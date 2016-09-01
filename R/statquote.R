@@ -8,15 +8,17 @@
 #' Function to display a randomly chosen statistical quote
 #'
 #' This function displays a randomly statistical quote from
-#' a collection. The quotations are classified by topics 
+#' a collection. The quotations are classified by topics
 #'
 #' @param ind Optional index of a quote; if missing a random value is sampled from
 #'        the available quotations.
 #' @param topic A character string, used to select a subset of the quotes based
-#'        on the assigned topics. 
+#'        on the assigned topics.
 #' @return A character vector containing one randomly selected quote
 #'    from the included data set. It is of class \code{statquote} for
 #'    which an S3 print method will be invoked.
+#' @export
+#' @importFrom stringr str_detect
 #' @examples
 #'  set.seed(1234)
 #'  statquote()
@@ -26,13 +28,13 @@ statquote <- function(ind, topic=NULL) {
 
 	if (is.null(.sq.env$quotes)) .sq.env$quotes <- .get.sq()
 	data <- sq.env$quotes
-	
+
 	if(!is.null(topic)) {
 		OK <- which(str_detect(tolower(as.character(data$topic)), tolower(topic)))
 		if (length(OK)>1) data <- data[OK,]
 		else warning("The topic", topic, "did not match any items and is ignored")
 	}
-	
+
   if (missing(ind)) {
     n <- nrow(data)
     ind <- sample(1:n, 1)

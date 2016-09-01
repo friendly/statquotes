@@ -2,11 +2,13 @@ Package: statquotes
 Title: Quotes on Statistics, Data Visualization and Science
 Version: 0.1
 Authors@R: person("Michael", "Friendly", email = "friendly@yorku.ca", role = c("aut", "cre"))
-Description: Generates a random quotation from a data base of quotes on topics in statistics,
-  data visualization and science.
-Depends: R (>= 3.2.5)
+Description: Generates a random quotation from a data base of quotes on topics
+    in statistics, data visualization and science.
+Depends:
+    R (>= 3.2.5)
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
 Maintainer: 'Michael Friendly' <friendly@yorku.ca>
 BugReports: https://github.com/friendly/statquotes/issues
+RoxygenNote: 5.0.1
