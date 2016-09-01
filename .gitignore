@@ -1,3 +1,13 @@
 .Rproj.user
 .Rhistory
 .RData
+
+# Session Data files
+.RData
+
+# Example code in package build process
+*-Ex.R
+
+# RStudio files
+.Rproj.user/
+
