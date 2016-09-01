@@ -36,4 +36,8 @@ a collection. The quotations are classified by topics
  statquote()
 
 }
+\seealso{
+Inspired by: \code{gaussfact} (\code{https://github.com/eddelbuettel/gaussfacts}),
+ \code{\link[fortunes:fortunes]{fortune}}
+}
 

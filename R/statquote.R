@@ -1,9 +1,8 @@
 .sq.env <- new.env()
 
-.get.sq <- function() {
-	quotes <- data(quotes, package="statquotes")
-}
-
+.set.sq <- function()
+  load(system.file('quotes.RData', package='statquotes'), envir = .sq.env)
+.get.sq <- function() .sq.env$quotes
 
 #' Function to display a randomly chosen statistical quote
 #'
@@ -19,7 +18,7 @@
 #'    which an S3 print method will be invoked.
 #' @export
 #' @importFrom stringr str_detect
-#' @seealso Inspired by: \code{\link[gaussfact:gaussfact]{gaussfact}},
+#' @seealso Inspired by: \code{gaussfact} (\code{https://github.com/eddelbuettel/gaussfacts}),
 #'  \code{\link[fortunes:fortunes]{fortune}}
 #' @examples
 #'  set.seed(1234)
@@ -28,8 +27,8 @@
 
 statquote <- function(ind, topic=NULL) {
 
-	if (is.null(.sq.env$quotes)) .sq.env$quotes <- .get.sq()
-	data <- .sq.env$quotes
+  if(is.null(.get.sq())) .set.sq()
+	data <- .get.sq()
 
 	if(!is.null(topic)) {
 		OK <- which(str_detect(tolower(as.character(data$topic)), tolower(topic)))
@@ -51,6 +50,7 @@ statquote <- function(ind, topic=NULL) {
 #' @param x Default object for \code{print} method
 #' @param width Optional column width parameter
 #' @param ... Other optional arguments
+#' @export
 
 print.statquote <- function(x, width = NULL, ...) {
     if (is.null(width)) width <- 0.9 * getOption("width")
@@ -62,5 +62,6 @@ print.statquote <- function(x, width = NULL, ...) {
 #' List the topics of the quotes data base
 
 quote_topics <- function() {
-	levels(quotes[,"topic"])
+  data <- .get.sq()
+	levels(data[,"topic"])
 }
