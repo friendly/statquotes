@@ -1,0 +1,55 @@
+\documentclass[11pt]{article}
+
+%\usepackage{sfheaders}        %% Chap/Sec headers in Helvetica
+\usepackage[margin=2cm]{geometry}
+\usepackage{epigraph}         %% section quotations
+\setlength{\epigraphwidth}{.95\textwidth}
+\renewcommand{\epigraphsize}{\normalsize}
+\setlength{\epigraphrule}{0pt}
+\setlength{\beforeepigraphskip}{.2\baselineskip}
+\setlength{\afterepigraphskip}{0pt}
+\usepackage[obeyspaces]{url}  %% URLs and pathnames
+\usepackage[]{hyperref}
+
+
+\usepackage[comma]{natbib}
+\renewcommand{\bibname}{References}
+\bibliographystyle{abbrvnat-apa}  % this includes URLs
+
+%opening
+\title{Quotes on Statistics, Data Visualization, and Science}
+\author{Michael Friendly}
+
+\begin{document}
+
+\maketitle
+
+%\begin{abstract}
+This is a collection of quotations dealing with aspects of statistics, data visualization
+and science I assembled over the years from various
+sources.  I use them in books, articles and lectures to set some context
+or to make a point.
+ 
+It began life as a simple text file and was later converted to
+\LaTeX\  using the \texttt{epigraph} package to format them as nice
+quotations for a chapter or section.  
+The quotations are classified by general topics (and subtopics), though their placement
+in these categories is an arbitrary choice to some degree.
+In this listing, the formatting attributes of an \verb|\epigraph{text}{source}|
+has been modified to conserve space.
+
+The exact wording and the attribution (``source'') of quotations is often controversial, either for
+the author or location.
+The cited source given here is sometimes
+supplemented by notes on my sources or further discussion.
+A good place to track down problem quotations is \url{http://quoteinvestigator.com}.
+%\end{abstract}
+
+%\section{}
+
+\input{quotes}
+
+\bibliography{graphics,statistics,timeref}
+
+
+\end{document}
