@@ -1,10 +1,12 @@
 Package: statquotes
-Title: What the Package Does (one line, title case)
-Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Title: Quotes on Statistics, Data Visualization and Science
+Version: 0.1
+Authors@R: person("Michael", "Friendly", email = "friendly@yorku.ca", role = c("aut", "cre"))
+Description: Generates a random quotation from a data base of quotes on topics in statistics,
+  data visualization and science.
 Depends: R (>= 3.2.5)
-License: What license is it under?
+License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
 Maintainer: 'Michael Friendly' <friendly@yorku.ca>
+BugReports: https://github.com/friendly/statquotes/issues
