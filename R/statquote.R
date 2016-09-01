@@ -19,6 +19,8 @@
 #'    which an S3 print method will be invoked.
 #' @export
 #' @importFrom stringr str_detect
+#' @seealso Inspired by: \code{\link[gaussfact:gaussfact]{gaussfact}},
+#'  \code{\link[fortunes:fortunes]{fortune}}
 #' @examples
 #'  set.seed(1234)
 #'  statquote()
