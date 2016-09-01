@@ -27,7 +27,7 @@
 statquote <- function(ind, topic=NULL) {
 
 	if (is.null(.sq.env$quotes)) .sq.env$quotes <- .get.sq()
-	data <- sq.env$quotes
+	data <- .sq.env$quotes
 
 	if(!is.null(topic)) {
 		OK <- which(str_detect(tolower(as.character(data$topic)), tolower(topic)))
