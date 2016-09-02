@@ -26,13 +26,21 @@ ditto <- function(x) {
 
 # cleanup TeX in source field
 detex <- function(x) {
+  x <- str_replace(x, "\\\\cite[pt]?\\[.*\\]?\\{(.*)\\}", "[@\\1]")
+  x <- str_replace(x, "\\\\cite[pt]?\\{(.*)\\}", "[@\\1]")
+  x <- str_replace(x, "\\\\emph\\{(.*)\\},?", "\\1")
   x <- str_replace(x, "%.*$", "")
   x <- str_replace(x, '``', '"')
   x <- str_replace(x, "''", '"')
   x <- str_replace(x, "\\\\&", '&')
 	x <- str_replace(x, "\\\\emph\\{(.*)\\}", "\\1")
 	x <- str_replace(x, "\\\\citeyear\\{(.*)\\}", "[@\\1]")
-	x <- str_replace(x, "\\\\cite[pt]?\\[.*\\]?\\{(.*)\\}", "[@\\1]")
+	x <- str_replace(x, "\\[\\@(.*)\\]", "")
+	x <- str_replace(x, "\\\\\\'", "")
+	x <- str_replace(x, "\\'\\{(.)\\}", "\\1")
+	x <- str_replace(x, "\\'", "")
+	x <- str_replace(x, '\\\\\\"', "")
+	x <- str_replace(x, '  ', " ")
 	x
 }
 
@@ -77,6 +85,10 @@ quotes$subtopic <- factor(quotes$subtopic)
 # assign quote ids
 quotes <- cbind(qid = 1:nrow(quotes), quotes)
 # cleanup TeX stuff
+if(FALSE){ #test
+    out <- detex(quotes[,"source"])
+    View(cbind(quotes[,"source"], out))
+}
 quotes[,"source"] <- detex(quotes[,"source"])
 
 # take a look
@@ -86,5 +98,5 @@ print(summary(quotes))
 
 # save results
 save(quotes, file="quotes.RData")
-write.csv(quotes, file="quotes.csv", row.names=FALSE)
+# write.csv(quotes, file="quotes.csv", row.names=FALSE)
 
