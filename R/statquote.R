@@ -1,7 +1,6 @@
 .sq.env <- new.env()
+data(quotes, package = 'statquotes', envir = .sq.env)
 
-.set.sq <- function()
-  load(system.file('quotes.RData', package='statquotes'), envir = .sq.env)
 .get.sq <- function() .sq.env$quotes
 
 #' Function to display a randomly chosen statistical quote
@@ -27,7 +26,6 @@
 
 statquote <- function(ind, topic=NULL) {
 
-  if(is.null(.get.sq())) .set.sq()
 	data <- .get.sq()
 
 	if(!is.null(topic)) {
