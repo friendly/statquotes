@@ -91,6 +91,10 @@ if(FALSE){ #test
 }
 quotes[,"source"] <- detex(quotes[,"source"])
 
+# change \emph{...} to *...*
+quotes$text <- str_replace_all(quotes$text, "\\\\emph\\{", "*")
+quotes$text <- str_replace_all(quotes$text, "\\}", "*")
+
 # take a look
 View(quotes)
 print(str(quotes))
