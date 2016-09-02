@@ -1,7 +1,9 @@
 Package: statquotes
 Title: Quotes on Statistics, Data Visualization and Science
 Version: 0.1
-Authors@R: person("Michael", "Friendly", email = "friendly@yorku.ca", role = c("aut", "cre"))
+Authors@R: c(person("Michael", "Friendly", email = "friendly@yorku.ca", role = c("aut", "cre")),
+             person("Phil", "Chalmers", email = "rphilip.chalmers@gmail.com", role = c("ctb"))
+            )
 Description: Generates a random quotation from a data base of quotes on topics
     in statistics, data visualization and science.
 Depends:
