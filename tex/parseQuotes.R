@@ -93,7 +93,7 @@ quotes[,"source"] <- detex(quotes[,"source"])
 
 # take a look
 View(quotes)
-str(quotes)
+print(str(quotes))
 print(summary(quotes))
 
 # save results
