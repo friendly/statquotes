@@ -38,6 +38,8 @@ a collection. The quotations are classified by topics
  set.seed(1234)
  statquote()
  statquote(author="Tukey")
+ statquote(topic="science")
+ statquote(topic="history")
 
 }
 \seealso{
