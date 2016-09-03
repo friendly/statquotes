@@ -1,7 +1,3 @@
-.sq.env <- new.env()
-data(quotes, package = 'statquotes', envir = .sq.env)
-.get.sq <- function() .sq.env$quotes
-
 #' Function to search quote database
 #'
 #' This function takes a search pattern (can use regular expressions) and returns all quotes
