@@ -5,7 +5,7 @@
 \alias{statquote}
 \title{Function to display a randomly chosen statistical quote}
 \usage{
-statquote(ind, topic = NULL)
+statquote(ind, topic = NULL, author = NULL)
 
 \method{print}{statquote}(x, width = NULL, ...)
 }
@@ -15,6 +15,9 @@ the available quotations.}
 
 \item{topic}{A character string, used to select a subset of the quotes based
 on the assigned topics.}
+
+\item{author}{A character string, used to select a subset of the quotes based
+on the source for the quote.}
 
 \item{x}{Default object for \code{print} method}
 
@@ -34,6 +37,7 @@ a collection. The quotations are classified by topics
 \examples{
  set.seed(1234)
  statquote()
+ statquote(author="Tukey")
 
 }
 \seealso{

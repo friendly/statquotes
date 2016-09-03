@@ -24,6 +24,7 @@ data(quotes, package = 'statquotes', envir = .sq.env)
 #' @examples
 #'  set.seed(1234)
 #'  statquote()
+#'  statquote(author="Tukey")
 #'
 
 statquote <- function(ind, topic=NULL, author=NULL) {
