@@ -41,6 +41,7 @@ a collection. The quotations are classified by topics
 
 }
 \seealso{
+\code{\link{quote_topics}}, \code{\link{search_quotes}}, \code{\link{quotes}},
 Inspired by: \code{gaussfact} (\code{https://github.com/eddelbuettel/gaussfacts}),
  \code{\link[fortunes:fortunes]{fortune}}
 }

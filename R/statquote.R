@@ -19,7 +19,8 @@ data(quotes, package = 'statquotes', envir = .sq.env)
 #'    which an S3 print method will be invoked.
 #' @export
 #' @importFrom stringr str_detect
-#' @seealso Inspired by: \code{gaussfact} (\code{https://github.com/eddelbuettel/gaussfacts}),
+#' @seealso \code{\link{quote_topics}}, \code{\link{search_quotes}}, \code{\link{quotes}},
+#' Inspired by: \code{gaussfact} (\code{https://github.com/eddelbuettel/gaussfacts}),
 #'  \code{\link[fortunes:fortunes]{fortune}}
 #' @examples
 #'  set.seed(1234)
