@@ -29,9 +29,11 @@ statquote <- function(ind, topic=NULL) {
 	data <- .get.sq()
 
 	if(!is.null(topic)) {
-		OK <- which(str_detect(tolower(as.character(data$topic)), tolower(topic)))
+	  merged <- with(data, paste(as.character(topic), as.character(subtopic)))
+		OK <- which(str_detect(tolower(merged), tolower(topic)))
 		if (length(OK)>1) data <- data[OK,]
-		else warning("The topic", topic, "did not match any items and is ignored")
+		else warning("The topic \'", topic, "\' did not match any items and is ignored",
+		             call.=FALSE)
 	}
 
   if (missing(ind)) {
