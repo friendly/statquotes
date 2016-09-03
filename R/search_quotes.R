@@ -7,6 +7,8 @@
 #' expression characters are allowed.
 #' @param fuzzy Logical; If \code{TRUE}, the function uses \code{\link[base]{agrep}} to allow approximate
 #'     matches to the search string.
+#' @param fields A character vector pertaining to the particular fields to search. The
+#' default is to search everything: `c("topic", "subtopic", "text", "source")`.
 #' @return A data frame object containing all quotes that match the search
 #' parameters.
 #' @export
@@ -18,16 +20,17 @@
 #' search_quotes("bad answer", fuzzy = TRUE) # fuzzy match
 #'
 
-search_quotes <- function(search, fuzzy=FALSE) {
+search_quotes <- function(search, fuzzy=FALSE,
+                          fields = c("topic", "subtopic", "text", "source")) {
   data <- .get.sq()
 
   if(missing(search))
     stop("No search parameters entered.", call.=FALSE)
 
-  merged <- with(data, paste(as.character(text),
-                             as.character(topic),
-                             as.character(subtopic),
-                             as.character(source)))
+  merged <- data.frame(data[,fields], check.names = FALSE)
+  cols <- colnames(merged)
+  if (length(cols) > 1) merged <- do.call(paste, merged[,cols])
+
   if(fuzzy) OK <- agrep(tolower(search), tolower(merged))
   else OK <- which(str_detect(merged, search))
 
