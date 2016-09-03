@@ -5,10 +5,12 @@
 #'
 #' @param search A character string, used to search the database. Regular
 #' expression characters are allowed.
+#' @param fuzzy Logical; If \code{TRUE}, the function uses \code{\link[base]{agrep}} to allow approximate
+#'     matches to the search string.
 #' @return A data frame object containing all quotes that match the search
 #' parameters.
 #' @export
-#' @seealso \code{\link{statquote}}, \code{\link{quote_topics}}, \code{\link{quotes}}
+#' @seealso \code{\link[base]{agrep}}, \code{\link{statquote}}, \code{\link{quote_topics}}, \code{\link{quotes}}
 #' @examples
 #' search_quotes("^D") # regex to find all quotes that start with "D"
 #' dat <- search_quotes("Tukey") #all quotes with "Tukey"

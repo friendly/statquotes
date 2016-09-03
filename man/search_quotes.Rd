@@ -9,6 +9,9 @@ search_quotes(search, fuzzy = FALSE)
 \arguments{
 \item{search}{A character string, used to search the database. Regular
 expression characters are allowed.}
+
+\item{fuzzy}{Logical; If \code{TRUE}, the function uses \code{\link[base]{agrep}} to allow approximate
+matches to the search string.}
 }
 \value{
 A data frame object containing all quotes that match the search
@@ -26,6 +29,6 @@ search_quotes("bad answer", fuzzy = TRUE) # fuzzy match
 
 }
 \seealso{
-\code{\link{statquote}}, \code{\link{quote_topics}}, \code{\link{quotes}}
+\code{\link[base]{agrep}}, \code{\link{statquote}}, \code{\link{quote_topics}}, \code{\link{quotes}}
 }
 
