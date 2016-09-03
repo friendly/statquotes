@@ -27,8 +27,9 @@ data(quotes, package = 'statquotes', envir = .sq.env)
 statquote <- function(ind, topic=NULL) {
 
 	data <- .get.sq()
+	if(!missing(ind)) stopifnot(ind > 0L && ind <= nrow(data))
 
-	if(!is.null(topic)) {
+	if(!is.null(topic) && missing(ind)) {
 	  merged <- with(data, paste(as.character(topic), as.character(subtopic)))
 		OK <- which(str_detect(tolower(merged), tolower(topic)))
 		if (length(OK)>1) data <- data[OK,]
