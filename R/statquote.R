@@ -12,7 +12,7 @@ data(quotes, package = 'statquotes', envir = .sq.env)
 #'        the available quotations.
 #' @param topic A character string, used to select a subset of the quotes based
 #'        on the assigned topics.
-#' @param author A character string, used to select a subset of the quotes based
+#' @param source A character string, used to select a subset of the quotes based
 #'        on the source for the quote.
 #' @return A character vector containing one randomly selected quote
 #'    from the included data set. It is of class \code{statquote} for
@@ -25,12 +25,12 @@ data(quotes, package = 'statquotes', envir = .sq.env)
 #' @examples
 #'  set.seed(1234)
 #'  statquote()
-#'  statquote(author="Tukey")
+#'  statquote(source="Tukey")
 #'  statquote(topic="science")
 #'  statquote(topic="history")
 #'
 
-statquote <- function(ind, topic=NULL, author=NULL) {
+statquote <- function(ind, topic=NULL, source=NULL) {
 
 	data <- .get.sq()
 	if(!missing(ind)) stopifnot(ind > 0L && ind <= nrow(data))
@@ -43,10 +43,10 @@ statquote <- function(ind, topic=NULL, author=NULL) {
 		             call.=FALSE)
 	}
 
-	if(!is.null(author) && missing(ind)) {
-	  OK <- which(str_detect(tolower(data$source), tolower(author)))
+	if(!is.null(source) && missing(ind)) {
+	  OK <- which(str_detect(tolower(data$source), tolower(source)))
 	  if (length(OK)) data <- data[OK,]
-	  else warning("The source \'", author, "\' did not match any items and is ignored",
+	  else warning("The source \'", source, "\' did not match any items and is ignored",
 	               call.=FALSE)
 	}
 
