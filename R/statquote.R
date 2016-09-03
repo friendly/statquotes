@@ -36,14 +36,14 @@ statquote <- function(ind, topic=NULL, author=NULL) {
 	if(!is.null(topic) && missing(ind)) {
 	  merged <- with(data, paste(as.character(topic), as.character(subtopic)))
 		OK <- which(str_detect(tolower(merged), tolower(topic)))
-		if (length(OK)>1) data <- data[OK,]
+		if (length(OK)) data <- data[OK,]
 		else warning("The topic \'", topic, "\' did not match any items and is ignored",
 		             call.=FALSE)
 	}
 
 	if(!is.null(author) && missing(ind)) {
 	  OK <- which(str_detect(tolower(data$source), tolower(author)))
-	  if (length(OK)>1) data <- data[OK,]
+	  if (length(OK)) data <- data[OK,]
 	  else warning("The source \'", author, "\' did not match any items and is ignored",
 	               call.=FALSE)
 	}
