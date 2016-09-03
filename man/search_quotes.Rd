@@ -4,7 +4,7 @@
 \alias{search_quotes}
 \title{Function to search quote database}
 \usage{
-search_quotes(search = NULL, fuzzy = FALSE)
+search_quotes(search, fuzzy = FALSE)
 }
 \arguments{
 \item{search}{A character string, used to search the database. Regular
@@ -20,8 +20,9 @@ that match the pattern. If fuzzy is FALSE, then only exact matches are returned 
 }
 \examples{
 search_quotes("^D") # regex to find all quotes that start with "D"
-dat <- search_quotes("Tukey")
+dat <- search_quotes("Tukey") #all quotes with "Tukey"
 dat
+search_quotes("bad answer", fuzzy = TRUE) # fuzzy match
 
 }
 \seealso{
