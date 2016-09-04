@@ -51,6 +51,7 @@ devtools::install_github("friendly/statquotes")
 
 Michael Friendly  
 Phil Chalmers  
+Matthew Sigal
 
 
 ### License
