@@ -12,31 +12,31 @@
 #' @export
 #' @seealso \code{\link{statquote}}, \code{\link{quote_topics}}, \code{\link{quotes}}
 #' @examples
-#' make_cloud()
-#' make_cloud(search = "graph")
-#' make_cloud(max.words = 10)
+#' quote_cloud()
+#' quote_cloud(search = "graph")
+#' quote_cloud(max.words = 10)
 
-make_cloud <- function(search = ".*", max.words = 80, colors = NA){
+quote_cloud <- function(search = ".*", max.words = 80, colors = NA){
     library(statquotes)
     library(tidytext)
     library(dplyr)
     library(stringr)
     library(wordcloud)
-    
+
     qt <- search_quotes(search) # defaults to all quotes
-    
-    data("stop_words")
+
+    data("stop_words", package="tidytext")
     qtidy <- tbl_df(qt) %>%
         select(-source, -topic, -subtopic) %>%
         unnest_tokens(word, text) %>%
         anti_join(stop_words) %>%
         count(word, sort = TRUE)
-    
+
     if (is.na(colors)){
       pal <- brewer.pal(9,"BuGn")
       pal <- pal[-(1:4)]
     }
-    
+
     qtidy %>%
       with(wordcloud(word, n, max.words = max.words, colors=pal))
 }
