@@ -22,7 +22,7 @@ The main topics of the quotes are:
 [5] "Reviews"            "Science"            "Statistics"         "Unclassified"      
 ```
 
-Some of these are divided into subtopics, most conveniently shown in tree form (using the [`data.tree`](https://cran.r-project.org/web/packages/data.tree/index.html) package)
+Some of these are divided into subtopics, most conveniently shown in tree form (using the [`data.tree`](https://cran.r-project.org/package=pkgname) package)
 
 <img src="qtree.png">
 
