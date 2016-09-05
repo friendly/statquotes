@@ -17,27 +17,24 @@
 #' quote_cloud(max.words = 10)
 
 quote_cloud <- function(search = ".*", max.words = 80, colors = NA){
-    library(statquotes)
     library(tidytext)
     library(dplyr)
-    library(stringr)
     library(wordcloud)
 
     qt <- search_quotes(search) # defaults to all quotes
 
     data("stop_words", package="tidytext")
-    qtidy <- tbl_df(qt) %>%
-        select(-source, -topic, -subtopic) %>%
-        unnest_tokens(word, text) %>%
-        anti_join(stop_words) %>%
-        count(word, sort = TRUE)
+    qtidy <- tbl_df(qt)
+    qtidy <- select(qtidy, -source, -topic, -subtopic)
+    qtidy <- unnest_tokens(qtidy, word, text)
+    qtidy <- anti_join(qtidy, stop_words, by = "word")
+    qtidy <- count(qtidy, word, sort = TRUE)
 
     if (is.na(colors)){
       pal <- brewer.pal(9,"BuGn")
       pal <- pal[-(1:4)]
     }
 
-    qtidy %>%
-      with(wordcloud(word, n, max.words = max.words, colors=pal))
+    with(qtidy, wordcloud(word, n, max.words = max.words, colors=pal))
 }
 
