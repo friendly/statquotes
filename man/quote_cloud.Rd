@@ -4,7 +4,7 @@
 \alias{quote_cloud}
 \title{Function to generate word cloud based upon quote database}
 \usage{
-quote_cloud(search = ".*", max.words = 80, colors = NA)
+quote_cloud(search = ".*", max.words = 80, colors = NA, ...)
 }
 \arguments{
 \item{search}{A character string; used to search the database. Regular
@@ -14,6 +14,9 @@ expression characters are allowed. Default is to search all quotes.}
 
 \item{colors}{A character vector pertaining to the colors to be used to designate
 word frequency. The default is 5 levels, from light to dark green.}
+
+\item{...}{additional arguments passed to \code{\link{search_quotes}} and
+\code{\link{wordcloud}}}
 }
 \value{
 A wordcloud is plotted.
@@ -28,6 +31,7 @@ quote_cloud(search = "graph")
 quote_cloud(max.words = 10)
 }
 \seealso{
-\code{\link{statquote}}, \code{\link{quote_topics}}, \code{\link{quotes}}
+\code{\link{statquote}}, \code{\link{quote_topics}}, \code{\link{quotes}},
+  \code{\link{search_quotes}}. \code{\link{wordcloud}}
 }
 
