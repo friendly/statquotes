@@ -11,7 +11,6 @@
 #' @param ... additional arguments passed to \code{\link{search_quotes}} and
 #'   \code{\link{wordcloud}}
 #' @return A wordcloud is plotted.
-#' @import dplyr
 #' @importFrom tidytext unnest_tokens
 #' @importFrom wordcloud wordcloud
 #' @export
@@ -25,10 +24,20 @@
 quote_cloud <- function(search = ".*", max.words = 80, colors = NA, ...){
     qt <- search_quotes(search, ...) # defaults to all quotes
     data("stop_words", package="tidytext", envir = .sq.env)
-    qtidy <- tbl_df(qt[,!(colnames(qt) %in% c("source", "topic", "subtopic"))])
-    qtidy <- qtidy %>% tidytext::unnest_tokens("word", "text") %>%
-      anti_join(.sq.env$stop_words, by = "word") %>%
-      count_("word", sort = TRUE)
+
+###### dplyr approach
+#     qtidy <- tbl_df(qt[,!(colnames(qt) %in% c("source", "topic", "subtopic"))])
+#     qtidy <- qtidy %>% tidytext::unnest_tokens("word", "text") %>%
+#       anti_join(.sq.env$stop_words, by = "word") %>%
+#       count_("word", sort = TRUE)
+
+###### base approach
+    qtidy <- qt[,c("qid","text")]
+    qtidy <- tidytext::unnest_tokens(qtidy, "word", "text")
+    qtidy <- qtidy[!qtidy$word %in% stop_words$word,]
+    qtidy <- as.data.frame(table(qtidy$word))
+    qtidy <- qtidy[order(qtidy$Freq, decreasing = TRUE),]
+    colnames(qtidy) <- c("word", "n")
 
     if (is.na(colors))
       pal <- c("#66C2A4", "#41AE76", "#238B45", "#006D2C", "#00441B")
