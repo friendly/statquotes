@@ -14,5 +14,8 @@ Encoding: UTF-8
 LazyData: true
 Maintainer: Michael Friendly <friendly@yorku.ca>
 BugReports: https://github.com/friendly/statquotes/issues
-Imports: stringr
+Imports: stringr,
+    dplyr,
+    tidytext,
+    wordcloud
 RoxygenNote: 5.0.1
