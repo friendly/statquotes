@@ -34,7 +34,7 @@ quote_cloud <- function(search = ".*", max.words = 80, colors = NA, ...){
 ###### base approach
     qtidy <- qt[,c("qid","text")]
     qtidy <- tidytext::unnest_tokens(qtidy, "word", "text")
-    qtidy <- qtidy[!qtidy$word %in% stop_words$word,]
+    qtidy <- qtidy[!qtidy$word %in% .sq.env$stop_words$word,]
     qtidy <- as.data.frame(table(qtidy$word))
     qtidy <- qtidy[order(qtidy$Freq, decreasing = TRUE),]
     colnames(qtidy) <- c("word", "n")
