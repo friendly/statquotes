@@ -3,6 +3,6 @@
 ^tex
 ^.*\.png$
 README.md
-
+ANNOUNCE.md
 ^cran-comments\.md$
 ^\.travis\.yml$
