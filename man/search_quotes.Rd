@@ -5,7 +5,7 @@
 \title{Function to search quote database}
 \usage{
 search_quotes(search, fuzzy = FALSE, fields = c("topic", "subtopic", "text",
-  "source"))
+  "source"), ...)
 }
 \arguments{
 \item{search}{A character string, used to search the database. Regular
@@ -16,6 +16,9 @@ matches to the search string.}
 
 \item{fields}{A character vector pertaining to the particular fields to search. The
 default is to search everything: `c("topic", "subtopic", "text", "source")`.}
+
+\item{...}{additional arguments passed to \code{\link[base]{agrep}} to fine-tune fuzzy
+search parameters.}
 }
 \value{
 A data frame object containing all quotes that match the search

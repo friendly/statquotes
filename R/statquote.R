@@ -1,4 +1,6 @@
 .sq.env <- new.env()
+
+#' @importFrom utils data
 data(quotes, package = 'statquotes', envir = .sq.env)
 
 .get.sq <- function() .sq.env$quotes
