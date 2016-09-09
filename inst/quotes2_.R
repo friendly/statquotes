@@ -48,8 +48,7 @@ quotes2tex <- function(filename = 'quotes.tex'){
         cat(sprintf("\\subsection{%s}\n\n", stpc), file=filename, append=TRUE)
       pick <- which(stpc == tmpdat$subtopic)
       for(i in pick)
-        with(tmpdat, cat(sprintf("\\epigraph{%s}{%s}\n\n",
-                                 if(TeXtext[i] != "") TeXtext[i] else text[i],
+        with(tmpdat, cat(sprintf("\\epigraph{%s}{%s}\n\n", text[i],
                                  if(TeXsource[i] != "") TeXsource[i] else source[i]),
                          file=filename, append=TRUE))
     }

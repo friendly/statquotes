@@ -8,5 +8,4 @@
 
 # Special LaTeX fields
 
-- TeXtext (optional): Same as text, however used if special LaTeX formatting is required (e.g., \begin{verse} ... \end{verse})
 - TeXsource (optional): Same as source, however used if special LaTeX formatting is required (e.g., \citep[p.45]{person95})
