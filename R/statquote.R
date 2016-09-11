@@ -95,6 +95,7 @@ as.data.frame.statquote <- function(x, row.names = NULL,
 }
 
 #' List the topics of the quotes data base
+#' @export
 
 quote_topics <- function() {
   data <- .get.sq()
