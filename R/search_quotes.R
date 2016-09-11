@@ -20,6 +20,10 @@
 #' search_quotes("Tukey") #all quotes with "Tukey"
 #' search_quotes("bad answer", fuzzy = TRUE) # fuzzy match
 #'
+#' # to a data.frame
+#' out <- search_quotes("bad answer", fuzzy = TRUE)
+#' as.data.frame(out)
+#'
 
 search_quotes <- function(search, fuzzy=FALSE,
                           fields = c("topic", "subtopic", "text", "source"),

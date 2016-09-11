@@ -33,6 +33,10 @@ search_quotes("^D") # regex to find all quotes that start with "D"
 search_quotes("Tukey") #all quotes with "Tukey"
 search_quotes("bad answer", fuzzy = TRUE) # fuzzy match
 
+# to a data.frame
+out <- search_quotes("bad answer", fuzzy = TRUE)
+as.data.frame(out)
+
 }
 \seealso{
 \code{\link[base]{agrep}}, \code{\link{statquote}}, \code{\link{quote_topics}}, \code{\link{quotes}}

@@ -57,13 +57,12 @@ statquote <- function(ind, topic=NULL, source=NULL) {
     ind <- sample(1:n, 1)
 }
 	res <- data[ind,]
-	res <- data.frame(text=res$text, source=res$source, stringsAsFactors = FALSE)
   class(res) <- c("statquote", 'data.frame')
   return(res)
 }
 
 #' @rdname statquote
-#' @param x Default object for \code{print} method
+#' @param x object of class \code{'statquote'}
 #' @param width Optional column width parameter
 #' @param ... Other optional arguments
 #' @export
@@ -82,6 +81,17 @@ print.statquote <- function(x, width = NULL, ...) {
       sapply(strwrap(x, width), cat, "\n")
     }
     invisible()
+}
+
+#' @rdname statquote
+#' @param row.names see \code{\link{as.data.frame}}
+#' @param optional see \code{\link{as.data.frame}}
+#' @export
+
+as.data.frame.statquote <- function(x, row.names = NULL,
+                                    optional = FALSE, ...) {
+  class(x) <- 'data.frame'
+  x
 }
 
 #' List the topics of the quotes data base
