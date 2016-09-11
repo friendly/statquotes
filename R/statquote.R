@@ -95,9 +95,23 @@ as.data.frame.statquote <- function(x, row.names = NULL,
 }
 
 #' List the topics of the quotes data base
+#' @param subtopics logical; if \code{TRUE} the subtopics are printed as well
+#'   with the associated topic
 #' @export
+#' @examples
+#' quote_topics()
+#' quote_topics(TRUE)
 
-quote_topics <- function() {
+quote_topics <- function(subtopics = FALSE) {
   data <- .get.sq()
-	levels(data[,"topic"])
+  ret <- levels(data[,"topic"])
+  if(subtopics){
+    subtopic_list <- lapply(ret, function(topic, data){
+      lev <- levels(droplevels(data$subtopic[data$topic == topic]))
+      data.frame(topic=topic, subtopic=lev)
+    }, data=data)
+    ret <- do.call(rbind, subtopic_list)
+    ret <- ret[ret$subtopic != "", ]
+  }
+  ret
 }

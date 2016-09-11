@@ -4,9 +4,17 @@
 \alias{quote_topics}
 \title{List the topics of the quotes data base}
 \usage{
-quote_topics()
+quote_topics(subtopics = FALSE)
+}
+\arguments{
+\item{subtopics}{logical; if \code{TRUE} the subtopics are printed as well
+with the associated topic}
 }
 \description{
 List the topics of the quotes data base
+}
+\examples{
+quote_topics()
+quote_topics(TRUE)
 }
 
