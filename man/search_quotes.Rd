@@ -21,8 +21,8 @@ default is to search everything: `c("topic", "subtopic", "text", "source")`.}
 search parameters.}
 }
 \value{
-A data frame object containing all quotes that match the search
-parameters.
+A data frame (also with class \code{'statquote'})
+  object containing all quotes that match the search parameters.
 }
 \description{
 This function takes a search pattern (can use regular expressions) and returns all quotes
@@ -30,8 +30,7 @@ that match the pattern. If fuzzy is FALSE, then only exact matches are returned 
 }
 \examples{
 search_quotes("^D") # regex to find all quotes that start with "D"
-dat <- search_quotes("Tukey") #all quotes with "Tukey"
-dat
+search_quotes("Tukey") #all quotes with "Tukey"
 search_quotes("bad answer", fuzzy = TRUE) # fuzzy match
 
 }

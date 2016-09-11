@@ -4,21 +4,20 @@
 #' that match the pattern. If fuzzy is FALSE, then only exact matches are returned (case sensitive).
 #'
 #' @param search A character string, used to search the database. Regular
-#' expression characters are allowed.
+#'   expression characters are allowed.
 #' @param fuzzy Logical; If \code{TRUE}, the function uses \code{\link[base]{agrep}} to allow approximate
 #'     matches to the search string.
 #' @param fields A character vector pertaining to the particular fields to search. The
-#' default is to search everything: `c("topic", "subtopic", "text", "source")`.
+#'   default is to search everything: `c("topic", "subtopic", "text", "source")`.
 #' @param ... additional arguments passed to \code{\link[base]{agrep}} to fine-tune fuzzy
-#' search parameters.
-#' @return A data frame object containing all quotes that match the search
-#' parameters.
+#'   search parameters.
+#' @return A data frame (also with class \code{'statquote'})
+#'   object containing all quotes that match the search parameters.
 #' @export
 #' @seealso \code{\link[base]{agrep}}, \code{\link{statquote}}, \code{\link{quote_topics}}, \code{\link{quotes}}
 #' @examples
 #' search_quotes("^D") # regex to find all quotes that start with "D"
-#' dat <- search_quotes("Tukey") #all quotes with "Tukey"
-#' dat
+#' search_quotes("Tukey") #all quotes with "Tukey"
 #' search_quotes("bad answer", fuzzy = TRUE) # fuzzy match
 #'
 
@@ -40,5 +39,6 @@ search_quotes <- function(search, fuzzy=FALSE,
   if (length(OK)) data <- data[OK,]
   else stop("The search parameters \'", search, "\' did not match any items.")
 
- return(data)
+  class(data) <- c("statquote", 'data.frame')
+  return(data)
 }

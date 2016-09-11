@@ -57,8 +57,8 @@ statquote <- function(ind, topic=NULL, source=NULL) {
     ind <- sample(1:n, 1)
 }
 	res <- data[ind,]
-	res <- list(text=res$text, source=res$source)
-  class(res) <- "statquote"
+	res <- data.frame(text=res$text, source=res$source, stringsAsFactors = FALSE)
+  class(res) <- c("statquote", 'data.frame')
   return(res)
 }
 
@@ -71,8 +71,17 @@ statquote <- function(ind, topic=NULL, source=NULL) {
 print.statquote <- function(x, width = NULL, ...) {
     if (is.null(width)) width <- 0.9 * getOption("width")
     if (width < 10) stop("'width' must be greater than 10", call.=FALSE)
-    x$source <- paste("---", x$source)
-    invisible(sapply(strwrap(x, width), cat, "\n"))
+    x <- x[ ,c('text', 'source')]
+    if (nrow(x) > 1){
+      for(i in 1L:nrow(x)){
+        print(x[i,], width=width, ...)
+        if(i < nrow(x)) cat('\n')
+      }
+    } else {
+      x$source <- paste("---", x$source)
+      sapply(strwrap(x, width), cat, "\n")
+    }
+    invisible()
 }
 
 #' List the topics of the quotes data base
