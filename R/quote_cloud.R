@@ -23,6 +23,7 @@
 
 quote_cloud <- function(search = ".*", max.words = 80, colors = NA, ...){
     qt <- search_quotes(search, ...) # defaults to all quotes
+    .sq.env <- new.env()
     data("stop_words", package="tidytext", envir = .sq.env)
 
 ###### dplyr approach
