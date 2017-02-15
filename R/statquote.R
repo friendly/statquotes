@@ -1,9 +1,9 @@
-.sq.env <- new.env()
-
 #' @importFrom utils data
-data(quotes, package = 'statquotes', envir = .sq.env)
-
-.get.sq <- function() .sq.env$quotes
+.get.sq <- function(){
+  .sq.env <- new.env()
+  data(quotes, package = 'statquotes', envir = .sq.env)
+  .sq.env$quotes
+}
 
 #' Function to display a randomly chosen statistical quote
 #'
