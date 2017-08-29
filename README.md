@@ -1,6 +1,8 @@
-[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active) [![Travis-CI Build Status](https://travis-ci.org/friendly/statquotes.svg?branch=master)](https://travis-ci.org/friendly/statquotes) [![](http://www.r-pkg.org/badges/version/statquotes)](http://www.r-pkg.org/pkg/statquotes) 
+[![Project Status: Active](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active) 
+[![Travis-CI Build Status](https://travis-ci.org/friendly/statquotes.svg?branch=master)](https://travis-ci.org/friendly/statquotes) [![](http://www.r-pkg.org/badges/version/statquotes)](http://www.r-pkg.org/pkg/statquotes) 
+[![Rdoc](http://www.rdocumentation.org/badges/version/statquotes)](http://www.rdocumentation.org/packages/statquotes)
 
-# statquotes v. 0.2.1
+# statquotes v. 0.2.2
 **Quotes on statistics, data visualization and science**
 
 This package displays a randomly chosen quotation from a data base consisting

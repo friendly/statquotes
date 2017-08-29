@@ -21,4 +21,3 @@ A data frame with over 200 quotations.  The variables are:
 }
 }
 \keyword{datasets}
-

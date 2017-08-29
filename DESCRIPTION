@@ -17,4 +17,4 @@ BugReports: https://github.com/friendly/statquotes/issues
 Imports: stringr,
     tidytext,
     wordcloud
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1

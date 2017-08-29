@@ -17,4 +17,3 @@ List the topics of the quotes data base
 quote_topics()
 quote_topics(TRUE)
 }
-

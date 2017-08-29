@@ -34,4 +34,3 @@ quote_cloud(max.words = 10)
 \code{\link{statquote}}, \code{\link{quote_topics}}, \code{\link{quotes}},
   \code{\link{search_quotes}}. \code{\link{wordcloud}}
 }
-

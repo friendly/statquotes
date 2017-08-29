@@ -41,4 +41,3 @@ as.data.frame(out)
 \seealso{
 \code{\link[base]{agrep}}, \code{\link{statquote}}, \code{\link{quote_topics}}, \code{\link{quotes}}
 }
-

@@ -1,3 +1,7 @@
+Version 0.2.2 (2017-08-29)
+
+- Fixed a bug giving `Error in .get.sq()` in more recent versions of R.
+
 Version 0.2.1 (2016-09-06)
 
 - Revised output of `statquote()` to be consistent with `search_quotes()`, and allow the print
