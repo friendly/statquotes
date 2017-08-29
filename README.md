@@ -7,6 +7,10 @@
 
 This package displays a randomly chosen quotation from a data base consisting
 of quotes about topics related to statistics, data visualization and science.
+The original idea came from the Unix `fortune` program that first appeared
+in Version 7 Unix. The \pkg{fortune} package is an R-centric equivalent.
+\pkg{statquotes} is dedicated to quotations on the substance of data
+analysis and visualization.
 
 The data base is a collection of quotations assembled over the years from various
 sources.  It began life as a simple text file and was later converted to
