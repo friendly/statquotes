@@ -1,5 +1,5 @@
 ### run this to rebuild the .Rdata file from the master csv. Must be in root dir to work
-#
+### This should be done prior to every CRAN release
 # quotes2RData()
 quotes2RData <- function(){
   if(!file.exists('inst/quotes.csv'))

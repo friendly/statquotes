@@ -8,4 +8,4 @@
 
 # Special LaTeX fields
 
-- TeXsource (optional): Same as source, however used if special LaTeX formatting is required (e.g., \citep[p.45]{person95})
+- TeXsource (optional): Same as source, however used if special LaTeX formatting is required (e.g., \citep[p.45]{person95}). Not used in R print-out
