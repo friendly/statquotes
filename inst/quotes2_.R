@@ -5,9 +5,9 @@ quotes2RData <- function(){
   if(!file.exists('inst/quotes.csv'))
     stop(sprintf('Hey developer, are you in the root dir of statquotes?
                  It looks like you\'re here: \"%s\"', getwd()), call.=FALSE)
-  data <- read.csv('inst/quotes.csv')
-  data <- data.frame(qid=1L:nrow(data), data[,c('topic', 'subtopic', 'text', 'source')])
-  save.image('data/quotes.RData')
+  quotes <- read.csv('inst/quotes.csv')
+  quotes <- data.frame(qid=1L:nrow(quotes), quotes[,c('topic', 'subtopic', 'text', 'source')])
+  save(quotes, file = 'data/quotes.RData')
   invisible(NULL)
 }
 
