@@ -1,12 +1,13 @@
 Package: statquotes
 Title: Quotes on Statistics, Data Visualization and Science
-Version: 0.2.2
+Version: 0.2.3
 Authors@R: c(person("Michael", "Friendly", email = "friendly@yorku.ca", role = c("aut", "cre")),
              person("Phil", "Chalmers", email = "rphilip.chalmers@gmail.com", role = c("ctb")),
              person("Matthew", "Sigal", email = "matthewsigal@gmail.com", role = c("ctb"))
             )
 Description: Generates a random quotation from a data base of quotes on topics
-    in statistics, data visualization and science.
+    in statistics, data visualization and science. Other functions allow searching
+    the quotes database or creating a word cloud.
 Depends:
     R (>= 3.2.5)
 License: GPL (>= 2)
@@ -14,6 +15,7 @@ Encoding: UTF-8
 LazyData: true
 Maintainer: Michael Friendly <friendly@yorku.ca>
 BugReports: https://github.com/friendly/statquotes/issues
+Url: https://github.com/friendly/statquotes/
 Imports: stringr,
     tidytext,
     wordcloud
