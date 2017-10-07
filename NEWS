@@ -1,3 +1,9 @@
+Version 0.2.3 (2017-10-6)
+
+- Created non-exported functions for adding to the quotes database [thx: philchalmers]
+
+- Added some more quotes
+
 Version 0.2.2 (2017-08-29)
 
 - Fixed a bug giving `Error in .get.sq()` in more recent versions of R.

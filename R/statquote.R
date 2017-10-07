@@ -74,11 +74,13 @@ print.statquote <- function(x, width = NULL, ...) {
     if (nrow(x) > 1){
       for(i in 1L:nrow(x)){
         print(x[i,], width=width, ...)
-        if(i < nrow(x)) cat('\n')
       }
     } else {
       x$source <- paste("---", x$source)
-      sapply(strwrap(x, width), cat, "\n")
+      out <- c(paste0("\n", strwrap(x$text, width)),
+               paste0("\n", strwrap(x$source, width)))
+      sapply(out, cat)
+      cat("\n")
     }
     invisible()
 }
