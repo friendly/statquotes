@@ -37,13 +37,25 @@ Some of these are divided into subtopics, most conveniently shown in tree form (
 ```{r}
 > set.seed(761)
 > statquote()
+
 The best thing about being a statistician is that you get to play in everyone's backyard. 
 --- John W. Tukey 
 > statquote(topic="science")
+
 Some people weave burlap into the fabric of our lives, and some weave gold thread. Both contribute 
 to make the whole picture beautiful and unique. 
 --- Anon. 
+> search_quotes("mail")
+
+Have you ever seen voice mail?
+--- The Hackers Test
 ```
+
+```{r}
+quote_cloud()
+```
+
+<img src="quotecloud.png">
 
 ### Installation
 
