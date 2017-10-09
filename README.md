@@ -59,12 +59,12 @@ quote_cloud()
 
 ### Installation
 
-This package is now on CRAN.  It can be installed from there via
+The released CRAN version can be installed via:
 
 ```
 install.packages("statquotes")
 ```
-The development version (if any) can be installed from this repo on Github via
+The development version (if any) can be installed from this repo on Github via:
 ```
 devtools::install_github("friendly/statquotes")
 ```
