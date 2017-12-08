@@ -1,13 +1,13 @@
 ### run this to rebuild the .Rdata file from the master csv. Must be in root dir to work
 ### This should be done prior to every CRAN release
-# quotes2RData()
+#' quotes2RData()
 quotes2RData <- function(){
   if(!file.exists('inst/quotes.csv'))
     stop(sprintf('Hey developer, are you in the root dir of statquotes?
                  It looks like you\'re here: \"%s\"', getwd()), call.=FALSE)
   quotes <- read.csv('inst/quotes.csv', stringsAsFactors = FALSE)
   nq <- nrow(quotes)
-  quotes <- data.frame(qid=1L:nq, quotes[,c('topic', 'subtopic', 'text', 'source')],
+  quotes <- data.frame(qid=1L:nq, quotes[,c('topic', 'subtopic', 'text', 'source', 'TeXsource')],
                        stringsAsFactors = FALSE)
   save(quotes, file = 'data/quotes.RData')
   cat(paste("Wrote", nq, "quotes to 'data/quotes.RData'\n"))

@@ -26,7 +26,7 @@
 #'
 
 search_quotes <- function(search, fuzzy=FALSE,
-                          fields = c("topic", "subtopic", "text", "source"),
+                          fields = c("topic", "subtopic", "text", "source", "TeXsource"),
                           ...) {
   data <- .get.sq()
 

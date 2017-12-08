@@ -19,10 +19,14 @@ as.latex.statquote <- function(data){
   topics <- unique(data$topic)
   data$text <- symbols2tex(data$text)
   data$source <- symbols2tex(data$source)
-  lines <- ""
-  for(i in 1:length(data)){
+  lines <- NULL
+  if(is.null(data$TeXsource)) data$TeXsource <- ""
+  for(i in 1:nrow(data)){
   	lines <- c(lines, sprintf("\\epigraph{%s}{%s}\n\n", data$text[i],
                                  if(data$TeXsource[i] != "") data$TeXsource[i] else data$source[i]))
   }
   lines
 }
+
+#' ll <- search_quotes("Tukey")
+#' as.latex.statquote(ll)
