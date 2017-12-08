@@ -15,7 +15,7 @@ expression characters are allowed.}
 matches to the search string.}
 
 \item{fields}{A character vector pertaining to the particular fields to search. The
-default is to search everything: `c("topic", "subtopic", "text", "source")`.}
+default is to search everything: `c("topic", "subtopic", "text", "source", "TeXsource")`.}
 
 \item{...}{additional arguments passed to \code{\link[base]{agrep}} to fine-tune fuzzy
 search parameters.}

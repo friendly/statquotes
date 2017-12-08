@@ -2,6 +2,7 @@
 
 S3method(as.data.frame,statquote)
 S3method(print,statquote)
+export(as.latex)
 export(quote_cloud)
 export(quote_topics)
 export(search_quotes)

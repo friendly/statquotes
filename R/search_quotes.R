@@ -8,7 +8,7 @@
 #' @param fuzzy Logical; If \code{TRUE}, the function uses \code{\link[base]{agrep}} to allow approximate
 #'     matches to the search string.
 #' @param fields A character vector pertaining to the particular fields to search. The
-#'   default is to search everything: `c("topic", "subtopic", "text", "source")`.
+#'   default is to search everything: `c("topic", "subtopic", "text", "source", "TeXsource")`.
 #' @param ... additional arguments passed to \code{\link[base]{agrep}} to fine-tune fuzzy
 #'   search parameters.
 #' @return A data frame (also with class \code{'statquote'})

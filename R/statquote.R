@@ -117,3 +117,54 @@ quote_topics <- function(subtopics = FALSE) {
   }
   ret
 }
+
+#' Function coerces statquote objects to strings suitable for LaTeX
+#'
+#' This function coerces statquote objects to strings suitable for rendering in LaTeX.
+#' Quotes and (potential LaTeX) sources are placed within suitable "\code{epigraph}" output
+#' format via the \code{\link{sprintf}} function.
+#'
+#' @param quotes an object of class \code{statquote} returned from functions such as
+#'   \code{\link{search_quotes}} or \code{\link{statquote}}
+#'
+#' @param form structure of the LaTeX output for the text (first argument)
+#'   and source (second argument) passed to \code{\link{sprintf}}
+#'
+#' @return character vector of formatted LaTeX quotes
+#'
+#' @export
+#' @examples
+#'
+#' ll <- search_quotes("Tukey")
+#' as.latex(ll)
+#'
+
+as.latex <- function(quotes, form = "\\epigraph{%s}{%s}\n\n"){
+
+  stopifnot('statquote' %in% class(quotes))
+  #replace the common csv symbols with LaTeX versions
+  symbols2tex <- function(strings){
+    strings <- as.character(strings)
+    loc <- stringr::str_locate_all(strings, '\\*.?')
+    pick <- which(sapply(loc, length) > 0)
+    for(i in pick){
+      index <- seq(1, nrow(loc[[i]]), by=2)
+      for(j in length(index):1L)
+        stringr::str_sub(strings[i], loc[[i]][index[j], 1L], loc[[i]][index[j], 1L]) <- '\\emph{'
+    }
+    strings <- stringr::str_replace_all(strings, '\\*', '}')
+    strings <- stringr::str_replace_all(strings, ' \"', '``')
+    strings
+  }
+
+  topics <- unique(quotes$topic)
+  quotes$text <- symbols2tex(quotes$text)
+  quotes$source <- symbols2tex(quotes$source)
+  lines <- NULL
+  if(is.null(quotes$TeXsource)) quotes$TeXsource <- ""
+  for(i in 1:nrow(quotes)){
+    lines <- c(lines, sprintf(form, quotes$text[i],
+                              if(quotes$TeXsource[i] != "") quotes$TeXsource[i] else quotes$source[i]))
+  }
+  lines
+}
