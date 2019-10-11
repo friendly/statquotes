@@ -7,7 +7,7 @@
 #' @importFrom stats na.omit
 #' @export
 #' @author Phil Chalmers
-#' @example
+#' @examples
 #' find_duplicate_quotes()
 #'
 find_duplicate_quotes <- function(){
