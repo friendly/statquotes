@@ -4,6 +4,8 @@
 #' Returns a list with qid, source, and the text where strings are
 #' aggressively fuzzy matched.
 #'
+#' @importFrom stats na.omit
+#' @export
 #' @example
 #' find_duplicate_quotes()
 #'

@@ -4,8 +4,8 @@
 \alias{search_quotes}
 \title{Function to search quote database}
 \usage{
-search_quotes(search, fuzzy = FALSE, fields = c("topic", "subtopic", "text",
-  "source", "TeXsource"), ...)
+search_quotes(search, fuzzy = FALSE, fields = c("topic", "subtopic",
+  "text", "source", "TeXsource"), ...)
 }
 \arguments{
 \item{search}{A character string, used to search the database. Regular
