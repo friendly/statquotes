@@ -10,3 +10,6 @@ find_duplicate_quotes()
 Returns a list with qid, source, and the text where strings are
 aggressively fuzzy matched.
 }
+\author{
+Phil Chalmers
+}

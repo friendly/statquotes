@@ -1,3 +1,8 @@
+Version 0.2.5 (2019-10-11)
+
+- Added `find_duplicate_quotes()` [thx: philchalmers]
+- Added hex sticker to README.md
+
 Version 0.2.4 (2017-12-8)
 
 - Added as.latex() to create text output suitable for LaTeX

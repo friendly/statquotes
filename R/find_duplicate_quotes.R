@@ -6,6 +6,7 @@
 #'
 #' @importFrom stats na.omit
 #' @export
+#' @author Phil Chalmers
 #' @example
 #' find_duplicate_quotes()
 #'
