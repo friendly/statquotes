@@ -2,7 +2,7 @@
 [![Travis-CI Build Status](https://travis-ci.org/friendly/statquotes.svg?branch=master)](https://travis-ci.org/friendly/statquotes) [![](http://www.r-pkg.org/badges/version/statquotes)](http://www.r-pkg.org/pkg/statquotes) 
 [![Rdoc](http://www.rdocumentation.org/badges/version/statquotes)](http://www.rdocumentation.org/packages/statquotes)
 
-# statquotes v. 0.2.4 <img src="statquotes-logo.png" align="right" height="200px" />
+# statquotes v. 0.2.5 <img src="statquotes-logo.png" align="right" height="200px" />
 **Quotes on statistics, data visualization and science**
 
 This package displays a randomly chosen quotation from a data base consisting
@@ -14,11 +14,12 @@ analysis and visualization.
 
 The data base is a collection of quotations assembled over the years from various
 sources.  It began life as a simple text file and was later converted to
-`LaTeX`  using the `epigraph` package. The quotes are classified by general topics (and subtopics).
+`LaTeX`  using the [`epigraph` package](https://ctan.org/pkg/epigraph?lang=en). 
+The quotes included here are classified by general topics (and subtopics).
 
 In this R package, each call to `statquote()` displays a randomly selected quotation.
 The selection can be restricted to those whose `topic` field matches the `topic=`
-argument.
+argument, or whose `source` field matches the `source=` argument. 
 
 The main topics of the quotes are:
 
@@ -28,11 +29,15 @@ The main topics of the quotes are:
 [5] "Reviews"            "Science"            "Statistics"         "Unclassified"      
 ```
 
-Some of these are divided into subtopics, most conveniently shown in tree form (using the [`data.tree`](https://cran.r-project.org/package=pkgname) package)
+Some of these topics are divided into subtopics, most conveniently shown in tree form (using the [`data.tree`](https://cran.r-project.org/package=pkgname) package)
 
 <img src="qtree.png">
 
 ### Examples
+
+#### Searching and printing
+
+The default print method gives a plain text format for the console, in the style of `fortune()`.
 
 ```{r}
 > set.seed(761)
@@ -51,6 +56,23 @@ Have you ever seen voice mail?
 --- The Hackers Test
 ```
 
+#### Other output formats
+
+`as.markdown()` formats quotes for `markdown`
+```{r}
+as.markdown(statquote())
+```
+> *The devil is in the details.* -- George Schultz
+
+`as.latex()` formats quotes for LaTeX, designed for the `epigraph` package
+
+```{r}
+cat(as.markdown(statquote()))
+\epigraph{The future is uncertain but the end is always near.}{Jim Morrison}
+```
+#### Quote clouds
+
+`quote_cloud()` generates word clouds based upon a search of the quotes database.
 ```{r}
 quote_cloud()
 ```
