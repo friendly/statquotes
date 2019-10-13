@@ -3,6 +3,7 @@
 S3method(as.data.frame,statquote)
 S3method(print,statquote)
 export(as.latex)
+export(as.markdown)
 export(find_duplicate_quotes)
 export(quote_cloud)
 export(quote_topics)
