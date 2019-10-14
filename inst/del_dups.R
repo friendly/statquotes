@@ -9,6 +9,22 @@ to_delete <- c(74,  # Carlyle
                121, # Sherlock Holmes
                170) # Tukey
 
+if(interactive()){
+  to_delete <- c()
+  for(i in 1L:length(dups)){
+    print(dups[[i]])
+    cat('\n ----- Which of the above should be removed? \n ----- Top quote (t), bottom quote (b), neither (n)')
+    while(TRUE){
+      input <- readline(prompt = "(t/b/n) > ")
+      if(tolower(input) %in% c('t', 'b', 'n')) break
+    }
+    if(input != 'n'){
+      rownums <- as.integer(rownames(dups[[i]]))
+      to_delete <- c(to_delete, if(input == 't') rownums[1] else rownums[2])
+    }
+  }
+}
+
 # read current quotes file -- from the package root directory
 
 qfile <- "inst/quotes.csv"
