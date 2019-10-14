@@ -2,6 +2,7 @@
 .Rhistory
 .RData
 *.bak
+*~
 # Session Data files
 .RData
 # Example code in package build process
