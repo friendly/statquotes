@@ -1,4 +1,6 @@
 # del_dup.R -- delete duplicated quotes and update the CSV file and the quotes.RData file
+# Must be in root dir to work
+
 # this is just an untested sketch.
 
 dups <- find_duplicate_quotes()
