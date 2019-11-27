@@ -1,13 +1,15 @@
 # del_dup.R -- delete duplicated quotes and update the CSV file and the quotes.RData file
+# Must be in root dir to work
+
 # this is just an untested sketch.
 
 dups <- find_duplicate_quotes()
 
-to_delete <- c(74,  # Carlyle
-               89,  # Wm Watt
-               110, # Box
-               121, # Sherlock Holmes
-               170) # Tukey
+# to_delete <- c(74,  # Carlyle
+#                89,  # Wm Watt
+#                110, # Box
+#                121, # Sherlock Holmes
+#                170) # Tukey
 
 if(interactive()){
   to_delete <- c()
@@ -35,7 +37,7 @@ file.rename(qfile, paste0(qfile, "~"))
 
 quotes <- quotes[-to_delete,]
 
-write.csv(quotes, file=qfile)
+write.csv(quotes, file=qfile, row.names = FALSE)
 
 source('inst/quotes2_.R')
 quotes2RData()
