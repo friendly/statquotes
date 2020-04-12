@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% New quotes Nov 2019
-
+%%
 ## Statistics
 
 From carefully compiled statistical facts more may be learned [about] the moral nature of Man than can be gathered from all the accumulated experiences of the preceding ages.
@@ -24,14 +24,10 @@ No study is less alluring or more dry and tedious than statistics, unless the mi
 ## Data visualization
 ### Pictures
 
-DIAGRAMS are of great utility for illustrating certain questions of vital statistics by
-conveying ideas on the subject through the eye, which cannot be so readily grasped when
-contained in figures.
+DIAGRAMS are of great utility for illustrating certain questions of vital statistics by conveying ideas on the subject through the eye, which cannot be so readily grasped when contained in figures.
 --- Florence Nightingale, Mortality of the British Army, 1857
 
-To give insight to statistical information it occurred to me, that making an
-appeal to the eye when proportion and magnitude are concerned, is the best and
-readiest method of conveying a distinct idea.
+To give insight to statistical information it occurred to me, that making an appeal to the eye when proportion and magnitude are concerned, is the best and readiest method of conveying a distinct idea.
 --- William Playfair, The Statistical Breviary (1801), p. 2
 
 
@@ -56,7 +52,7 @@ Functional visualizations are more than innovative statistical analyses and comp
 ## History
 
 A people without the knowledge of their past history, origin and culture is like a tree without roots
--- Marcus Garvey
+--- Marcus Garvey
 
 The bushels of rings taken from the fingers of the slain at the battle of Cannae, above two thousand years ago, are recorded; ... but the bushels of corn produced in England at this day, or the number of the inhabitants of the country, are unknown, at the very time that we are debating that most important question, whether or not there is sufficient substance for those who live in the kingdom.
 --- William Playfair, The Statistical Breviary (1801), p. 7-8
@@ -67,18 +63,15 @@ How can the past and future be, when the past no longer is, and the future is no
 -- St. Augustine of Hippo, Confessions
 
 ## Misc
+
 The punishment of every disordered mind is its own disorder.
 -- St. Augustine of Hippo, Confessions
 
 ## Data visualization
 ### Geometry
 
-Every measurable thing, except numbers, is imagined in the manner of continuous
-quantity. Therefore, for the mensuration of such a thing, it is necessary that
-points, lines and surfaces, or their properties be imagined. For in them, as the
-Philosopher has it, measure or ratio is initially found, while in other things
-it is recognized by similarity as they are being referred to by the intellect to
-the geometrical entities.
+Every measurable thing, except numbers, is imagined in the manner of continuous quantity. Therefore, for the mensuration of such a thing, it is necessary that points, lines and surfaces, or their properties be imagined. For in them, as the
+Philosopher has it, measure or ratio is initially found, while in other things it is recognized by similarity as they are being referred to by the intellect to the geometrical entities.
 ---Nicole Oresme, The Latitude of Forms
 
 % quoted in: http://www.homeofbob.com/science/teacherTools/graphing/info.html
