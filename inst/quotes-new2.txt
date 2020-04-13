@@ -70,8 +70,7 @@ The punishment of every disordered mind is its own disorder.
 ## Data visualization
 ### Geometry
 
-Every measurable thing, except numbers, is imagined in the manner of continuous quantity. Therefore, for the mensuration of such a thing, it is necessary that points, lines and surfaces, or their properties be imagined. For in them, as the
-Philosopher has it, measure or ratio is initially found, while in other things it is recognized by similarity as they are being referred to by the intellect to the geometrical entities.
+Every measurable thing, except numbers, is imagined in the manner of continuous quantity. Therefore, for the mensuration of such a thing, it is necessary that points, lines and surfaces, or their properties be imagined. For in them, as the Philosopher has it, measure or ratio is initially found, while in other things it is recognized by similarity as they are being referred to by the intellect to the geometrical entities.
 ---Nicole Oresme, The Latitude of Forms
 
 % quoted in: http://www.homeofbob.com/science/teacherTools/graphing/info.html
