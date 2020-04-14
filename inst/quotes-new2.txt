@@ -60,7 +60,7 @@ The bushels of rings taken from the fingers of the slain at the battle of Cannae
 ### Time
 
 How can the past and future be, when the past no longer is, and the future is not yet? As for the present, if it were always present and never moved on to become the past, it would not be time, but eternity.
--- St. Augustine of Hippo, Confessions
+--- St. Augustine of Hippo, Confessions
 
 ## Misc
 
@@ -71,7 +71,7 @@ The punishment of every disordered mind is its own disorder.
 ### Geometry
 
 Every measurable thing, except numbers, is imagined in the manner of continuous quantity. Therefore, for the mensuration of such a thing, it is necessary that points, lines and surfaces, or their properties be imagined. For in them, as the Philosopher has it, measure or ratio is initially found, while in other things it is recognized by similarity as they are being referred to by the intellect to the geometrical entities.
----Nicole Oresme, The Latitude of Forms
+--- Nicole Oresme, The Latitude of Forms
 
 % quoted in: http://www.homeofbob.com/science/teacherTools/graphing/info.html
 
