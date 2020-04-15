@@ -47,9 +47,8 @@ readQuotes <- function(file="quotes.tex", path=".", type=c("tex", "txt")) {
     subtop <- ditto(subsects[,2])
 
     # patterns for quotations and sources
-    quotpat <- "^[^#-](.*)"               #quotes are lines that don't begin with "#" or "-"
-              # FIXME:  for some reason, the first letter of the quote is not captured.
-    srcpat  <- "^--+\\s+(.*)"             # sources lines with two or more "-"
+    quotpat <- "^(\\w.*)"               #quotes are lines that begin with a word character
+    srcpat  <- "^--+\\s*(.*)"             # sources lines with two or more "-"
 
     quotes <-  str_match(text, quotpat)
     source <-  str_match(text, srcpat)
@@ -83,7 +82,10 @@ readQuotes <- function(file="quotes.tex", path=".", type=c("tex", "txt")) {
 
     # FIXME: There is a one-off error -- text & source appear as seaprate observations
 
-    quotes <- quotes[!(is.na(quotes$text) & is.na(quotes$source)),]
+    nq <- nrow(quotes)
+    quotes$source[1:nq-1] <- quotes$source[2:nq]
+#    quotes <- quotes[!(is.na(quotes$text) & is.na(quotes$source)),]
+    quotes <- quotes[!is.na(quotes$text),]
   }
 
   else if(type == "tex") {
