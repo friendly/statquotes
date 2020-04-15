@@ -4,8 +4,6 @@
 #' date: "27 March 2020"
 #' ---
 
-library(stringr)
-library(magrittr)
 
 # useful functions
 # copy a vector, duplicating previous non-NA
@@ -22,6 +20,8 @@ ditto <- function(x) {
 
 readQuotes <- function(file="quotes.tex", path=".", type=c("tex", "txt")) {
 
+  require(stringr)
+  require(magrittr)
   infile <- file.path(path, file)
   fname <- tools::file_path_sans_ext(file)
   text <- readLines(infile, encoding="UTF-8")
@@ -48,7 +48,7 @@ readQuotes <- function(file="quotes.tex", path=".", type=c("tex", "txt")) {
 
     # patterns for quotations and sources
     quotpat <- "^(\\w.*)"               #quotes are lines that begin with a word character
-    srcpat  <- "^--+\\s*(.*)"             # sources lines with two or more "-"
+    srcpat  <- "^--+\\s*(.*)"           # sources lines start with two or more "-"
 
     quotes <-  str_match(text, quotpat)
     source <-  str_match(text, srcpat)
@@ -62,13 +62,6 @@ readQuotes <- function(file="quotes.tex", path=".", type=c("tex", "txt")) {
 		# 	  as.data.frame() %>%
 		# 	  setNames(c("text", "source"))
 
-#browser()
-		# create data frame
-		# quotes <- data.frame(topic=topic,
-		#                      subtopic=subtop,
-		#                      text=quotes[,1],
-		#                      source=quotes[,2],
-		#                      stringsAsFactors=FALSE)
 
     quotes <- data.frame(topic=topic,
                          subtopic=subtop,
@@ -76,14 +69,11 @@ readQuotes <- function(file="quotes.tex", path=".", type=c("tex", "txt")) {
                          source=source[,2],
                          stringsAsFactors = FALSE
                          )
-    # delete lines with missing text & source
-    # quotes <- quotes %>%
-    #   filter(!is.na(text) & !is.na(source))
 
-    # FIXME: There is a one-off error -- text & source appear as seaprate observations
-
+    # shift the source to be on the same line as text
     nq <- nrow(quotes)
     quotes$source[1:nq-1] <- quotes$source[2:nq]
+    # delete lines with missing text & source
 #    quotes <- quotes[!(is.na(quotes$text) & is.na(quotes$source)),]
     quotes <- quotes[!is.na(quotes$text),]
   }
@@ -132,7 +122,7 @@ if(TESTME) {
   outrdata <- paste0(fname, ".RData")
   outcsv   <- paste0(fname, ".csv")
 
-  write.csv(file.path(path, outcsv))
+  write.csv(newquotes, file=file.path(path, outcsv), row.names=FALSE)
   save(newquotes, file = file.path(path, outrdata))
 
   # join old and new quotes
