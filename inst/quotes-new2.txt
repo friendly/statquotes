@@ -62,11 +62,6 @@ The bushels of rings taken from the fingers of the slain at the battle of Cannae
 How can the past and future be, when the past no longer is, and the future is not yet? As for the present, if it were always present and never moved on to become the past, it would not be time, but eternity.
 --- St. Augustine of Hippo, Confessions
 
-## Misc
-
-The punishment of every disordered mind is its own disorder.
--- St. Augustine of Hippo, Confessions
-
 ## Data visualization
 ### Geometry
 
@@ -99,3 +94,5 @@ With four parameters I can fit an elephant, and with five I can make him wiggle 
 % Attributed to von Neumann by Enrico Fermi, as quoted by Freeman Dyson in "A
 % meeting with Enrico Fermi" in Nature 427 (22 January 2004) p. 297
 
+The punishment of every disordered mind is its own disorder.
+-- St. Augustine of Hippo, Confessions
