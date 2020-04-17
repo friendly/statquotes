@@ -26,9 +26,10 @@
 #'
 
 search_quotes <- function(search, fuzzy=FALSE,
-                          fields = c("topic", "subtopic", "text", "source", "TeXsource"),
+                          fields = NULL,
                           ...) {
-  data <- .get.sq()
+  data <- statquotes:::.get.sq()
+  if(is.null(fields)) fields <- colnames(data)
 
   if(missing(search))
     stop("No search parameters entered.", call.=FALSE)
