@@ -1,7 +1,12 @@
+<!-- badges: start -->
+
 [![](http://cranlogs.r-pkg.org/badges/grand-total/statquotes)](https://cran.r-project.org/package=statquotes)
 [![Project Status: Active](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active) 
 [![Travis-CI Build Status](https://travis-ci.org/friendly/statquotes.svg?branch=master)](https://travis-ci.org/friendly/statquotes) [![](http://www.r-pkg.org/badges/version/statquotes)](http://www.r-pkg.org/pkg/statquotes) 
 [![Rdoc](http://www.rdocumentation.org/badges/version/statquotes)](http://www.rdocumentation.org/packages/statquotes)
+[![CRAN status](https://www.r-pkg.org/badges/version/statquotes)](https://CRAN.R-project.org/package=statquotes)
+<!-- badges: end -->
+
 
 # statquotes v. 0.2.5 <img src="statquotes-logo.png" align="right" height="200px" />
 **Quotes on statistics, data visualization and science**
