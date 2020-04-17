@@ -18,10 +18,20 @@ ditto <- function(x) {
 }
 
 
+#' Read and parse a quotes file in LaTeX  or text format
+#'
+#' @param file Name of the input file; should be a `.tex` or `.txt` file
+#' @param path Path to `file`
+#' @param type Type of file; the default is determined by the file extension
+#'
+#' @return A data.frame containing the quotations.
+#' @export
+#'
+#' @examples
 readQuotes <- function(file="quotes.tex", path=".", type=c("tex", "txt")) {
 
-  require(stringr)
-  require(magrittr)
+  requireNamespace(stringr)
+  requireNamespace(magrittr)
   infile <- file.path(path, file)
   fname <- tools::file_path_sans_ext(file)
   text <- readLines(infile, encoding="UTF-8")
@@ -47,7 +57,7 @@ readQuotes <- function(file="quotes.tex", path=".", type=c("tex", "txt")) {
     subtop <- ditto(subsects[,2])
 
     # patterns for quotations and sources
-    quotpat <- "^(\\w.*)"               #quotes are lines that begin with a word character
+    quotpat <- "^(\\w.*)"               # quotes are lines that begin with a word character
     srcpat  <- "^--+\\s*(.*)"           # sources lines start with two or more "-"
 
     quotes <-  str_match(text, quotpat)
@@ -81,8 +91,6 @@ readQuotes <- function(file="quotes.tex", path=".", type=c("tex", "txt")) {
   else if(type == "tex") {
     # delete non latex lines
     text <- text[str_sub(text,1,1) == "\\"]
-
-    #str(text)
 
     # regex to match epigraphs, sections and subsections
     secpat <- "\\\\section\\{(.*)\\}"
