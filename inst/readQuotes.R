@@ -30,8 +30,8 @@ ditto <- function(x) {
 #' @examples
 readQuotes <- function(file="quotes.tex", path=".", type=c("tex", "txt")) {
 
-  requireNamespace(stringr)
-  requireNamespace(magrittr)
+  # requireNamespace("stringr")
+  require(stringr)
   infile <- file.path(path, file)
   fname <- tools::file_path_sans_ext(file)
   text <- readLines(infile, encoding="UTF-8")
@@ -63,20 +63,12 @@ readQuotes <- function(file="quotes.tex", path=".", type=c("tex", "txt")) {
     quotes <-  str_match(text, quotpat)
     source <-  str_match(text, srcpat)
 
-  ## Tried this approach, but abandoned it...
-		# # split into paragraphs, separate quote text from source
-		# txt <- paste(text, collapse="\n")
-		# quotes <-
-		# 	strsplit(txt, "\n\n")[[1]] %>%
-		# 	  str_split_fixed("\n--- ", 2) %>%
-		# 	  as.data.frame() %>%
-		# 	  setNames(c("text", "source"))
-
 
     quotes <- data.frame(topic=topic,
                          subtopic=subtop,
                          text=quotes[,2],
                          source=source[,2],
+                         TeXsource="",
                          stringsAsFactors = FALSE
                          )
 
@@ -112,6 +104,7 @@ readQuotes <- function(file="quotes.tex", path=".", type=c("tex", "txt")) {
                          subtopic=subtop,
                          text=epis[,2],
                          source=epis[,3],
+                         TeXsource="",             ## FIXME: no longer parsing this ??
                          stringsAsFactors=FALSE)
   }
 
@@ -122,6 +115,11 @@ readQuotes <- function(file="quotes.tex", path=".", type=c("tex", "txt")) {
 TESTME <- FALSE
 
 if(TESTME) {
+  # must be in project root directory!
+  # if(!file.exists('inst/quotes.csv'))
+  #   stop(sprintf('Hey developer, are you in the root dir of statquotes?
+  #                It looks like you\'re here: \"%s\"', getwd()), call.=FALSE)
+
   path <- "C:/Users/friendly/Dropbox/R/projects/statquotes/inst"
   newquotes <- readQuotes(file <- "quotes-new2.txt", path=path)
 
