@@ -1,9 +1,9 @@
 # Creating, updating & maintaining the `statquotes` data base
 
-`statsquotes` items can be read and parsed by the `inst/readQuotes()` function in either text (`.txt`) or LaTeX (`.tex`) format. These are saved in the `inst/quotes.csv` file, which is then also saved in `data/quotes.RData`, the main data file used in the package.
+`statquotes` items can be read and parsed by the `inst/readQuotes()` function in either text (`.txt`) or LaTeX (`.tex`) format. These are saved in the `inst/quotes.csv` file, which is then also saved in `data/quotes.RData`, the main data file used in the package.
 
 
-## Origin
+## LaTeX format
 
 `statquotes` originally arose from a LaTeX file, `quotes.tex`  that I used to collect interesting quotations
 related to statistics, data visualization, history, software and other topics. This was designed to be a collection I could search, then copy/paste an appropriate one into a working LaTeX document.  The format

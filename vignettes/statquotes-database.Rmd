@@ -1,0 +1,86 @@
+---
+title: "Creating, updating & maintaining the statquotes data base"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Creating, updating & maintaining the statquotes data base}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(statquotes)
+```
+
+`statquotes` items can be read and parsed by the `inst/readQuotes()` function in either text (`.txt`) or LaTeX (`.tex`) format. These are saved in the `inst/quotes.csv` file, which is then also saved in `data/quotes.RData`, the main data file used in the package. The function `readQuotes()` is not yet
+exported.
+
+## LaTeX format
+
+`statquotes` originally arose from a LaTeX file, `quotes.tex`  that I used to collect interesting quotations
+related to statistics, data visualization, history, software and other topics. This was designed to be a collection I could search, then copy/paste an appropriate one into a working LaTeX document.  The format
+of quotes was designed to use the LaTeX `epigraph` package:
+
+```
+\epigraph{You can see a lot, just by looking.}{Yogi Berra}
+\epigraph{Every picture tells a story.}{Rod Stewart, 1971}
+\epigraph{A picture is worth a thousand words.}{F. Barnard, 1927}
+```
+Each quote has some `text` and a `source` attribution, and so could be displayed in a document something like
+
+> *You can see a lot, just by looking.* 
+> --- Yogi Berra
+
+Overtime, I wanted to categorize these by `topic` and `subtopic`, so `\section{}` and `\subsection{}` were introduced into the `quotes.tex` file.
+
+This results in what is the canonical form for a quotations file in LaTeX format.
+
+```
+\section{Data visualization}
+\epigraph{You can see a lot, just by looking.}{Yogi Berra}
+
+\subsection{Pictures}
+\epigraph{Every picture tells a story.}{Rod Stewart, 1971}
+\epigraph{A picture is worth a thousand words.}{F. Barnard, 1927}
+...
+```
+
+## Text format
+
+The following lines illustrate the text format, similar in most respects to the output of the `fortunes` package
+
+```
+%% Some sample quotes
+%  ... to illustrate the format
+
+## Data visualization
+You can see a lot, just by looking.
+--- Yogi Berra
+
+### Pictures
+Every picture tells a story.
+--- Rod Stewart, 1971
+
+A picture is worth a thousand words.
+--- F. Barnard, 1927
+```
+
+In this format:
+
+* Lines starting with `%` are treated as comments and ignored.
+* Separate quotes are separated by one or more blank lines.
+* Lines beginning with `##` are treated as defining a new section (`topic` in the database), which persists until the next section is started.
+* Similarly, lines beginning with `###` define a new subsection (`suptopic`).
+* Lines beginning with a word character give the text of a quotation. In this version of `readQuotes()`, the entire quote **must appear on one line** in the text file.
+* Lines beginning with `--- ` give the source of the quotation, typically just a name, publication, year.
+
+
+
+
+

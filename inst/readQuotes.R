@@ -135,10 +135,11 @@ if(TESTME) {
   oldquotes <- statquotes:::.get.sq()
   qid <- max(oldquotes$qid) + 1:nrow(newquotes)
   newquotes <- cbind(qid, newquotes)
-  quotes <- rbind(oldquotes, newquotes)
 
   # should save this directly into data/ ??
-  save(quotes, file=file.path(path, "quotes.RData"))
-  write.csv(quotes, file=file.path(path, "quotes.csv"), row.names=FALSE)
+#  save(quotes, file=file.path(path, "quotes.RData"))
+  save(quotes, file=file.path("data", "quotes.RData"))
+
+  write.csv(quotes[,-1], file=file.path(path, "quotes.csv"), row.names=FALSE)
 
 }
