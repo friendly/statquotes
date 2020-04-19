@@ -4,7 +4,9 @@
 \name{quotes}
 \alias{quotes}
 \title{Quotes on statistics, data visualization and science}
-\format{A data frame with 231 rows and 5 variables}
+\format{
+A data frame with 231 rows and 5 variables
+}
 \usage{
 data(quotes)
 }
