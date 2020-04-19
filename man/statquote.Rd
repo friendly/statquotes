@@ -10,8 +10,7 @@ statquote(ind, topic = NULL, source = NULL)
 
 \method{print}{statquote}(x, width = NULL, ...)
 
-\method{as.data.frame}{statquote}(x, row.names = NULL,
-  optional = FALSE, ...)
+\method{as.data.frame}{statquote}(x, row.names = NULL, optional = FALSE, ...)
 }
 \arguments{
 \item{ind}{Optional index of a quote; if missing a random value is sampled from

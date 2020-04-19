@@ -28,7 +28,7 @@
 search_quotes <- function(search, fuzzy=FALSE,
                           fields = NULL,
                           ...) {
-  data <- statquotes:::.get.sq()
+  data <- .get.sq()
   if(is.null(fields)) fields <- colnames(data)
 
   if(missing(search))
