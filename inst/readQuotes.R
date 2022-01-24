@@ -120,8 +120,11 @@ if(TESTME) {
   #   stop(sprintf('Hey developer, are you in the root dir of statquotes?
   #                It looks like you\'re here: \"%s\"', getwd()), call.=FALSE)
 
-  path <- "C:/Users/friendly/Dropbox/R/projects/statquotes/inst"
+#  path <- "C:/Users/friendly/Dropbox/R/projects/statquotes/inst"
+  library(here)
+  path <- here("inst")
   newquotes <- readQuotes(file <- "quotes-new2.txt", path=path)
+  newquotes <- readQuotes(file <- "quotes-new3.txt", path=path)
 
   # write as a CSV file & RData
   fname <- tools::file_path_sans_ext(file)
@@ -130,6 +133,8 @@ if(TESTME) {
 
   write.csv(newquotes, file=file.path(path, outcsv), row.names=FALSE)
   save(newquotes, file = file.path(path, outrdata))
+
+#--- it remains to add the newquotes to old and save --- MF 1/24/22
 
   # join old and new quotes
   oldquotes <- statquotes:::.get.sq()
