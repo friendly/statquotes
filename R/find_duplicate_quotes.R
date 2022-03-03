@@ -8,7 +8,9 @@
 #' @export
 #' @author Phil Chalmers
 #' @examples
+#' \donttest{
 #' find_duplicate_quotes()
+#' }
 #'
 find_duplicate_quotes <- function(){
   dat <- .get.sq()

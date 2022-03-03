@@ -20,7 +20,7 @@ Url: https://github.com/friendly/statquotes/
 Imports: stringr,
     tidytext,
     wordcloud
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.2
 Suggests: 
     knitr,
     rmarkdown

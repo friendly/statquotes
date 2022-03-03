@@ -2,6 +2,7 @@ Version 0.2.6 (2022-03-03)
 
 - add more quotes
 - `search_quotes` uses `message()` not `stop()` on empty search
+- add `search_text()` shortcut
 
 Version 0.2.5 (2019-10-11)
 

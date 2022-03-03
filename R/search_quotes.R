@@ -1,7 +1,8 @@
-#' Function to search quote database
+#' Search the quote database for a string or regex pattern
 #'
 #' This function takes a search pattern (can use regular expressions) and returns all quotes
-#' that match the pattern. If fuzzy is FALSE, then only exact matches are returned (case sensitive).
+#' that match the pattern. By default all fields are included in the search.
+#' If fuzzy is FALSE, then only exact matches are returned (case sensitive).
 #'
 #' @param search A character string, used to search the database. Regular
 #'   expression characters are allowed.
@@ -49,3 +50,16 @@ search_quotes <- function(search, fuzzy=FALSE,
   else message("The search string \'", search, "\' did not match any items.")
 }
 
+#' Search the text field for a string
+#'
+#' @rdname search_quotes
+#' @export
+#'
+search_text <- function(search, fuzzy=FALSE,
+                        ...) {
+
+  search_quotes(search = search,
+                fuzzy = fuzzy,
+                fields = "text",
+                ...)
+}

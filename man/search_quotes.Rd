@@ -2,9 +2,12 @@
 % Please edit documentation in R/search_quotes.R
 \name{search_quotes}
 \alias{search_quotes}
-\title{Function to search quote database}
+\alias{search_text}
+\title{Search the quote database for a string or regex pattern}
 \usage{
 search_quotes(search, fuzzy = FALSE, fields = NULL, ...)
+
+search_text(search, fuzzy = FALSE, ...)
 }
 \arguments{
 \item{search}{A character string, used to search the database. Regular
@@ -25,7 +28,8 @@ A data frame (also with class \code{'statquote'})
 }
 \description{
 This function takes a search pattern (can use regular expressions) and returns all quotes
-that match the pattern. If fuzzy is FALSE, then only exact matches are returned (case sensitive).
+that match the pattern. By default all fields are included in the search.
+If fuzzy is FALSE, then only exact matches are returned (case sensitive).
 }
 \examples{
 search_quotes("^D") # regex to find all quotes that start with "D"
