@@ -7,7 +7,7 @@
 <!-- badges: end -->
 
 
-# statquotes v. 0.2.5 <img src="statquotes-logo.png" align="right" height="200px" />
+# statquotes v. 0.2.6 <img src="statquotes-logo.png" align="right" height="200px" />
 **Quotes on statistics, data visualization and science**
 
 This package displays a randomly chosen quotation from a data base consisting

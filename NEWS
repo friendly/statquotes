@@ -1,3 +1,8 @@
+Version 0.2.6 (2022-03-03)
+
+- add more quotes
+- `search_quotes` uses `message()` not `stop()` on empty search
+
 Version 0.2.5 (2019-10-11)
 
 - Added `find_duplicate_quotes()` [thx: philchalmers]
