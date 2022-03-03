@@ -41,9 +41,11 @@ search_quotes <- function(search, fuzzy=FALSE,
   if(fuzzy) OK <- agrep(tolower(search), tolower(merged), ...)
   else OK <- which(str_detect(merged, search))
 
-  if (length(OK)) data <- data[OK,]
-  else stop("The search parameters \'", search, "\' did not match any items.")
-
-  class(data) <- c("statquote", 'data.frame')
-  return(data)
+  if (length(OK)) {
+    data <- data[OK,]
+    class(data) <- c("statquote", 'data.frame')
+    return(data)
+  }
+  else message("The search string \'", search, "\' did not match any items.")
 }
+
