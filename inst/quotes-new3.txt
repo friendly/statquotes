@@ -15,21 +15,24 @@ Two things are infinite: the universe and human stupidity; and I'm not sure abou
 % This quote, first appearing in Ego, Hunger, and Aggression: a Revision of Freud's Theory and Method by Frederick S. Perls. Einstein (1879 - 1955) is known to have clashed with popular thinking and the limited imagination of fellow scientists and the public.
 
 "You do not really understand something unless you can explain it to your grandmother."
--- Albert Einsten
+--- Albert Einsten
 
 Facts, however numerous, do not constitute a science. Like innumerable grains of sand on the sea shore, single facts appear isolated, useless, shapeless; it is only when compared, when arranged in their natural relations, when crystallised by the intellect, that they constitute the eternal truths of science
 --- William Farr, "Observation," Br. Ann. Med. 1 (1837): 693
 % via Eyler page 29 note 70
 
-## Data
+## Computing
+### Tidy data
 
 Tidy datasets are all alike, but every messy dataset is messy in its own way
 --- Hadley Wickham
 
+## Data
+
 We cannot understand the world without numbers, and we cannot understand it with numbers alone.
 --- Hans Rosling
 
-Bad data makes bad models. Bad models instruct people to make ineffective or harmful interventions. Those bad interventions produce more bad data, which is fed into more bad models; it's a 'data-cascade.
+Bad data makes bad models. Bad models instruct people to make ineffective or harmful interventions. Those bad interventions produce more bad data, which is fed into more bad models.
 --- @doctorow https://onezero.medium.com/machine-learnings-crumbling-foundations-bd11efa22b0
 
 ## Data visualization
@@ -37,9 +40,6 @@ Bad data makes bad models. Bad models instruct people to make ineffective or har
 
 Whenever I am infuriated, I revenge myself with a new Diagram
 --- Florence Nightingale, Letter 1857.8.19 to Sidney Herbert
-
-DIAGRAMS are of great utility for illustrating certain questions of vital statistics by conveying ideas on the subject through the eye, which cannot be so readily grasped when contained in figures.
---- Florence Nightingale, Mortality of the British Army. 1858. Page 1.
 
 ## Statistics
 
@@ -53,6 +53,7 @@ Again I must repeat my objections to intermingling causation with statistics. It
 A Bayesian is one who, vaguely expecting a horse, and catching a glimpse of a donkey, strongly believes he has seen a mule.
 --- Stephen John Senn @stephensenn
 
-
+What nature hath joined together, multiple regression cannot put asunder.
+--- Richard Nisbett
 
 

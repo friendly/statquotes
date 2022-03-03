@@ -123,7 +123,7 @@ if(TESTME) {
 #  path <- "C:/Users/friendly/Dropbox/R/projects/statquotes/inst"
   library(here)
   path <- here("inst")
-  newquotes <- readQuotes(file <- "quotes-new2.txt", path=path)
+#  newquotes <- readQuotes(file <- "quotes-new2.txt", path=path)
   newquotes <- readQuotes(file <- "quotes-new3.txt", path=path)
 
   # write as a CSV file & RData
@@ -140,6 +140,7 @@ if(TESTME) {
   oldquotes <- statquotes:::.get.sq()
   qid <- max(oldquotes$qid) + 1:nrow(newquotes)
   newquotes <- cbind(qid, newquotes)
+  quotes <- rbind(oldquotes, newquotes)
 
   # should save this directly into data/ ??
 #  save(quotes, file=file.path(path, "quotes.RData"))
