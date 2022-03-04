@@ -5,6 +5,7 @@ Version 0.2.6 (2022-03-03)
 - add `search_text()` shortcut
 - `search_quotes()` gets `ignore_case=TRUE`
 - clean up error msgs in `statquote()`
+- fix colors bug in `quote_cloud()`
 
 Version 0.2.5 (2019-10-11)
 

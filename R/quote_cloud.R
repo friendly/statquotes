@@ -21,7 +21,7 @@
 #' quote_cloud(search = "graph")
 #' quote_cloud(max.words = 10)
 
-quote_cloud <- function(search = ".*", max.words = 80, colors = NA, ...){
+quote_cloud <- function(search = ".*", max.words = 80, colors, ...){
     qt <- search_quotes(search, ...) # defaults to all quotes
     .sq.env <- new.env()
     data("stop_words", package="tidytext", envir = .sq.env)
@@ -40,9 +40,9 @@ quote_cloud <- function(search = ".*", max.words = 80, colors = NA, ...){
     qtidy <- qtidy[order(qtidy$Freq, decreasing = TRUE),]
     colnames(qtidy) <- c("word", "n")
 
-    if (is.na(colors))
-      pal <- c("#66C2A4", "#41AE76", "#238B45", "#006D2C", "#00441B")
+    if (missing(colors))
+      colors <- c("#66C2A4", "#41AE76", "#238B45", "#006D2C", "#00441B")
 
-    with(qtidy, wordcloud::wordcloud(word, n, max.words = max.words, colors=pal, ...))
+    with(qtidy, wordcloud::wordcloud(word, n, max.words = max.words, colors=colors, ...))
 }
 

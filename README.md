@@ -96,6 +96,15 @@ The development version (if any) can be installed from this repo on Github via:
 devtools::install_github("friendly/statquotes")
 ```
 
+#### Quote of the day
+
+To have `statquotes` give you an inspirational quote of the day each time you start R, include the following line in your
+`.Rprofile` file.
+
+```
+if(interactive()) statquotes::statquote()
+```
+
 ### Author
 
 Michael Friendly  
