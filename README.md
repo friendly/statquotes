@@ -7,7 +7,7 @@
 <!-- badges: end -->
 
 
-# statquotes v. 0.2.6 <img src="statquotes-logo.png" align="right" height="200px" />
+# statquotes v. 0.2.6 <img src="man/figures/statquotes-logo.png" align="right" height="200px" />
 **Quotes on statistics, data visualization and science**
 
 This package displays a randomly chosen quotation from a data base consisting
@@ -36,7 +36,7 @@ The main topics of the quotes are:
 
 Some of these topics are divided into subtopics, most conveniently shown in tree form (using the [`data.tree`](https://cran.r-project.org/package=pkgname) package)
 
-<img src="qtree.png">
+<img src="man/figures/qtree.png">
 
 ### Examples
 
@@ -69,10 +69,10 @@ as.markdown(statquote())
 ```
 > *The devil is in the details.* -- George Schultz
 
-`as.latex()` formats quotes for LaTeX, designed for the `epigraph` package
+`as.latex()` formats quotes for LaTeX, designed for the [epigraph](https://ctan.org/pkg/epigraph) package
 
 ```{r}
-cat(as.markdown(statquote()))
+cat(as.latex(statquote()))
 \epigraph{The future is uncertain but the end is always near.}{Jim Morrison}
 ```
 #### Quote clouds
@@ -82,7 +82,7 @@ cat(as.markdown(statquote()))
 quote_cloud()
 ```
 
-<img src="quotecloud.png">
+<img src="man/figures/quotecloud.png">
 
 ### Installation
 
