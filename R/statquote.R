@@ -26,7 +26,7 @@
 #'  \code{\link[fortunes:fortunes]{fortune}}
 #' @examples
 #'  set.seed(1234)
-#'  statquote()
+#'  statquote(123)
 #'  statquote(source="Tukey")
 #'  statquote(topic="science")
 #'  statquote(topic="history")
@@ -34,8 +34,15 @@
 
 statquote <- function(ind, topic=NULL, source=NULL) {
 
+  isInteger <-
+    function(x) is.numeric(x) && all.equal(x, as.integer(x))
+
 	data <- .get.sq()
-	if(!missing(ind)) stopifnot(ind > 0L && ind <= nrow(data))
+	if(!missing(ind)) {
+	  if (!isInteger(ind)) stop("ind must be an integer, not '", ind, "'")
+	  if (!(ind > 0L && ind <= nrow(data))) stop("ind must be between 1 and ", nrow(data))
+#	  stopifnot(ind > 0L && ind <= nrow(data))
+	  }
 
 	if(!is.null(topic) && missing(ind)) {
 	  merged <- with(data, paste(as.character(topic), as.character(subtopic)))
