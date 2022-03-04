@@ -3,11 +3,14 @@
 \name{search_quotes}
 \alias{search_quotes}
 \alias{search_text}
+\alias{get_quotes}
 \title{Search the quote database for a string or regex pattern}
 \usage{
 search_quotes(search, ignore_case = TRUE, fuzzy = FALSE, fields = NULL, ...)
 
 search_text(search, fuzzy = FALSE, ...)
+
+get_quotes(search = ".*", ...)
 }
 \arguments{
 \item{search}{A character string, used to search the database. Regular
@@ -27,11 +30,16 @@ search parameters.}
 \value{
 A data frame (also with class \code{'statquote'})
   object containing all quotes that match the search parameters.
+
+A data frame (also with class \code{'statquote'})
+  object containing all quotes. This is meant to be assigned to name rather than printed.
 }
 \description{
 This function takes a search pattern (can use regular expressions) and returns all quotes
 that match the pattern. By default all fields are included in the search.
 If fuzzy is FALSE, then only exact matches are returned (case sensitive).
+
+A convenient wrapper for search quotes that by default returns all quotes
 }
 \examples{
 search_quotes("^D") # regex to find all quotes that start with "D"
@@ -41,6 +49,10 @@ search_quotes("bad answer", fuzzy = TRUE) # fuzzy match
 # to a data.frame
 out <- search_quotes("bad answer", fuzzy = TRUE)
 as.data.frame(out)
+
+qdb <- get_quotes()
+nrow(qdb)
+names(qdb)
 
 }
 \seealso{

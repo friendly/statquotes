@@ -4,7 +4,7 @@
 \alias{quote_cloud}
 \title{Function to generate word cloud based upon quote database}
 \usage{
-quote_cloud(search = ".*", max.words = 80, colors = NA, ...)
+quote_cloud(search = ".*", max.words = 80, colors, ...)
 }
 \arguments{
 \item{search}{A character string; used to search the database. Regular

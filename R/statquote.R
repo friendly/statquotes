@@ -28,7 +28,6 @@
 #' @examples
 #'  set.seed(1234)
 #'  statquote(123)
-#'  statquote(21:22)
 #'  statquote(source="Tukey")
 #'  statquote(topic="science")
 #'  statquote(topic="history")

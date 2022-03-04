@@ -70,3 +70,20 @@ search_text <- function(search, fuzzy=FALSE,
                 fields = "text",
                 ...)
 }
+
+#' Retrieve the quotes database
+#'
+#' A convenient wrapper for search quotes that by default returns all quotes
+#'
+#' @return A data frame (also with class \code{'statquote'})
+#'   object containing all quotes. This is meant to be assigned to name rather than printed.
+#' @rdname search_quotes
+#' @export
+#' @examples
+#' qdb <- get_quotes()
+#' nrow(qdb)
+#' names(qdb)
+#'
+get_quotes <- function(search = ".*", ...) {
+  qt <- search_quotes(search, ...)
+}

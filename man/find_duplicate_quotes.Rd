@@ -11,9 +11,9 @@ Returns a list with qid, source, and the text where strings are
 aggressively fuzzy matched.
 }
 \examples{
-\donttest{
-find_duplicate_quotes()
-}
+
+#  find_duplicate_quotes()
+
 
 }
 \author{
