@@ -10,7 +10,8 @@
 #' This function displays a randomly statistical quote from
 #' a collection. The quotations are classified by topics
 #'
-#' @param ind Optional index of a quote; if missing a random value is sampled from
+#' @param ind Optional index of a quote, or a vector of such integer indices
+#'        If missing a random value is sampled from
 #'        the available quotations.
 #' @param topic A character string, used to select a subset of the quotes based
 #'        on the assigned topics.
@@ -27,6 +28,7 @@
 #' @examples
 #'  set.seed(1234)
 #'  statquote(123)
+#'  statquote(21:22)
 #'  statquote(source="Tukey")
 #'  statquote(topic="science")
 #'  statquote(topic="history")

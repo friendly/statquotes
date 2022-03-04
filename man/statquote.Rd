@@ -13,7 +13,8 @@ statquote(ind, topic = NULL, source = NULL)
 \method{as.data.frame}{statquote}(x, row.names = NULL, optional = FALSE, ...)
 }
 \arguments{
-\item{ind}{Optional index of a quote; if missing a random value is sampled from
+\item{ind}{Optional index of a quote, or a vector of such integer indices
+If missing a random value is sampled from
 the available quotations.}
 
 \item{topic}{A character string, used to select a subset of the quotes based
@@ -43,7 +44,8 @@ a collection. The quotations are classified by topics
 }
 \examples{
  set.seed(1234)
- statquote()
+ statquote(123)
+ statquote(21:22)
  statquote(source="Tukey")
  statquote(topic="science")
  statquote(topic="history")
