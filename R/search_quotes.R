@@ -4,13 +4,14 @@
 #' that match the pattern. By default all fields are included in the search.
 #' If fuzzy is FALSE, then only exact matches are returned (case sensitive).
 #'
-#' @param search A character string, used to search the database. Regular
+#' @param search     A character string, used to search the database. Regular
 #'   expression characters are allowed.
-#' @param fuzzy Logical; If \code{TRUE}, the function uses \code{\link[base]{agrep}} to allow approximate
+#' @param ignore_case Logical; If \code{TRUE}, matching is done without recard to case.
+#' @param fuzzy      Logical; If \code{TRUE}, the function uses \code{\link[base]{agrep}} to allow approximate
 #'     matches to the search string.
-#' @param fields A character vector pertaining to the particular fields to search. The
+#' @param fields     A character vector pertaining to the particular fields to search. The
 #'   default is to search everything: `c("topic", "subtopic", "text", "source", "TeXsource")`.
-#' @param ... additional arguments passed to \code{\link[base]{agrep}} to fine-tune fuzzy
+#' @param ...        additional arguments passed to \code{\link[base]{agrep}} to fine-tune fuzzy
 #'   search parameters.
 #' @return A data frame (also with class \code{'statquote'})
 #'   object containing all quotes that match the search parameters.
@@ -26,7 +27,9 @@
 #' as.data.frame(out)
 #'
 
-search_quotes <- function(search, fuzzy=FALSE,
+search_quotes <- function(search,
+                          ignore_case = TRUE,
+                          fuzzy = FALSE,
                           fields = NULL,
                           ...) {
   data <- .get.sq()
@@ -39,7 +42,11 @@ search_quotes <- function(search, fuzzy=FALSE,
   cols <- colnames(merged)
   if (length(cols) > 1) merged <- do.call(paste, merged[,cols])
 
-  if(fuzzy) OK <- agrep(tolower(search), tolower(merged), ...)
+  if (isTRUE(ignore_case)) {
+    search <- tolower(search)
+    merged <- tolower(merged)
+  }
+  if(fuzzy) OK <- agrep(search, merged, ...)
   else OK <- which(str_detect(merged, search))
 
   if (length(OK)) {

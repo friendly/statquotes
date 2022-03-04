@@ -5,13 +5,15 @@
 \alias{search_text}
 \title{Search the quote database for a string or regex pattern}
 \usage{
-search_quotes(search, fuzzy = FALSE, fields = NULL, ...)
+search_quotes(search, ignore_case = TRUE, fuzzy = FALSE, fields = NULL, ...)
 
 search_text(search, fuzzy = FALSE, ...)
 }
 \arguments{
 \item{search}{A character string, used to search the database. Regular
 expression characters are allowed.}
+
+\item{ignore_case}{Logical; If \code{TRUE}, matching is done without recard to case.}
 
 \item{fuzzy}{Logical; If \code{TRUE}, the function uses \code{\link[base]{agrep}} to allow approximate
 matches to the search string.}
