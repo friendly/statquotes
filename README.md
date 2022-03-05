@@ -5,6 +5,8 @@
 [![Project Status: Active](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active) 
 [![Dependencies](https://tinyverse.netlify.com/badge/statquotes)](https://cran.r-project.org/package=statquotes)
 [![Travis-CI Build Status](https://travis-ci.org/friendly/statquotes.svg?branch=master)](https://travis-ci.org/friendly/statquotes) 
+[![Last Commit](https://img.shields.io/github/last-commit/friendly/statquotes)](https://github.com/friendly/statquotes)
+
 <!-- badges: end -->
 
 
