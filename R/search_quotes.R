@@ -6,7 +6,7 @@
 #'
 #' @param search     A character string, used to search the database. Regular
 #'   expression characters are allowed.
-#' @param ignore_case Logical; If \code{TRUE}, matching is done without recard to case.
+#' @param ignore_case Logical; If \code{TRUE}, matching is done without regard to case.
 #' @param fuzzy      Logical; If \code{TRUE}, the function uses \code{\link[base]{agrep}} to allow approximate
 #'     matches to the search string.
 #' @param fields     A character vector pertaining to the particular fields to search. The

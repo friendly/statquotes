@@ -16,7 +16,7 @@ get_quotes(search = ".*", ...)
 \item{search}{A character string, used to search the database. Regular
 expression characters are allowed.}
 
-\item{ignore_case}{Logical; If \code{TRUE}, matching is done without recard to case.}
+\item{ignore_case}{Logical; If \code{TRUE}, matching is done without regard to case.}
 
 \item{fuzzy}{Logical; If \code{TRUE}, the function uses \code{\link[base]{agrep}} to allow approximate
 matches to the search string.}
