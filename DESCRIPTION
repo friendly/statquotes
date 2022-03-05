@@ -16,7 +16,7 @@ Encoding: UTF-8
 LazyData: true
 Maintainer: Michael Friendly <friendly@yorku.ca>
 BugReports: https://github.com/friendly/statquotes/issues
-Url: https://github.com/friendly/statquotes/
+URL: https://github.com/friendly/statquotes/
 Imports: stringr,
     tidytext,
     wordcloud
