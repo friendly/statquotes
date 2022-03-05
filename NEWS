@@ -1,11 +1,12 @@
 Version 0.2.6 (2022-03-03)
 
 - add more quotes
-- `search_quotes` uses `message()` not `stop()` on empty search
+- `search_quotes` now uses `message()` not `stop()` on empty search
 - add `search_text()` shortcut
 - `search_quotes()` gets `ignore_case=TRUE`
 - clean up error msgs in `statquote()`
 - fix colors bug in `quote_cloud()`
+- add `get_quotes()`
 
 Version 0.2.5 (2019-10-11)
 
