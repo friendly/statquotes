@@ -84,7 +84,7 @@ Every measurable thing, except numbers, is imagined in the manner of continuous 
 ## Computing
 
 Any one who considers arithmetical methods of producing random digits is, of course, in a state of sin.
---- John von Neumann
+--- John von Neumann, "Various techniques used in connection with random digits", Applied Mathematics Series, 1951, no 12, 36-38.
 
 ## Science
 
