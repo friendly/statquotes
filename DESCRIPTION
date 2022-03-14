@@ -1,10 +1,19 @@
 Package: statquotes
 Title: Quotes on Statistics, Data Visualization and Science
-Version: 0.2.6
+Version: 0.2.7
 Date: 2022-03-03
-Authors@R: c(person("Michael", "Friendly", email = "friendly@yorku.ca", role = c("aut", "cre")),
-             person("Phil", "Chalmers", email = "rphilip.chalmers@gmail.com", role = c("ctb")),
-             person("Matthew", "Sigal", email = "matthewsigal@gmail.com", role = c("ctb"))
+Authors@R: c(person("Michael", "Friendly", 
+                    email = "friendly@yorku.ca", 
+                    role = c("aut", "cre")),
+             person("Phil", "Chalmers", 
+                    email = "rphilip.chalmers@gmail.com", 
+                    role = c("aut")),
+             person("Kevin", "Wright", 
+                    email = "kw.stat@gmail.com", 
+                    role = c("aut")),
+             person("Matthew", "Sigal", 
+                    email = "matthewsigal@gmail.com", 
+                    role = c("ctb"))
             )
 Language: en-US
 Description: Generates a random quotation from a data base of quotes on topics
