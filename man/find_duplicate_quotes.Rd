@@ -2,7 +2,7 @@
 % Please edit documentation in R/find_duplicate_quotes.R
 \name{find_duplicate_quotes}
 \alias{find_duplicate_quotes}
-\title{Check for duplicates in master .csv file}
+\title{Check for duplicate quotes}
 \usage{
 find_duplicate_quotes()
 }
@@ -12,7 +12,8 @@ aggressively fuzzy matched.
 }
 \examples{
 
-#  find_duplicate_quotes()
+# This can be slow...
+# find_duplicate_quotes()
 
 
 }

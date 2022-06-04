@@ -10,6 +10,7 @@ Authors@R: c(person("Michael", "Friendly",
                     role = c("aut")),
              person("Kevin", "Wright", 
                     email = "kw.stat@gmail.com", 
+                    comment=c(ORCID = "0000-0002-0617-8673"),
                     role = c("aut")),
              person("Matthew", "Sigal", 
                     email = "matthewsigal@gmail.com", 
@@ -30,7 +31,7 @@ URL: https://github.com/friendly/statquotes/
 Imports: stringr,
     tidytext,
     wordcloud
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.0
 Suggests: 
     knitr,
     rmarkdown

@@ -2,35 +2,35 @@
 % Please edit documentation in R/quote_cloud.R
 \name{quote_cloud}
 \alias{quote_cloud}
-\title{Function to generate word cloud based upon quote database}
+\title{Generate a word cloud based upon quote database}
 \usage{
 quote_cloud(search = ".*", max.words = 80, colors, ...)
 }
 \arguments{
-\item{search}{A character string; used to search the database. Regular
-expression characters are allowed. Default is to search all quotes.}
+\item{search}{Character string (or regular expression) used to search the database. Default is to search all quotes.}
 
-\item{max.words}{Logical; designate maximum number of words to be plotted.}
+\item{max.words}{Integer; The maximum number of words to be plotted.}
 
-\item{colors}{A character vector pertaining to the colors to be used to designate
+\item{colors}{A character vector of colors to be used to designate
 word frequency. The default is 5 levels, from light to dark green.}
 
 \item{...}{additional arguments passed to \code{\link{search_quotes}} and
 \code{\link{wordcloud}}}
 }
 \value{
-A wordcloud is plotted.
+None. A wordcloud is plotted.
 }
 \description{
-This function takes a search pattern (can use regular expressions) and generates
+This function takes a search pattern (or regular expression) and generates
 a word cloud based upon that filter.
 }
 \examples{
 quote_cloud()
 quote_cloud(search = "graph")
 quote_cloud(max.words = 10)
+
 }
 \seealso{
-\code{\link{statquote}}, \code{\link{quote_topics}}, \code{\link{quotes}},
+\code{\link{statquote}}, \code{\link{quote_tags}}, \code{\link{quotes}},
   \code{\link{search_quotes}}. \code{\link{wordcloud}}
 }

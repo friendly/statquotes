@@ -13,33 +13,13 @@
 # statquotes v. 0.2.6 <img src="man/figures/statquotes-logo.png" align="right" height="200px" />
 **Quotes on statistics, data visualization and science**
 
-This package displays a randomly chosen quotation from a data base consisting
-of quotes about topics related to statistics, data visualization and science.
-The original idea came from the Unix `fortune` program that first appeared
-in Version 7 Unix. The `fortune` package is an R-centric equivalent.
-`statquotes` is dedicated to quotations on the substance of data
-analysis and visualization.
+This package displays a randomly chosen quotation from a database consisting of quotes about topics related to statistics, data visualization and science.  The original idea came from the Unix `fortune` program that first appeared in Version 7 Unix. The `fortune` package is an R-centric equivalent.  `statquotes` is dedicated to quotations on the substance of data analysis and visualization.
 
 The data base is a collection of quotations assembled over the years from various
 sources.  It began life as a simple text file and was later converted to
-`LaTeX`  using the [`epigraph` package](https://ctan.org/pkg/epigraph?lang=en). 
-The quotes included here are classified by general topics (and subtopics).
+`LaTeX` using the [`epigraph` package](https://ctan.org/pkg/epigraph?lang=en). 
 
-In this R package, each call to `statquote()` displays a randomly selected quotation.
-The selection can be restricted to those whose `topic` field matches the `topic=`
-argument, or whose `source` field matches the `source=` argument. 
-
-The main topics of the quotes are:
-
-```{r}
-> levels(quotes$topic)
-[1] "Computing"          "Data"               "Data visualization" "History"           
-[5] "Reviews"            "Science"            "Statistics"         "Unclassified"      
-```
-
-Some of these topics are divided into subtopics, most conveniently shown in tree form (using the [`data.tree`](https://cran.r-project.org/package=pkgname) package)
-
-<img src="man/figures/qtree.png">
+In this R package, each call to `statquote()` displays a randomly selected quotation.  The selection can be restricted to those whose `tags` field matches the `tag` argument, or whose `source` field matches the `source=` argument.
 
 ### Examples
 
@@ -53,11 +33,13 @@ The default print method gives a plain text format for the console, in the style
 
 The best thing about being a statistician is that you get to play in everyone's backyard. 
 --- John W. Tukey 
-> statquote(topic="science")
+
+> statquote(tag="science")
 
 Some people weave burlap into the fabric of our lives, and some weave gold thread. Both contribute 
 to make the whole picture beautiful and unique. 
 --- Anon. 
+
 > search_quotes("mail")
 
 Have you ever seen voice mail?
@@ -110,9 +92,10 @@ if(interactive()) statquotes::statquote()
 
 ### Author
 
-Michael Friendly  
-Phil Chalmers  
+Michael Friendly
+Phil Chalmers
 Matthew Sigal
+Kevin Wright
 
 
 ### License

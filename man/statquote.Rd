@@ -4,21 +4,20 @@
 \alias{statquote}
 \alias{print.statquote}
 \alias{as.data.frame.statquote}
-\title{Function to display a randomly chosen statistical quote}
+\title{Display a randomly chosen statistical quote}
 \usage{
-statquote(ind, topic = NULL, source = NULL)
+statquote(ind, tag = NULL, source = NULL)
 
 \method{print}{statquote}(x, width = NULL, ...)
 
 \method{as.data.frame}{statquote}(x, row.names = NULL, optional = FALSE, ...)
 }
 \arguments{
-\item{ind}{Optional index of a quote, or a vector of such integer indices
-If missing a random value is sampled from
-the available quotations.}
+\item{ind}{Integer vector of quote ID numbers.
+If missing, a random value is sampled from all quotations.}
 
-\item{topic}{A character string, used to select a subset of the quotes based
-on the assigned topics.}
+\item{tag}{A character string, used to select a subset of the quotes based
+on the tags.}
 
 \item{source}{A character string, used to select a subset of the quotes based
 on the source for the quote.}
@@ -35,23 +34,23 @@ on the source for the quote.}
 }
 \value{
 A character vector containing one randomly selected quote
-   from the included data set. It is of class \code{statquote} for
-   which an S3 print method will be invoked.
+from the included data set. It is of class \code{statquote} for
+which an S3 print method will be invoked.
 }
 \description{
-This function displays a randomly statistical quote from
-a collection. The quotations are classified by topics
+This function displays a random statistical quote.
 }
 \examples{
- set.seed(1234)
- statquote(123)
- statquote(source="Tukey")
- statquote(topic="science")
- statquote(topic="history")
+statquote(10:11)
+set.seed(1234)
+statquote(123)
+statquote(source="Tukey")
+statquote(tag="science")
+print.data.frame(statquote(301)) # All information, including URL
 
 }
 \seealso{
-\code{\link{quote_topics}}, \code{\link{search_quotes}}, \code{\link{quotes}},
+\code{\link{quote_tags}}, \code{\link{search_quotes}}, \code{\link{quotes}},
 Inspired by: \code{gaussfact} (\code{https://github.com/eddelbuettel/gaussfacts}),
  \code{\link[fortunes:fortunes]{fortune}}
 }

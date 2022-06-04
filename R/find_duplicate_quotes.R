@@ -1,5 +1,5 @@
 
-#' Check for duplicates in master .csv file
+#' Check for duplicate quotes
 #'
 #' Returns a list with qid, source, and the text where strings are
 #' aggressively fuzzy matched.
@@ -9,7 +9,8 @@
 #' @author Phil Chalmers
 #' @examples
 #'
-#' #  find_duplicate_quotes()
+#' # This can be slow...
+#' # find_duplicate_quotes()
 #'
 #'
 find_duplicate_quotes <- function(){
