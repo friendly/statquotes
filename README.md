@@ -10,7 +10,7 @@
 <!-- badges: end -->
 
 
-# statquotes v. 0.2.6 <img src="man/figures/statquotes-logo.png" align="right" height="200px" />
+# statquotes v. 0.3.0 <img src="man/figures/statquotes-logo.png" align="right" height="200px" />
 **Quotes on statistics, data visualization and science**
 
 This package displays a randomly chosen quotation from a database consisting of quotes about topics related to statistics, data visualization and science.  The original idea came from the Unix `fortune` program that first appeared in Version 7 Unix. The `fortune` package is an R-centric equivalent.  `statquotes` is dedicated to quotations on the substance of data analysis and visualization.

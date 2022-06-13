@@ -1,6 +1,7 @@
 # convert_quotes_to_rdata.R
 
-library(dplyr,stringr)
+library(dplyr)
+library(stringr)
 
 # Change 'packdir' as needed
 packdir <- getwd()
@@ -36,6 +37,7 @@ for(i in 1:nl){
     dat[qid,"url"] <- gsub("^url:", "", linei)
   } else if(str_detect(linei, "^tag:")){
     dat[qid,"tags"] <- gsub("^tag:", "", linei)
+    dat[qid,"tags"] <- gsub(",\\s+", ",", dat[qid,"tags"])   # trim extra spaces in tags
   } else if(str_detect(linei, "^tex:")){
     dat[qid,"tex"] <- gsub("^tex:", "", linei)
   } else if(str_detect(linei, "^%")) {
@@ -47,7 +49,7 @@ for(i in 1:nl){
   }
 }
 
-  
+
 # Checks
 library(dplyr)
 filter(dat, is.na(text)) # should be empty

@@ -12,17 +12,17 @@
 #'
 #' @param ind Integer vector of quote ID numbers.
 #' If missing, a random value is sampled from all quotations.
-#' 
+#'
 #' @param tag A character string, used to select a subset of the quotes based
 #' on the tags.
-#' 
+#'
 #' @param source A character string, used to select a subset of the quotes based
 #' on the source for the quote.
-#' 
+#'
 #' @return A character vector containing one randomly selected quote
 #' from the included data set. It is of class \code{statquote} for
 #' which an S3 print method will be invoked.
-#' 
+#'
 #' @export
 #' @importFrom stringr str_detect
 #' @seealso \code{\link{quote_tags}}, \code{\link{search_quotes}}, \code{\link{quotes}},
@@ -35,7 +35,7 @@
 #' statquote(source="Tukey")
 #' statquote(tag="science")
 #' print.data.frame(statquote(301)) # All information, including URL
-#' 
+#'
 statquote <- function(ind, tag=NULL, source=NULL) {
 
   isInteger <-
@@ -67,7 +67,7 @@ statquote <- function(ind, tag=NULL, source=NULL) {
     n <- nrow(data)
     ind <- sample(1:n, 1)
   }
-  
+
 	res <- data[ind,]
   class(res) <- c("statquote", 'data.frame')
   return(res)
@@ -80,7 +80,7 @@ statquote <- function(ind, tag=NULL, source=NULL) {
 #' @param width Optional column width parameter
 #' @param ... Other optional arguments
 #' @export
-#' 
+#'
 print.statquote <- function(x, width = NULL, ...) {
     if (is.null(width)) width <- 0.9 * getOption("width")
     if (width < 10) stop("'width' must be greater than 10", call.=FALSE)
@@ -103,7 +103,7 @@ print.statquote <- function(x, width = NULL, ...) {
 #' @param row.names see \code{\link{as.data.frame}}
 #' @param optional see \code{\link{as.data.frame}}
 #' @export
-#' 
+#'
 as.data.frame.statquote <- function(x, row.names = NULL,
                                     optional = FALSE, ...) {
   class(x) <- 'data.frame'
@@ -111,18 +111,48 @@ as.data.frame.statquote <- function(x, row.names = NULL,
 }
 
 #' List the tags of the quotes database
+#'
+#' List the tags of the quotes database
+#'
+#' @param table logical; if \code{table=TRUE} returns a one-way frequency table of quotes for each tag; otherwise
+#'        returns the sorted vector of unique tags.
+#'
+#' @return Returns either the list of tags in the quotes database or a one-way frequency table of the number of
+#'        quotes for each tag.
 #' @export
+#'
 #' @examples
 #' quote_tags()
-#' 
-quote_tags <- function() {
-  data <- .get.sq()
-  tags <- data[,"tags"]
-  tags <- unique( unlist( strsplit(tags, ",") ) )
-  sort( tags[!is.na(tags)] )
+#'
+#' quote_tags(table=TRUE)
+#'
+#' library(ggplot2)
+#' qt <- quote_tags(table=TRUE)
+#' qtdf <-as.data.frame(qt)
+#' # bar plot of frequencies
+#' ggplot2::ggplot(data=qtdf, aes(x=Freq, y=tags)) +
+#'     geom_bar(stat = "identity")
+#'
+#' # Sort tags by frequency
+#' qtdf |>
+#'   dplyr::mutate(tags = forcats::fct_reorder(tags, Freq)) |>
+#'   ggplot2::ggplot(aes(x=Freq, y=tags)) +
+#'   geom_bar(stat = "identity")
+
+quote_tags <- function (table = FALSE)
+{
+  data <- statquotes:::.get.sq()
+  tags <- data[, "tags"]
+  tags <- unlist(strsplit(tags, ","))
+  tabs <- tags[!is.na(tags)]
+  if (table) {
+    table(tags)
+  }
+  else {
+    tags <- unique(tags)
+    sort(tags)
+  }
 }
-
-
 #' Function coerces statquote objects to strings suitable for LaTeX
 #'
 #' This function coerces statquote objects to strings suitable for rendering in LaTeX.

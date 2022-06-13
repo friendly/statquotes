@@ -1,3 +1,8 @@
+Version 0.3.0 (2022-06-13)
+
+- Incorporate changes from `kwstat/statquotes` into this repo as `dev-tags` branch
+- `quote_tags()` gains a `table` argument
+
 Version 0.2.8
 
 - Combined all quote files into a single file: quotes_raw.txt.
