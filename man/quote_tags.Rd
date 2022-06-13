@@ -4,7 +4,15 @@
 \alias{quote_tags}
 \title{List the tags of the quotes database}
 \usage{
-quote_tags()
+quote_tags(table = FALSE)
+}
+\arguments{
+\item{table}{logical; if \code{table=TRUE} returns a one-way frequency table of quotes for each tag; otherwise
+returns the sorted vector of unique tags.}
+}
+\value{
+Returns either the list of tags in the quotes database or a one-way frequency table of the number of
+       quotes for each tag.
 }
 \description{
 List the tags of the quotes database
@@ -12,4 +20,18 @@ List the tags of the quotes database
 \examples{
 quote_tags()
 
+quote_tags(table=TRUE)
+
+library(ggplot2)
+qt <- quote_tags(table=TRUE)
+qtdf <-as.data.frame(qt)
+# bar plot of frequencies
+ggplot2::ggplot(data=qtdf, aes(x=Freq, y=tags)) +
+    geom_bar(stat = "identity")
+
+# Sort tags by frequency
+qtdf |>
+  dplyr::mutate(tags = forcats::fct_reorder(tags, Freq)) |>
+  ggplot2::ggplot(aes(x=Freq, y=tags)) +
+  geom_bar(stat = "identity")
 }

@@ -34,5 +34,8 @@ Imports: stringr,
 RoxygenNote: 7.2.0
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    dplyr,
+    forcats,
+    ggplot2
 VignetteBuilder: knitr

@@ -141,7 +141,7 @@ as.data.frame.statquote <- function(x, row.names = NULL,
 
 quote_tags <- function (table = FALSE)
 {
-  data <- statquotes:::.get.sq()
+  data <- .get.sq()
   tags <- data[, "tags"]
   tags <- unlist(strsplit(tags, ","))
   tabs <- tags[!is.na(tags)]
