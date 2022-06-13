@@ -92,10 +92,10 @@ if(interactive()) statquotes::statquote()
 
 ### Author
 
-Michael Friendly
-Phil Chalmers
+Michael Friendly,
+Kevin Wright,
+Phil Chalmers,
 Matthew Sigal
-Kevin Wright
 
 
 ### License

@@ -12,7 +12,7 @@
 
 quo:You can see a lot, just by looking.
 src:Yogi Berra
-tag:data visualization
+tag:data visualization,vision
 
 quo:Did you ever see such a thing as a drawing of a muchness?
 src:Lewis Carroll
@@ -31,18 +31,18 @@ tag:data visualization
 quo:Have you ever seen voice mail?
 src:The Hackers Test
 url:http://www.armory.com/tests/hacker.html
-tag:data visualization
+tag:data visualization,vision
 
 quo:Graphics is the visual means of resolving logical problems.
 src:Jacques Bertin
 cit:Graphics and Graphic Information Processing, 2011, p. 16.
-tag:data visualization
+tag:data visualization,vision
 tex:Jacques Bertin \citet[p. 16]{Bertin:81}
 
 quo:The greatest value of a picture is when it forces us to notice what we never expected to see.
 src:John W. Tukey
 cit:Exploratory Data Analysis, 1977
-tag:data visualization,eda
+tag:data visualization,pictures,eda
 tex:John W. Tukey \citet[p. vi]{Tukey:77}
 
 quo:If one technique of data analysis were to be exalted above all others for its ability to be revealing to the mind in connection with each of many different models, there is little doubt which one would be chosen. The simple graph has brought more information to the data analyst's mind than any other device. It specializes in providing indications of unexpected phenomena.
@@ -54,7 +54,7 @@ tex:John W. Tukey \citet[p. 49]{Tukey:1962}
 
 quo:Genius seems to consist merely in trueness of sight.
 src:Ralph Waldo Emerson, 1840
-tag:data visualization
+tag:data visualization,vision
 
 quo:The eye obeys exactly the action of the mind.
 src:Ralph Waldo Emerson, 1860
@@ -62,15 +62,15 @@ tag:data visualization
 
 quo:Vision is the art of seeing things invisible.
 src:Johnathan Swift, 1711
-tag:data visualization
+tag:data visualization,vision
 
 quo:When there is no vision, the people perish.
 src:Proverbs 29:18
-tag:data visualization
+tag:data visualization,vision
 
 quo:If I can't picture it, I can't understand it.
 src:Albert Einstein
-tag:data visualization
+tag:data visualization,pictures
 
 quo:And those who have insight will shine brightly like the brightness of the expanse of Heaven.
 src:Daniel 12:3
@@ -83,11 +83,11 @@ tag:data visualization
 
 quo:I like your motto: One picture is worth 1,000 denials.
 src:Ronald Reagan to White House News Photographers Assn, 18 May 1983
-tag:data visualization
+tag:data visualization,pictures
 
 quo:With brush you paint the possibilities with pens you scribe the probabilities for in pictures we find insight while in numbers find we strength.
 src:Forrest W. Young
-tag:data visualization,eda
+tag:data visualization,eda,pictures
 
 quo:A graphic should not only show the leaves it should show the branches as well as the entire tree.
 src:Jacques Bertin
@@ -110,7 +110,7 @@ tag:data visualization
 quo:Although geometrical representations of propositions in the thermodynamics of fluids are in general use and have done good service in disseminating clear notions in this science, yet they have by no means received the extension in respect to variety and generality of which they are capable.
 src:J. Willard Gibbs
 cit:Graphical Methods in the Thermodynamics of Fluids, 1873
-tag:data visualization
+tag:data visualization,geometry
 tex:J. Willard Gibbs, \emph{Graphical Methods in the Thermodynamics of Fluids}, 1873 \citeyear{Gibbs:1873a}
 
 quo:Although we often hear that data speak for themselves, their voices can be soft and sly.
@@ -121,11 +121,11 @@ tag:data visualization
 quo:Nocturne, of Chopin, so beautiful music. But few people will appreciate the music if I just show them the notes. Most of us need to listen to the music to understand how beautiful it is. But often that's how we present statistics; we just show the notes, we don't play the music.
 src:Hans Rosling
 cit:OECD World Forum, Istanbul, June 2007
-tag:data visualization
+tag:data visualization,statistics
 
 quo:The greatest possibilities of visual display lie in vividness and inescapability of the intended message. A visual display can stop your mental flow in its tracks and make you think. A visual display can force you to notice what you never expected to see.
 src:John W. Tukey
-tag:data visualization
+tag:data visualization,vision
 tex:John W. Tukey \citeyear{Tukey:90}
 
 quo:The purpose of [data] display is comparison (recognition of phenomena), not numbers ... The phenomena are the main actors, numbers are the supporting cast.
@@ -141,12 +141,12 @@ tag:data visualization
 
 quo:Around the turn of the century, Karl Pearson, an almost elemental force for more and better statistical thought in all areas of life, including with gusto, matters of social policy, was thinking and lecturing about graphical methods. But later in Pearson's life, and certainly in the careers of R. A. Fisher and the other great statistical minds of the first half of the century, there was a falling away of interest in graphics and an efflorescence  of devotion to analytical mathematical methods. Indeed, for many years there was a contagious *snobbery* against so unpopular, vulgar and elementary a topic as graphics among academic statisticians and their students
 src:William Kruskal
-tag:data visualization
+tag:data visualization,statistics
 tex:William Kruskal \citep[p. 144, italics in original]{Kruskal:1978}
 
 quo:If statistical graphics, although born just yesterday, extends its reach every day, it is because it replaces long tables of numbers and it allows one not only to embrace at glance the series of phenomena, but also to signal the correspondences or anomalies, to find the causes, to identify the laws.
 src:Emile Cheysson, c. 1877
-tag:data visualization
+tag:data visualization,tables
 
 quo:Numbers have an important story to tell. They rely on you to give them a clear and convincing voice.
 src:Stephen Few
@@ -159,7 +159,7 @@ tag:data visualization
 quo:The purpose of visualization is insight, not pictures.
 src:Ben Shneiderman
 cit:Extreme visualization: squeezing a billion records into a million pixels. In SIGMOD '08: Proceedings of the 2008 ACM SIGMOD international conference on Management of data, pages 3-12, New York, NY, USA, 2008. ACM.
-tag:data visualization
+tag:data visualization,pictures
 
 quo:I love taxonomies, categories, ways of dividing people into groups.
 src:Gretchen Rubin
@@ -177,7 +177,7 @@ tag:data visualization
 
 quo:Without data you are just another person with an opinion.
 src:W. Edwards Deming
-tag:data visualization
+tag:data visualization,data
 
 quo:Without a plot you are just a person missing a convincing argument.
 src:Di Cook, 2016
@@ -185,17 +185,17 @@ tag:data visualization
 
 quo:Whatever relates to extent and quantity may be represented by geometrical figures. Statistical projections which speak to the senses without fatiguing the mind, possess the advantage of fixing the attention on a great number of important facts.
 src:Alexander von Humboldt
-tag:data visualization
+tag:data visualization,vision
 tex:Alexander von Humboldt, \citeyear{Humboldt:1811a}, p. ciii
 
 quo:Segnius irritant animos demissa per aures, Quam quae sunt oculus subjecta fidelibus (Roughly: What we hear excites the mind less than what we see).
 src:Horace
-tag:data visualization
+tag:data visualization,vision
 
 quo:You see, but you do not observe. The distinction is clear.
 src:Sherlock Holmes
 cit:The Adventures of Sherlock Holmes (1890), "A Scandal in Bohemia", p. 162
-tag:data visualization
+tag:data visualization,vision
 
 quo:Every picture tells a story.
 src:Rod Stewart, 1971
@@ -221,7 +221,7 @@ tag:data visualization,pictures
 quo:Show me your flowcharts and conceal your tables, and I shall continue to be mystified. Show me your tables, and I won't usually need your flowcharts; they'll be obvious.
 src:Fred Brooks
 cit:The Mythical Man-Month
-tag:data visualization,pictures
+tag:data visualization,pictures,tables
 
 quo:Look here, upon this picture, and on this.
 src:Shakespeare
@@ -254,7 +254,7 @@ tag:data visualization,design
 
 quo:Mankind is not a circle with a single center but an ellipse with two focal points of which facts are one and ideas the other.
 src:Victor Hugo
-tag:data visualization
+tag:data visualization,ellipses
 
 quo:So, Fabricius, I already have this: that the most true path of the planet [Mars] is an ellipse, which Durer also calls an oval, or certainly so close to an ellipse that the difference is insensible.
 src:Johannes Kepler, 1605
@@ -297,7 +297,7 @@ tag:computing
 
 quo:There are no routine statistical questions, only questionable statistical routines.
 src:David R. Cox
-tag:computing
+tag:computing,statistics
 
 quo:Be careful the environment you choose for it will shape you be careful the friends you choose for you will become like them.
 src:W. Clement Stone
@@ -398,7 +398,7 @@ src:George E. P. Box & G. C. Tiao
 cit:Bayesian inference in statistical analysis, 1973. Addison-Wesley, Reading, MA, p. 65.
 tag:statistics
 
-quo:Some people hate the very name of statistics but I find them full of beauty and interest.  Whenever they are not brutalized, but delicately handled by the higher methods, and are warily interpreted,  their power of dealing with complicated phenomena is extraordinary.
+quo:Some people hate the very name of statistics but I find them full of beauty and interest.  Whenever they are not brutalized, but delicately handled by the higher methods, and are warily interpreted, their power of dealing with complicated phenomena is extraordinary.
 src:Francis Galton
 cit:Natual Inheritance 1889 p. 62
 tag:statistics
@@ -414,11 +414,11 @@ tag:statistics
 
 quo:Sometimes the only thing you can do with a poorly designed experiment is to try to find out what it died of.
 src:Ronald A. Fisher
-tag:statistics
+tag:statistics,experimental design
 
 quo:The best time to plan an experiment is after you've done it.
 src:Ronald A. Fisher
-tag:statistics
+tag:statistics,experimental design
 
 quo:[The War Office kept three sets of figures:] one to mislead the public, another to mislead the Cabinet, and the third to mislead itself.
 src:Herbert Asquith
@@ -435,7 +435,7 @@ quo:The relevant question is not whether ANOVA assumptions are met exactly, but 
 src:Gene V. Glass & Percy D. Peckham & James R. Sanders
 cit:Consequences of Failure to Meet Assumptions Underlying the Fixed Effects Analyses of Variance and Covariance,  Review of Educational Research Vol. 42, No. 3 (Summer, 1972), pp. 237-288 , p. 237.
 url:https://doi.org/10.2307/1169991
-tag:statistics
+tag:statistics,anova
 
 quo:Exploratory data analysis can never be the whole story, but nothing else	can serve as the foundation stone -- as the first step.
 src:John W. Tukey
@@ -493,11 +493,11 @@ tag:statistics,Box quotes,time series
 
 quo:It is the data that are real (they actually happened!) The model is a hypothetical conjecture that might or might not summarize and/or explain important features of the data
 src:George E. P. Box
-tag:statistics,Box quotes
+tag:statistics,Box quotes,data
 
 quo:It is not unusual for a well-designed experiment to analyze itself.
 src:George E. P. Box
-tag:statistics,Box quotes
+tag:statistics,Box quotes,experimental design
 
 quo:Discovering the unexpected is more important than confirming the known.
 src:George E. P. Box
@@ -544,7 +544,7 @@ tag:data
 quo:Whenever I see an outlier, I never know whether to throw it away or patent it.
 src:Bert Gunter
 cit:R-Help, 9/14/2015
-tag:data
+tag:data,outliers
 
 quo:In God we trust. All others must bring data.
 src:W. Edwards Deming
@@ -552,7 +552,7 @@ tag:data
 
 quo:The combination of some data and an aching desire for an answer does not ensure that a reasonable answer can be extracted from a given body of data.
 src:John W. Tukey
-tag:data
+tag:data,Tukey quotes
 
 quo:How do I love thee? Let me count the ways.
 src:Elizabeth Barrett Browning
@@ -584,7 +584,7 @@ tag:data,averages
 quo:The graphical method has considerable superiority for the exposition of statistical facts over the tabular. A heavy bank of figures is grievously wearisome to the eye, and the popular mind is as incapable of drawing any useful lessons from it as of extracting sunbeams from cucumbers.
 src:Arthur B. Farquhar & Henry Farquhar
 cit:Economic and Industrial Delusions, 1891.
-tag:data,tables
+tag:data,tables,vision
 tex:Arthur B. \& Henry Farquhar (1891). Economic and Industrial Delusions \citet[p. 55]{FaquharFaquhar:1891}
 
 quo:Let it serve for table-talk.
@@ -620,8 +620,8 @@ tag:science
 % Unverified
 quo:The practical power of a statistical test is the product of its' statistical power and the probability of use.
 src:John W. Tukey
-cit:1959
-tag:science
+cit:A Quick, Compact, Two Sample Test to Duckworth's Specifications
+tag:science,power
 tex:John W. Tukey, 1959 \citep{Tukey:59}
 
 quo:Theory into Practice.
@@ -636,19 +636,19 @@ tag:science
 
 quo:They consider me to have sharp and penetrating vision because I see them through the mesh of a sieve.
 src:Kahlil Gibran
-tag:science
+tag:science,vision
 
 quo:The journalistic vision sharpens to the point of maximum impact every event, every individual and social configuration; but the honing is uniform.
 src:George Steiner
-tag:science
+tag:science,vision
 
 quo:Some people weave burlap into the fabric of our lives, and some weave gold thread. Both contribute to make the whole picture beautiful and unique.
 src:Anon.
-tag:science
+tag:science,pictures
 
 quo:Time extracts various values from a painter's work. When these values are exhausted the pictures are forgotten, and the more a picture has to give, the greater it is.
 src:Henri Matisse
-tag:science
+tag:science,pictures
 
 quo:God is in the details.
 src:Mies van der Roche
@@ -662,7 +662,7 @@ tag:science
 quo:One has to be able to count if only so that at fifty one doesn't marry a girl of twenty.
 src:Maxim Gorky
 cit:The Zykovs 1914
-tag:science
+tag:science,counts
 
 quo:A man has one hundred dollars and you leave him with two dollars, that's subtraction.
 src:Mae West
@@ -671,12 +671,12 @@ tag:science
 
 quo:In the fields of observation chance favors only the prepared mind.
 src:Louis Pasteur
-tag:science
+tag:science,data
 
 quo:The eye of a human being is a microscope, which makes the world seem bigger than it really is.
 src:Kahlil Gibran
 cit:A Handful of Sand on the Shore
-tag:science
+tag:science,vision
 
 quo:To the man who only has a hammer in the toolkit, every problem looks like a nail.
 src:Abraham Maslow
@@ -697,7 +697,7 @@ tag:science
 
 quo:The great tragedy of science -- the slaying of a beautiful hypothesis by an ugly fact.
 src:Thomas Huxley
-tag:science
+tag:science,nhst
 
 quo:Give a man to fish and he will eat for a day. Teach a man to fish and he will eat for the rest of his life.
 src:Chinese Proverb
@@ -711,17 +711,17 @@ tag:science
 quo:When you have eliminated the impossible, whatever remains, however improbable, must be the truth.
 src:Arthur Conan Doyle
 cit:The Sign of the Four (1890), Ch. 6
-tag:science
+tag:science,probability
 
 quo:If you choose to represent the various parts in life by holes upon a table, of different shapes---some circular, some triangular, some square, some oblong---we shall generally find that the triangular person has got into the square hole, the oblong into the triangular, and a square person has squeezed himself into the round hole.
 src:Sydney Smith
 cit:1769-1845
-tag:science
+tag:science,geometry
 
 quo:I know of scarcely anything so apt to impress the imagination as the wonderful form of cosmic order expressed by the "Law of Frequency of Error." The law would have been personified by the Greeks and deified, if they had known of it. It reigns with serenity and in complete self-effacement, amidst the wildest confusion. The huger the mob, and the greater the apparent anarchy, the more perfect is its sway. It is the supreme law of Unreason. Whenever a large sample of chaotic elements are taken in hand and marshaled in the order of their magnitude, an unsuspected and most beautiful form of regularity proves to have been latent all along.
 src:Sir Francis Galton
 cit:Natural Inheritance London: Macmillan, 1889. Quoted in J. R. Newman (ed.) The World of Mathematics, New York: Simon and Schuster, 1956. p. 1482.
-tag:science
+tag:science,normality
 
 quo:In scientific thought we adopt the simplest theory which will explain all the facts under consideration and enable us to predict new facts of the same kind. The catch in this criterion lies in the world "simplest." It is really an aesthetic canon such as we find implicit in our criticisms of poetry or painting. The layman finds such a law as dx/dt = K(d^2x/dy^2) much less simple than "it oozes," of which it is the mathematical statement. The physicist reverses this judgment, and his statement is certainly the more fruitful of the two, so far as prediction is concerned. It is, however, a statement about something very unfamiliar to the plainman, namely, the rate of change of a rate of change.
 src:John Burdon Sanderson Haldane
@@ -827,11 +827,11 @@ tag:history
 quo:So we beat on, boats against the current, borne back ceaselessly into the past.
 src:F. Scott Fitzgerald
 cit:The Great Gatsby (1925)
-tag:history
+tag:history,time
 
 quo:Euclid alone has looked on beauty bare.
 src:Edna St Vincent Millay
-tag:history
+tag:history,geometry
 
 quo:The past only exists insofar as it is present in the records of today. And what those records are is determined by what questions we ask.  There is no other history than that.
 src:Wheeler
@@ -970,20 +970,21 @@ tag:reviews
 quo:Mathematicians have always been rather of a jealous nature, and undoubtedly jealousy was a family characteristic of the Bernoullis.  There is some excuse for mathematicians, for their reputation stands for posterity largely not on what they did, but on what their contemporaries attributed to them.
 src:Karl Pearson
 cit:The History of Statistics in the 17th and 18th Centuries.
-tag:unclassified
+tag:history
 tex:Karl Pearson, "The History of Statistics in the 17th and 18th Centuries" \cite[p. 226]{Pearson:1978}
 
 quo:When choosing between two evils, I always like to take the one I've never tried before.
 src:Mae West, 1941
-tag:unclassified
+tag:ethics
 
 quo:To err is human---but it feels divine!
-src:Mae West
+src:Mae West (paraphrase of Alenander Pope, "To err is human, to forgive devine")
+url:http://www.quotecounterquote.com/2012/08/to-err-is-human-to-forgive-divine.html
 tag:unclassified
 
 quo:Good judgment comes from experience experience comes from bad judgment.
 src:Fred Brooks
-tag:unclassified
+tag:history
 
 quo:One must learn by doing the thing; for though you think you know it, you have no certainty until you try.
 src:Sophocles
@@ -1007,7 +1008,7 @@ tag:data visualization,pictures
 quo:The graphic art depicts magnitudes to the eye. It does more. It compels the seeing of relations. We may portray by simple graphic methods whole masses of intricate routine, the organization of an enterprise, or the plan of a campaign. Graphs serve as storm signals for the manager, statesman, engineer; as potent narratives for the actuary, statist, naturalist; and as forceful engines of research for science, technology and industry. They display results. They disclose new facts and laws. They reveal discoveries as the bud unfolds the flower.
 src:Henry D. Hubbard
 cit:Foreword to Brinton (1939), Graphic Presentation
-tag:data visualization,pictures
+tag:data visualization,pictures,vision
 
 quo:The graphic language is modern. We are learning its alphabet. That it will develop a lexicon and a literature marvelous for its vividness and the variety of application is inevitable. Graphs are dynamic, dramatic. They may epitomize an epoch, each dot a fact, each slope an event, each curve a history. Wherever there are data to record, inferences to draw, or facts to tell, graphs furnish the unrivalled means whose power we are just beginning to realize and to apply.
 src:Henry D. Hubbard
@@ -1021,8 +1022,8 @@ tag:data visualization,pictures
 
 % fixme multiline
 quo:In One Dimensions, did not a moving Point produce a Line with two terminal points?
-In two Dimensions, did not a moving Line produce a Square wit four terminal points?
-In Three Dimensions, did not a moving Square produce - did not the eyes of mine behold it - that blessed being, a Cube, with eight terminal points?
+In Two Dimensions, did not a moving Line produce a Square with four terminal points?
+In Three Dimensions, did not a moving Square produce - did not this eye of mine behold it - that blessed being, a Cube, with eight terminal points?
 And in Four Dimensions, shall not a moving Cube - alas, for Analogy, and alas for the Progress of Truth if it be not so - shall not, I say the motion of a divine Cube result in a still more divine organization with sixteen terminal points?
 src:Edwin A. Abbott
 cit:Flatland: A Romance of Many Dimensions
@@ -1092,17 +1093,17 @@ tag:statistics
 quo:DIAGRAMS are of great utility for illustrating certain questions of vital statistics by conveying ideas on the subject through the eye, which cannot be so readily grasped when contained in figures.
 src:Florence Nightingale
 cit:Mortality of the British Army, 1857
-tag:data visualization,pictures
+tag:data visualization,pictures,vision
 
 quo:To give insight to statistical information it occurred to me, that making an appeal to the eye when proportion and magnitude are concerned, is the best and readiest method of conveying a distinct idea.
 src:William Playfair
 cit:The Statistical Breviary (1801), p. 2
-tag:data visualization,pictures
+tag:data visualization,pictures,vision
 
 quo:Regarding numbers and proportions, the best way to catch the imagination is to speak to the eyes.
 src:William Playfair
 cit:Elemens de statistique, Paris, 1802, p. XX.
-tag:data visualization,pictures
+tag:data visualization,pictures,vision
 
 quo:The aim of my carte figurative is to convey promptly to the eye the relation not given quickly by numbers requiring mental calculation.
 src:Charles Joseph Minard
@@ -1111,7 +1112,7 @@ tag:data visualization,pictures
 quo:Information that is imperfectly acquired, is generally as imperfectly retained; and a man who has carefully investigated a printed table, finds, when done, that he has only a very faint and partial idea of what he has read; and that like a figure imprinted on sand, is soon totally erased and defaced.
 src:William Playfair
 cit:The Commercial and Political Atlas (p. 3), 1786
-tag:data visualization,pictures
+tag:data visualization,pictures,tables
 
 quo:Since the aim of exploratory data analysis is to learn what seems to be, it should be no surprise that pictures play a vital role in doing it well.
 src:John W. Tukey
