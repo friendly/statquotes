@@ -1,26 +1,29 @@
-#' Function to generate word cloud based upon quote database
+#' Generate a word cloud based upon quote database
 #'
-#' This function takes a search pattern (can use regular expressions) and generates
+#' This function takes a search pattern (or regular expression) and generates
 #' a word cloud based upon that filter.
 #'
-#' @param search A character string; used to search the database. Regular
-#'   expression characters are allowed. Default is to search all quotes.
-#' @param max.words Logical; designate maximum number of words to be plotted.
-#' @param colors A character vector pertaining to the colors to be used to designate
+#' @param search Character string (or regular expression) used to search the database. Default is to search all quotes.
+#' 
+#' @param max.words Integer; The maximum number of words to be plotted.
+#' 
+#' @param colors A character vector of colors to be used to designate
 #'   word frequency. The default is 5 levels, from light to dark green.
+#' 
 #' @param ... additional arguments passed to \code{\link{search_quotes}} and
 #'   \code{\link{wordcloud}}
-#' @return A wordcloud is plotted.
+#' 
+#' @return None. A wordcloud is plotted.
 #' @importFrom tidytext unnest_tokens
 #' @importFrom wordcloud wordcloud
 #' @export
-#' @seealso \code{\link{statquote}}, \code{\link{quote_topics}}, \code{\link{quotes}},
+#' @seealso \code{\link{statquote}}, \code{\link{quote_tags}}, \code{\link{quotes}},
 #'   \code{\link{search_quotes}}. \code{\link{wordcloud}}
 #' @examples
 #' quote_cloud()
 #' quote_cloud(search = "graph")
 #' quote_cloud(max.words = 10)
-
+#' 
 quote_cloud <- function(search = ".*", max.words = 80, colors, ...){
     qt <- search_quotes(search, ...) # defaults to all quotes
     .sq.env <- new.env()
@@ -43,6 +46,8 @@ quote_cloud <- function(search = ".*", max.words = 80, colors, ...){
     if (missing(colors))
       colors <- c("#66C2A4", "#41AE76", "#238B45", "#006D2C", "#00441B")
 
-    with(qtidy, wordcloud::wordcloud(word, n, max.words = max.words, colors=colors, ...))
+    with(qtidy, wordcloud::wordcloud(word, n,
+                                     max.words = max.words,
+                                     colors=colors, ...))
 }
 

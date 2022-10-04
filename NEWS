@@ -1,3 +1,16 @@
+Version 0.3.0 (2022-06-13)
+
+- Incorporate changes from `kwstat/statquotes` into this repo as `dev-tags` branch
+- `quote_tags()` gains a `table` argument
+
+Version 0.2.8
+
+- Combined all quote files into a single file: quotes_raw.txt.
+- Added many quotes about hypothesis testing.
+- Added 'tags' field to replace 'topic' and 'subtopic'.
+- Added URLs for many quotes.
+- Function `quote_topics` renamed to `quote_tags`.
+
 Version 0.2.7 (2022-03-14)
 
 - add kw quotes ( #PR22)

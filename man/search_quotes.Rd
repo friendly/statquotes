@@ -6,55 +6,58 @@
 \alias{get_quotes}
 \title{Search the quote database for a string or regex pattern}
 \usage{
-search_quotes(search, ignore_case = TRUE, fuzzy = FALSE, fields = NULL, ...)
+search_quotes(
+  search,
+  ignore_case = TRUE,
+  fuzzy = FALSE,
+  fields = c("text", "source", "tags"),
+  ...
+)
 
 search_text(search, fuzzy = FALSE, ...)
 
 get_quotes(search = ".*", ...)
 }
 \arguments{
-\item{search}{A character string, used to search the database. Regular
-expression characters are allowed.}
+\item{search}{A character string or regex pattern to search the database.}
 
-\item{ignore_case}{Logical; If \code{TRUE}, matching is done without regard to case.}
+\item{ignore_case}{If \code{TRUE}, matching is done without regard to case.}
 
-\item{fuzzy}{Logical; If \code{TRUE}, the function uses \code{\link[base]{agrep}} to allow approximate
-matches to the search string.}
+\item{fuzzy}{If \code{TRUE}, use \code{\link[base]{agrep}} to allow approximate matches to the search string.}
 
-\item{fields}{A character vector pertaining to the particular fields to search. The
-default is to search everything: `c("topic", "subtopic", "text", "source", "TeXsource")`.}
+\item{fields}{A character vector of the particular fields to search.
+The default is \code{c("text","source","tags")}.
+You can use the shortcut \code{fields="all"} to search all fields (including citation, url).}
 
-\item{...}{additional arguments passed to \code{\link[base]{agrep}} to fine-tune fuzzy
-search parameters.}
+\item{...}{additional arguments passed to \code{\link[base]{agrep}} to fine-tune fuzzy search parameters.}
 }
 \value{
-A data frame (also with class \code{'statquote'})
-  object containing all quotes that match the search parameters.
+A data frame (also with class \code{'statquote'}) object containing all quotes that match the search parameters.
 
-A data frame (also with class \code{'statquote'})
-  object containing all quotes. This is meant to be assigned to name rather than printed.
+A data frame (also with class \code{'statquote'}) object
+containing all quotes.
 }
 \description{
-This function takes a search pattern (can use regular expressions) and returns all quotes
-that match the pattern. By default all fields are included in the search.
-If fuzzy is FALSE, then only exact matches are returned (case sensitive).
+This function takes a search pattern (or regular expression) and returns all quotes
+that match the pattern.
 
 A convenient wrapper for search quotes that by default returns all quotes
 }
 \examples{
 search_quotes("^D") # regex to find all quotes that start with "D"
-search_quotes("Tukey") #all quotes with "Tukey"
-search_quotes("bad answer", fuzzy = TRUE) # fuzzy match
+search_quotes("Tukey") # all quotes with "Tukey"
+search_quotes("Turkey", fuzzy = TRUE) # fuzzy match
 
 # to a data.frame
-out <- search_quotes("bad answer", fuzzy = TRUE)
+out <- search_quotes("bad data", fuzzy = TRUE)
 as.data.frame(out)
 
+search_text("omnibus")
 qdb <- get_quotes()
 nrow(qdb)
 names(qdb)
 
 }
 \seealso{
-\code{\link[base]{agrep}}, \code{\link{statquote}}, \code{\link{quote_topics}}, \code{\link{quotes}}
+\code{\link[base]{agrep}}, \code{\link{statquote}}.
 }

@@ -18,7 +18,7 @@ character vector of formatted markdown quotes
 }
 \description{
 This function coerces statquote objects to strings suitable for rendering in markdown.
-Quotes and  sources are placed within  output
+Quotes and sources are placed within output
 format via the \code{\link{sprintf}} function.
 }
 \examples{

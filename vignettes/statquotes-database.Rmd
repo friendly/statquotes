@@ -18,26 +18,48 @@ knitr::opts_chunk$set(
 library(statquotes)
 ```
 
-`statquotes` items can be read and parsed by the `inst/readQuotes()` function in either text (`.txt`) or LaTeX (`.tex`) format. These are saved in the `inst/quotes.csv` file, which is then also saved in `data/quotes.RData`, the main data file used in the package. The function `readQuotes()` is not yet
-exported.
+## Primary format for quotes file
 
-## LaTeX format
+The quotes are stored in the `inst/quotes_raw.txt` file. The script `convert_quotes_to_rdata.R` can be used to read these quotes and save them to `data/quotes.RData`, which is the main data file used in the package.
 
-`statquotes` originally arose from a LaTeX file, `quotes.tex`  that I used to collect interesting quotations
-related to statistics, data visualization, history, software and other topics. This was designed to be a collection I could search, then copy/paste an appropriate one into a working LaTeX document.  The format
-of quotes was designed to use the LaTeX `epigraph` package:
+The `quotes_raw.txt` file uses the following format for each quotation.  Lines beginning with "%" are comments and ignored.  Other lines contain a "key:value" pair. The key is used to identify the right column when building the `quotes` dataframe:
+
+```
+% Comment
+quo:This is a quotation.
+src:Person or persons who said or wrote the quote.
+cit:Citation for the original quote.
+url:URL where the quote can be found (such as journal articles).
+tag:Comma-separated tags to categorize the quote.
+tex:TeX-formatted citation
+```
+
+Here is an example:
+
+```
+quo:A judicious man looks at Statistics, not to get knowledge, but to save himself from having ignorance foisted on him.
+src:Thomas Carlyle
+cit:Chartism, 1840, Chapter II, Statistics
+url:https://en.wikisource.org/wiki/Chartism/Chapter_2
+tag:data visualization
+```
+
+## LaTeX format for quotes file
+
+`statquotes` originally arose from a LaTeX file, that I (Michael Friendly) used to collect interesting quotations related to statistics, data visualization, history, software and other topics. This was designed to be a collection I could search, then copy/paste an appropriate one into a working LaTeX document.  The format of quotes was designed to use the LaTeX `epigraph` package:
 
 ```
 \epigraph{You can see a lot, just by looking.}{Yogi Berra}
 \epigraph{Every picture tells a story.}{Rod Stewart, 1971}
 \epigraph{A picture is worth a thousand words.}{F. Barnard, 1927}
 ```
+
 Each quote has some `text` and a `source` attribution, and so could be displayed in a document something like
 
 > *You can see a lot, just by looking.* 
 > --- Yogi Berra
 
-Overtime, I wanted to categorize these by `topic` and `subtopic`, so `\section{}` and `\subsection{}` were introduced into the `quotes.tex` file.
+Overtime, I wanted to categorize these by `topic` and `subtopic`, so `\section{}` and `\subsection{}` were introduced into the quotes file. Later the two-level topic and subtopic were removed in favor of `tags`. As many tags as desired can be added to a quote.
 
 This results in what is the canonical form for a quotations file in LaTeX format.
 
@@ -51,7 +73,7 @@ This results in what is the canonical form for a quotations file in LaTeX format
 ...
 ```
 
-## Text format
+## Text format for quotes file
 
 The following lines illustrate the text format, similar in most respects to the output of the `fortunes` package
 
@@ -70,17 +92,5 @@ Every picture tells a story.
 A picture is worth a thousand words.
 --- F. Barnard, 1927
 ```
-
-In this format:
-
-* Lines starting with `%` are treated as comments and ignored.
-* Separate quotes are separated by one or more blank lines.
-* Lines beginning with `##` are treated as defining a new section (`topic` in the database), which persists until the next section is started.
-* Similarly, lines beginning with `###` define a new subsection (`suptopic`).
-* Lines beginning with a word character give the text of a quotation. In this version of `readQuotes()`, the entire quote **must appear on one line** in the text file.
-* Lines beginning with `--- ` give the source of the quotation, typically just a name, publication, year.
-
-
-
 
 

@@ -65,7 +65,7 @@ This reminds me of the duality in statistics between computation and model fit: 
 % http://www.stat.columbia.edu/~cook/movabletype/archives/2006/02/fooled_by_rando.html
 
 
-It is a nontrivial exercise to correctly program even the simplest split-plot model using PROC MIXED. 
+It is a nontrivial exercise to correctly program even the simplest split-plot model using PROC MIXED.
 --- Jeremy Aldworth & Wherly P Hoffman, "Split-Plot Model With Covariate: A Cautionary Tale", The American Statistician, 56, 284--289.
 
 
@@ -73,7 +73,7 @@ Sometimes the most important fit statistic you can get is 'convergence not met'-
 --- Oliver Schabenberger, 2006 Applied Statistics in Agriculture Conference.
 
 
-It is obviously pointless to report or quote results to more digits than is warranted. In fact, it is misleading or at the very least unhelpful, because it fails to communicate to the reader another important aspect of the result--namely its reliability! A good rule (sometimes known as Ehrenberg's rule) is to quote all digits up to and including the first two variable digits. 
+It is obviously pointless to report or quote results to more digits than is warranted. In fact, it is misleading or at the very least unhelpful, because it fails to communicate to the reader another important aspect of the result--namely its reliability! A good rule (sometimes known as Ehrenberg's rule) is to quote all digits up to and including the first two variable digits.
 --- Philipp K. Janert, "Data Analysis with Open Source Tools", O'Reilly, 2010.
 
 
@@ -150,7 +150,7 @@ The goals in statistics are to use data to predict and to get information about 
 --- Leo Breiman, "Statistical Modeling: The Two Cultures", Statistical Science, Vol 16, p. 214.
 
 
-## Data 
+## Data
 ### Data analysis
 
 
@@ -214,7 +214,7 @@ Doing applied statistics is never easy, especially if you want to get it right.
 --- Bill Venables, "Exegeses on Linear Models"
 
 
-I agree with the general message: "The right variables make a big difference for accuracy. Complex statistical methods, not so much." This is similar to something Hal Stern told me once: the most important aspect of a statistical analysis is not what you do with the data, it's what data you use. 
+I agree with the general message: "The right variables make a big difference for accuracy. Complex statistical methods, not so much." This is similar to something Hal Stern told me once: the most important aspect of a statistical analysis is not what you do with the data, it's what data you use.
 --- Andrew Gelman, "The most important aspect of a statistical analysis is not what you do with the data, it's what data you use", 2018.
 % https://statmodeling.stat.columbia.edu/2018/08/07/important-aspect-statistical-analysis-not-data-data-use-survey-adjustment-edition/
 
@@ -255,7 +255,7 @@ To call in the statistician after the experiment is done may be no more than ask
 --- R.A. Fisher, Sankya, Indian Statistical Congress, Vol 4, p. 17.
 
 
-It is clear that a statistician who is involved at the start of an investigation, advises on data collection, and who knows the background and objectives, will generally make a better job of the analysis than a statistician who was called in later on. 
+It is clear that a statistician who is involved at the start of an investigation, advises on data collection, and who knows the background and objectives, will generally make a better job of the analysis than a statistician who was called in later on.
 --- Christopher Chatfield, 1988, "Problem solving : a statistician's guide", p. 12.
 
 
@@ -647,7 +647,7 @@ If you show your friends your confidence interval for the standard error of the 
 --- Tony Baiching, personal communication
 
 
-## Statistics 
+## Statistics
 ### Box quotes
 
 
@@ -727,8 +727,8 @@ Another reason for the applied statistician to care about Bayesian inference is 
 --- Donald B. Rubin. Bayesianly justifiable and relevant frequency calculations for the applied statistician. Annals of Statistics, 12(4):1151–1172, 1984.
 
 
-In most cases the frequentist adopts numerical values because they are convenient in that the calculations can be easily performed. For instance, a reliability engineer will use an exponential distribution or, if that is too gross, a Weibull. In the majority of frequentist analyses there is little justification for the assumed likelihood, and it is as subjective as any prior. 
---- D. V. Lindley, "Discussion", The American Statistician, August 1997, Vol. 51, page 265. 
+In most cases the frequentist adopts numerical values because they are convenient in that the calculations can be easily performed. For instance, a reliability engineer will use an exponential distribution or, if that is too gross, a Weibull. In the majority of frequentist analyses there is little justification for the assumed likelihood, and it is as subjective as any prior.
+--- D. V. Lindley, "Discussion", The American Statistician, August 1997, Vol. 51, page 265.
 
 
 In contrast to the logical development and intuitive interpretations of the Bayesian approach, frequentist methods are nearly impossible to understand, even for the best students. Consider confidence intervals. Many instructors err in describing confidence intervals and even some texts err. But whether texts or instructors err in explaining them, students do not understand them. And they carry this misunderstanding with them into later life. Calculating a confidence interval is easy. But everyone except the cognoscenti believes that when one calculates 95% confidence limits of 2.6 and 7.9, say, the probability is 95% that the parameter in question lies in the interval from 2.6 to 7.9. P values are nearly as obscure as confidence intervals. Diamond and Forrester (1983) make it clear that MDs [Medical Doctors] do not understand P values (and in particular that they themselves do not understand P values!). Students in frequentist courses may learn very well how to calculate confidence intervals and P values, but they cannot give them correct interpretations. I stopped teaching frequentist methods when I decided that they could not be learned.
@@ -772,7 +772,7 @@ Bayesian methods are complicated enough, that giving researchers user-friendly s
 
 
 If a study, even a statistically significant one, suggests that pigs can fly, Bayes's theorem allows researchers to combine the study's results mathematically with hundreds of years of knowledge about the travel habits of swine.
---- David Leonhardt, New York Times, April 28, 2001 
+--- David Leonhardt, New York Times, April 28, 2001
 
 
 If the prior distribution, at which I am frankly guessing, has little or no effect on the result, then why bother; and if it has a large effect, then since I do not know what I am doing how would I dare act on the conclusions drawn?
@@ -785,7 +785,7 @@ I believe that there are many classes of problems where Bayesian analyses are re
 
 
 If you read Bayesian polemics from the 1970s and 1980s—including my own—it's usually arrogant and even insulting. Some of the terms were excessively pointed. For example, Bayesians identified which frequentist methods were "incoherent", or more accurately, lamented that none seemed to be coherent. On the other hand, Bayesians were accused of being "biased". The rhetoric was not all that different from that of the Fisher/Pearson duels. But we Bayesians have stopped saying derogatory things, partly because we have changed and partly because frequentists have been listening. When you're walking beside someone you tend to be cordial; when you're trying to catch up to tell them something and they are ignoring what you say, you sometimes yell.
---- Don Berry, "Celebrating 70: An Interview with Don Berry", Dalene Stangl, Lurdes Y. T. Inoue and Telba Z. Irony. Statistical Science, 2012, Vol. 27, No. 1, 144–159. 
+--- Don Berry, "Celebrating 70: An Interview with Don Berry", Dalene Stangl, Lurdes Y. T. Inoue and Telba Z. Irony. Statistical Science, 2012, Vol. 27, No. 1, 144–159.
 % DOI: 10.1214/11-STS366.
 
 
@@ -863,7 +863,7 @@ We statisticians must accept much of the blame for cavalier attitudes toward Typ
 --- Peter Westfall. "Applied Statistics in Agriculture (Proceedings of the 13th annual conference)", page 5.
 
 
-While the main emphasis in the development of power analysis has been to provide methods for assessing and increasing power, it should also be noted that it is possible to have too much power. If your sample is too large, nearly any difference, no matter how small or meaningless from a practical standpoint, will be 'statistically significant'. 
+While the main emphasis in the development of power analysis has been to provide methods for assessing and increasing power, it should also be noted that it is possible to have too much power. If your sample is too large, nearly any difference, no matter how small or meaningless from a practical standpoint, will be 'statistically significant'.
 --- Clay Helberg
 % Original source (now broken) http://www.execpc.com/~helberg/pitfalls/
 

@@ -1,3 +1,4 @@
+
 #' @importFrom utils data
 .get.sq <- function(){
   .sq.env <- new.env()
@@ -5,66 +6,104 @@
   .sq.env$quotes
 }
 
-#' Function to display a randomly chosen statistical quote
+#' Display a randomly chosen statistical quote.
 #'
-#' This function displays a randomly statistical quote from
-#' a collection. The quotations are classified by topics
+#' When used without any arguments, one quote is returned at random.
 #'
-#' @param ind Optional index of a quote, or a vector of such integer indices
-#'        If missing a random value is sampled from
-#'        the available quotations.
-#' @param topic A character string, used to select a subset of the quotes based
-#'        on the assigned topics.
+#' When 'source' is specified, the quotes are first narrowed to those matching
+#' the specified source (person).
+#'
+#' When 'tag' is specified, the quotes are first narrowed to those matching
+#' the specified tag.
+#'
+#' When 'pattern' is specified, the quotes are first narrowed to to those which
+#' match the pattern in the quote text.
+#'
+#' When 'ind' is specified and is an integer, return the ind^th quote.
+#'
+#' When 'ind' is specified and is character, use it as the 'pattern'.
+#'
+#' @param ind Integer vector of quote ID numbers.
+#' If missing, a random value is sampled from all quotations.
+#'
+#' @param pattern A character string, used to select a subset of the quotes
+#' based on the text of the quote.
+#'
+#' @param tag A character string, used to select a subset of the quotes based
+#' on the tags.
+#'
 #' @param source A character string, used to select a subset of the quotes based
-#'        on the source for the quote.
-#' @return A character vector containing one randomly selected quote
-#'    from the included data set. It is of class \code{statquote} for
-#'    which an S3 print method will be invoked.
+#' on the source for the quote.
+#'
+#' @param topic Deprecated. Only kept for backward compatability. Use 'tag' instead.
+
+#' @return
+#' A character vector containing one randomly selected quote
+#' from the included data set. It is of class \code{statquote} for
+#' which an S3 print method will be invoked.
+#'
 #' @export
 #' @importFrom stringr str_detect
-#' @seealso \code{\link{quote_topics}}, \code{\link{search_quotes}}, \code{\link{quotes}},
-#' Inspired by: \code{gaussfact} (\code{https://github.com/eddelbuettel/gaussfacts}),
-#'  \code{\link[fortunes:fortunes]{fortune}}
+#' @seealso \code{\link{quote_tags}}, \code{\link{search_quotes}}, \code{\link{quotes}},
+#' Inspired by: \code{\link[fortunes:fortunes]{fortune}}
 #' @examples
-#'  set.seed(1234)
-#'  statquote(123)
-#'  statquote(source="Tukey")
-#'  statquote(topic="science")
-#'  statquote(topic="history")
+#' statquote(10)
+#' set.seed(1234)
+#' statquote()
+#' statquote("magic")
+#' statquote(pattern="magic")
+#' statquote(source="Yates")
+#' statquote(tag="anova")
+#' print.data.frame(statquote(301)) # All information, including URL
 #'
+statquote <- function(ind=NULL, pattern=NULL, tag=NULL, source=NULL, topic=NULL) {
 
-statquote <- function(ind, topic=NULL, source=NULL) {
+  dat <- .get.sq()
 
+  if(!missing(topic)) {
+    message("Please use `tag` instead of `topic`")
+    tag=topic
+  }
+
+  # Note: is.integer(23) is FALSE, is.integer(23L) is TRUE. Make our own fun.
   isInteger <-
     function(x) is.numeric(x) && all.equal(x, as.integer(x))
 
-	data <- .get.sq()
-	if(!missing(ind)) {
-	  if (!isInteger(ind)) stop("ind must be an integer, not '", ind, "'")
-	  if (!(ind > 0L && ind <= nrow(data))) stop("ind must be between 1 and ", nrow(data))
-#	  stopifnot(ind > 0L && ind <= nrow(data))
+  # ind is a number
+  if(!missing(ind) && isInteger(ind)) {
+    if (min(ind)<1 | max(ind) > nrow(dat))
+      stop("ind must be between 1 and ", nrow(dat))
+    dat <- dat[ind,]
+  }
+  # ind is string, use it as 'pattern'
+  if(!missing(ind) && is.character(ind)){
+    OK <- which(str_detect(tolower(dat$text), tolower(ind)))
+    dat <- dat[OK,]
 	  }
 
-	if(!is.null(topic) && missing(ind)) {
-	  merged <- with(data, paste(as.character(topic), as.character(subtopic)))
-		OK <- which(str_detect(tolower(merged), tolower(topic)))
-		if (length(OK)) data <- data[OK,]
-		else warning("The topic \'", topic, "\' did not match any items and is ignored",
-		             call.=FALSE)
+
+  # Now 'ind' is missing
+  if(missing(ind) && !is.null(tag)) {
+    OK <- which(str_detect(tolower(dat$tags), tolower(tag)))
+    dat <- dat[OK,]
 	}
 
-	if(!is.null(source) && missing(ind)) {
-	  OK <- which(str_detect(tolower(data$source), tolower(source)))
-	  if (length(OK)) data <- data[OK,]
-	  else warning("The source \'", source, "\' did not match any items and is ignored",
-	               call.=FALSE)
+  if(missing(ind) && !is.null(source) ) {
+    OK <- which(str_detect(tolower(dat$source), tolower(source)))
+    dat <- dat[OK,]
 	}
 
-  if (missing(ind)) {
-    n <- nrow(data)
-    ind <- sample(1:n, 1)
-}
-	res <- data[ind,]
+  if(missing(ind) && !is.null(pattern) ) {
+    OK <- which(str_detect(tolower(dat$text), tolower(pattern)))
+    dat <- dat[OK,]
+  }
+
+  if(nrow(dat)<1) stop("No matches found")
+
+  # Finally, pick one at random
+  ind <- sample(1:nrow(dat),1)
+
+  res <- dat[ind,]
   class(res) <- c("statquote", 'data.frame')
   return(res)
 }
@@ -74,7 +113,7 @@ statquote <- function(ind, topic=NULL, source=NULL) {
 #' @param width Optional column width parameter
 #' @param ... Other optional arguments
 #' @export
-
+#'
 print.statquote <- function(x, width = NULL, ...) {
     if (is.null(width)) width <- 0.9 * getOption("width")
     if (width < 10) stop("'width' must be greater than 10", call.=FALSE)
@@ -97,34 +136,25 @@ print.statquote <- function(x, width = NULL, ...) {
 #' @param row.names see \code{\link{as.data.frame}}
 #' @param optional see \code{\link{as.data.frame}}
 #' @export
-
+#'
 as.data.frame.statquote <- function(x, row.names = NULL,
                                     optional = FALSE, ...) {
   class(x) <- 'data.frame'
   x
 }
 
-#' List the topics of the quotes data base
-#' @param subtopics logical; if \code{TRUE} the subtopics are printed as well
-#'   with the associated topic
+#' List the tags in the quotes database
 #' @export
 #' @examples
-#' quote_topics()
-#' quote_topics(TRUE)
-
-quote_topics <- function(subtopics = FALSE) {
+#' quote_tags()
+#'
+quote_tags <- function() {
   data <- .get.sq()
-  ret <- levels(data[,"topic"])
-  if(subtopics){
-    subtopic_list <- lapply(ret, function(topic, data){
-      lev <- levels(droplevels(data$subtopic[data$topic == topic]))
-      data.frame(topic=topic, subtopic=lev)
-    }, data=data)
-    ret <- do.call(rbind, subtopic_list)
-    ret <- ret[ret$subtopic != "", ]
-  }
-  ret
+  tags <- data[, "tags"]
+  tags <- unique( unlist( strsplit(tags, ",") ) )
+  sort( tags[!is.na(tags)] )
 }
+
 
 #' Function coerces statquote objects to strings suitable for LaTeX
 #'
@@ -165,7 +195,6 @@ as.latex <- function(quotes, form = "\\epigraph{%s}{%s}\n\n"){
     strings
   }
 
-  topics <- unique(quotes$topic)
   quotes$text <- symbols2tex(quotes$text)
   quotes$source <- symbols2tex(quotes$source)
   lines <- NULL
