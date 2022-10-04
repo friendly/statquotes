@@ -12,7 +12,7 @@ aggressively fuzzy matched.
 }
 \examples{
 
-# This can be slow...
+# As the number of quotes has grown, this has become very slow.
 # find_duplicate_quotes()
 
 

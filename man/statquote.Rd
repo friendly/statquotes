@@ -4,9 +4,9 @@
 \alias{statquote}
 \alias{print.statquote}
 \alias{as.data.frame.statquote}
-\title{Display a randomly chosen statistical quote}
+\title{Display a randomly chosen statistical quote.}
 \usage{
-statquote(ind, tag = NULL, source = NULL)
+statquote(ind = NULL, pattern = NULL, tag = NULL, source = NULL, topic = NULL)
 
 \method{print}{statquote}(x, width = NULL, ...)
 
@@ -16,11 +16,16 @@ statquote(ind, tag = NULL, source = NULL)
 \item{ind}{Integer vector of quote ID numbers.
 If missing, a random value is sampled from all quotations.}
 
+\item{pattern}{A character string, used to select a subset of the quotes
+based on the text of the quote.}
+
 \item{tag}{A character string, used to select a subset of the quotes based
 on the tags.}
 
 \item{source}{A character string, used to select a subset of the quotes based
 on the source for the quote.}
+
+\item{topic}{Deprecated. Only kept for backward compatability. Use 'tag' instead.}
 
 \item{x}{object of class \code{'statquote'}}
 
@@ -38,19 +43,34 @@ from the included data set. It is of class \code{statquote} for
 which an S3 print method will be invoked.
 }
 \description{
-This function displays a random statistical quote.
+When used without any arguments, one quote is returned at random.
+}
+\details{
+When 'source' is specified, the quotes are first narrowed to those matching
+the specified source (person).
+
+When 'tag' is specified, the quotes are first narrowed to those matching
+the specified tag.
+
+When 'pattern' is specified, the quotes are first narrowed to to those which
+match the pattern in the quote text.
+
+When 'ind' is specified and is an integer, return the ind^th quote.
+
+When 'ind' is specified and is character, use it as the 'pattern'.
 }
 \examples{
-statquote(10:11)
+statquote(10)
 set.seed(1234)
-statquote(123)
-statquote(source="Tukey")
-statquote(tag="science")
+statquote()
+statquote("magic")
+statquote(pattern="magic")
+statquote(source="Yates")
+statquote(tag="anova")
 print.data.frame(statquote(301)) # All information, including URL
 
 }
 \seealso{
 \code{\link{quote_tags}}, \code{\link{search_quotes}}, \code{\link{quotes}},
-Inspired by: \code{gaussfact} (\code{https://github.com/eddelbuettel/gaussfacts}),
- \code{\link[fortunes:fortunes]{fortune}}
+Inspired by: \code{\link[fortunes:fortunes]{fortune}}
 }

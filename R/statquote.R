@@ -6,12 +6,28 @@
   .sq.env$quotes
 }
 
-#' Display a randomly chosen statistical quote
+#' Display a randomly chosen statistical quote.
 #'
-#' This function displays a random statistical quote.
+#' When used without any arguments, one quote is returned at random.
+#'
+#' When 'source' is specified, the quotes are first narrowed to those matching
+#' the specified source (person).
+#'
+#' When 'tag' is specified, the quotes are first narrowed to those matching
+#' the specified tag.
+#'
+#' When 'pattern' is specified, the quotes are first narrowed to to those which
+#' match the pattern in the quote text.
+#'
+#' When 'ind' is specified and is an integer, return the ind^th quote.
+#'
+#' When 'ind' is specified and is character, use it as the 'pattern'.
 #'
 #' @param ind Integer vector of quote ID numbers.
 #' If missing, a random value is sampled from all quotations.
+#'
+#' @param pattern A character string, used to select a subset of the quotes
+#' based on the text of the quote.
 #'
 #' @param tag A character string, used to select a subset of the quotes based
 #' on the tags.
@@ -19,61 +35,78 @@
 #' @param source A character string, used to select a subset of the quotes based
 #' on the source for the quote.
 #'
-#' @return A character vector containing one randomly selected quote
+#' @param topic Deprecated. Only kept for backward compatability. Use 'tag' instead.
+
+#' @return
+#' A character vector containing one randomly selected quote
 #' from the included data set. It is of class \code{statquote} for
 #' which an S3 print method will be invoked.
 #'
 #' @export
 #' @importFrom stringr str_detect
 #' @seealso \code{\link{quote_tags}}, \code{\link{search_quotes}}, \code{\link{quotes}},
-#' Inspired by: \code{gaussfact} (\code{https://github.com/eddelbuettel/gaussfacts}),
-#'  \code{\link[fortunes:fortunes]{fortune}}
+#' Inspired by: \code{\link[fortunes:fortunes]{fortune}}
 #' @examples
-#' statquote(10:11)
+#' statquote(10)
 #' set.seed(1234)
-#' statquote(123)
-#' statquote(source="Tukey")
-#' statquote(tag="science")
+#' statquote()
+#' statquote("magic")
+#' statquote(pattern="magic")
+#' statquote(source="Yates")
+#' statquote(tag="anova")
 #' print.data.frame(statquote(301)) # All information, including URL
 #'
-statquote <- function(ind, tag=NULL, source=NULL) {
+statquote <- function(ind=NULL, pattern=NULL, tag=NULL, source=NULL, topic=NULL) {
 
+  dat <- .get.sq()
+
+  if(!missing(topic)) {
+    message("Please use `tag` instead of `topic`")
+    tag=topic
+  }
+
+  # Note: is.integer(23) is FALSE, is.integer(23L) is TRUE. Make our own fun.
   isInteger <-
     function(x) is.numeric(x) && all.equal(x, as.integer(x))
 
-	data <- .get.sq()
-	if(!missing(ind)) {
-	  if (!isInteger(ind)) stop("ind must be an integer, not '", ind, "'")
-	  if (min(ind)<1 | max(ind) > nrow(data)) stop("ind must be between 1 and ", nrow(data))
+  # ind is a number
+  if(!missing(ind) && isInteger(ind)) {
+    if (min(ind)<1 | max(ind) > nrow(dat))
+      stop("ind must be between 1 and ", nrow(dat))
+    dat <- dat[ind,]
+  }
+  # ind is string, use it as 'pattern'
+  if(!missing(ind) && is.character(ind)){
+    OK <- which(str_detect(tolower(dat$text), tolower(ind)))
+    dat <- dat[OK,]
 	  }
 
-	if(!is.null(tag) && missing(ind)) {
-		OK <- which(str_detect(tolower(data$tags), tolower(tag)))
-		if (length(OK)) {
-      data <- data[OK,]
-    } else warning("The tag \'", tag, "\' did not match any items and is ignored",
-		             call.=FALSE)
+
+  # Now 'ind' is missing
+  if(missing(ind) && !is.null(tag)) {
+    OK <- which(str_detect(tolower(dat$tags), tolower(tag)))
+    dat <- dat[OK,]
 	}
 
-	if(!is.null(source) && missing(ind)) {
-	  OK <- which(str_detect(tolower(data$source), tolower(source)))
-	  if (length(OK)) {
-      data <- data[OK,]
-    } else warning("The source \'", source, "\' did not match any items and is ignored",
-	               call.=FALSE)
+  if(missing(ind) && !is.null(source) ) {
+    OK <- which(str_detect(tolower(dat$source), tolower(source)))
+    dat <- dat[OK,]
 	}
 
-  if (missing(ind)) {
-    n <- nrow(data)
-    ind <- sample(1:n, 1)
+  if(missing(ind) && !is.null(pattern) ) {
+    OK <- which(str_detect(tolower(dat$text), tolower(pattern)))
+    dat <- dat[OK,]
   }
 
-	res <- data[ind,]
+  if(nrow(dat)<1) stop("No matches found")
+
+  # Finally, pick one at random
+  ind <- sample(1:nrow(dat),1)
+
+  res <- dat[ind,]
   class(res) <- c("statquote", 'data.frame')
   return(res)
 }
-
-# print methods are normally not exported.  Should we stop exporting?
 
 #' @rdname statquote
 #' @param x object of class \code{'statquote'}
@@ -110,49 +143,19 @@ as.data.frame.statquote <- function(x, row.names = NULL,
   x
 }
 
-#' List the tags of the quotes database
-#'
-#' List the tags of the quotes database
-#'
-#' @param table logical; if \code{table=TRUE} returns a one-way frequency table of quotes for each tag; otherwise
-#'        returns the sorted vector of unique tags.
-#'
-#' @return Returns either the list of tags in the quotes database or a one-way frequency table of the number of
-#'        quotes for each tag.
+#' List the tags in the quotes database
 #' @export
-#'
 #' @examples
 #' quote_tags()
 #'
-#' quote_tags(table=TRUE)
-#'
-#' library(ggplot2)
-#' qt <- quote_tags(table=TRUE)
-#' qtdf <-as.data.frame(qt)
-#' # bar plot of frequencies
-#' ggplot2::ggplot(data=qtdf, aes(x=Freq, y=tags)) +
-#'     geom_bar(stat = "identity")
-#'
-#' # Sort tags by frequency
-#' qtdf |>
-#'   dplyr::mutate(tags = forcats::fct_reorder(tags, Freq)) |>
-#'   ggplot2::ggplot(aes(x=Freq, y=tags)) +
-#'   geom_bar(stat = "identity")
-
-quote_tags <- function (table = FALSE)
-{
+quote_tags <- function() {
   data <- .get.sq()
   tags <- data[, "tags"]
-  tags <- unlist(strsplit(tags, ","))
-  tabs <- tags[!is.na(tags)]
-  if (table) {
-    table(tags)
-  }
-  else {
-    tags <- unique(tags)
-    sort(tags)
-  }
+  tags <- unique( unlist( strsplit(tags, ",") ) )
+  sort( tags[!is.na(tags)] )
 }
+
+
 #' Function coerces statquote objects to strings suitable for LaTeX
 #'
 #' This function coerces statquote objects to strings suitable for rendering in LaTeX.
