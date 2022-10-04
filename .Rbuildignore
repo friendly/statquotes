@@ -7,3 +7,4 @@ ANNOUNCE
 ^cran-comments\.md$
 ^\.travis\.yml$
 ^CRAN-SUBMISSION$
+^data-raw

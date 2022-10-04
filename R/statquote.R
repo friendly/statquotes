@@ -8,53 +8,39 @@
 
 #' Display a randomly chosen statistical quote.
 #'
-#' When used without any arguments, one quote is returned at random.
+#' @param ind Integer or character.
+#' If 'ind' is missing, a random quote is chosen from all quotations.
+#' If 'ind' is specified and is an integer, return the ind^th quote.
+#' If 'ind' is specified and is character, use it as the 'pattern'.
 #'
-#' When 'source' is specified, the quotes are first narrowed to those matching
-#' the specified source (person).
-#'
-#' When 'tag' is specified, the quotes are first narrowed to those matching
-#' the specified tag.
-#'
-#' When 'pattern' is specified, the quotes are first narrowed to to those which
+#' @param pattern Character string. Quotes are first subset to to those which
 #' match the pattern in the quote text.
 #'
-#' When 'ind' is specified and is an integer, return the ind^th quote.
+#' @param tag Character string. Quotes are first subset to those matching the
+#' specified tag.
 #'
-#' When 'ind' is specified and is character, use it as the 'pattern'.
+#' @param source Character string. Quotes are first subset to those matching
+#' the specified source (person).
 #'
-#' @param ind Integer vector of quote ID numbers.
-#' If missing, a random value is sampled from all quotations.
-#'
-#' @param pattern A character string, used to select a subset of the quotes
-#' based on the text of the quote.
-#'
-#' @param tag A character string, used to select a subset of the quotes based
-#' on the tags.
-#'
-#' @param source A character string, used to select a subset of the quotes based
-#' on the source for the quote.
-#'
-#' @param topic Deprecated. Only kept for backward compatability. Use 'tag' instead.
+#' @param topic Deprecated. Use 'tag' instead. Only kept for backward compatability.
 
 #' @return
-#' A character vector containing one randomly selected quote
-#' from the included data set. It is of class \code{statquote} for
-#' which an S3 print method will be invoked.
+#' A character vector containing one quote.
+#' It is of class \code{statquote} for which an S3 print method will be invoked.
 #'
 #' @export
 #' @importFrom stringr str_detect
 #' @seealso \code{\link{quote_tags}}, \code{\link{search_quotes}}, \code{\link{quotes}},
 #' Inspired by: \code{\link[fortunes:fortunes]{fortune}}
 #' @examples
-#' statquote(10)
 #' set.seed(1234)
 #' statquote()
-#' statquote("magic")
-#' statquote(pattern="magic")
+#' statquote(10)
+#' statquote("boggled")
+#' statquote(pattern="boggled")
 #' statquote(source="Yates")
 #' statquote(tag="anova")
-#' print.data.frame(statquote(301)) # All information, including URL
+#' print.data.frame(statquote(302)) # All information
 #'
 statquote <- function(ind=NULL, pattern=NULL, tag=NULL, source=NULL, topic=NULL) {
 
