@@ -129,18 +129,48 @@ as.data.frame.statquote <- function(x, row.names = NULL,
   x
 }
 
-#' List the tags in the quotes database
+#' List the tags of the quotes database
+#'
+#' List the tags of the quotes database
+#'
+#' @param table Logical. If \code{table=TRUE}, return a one-way frequency table
+#' of quotes for each tag; otherwise return the sorted vector of unique tags.
+#'
+#' @return Returns either a vector of tags in the quotes database or a one-way
+#' frequency table of the number of quotes for each tag.
+#'
 #' @export
+#'
 #' @examples
 #' quote_tags()
+#' quote_tags(table=TRUE)
 #'
-quote_tags <- function() {
+#' library(ggplot2)
+#' qt <- quote_tags(table=TRUE)
+#' qtdf <-as.data.frame(qt)
+#' # bar plot of frequencies
+#' ggplot2::ggplot(data=qtdf, aes(x=Freq, y=tags)) +
+#'     geom_bar(stat = "identity")
+#'
+#' # Sort tags by frequency
+#' qtdf |>
+#'   dplyr::mutate(tags = forcats::fct_reorder(tags, Freq)) |>
+#'   ggplot2::ggplot(aes(x=Freq, y=tags)) +
+#'   geom_bar(stat = "identity")
+#'
+quote_tags <- function (table = FALSE) {
   data <- .get.sq()
   tags <- data[, "tags"]
-  tags <- unique( unlist( strsplit(tags, ",") ) )
-  sort( tags[!is.na(tags)] )
+  tags <- unlist(strsplit(tags, ","))
+  tabs <- tags[!is.na(tags)]
+  if (table) {
+    table(tags)
+  }
+  else {
+    tags <- unique(tags)
+    sort(tags)
+  }
 }
-
 
 #' Function coerces statquote objects to strings suitable for LaTeX
 #'
