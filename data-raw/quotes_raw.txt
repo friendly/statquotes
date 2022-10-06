@@ -16,9 +16,11 @@
 
 % tags can be anything, but here are some to pick from:
 % anova
+% bayesian
 % data
 % data visualization
 % eda = exploratory data analysis
+% lsmeans
 % nhst = null hypothesis significance testing
 % normality
 
@@ -28,7 +30,7 @@
 
 quo:You can see a lot, just by looking.
 src:Yogi Berra
-tag:data visualization
+tag:data visualization,vision
 
 quo:Did you ever see such a thing as a drawing of a muchness?
 src:Lewis Carroll
@@ -47,18 +49,18 @@ tag:data visualization
 quo:Have you ever seen voice mail?
 src:The Hackers Test
 url:http://www.armory.com/tests/hacker.html
-tag:data visualization
+tag:data visualization,vision
 
 quo:Graphics is the visual means of resolving logical problems.
 src:Jacques Bertin
 cit:Graphics and Graphic Information Processing, 2011, p. 16.
-tag:data visualization
+tag:data visualization,vision
 tex:Jacques Bertin \citet[p. 16]{Bertin:81}
 
 quo:The greatest value of a picture is when it forces us to notice what we never expected to see.
 src:John W. Tukey
 cit:Exploratory Data Analysis, 1977
-tag:data visualization,eda
+tag:data visualization,pictures,eda
 tex:John W. Tukey \citet[p. vi]{Tukey:77}
 
 quo:If data analysis is to be well done, much of it must be a matter of judgment, and ‘theory’ whether statistical or non-statistical, will have to guide, not command.
@@ -80,7 +82,7 @@ tex:John W. Tukey \citet[p. 49]{Tukey:1962}
 
 quo:Genius seems to consist merely in trueness of sight.
 src:Ralph Waldo Emerson, 1840
-tag:data visualization
+tag:data visualization,vision
 
 quo:The eye obeys exactly the action of the mind.
 src:Ralph Waldo Emerson, 1860
@@ -88,15 +90,15 @@ tag:data visualization
 
 quo:Vision is the art of seeing things invisible.
 src:Johnathan Swift, 1711
-tag:data visualization
+tag:data visualization,vision
 
 quo:When there is no vision, the people perish.
 src:Proverbs 29:18
-tag:data visualization
+tag:data visualization,vision
 
 quo:If I can't picture it, I can't understand it.
 src:Albert Einstein
-tag:data visualization
+tag:data visualization,pictures
 
 quo:And those who have insight will shine brightly like the brightness of the expanse of Heaven.
 src:Daniel 12:3
@@ -109,11 +111,11 @@ tag:data visualization
 
 quo:I like your motto: One picture is worth 1,000 denials.
 src:Ronald Reagan to White House News Photographers Assn, 18 May 1983
-tag:data visualization
+tag:data visualization,pictures
 
 quo:With brush you paint the possibilities with pens you scribe the probabilities for in pictures we find insight while in numbers find we strength.
 src:Forrest W. Young
-tag:data visualization,eda
+tag:data visualization,eda,pictures
 
 quo:A graphic should not only show the leaves it should show the branches as well as the entire tree.
 src:Jacques Bertin
@@ -136,7 +138,7 @@ tag:data visualization
 quo:Although geometrical representations of propositions in the thermodynamics of fluids are in general use and have done good service in disseminating clear notions in this science, yet they have by no means received the extension in respect to variety and generality of which they are capable.
 src:J. Willard Gibbs
 cit:Graphical Methods in the Thermodynamics of Fluids, 1873
-tag:data visualization
+tag:data visualization,geometry
 tex:J. Willard Gibbs, \emph{Graphical Methods in the Thermodynamics of Fluids}, 1873 \citeyear{Gibbs:1873a}
 
 quo:Although we often hear that data speak for themselves, their voices can be soft and sly.
@@ -147,11 +149,11 @@ tag:data visualization
 quo:Nocturne, of Chopin, so beautiful music. But few people will appreciate the music if I just show them the notes. Most of us need to listen to the music to understand how beautiful it is. But often that's how we present statistics; we just show the notes, we don't play the music.
 src:Hans Rosling
 cit:OECD World Forum, Istanbul, June 2007
-tag:data visualization
+tag:data visualization,statistics
 
 quo:The greatest possibilities of visual display lie in vividness and inescapability of the intended message. A visual display can stop your mental flow in its tracks and make you think. A visual display can force you to notice what you never expected to see.
 src:John W. Tukey
-tag:data visualization
+tag:data visualization,vision
 tex:John W. Tukey \citeyear{Tukey:90}
 
 quo:The purpose of [data] display is comparison (recognition of phenomena), not numbers ... The phenomena are the main actors, numbers are the supporting cast.
@@ -167,12 +169,12 @@ tag:data visualization
 
 quo:Around the turn of the century, Karl Pearson, an almost elemental force for more and better statistical thought in all areas of life, including with gusto, matters of social policy, was thinking and lecturing about graphical methods. But later in Pearson's life, and certainly in the careers of R. A. Fisher and the other great statistical minds of the first half of the century, there was a falling away of interest in graphics and an efflorescence  of devotion to analytical mathematical methods. Indeed, for many years there was a contagious *snobbery* against so unpopular, vulgar and elementary a topic as graphics among academic statisticians and their students
 src:William Kruskal
-tag:data visualization
+tag:data visualization,statistics
 tex:William Kruskal \citep[p. 144, italics in original]{Kruskal:1978}
 
 quo:If statistical graphics, although born just yesterday, extends its reach every day, it is because it replaces long tables of numbers and it allows one not only to embrace at glance the series of phenomena, but also to signal the correspondences or anomalies, to find the causes, to identify the laws.
 src:Emile Cheysson, c. 1877
-tag:data visualization
+tag:data visualization,tables
 
 quo:Numbers have an important story to tell. They rely on you to give them a clear and convincing voice.
 src:Stephen Few
@@ -185,7 +187,7 @@ tag:data visualization
 quo:The purpose of visualization is insight, not pictures.
 src:Ben Shneiderman
 cit:Extreme visualization: squeezing a billion records into a million pixels. In SIGMOD '08: Proceedings of the 2008 ACM SIGMOD international conference on Management of data, pages 3-12, New York, NY, USA, 2008. ACM.
-tag:data visualization
+tag:data visualization,pictures
 
 quo:I love taxonomies, categories, ways of dividing people into groups.
 src:Gretchen Rubin
@@ -203,7 +205,7 @@ tag:data visualization
 
 quo:Without data you are just another person with an opinion.
 src:W. Edwards Deming
-tag:data visualization
+tag:data visualization,data
 
 quo:Without a plot you are just a person missing a convincing argument.
 src:Di Cook, 2016
@@ -211,17 +213,17 @@ tag:data visualization
 
 quo:Whatever relates to extent and quantity may be represented by geometrical figures. Statistical projections which speak to the senses without fatiguing the mind, possess the advantage of fixing the attention on a great number of important facts.
 src:Alexander von Humboldt
-tag:data visualization
+tag:data visualization,vision
 tex:Alexander von Humboldt, \citeyear{Humboldt:1811a}, p. ciii
 
 quo:Segnius irritant animos demissa per aures, Quam quae sunt oculus subjecta fidelibus (Roughly: What we hear excites the mind less than what we see).
 src:Horace
-tag:data visualization
+tag:data visualization,vision
 
 quo:You see, but you do not observe. The distinction is clear.
 src:Sherlock Holmes
 cit:The Adventures of Sherlock Holmes (1890), "A Scandal in Bohemia", p. 162
-tag:data visualization
+tag:data visualization,vision
 
 quo:Every picture tells a story.
 src:Rod Stewart, 1971
@@ -247,7 +249,7 @@ tag:data visualization,pictures
 quo:Show me your flowcharts and conceal your tables, and I shall continue to be mystified. Show me your tables, and I won't usually need your flowcharts; they'll be obvious.
 src:Fred Brooks
 cit:The Mythical Man-Month
-tag:data visualization,pictures
+tag:data visualization,pictures,tables
 
 quo:Look here, upon this picture, and on this.
 src:Shakespeare
@@ -280,7 +282,7 @@ tag:data visualization,design
 
 quo:Mankind is not a circle with a single center but an ellipse with two focal points of which facts are one and ideas the other.
 src:Victor Hugo
-tag:data visualization
+tag:data visualization,ellipses
 
 quo:So, Fabricius, I already have this: that the most true path of the planet [Mars] is an ellipse, which Durer also calls an oval, or certainly so close to an ellipse that the difference is insensible.
 src:Johannes Kepler, 1605
@@ -323,7 +325,7 @@ tag:computing
 
 quo:There are no routine statistical questions, only questionable statistical routines.
 src:David R. Cox
-tag:computing
+tag:computing,statistics
 
 quo:Be careful the environment you choose for it will shape you be careful the friends you choose for you will become like them.
 src:W. Clement Stone
@@ -440,11 +442,11 @@ tag:statistics
 
 quo:Sometimes the only thing you can do with a poorly designed experiment is to try to find out what it died of.
 src:Ronald A. Fisher
-tag:statistics
+tag:statistics,experimental design
 
 quo:The best time to plan an experiment is after you've done it.
 src:Ronald A. Fisher
-tag:statistics
+tag:statistics,experimental design
 
 quo:[The War Office kept three sets of figures:] one to mislead the public, another to mislead the Cabinet, and the third to mislead itself.
 src:Herbert Asquith
@@ -461,7 +463,7 @@ quo:The relevant question is not whether ANOVA assumptions are met exactly, but 
 src:Gene V. Glass & Percy D. Peckham & James R. Sanders
 cit:Consequences of Failure to Meet Assumptions Underlying the Fixed Effects Analyses of Variance and Covariance,  Review of Educational Research Vol. 42, No. 3 (Summer, 1972), pp. 237-288 , p. 237.
 url:https://doi.org/10.2307/1169991
-tag:statistics
+tag:statistics,anova
 
 quo:Exploratory data analysis can never be the whole story, but nothing else	can serve as the foundation stone -- as the first step.
 src:John W. Tukey
@@ -570,7 +572,7 @@ tag:data
 quo:Whenever I see an outlier, I never know whether to throw it away or patent it.
 src:Bert Gunter
 cit:R-Help, 9/14/2015
-tag:data
+tag:data,outliers
 
 quo:In God we trust. All others must bring data.
 src:W. Edwards Deming
@@ -612,7 +614,7 @@ tag:data,averages
 quo:The graphical method has considerable superiority for the exposition of statistical facts over the tabular. A heavy bank of figures is grievously wearisome to the eye, and the popular mind is as incapable of drawing any useful lessons from it as of extracting sunbeams from cucumbers.
 src:Arthur B. Farquhar & Henry Farquhar
 cit:Economic and Industrial Delusions, 1891.
-tag:data,tables
+tag:data,tables,vision
 tex:Arthur B. \& Henry Farquhar (1891). Economic and Industrial Delusions \citet[p. 55]{FaquharFaquhar:1891}
 
 quo:Let it serve for table-talk.
@@ -648,8 +650,8 @@ tag:science
 % Unverified
 quo:The practical power of a statistical test is the product of its' statistical power and the probability of use.
 src:John W. Tukey
-cit:1959
-tag:science
+cit:A Quick, Compact, Two Sample Test to Duckworth's Specifications
+tag:science,power
 tex:John W. Tukey, 1959 \citep{Tukey:59}
 
 quo:Theory into Practice.
@@ -664,19 +666,19 @@ tag:science
 
 quo:They consider me to have sharp and penetrating vision because I see them through the mesh of a sieve.
 src:Kahlil Gibran
-tag:science
+tag:science,vision
 
 quo:The journalistic vision sharpens to the point of maximum impact every event, every individual and social configuration; but the honing is uniform.
 src:George Steiner
-tag:science
+tag:science,vision
 
 quo:Some people weave burlap into the fabric of our lives, and some weave gold thread. Both contribute to make the whole picture beautiful and unique.
 src:Anon.
-tag:science
+tag:science,pictures
 
 quo:Time extracts various values from a painter's work. When these values are exhausted the pictures are forgotten, and the more a picture has to give, the greater it is.
 src:Henri Matisse
-tag:science
+tag:science,pictures
 
 quo:God is in the details.
 src:Mies van der Roche
@@ -690,7 +692,7 @@ tag:science
 quo:One has to be able to count if only so that at fifty one doesn't marry a girl of twenty.
 src:Maxim Gorky
 cit:The Zykovs 1914
-tag:science
+tag:science,counts
 
 quo:A man has one hundred dollars and you leave him with two dollars, that's subtraction.
 src:Mae West
@@ -699,12 +701,12 @@ tag:science
 
 quo:In the fields of observation chance favors only the prepared mind.
 src:Louis Pasteur
-tag:science
+tag:science,data
 
 quo:The eye of a human being is a microscope, which makes the world seem bigger than it really is.
 src:Kahlil Gibran
 cit:A Handful of Sand on the Shore
-tag:science
+tag:science,vision
 
 quo:To the man who only has a hammer in the toolkit, every problem looks like a nail.
 src:Abraham Maslow
@@ -725,7 +727,7 @@ tag:science
 
 quo:The great tragedy of science -- the slaying of a beautiful hypothesis by an ugly fact.
 src:Thomas Huxley
-tag:science
+tag:science,nhst
 
 quo:Give a man to fish and he will eat for a day. Teach a man to fish and he will eat for the rest of his life.
 src:Chinese Proverb
@@ -739,17 +741,17 @@ tag:science
 quo:When you have eliminated the impossible, whatever remains, however improbable, must be the truth.
 src:Arthur Conan Doyle
 cit:The Sign of the Four (1890), Ch. 6
-tag:science
+tag:science,probability
 
 quo:If you choose to represent the various parts in life by holes upon a table, of different shapes---some circular, some triangular, some square, some oblong---we shall generally find that the triangular person has got into the square hole, the oblong into the triangular, and a square person has squeezed himself into the round hole.
 src:Sydney Smith
 cit:1769-1845
-tag:science
+tag:science,geometry
 
 quo:I know of scarcely anything so apt to impress the imagination as the wonderful form of cosmic order expressed by the "Law of Frequency of Error." The law would have been personified by the Greeks and deified, if they had known of it. It reigns with serenity and in complete self-effacement, amidst the wildest confusion. The huger the mob, and the greater the apparent anarchy, the more perfect is its sway. It is the supreme law of Unreason. Whenever a large sample of chaotic elements are taken in hand and marshaled in the order of their magnitude, an unsuspected and most beautiful form of regularity proves to have been latent all along.
 src:Sir Francis Galton
 cit:Natural Inheritance London: Macmillan, 1889. Quoted in J. R. Newman (ed.) The World of Mathematics, New York: Simon and Schuster, 1956. p. 1482.
-tag:science
+tag:science,normality
 
 quo:In scientific thought we adopt the simplest theory which will explain all the facts under consideration and enable us to predict new facts of the same kind. The catch in this criterion lies in the world "simplest." It is really an aesthetic canon such as we find implicit in our criticisms of poetry or painting. The layman finds such a law as dx/dt = K(d^2x/dy^2) much less simple than "it oozes," of which it is the mathematical statement. The physicist reverses this judgment, and his statement is certainly the more fruitful of the two, so far as prediction is concerned. It is, however, a statement about something very unfamiliar to the plainman, namely, the rate of change of a rate of change.
 src:John Burdon Sanderson Haldane
@@ -813,39 +815,39 @@ tag:science
 
 quo:The museum spreads its surfaces everywhere, and becomes an untitled collection of generalizations that mobilize the eye.
 src:Robert Smithson
-tag:science
+tag:science,generalizations
 
 quo:In one word, to draw the rule from experience, one must generalize; this is a necessity that imposes itself on the most circumspect observer.
 src:Henri Poincare
 cit:The Value of Science: Essential Writings of Henri Poincare
-tag:science
+tag:science,generalizations
 
 quo:If I have seen further, it is by standing on the shoulders of giants.
 src:Sir Isaac Newton
 cit:Letter to Robert Hooke, Feb. 5, 1676
-tag:science
+tag:science,generalizations
 
 quo:Few intellectual pleasures are more keen than those enjoyed by a person who, while he is occupied in some special inquiry, suddenly perceives that it admits of a wide generalization, and that his results hold good in previously-unsuspected directions.
 src:Francis Galton
 cit:North American Review, 150 419-431 (1890)
-tag:science
+tag:science,generalizations
 
 quo:The elegance of a theorem is directly proportional to the number of ideas you can see in it and inversely proportional to the effort it takes to see them.
 src:George Polya
-tag:science
+tag:science,generalizations
 
 quo:A mathematician, like a painter or a poet, is a master of pattern. The mathematician's patterns, like the painter's or the poet's, must be beautiful; the ideas, like the colors or the words, must fit together in a harmonious way. ... There is no permanent place in the world for ugly mathematics.
 src:G. H. Hardy
-tag:science
+tag:science,generalizations
 
 quo:An idea which can be used once is a trick. If it can be used more than once it becomes a method.
 src:George Polya and Gabor Szego
-tag:science
+tag:science,generalizations
 
 quo:When the time is ripe for certain things, these things appear in different places in the manner of violets coming to light in early spring.
 src:Farkas Bolyai
 cit:To his son Janos Bolyai, urging him to claim the invention of non-Euclidean geometry without delay, quoted in Ming Li and Paul Vitanyi, An introduction to Kolmogorov Complexity and Its Applications, 1st ed., 1993, p. 83.
-tag:science
+tag:science,generalizations
 
 quo:The only new thing in the world is the history you don't know.
 src:Harry S. Truman
@@ -855,11 +857,11 @@ tag:history
 quo:So we beat on, boats against the current, borne back ceaselessly into the past.
 src:F. Scott Fitzgerald
 cit:The Great Gatsby (1925)
-tag:history
+tag:history,time
 
 quo:Euclid alone has looked on beauty bare.
 src:Edna St Vincent Millay
-tag:history
+tag:history,geometry
 
 quo:The past only exists insofar as it is present in the records of today. And what those records are is determined by what questions we ask.  There is no other history than that.
 src:Wheeler
@@ -984,27 +986,35 @@ tag:history,milestones
 
 quo:This paper contains much that is new and much that is true. Unfortunately, that which is true is not new and that which is new is not true.
 src:attributed to Wolfgang Pauli
+tag:reviews
 
 quo:This book fills a much-needed gap.
 src:Attributed to many
+tag:reviews
 
 quo:Russell left the vast darkness of the topic unobscured
 src:Alfred North Whitehead
 cit:Referring to Bertrand Russell
+tag:reviews
 
 quo:Mathematicians have always been rather of a jealous nature, and undoubtedly jealousy was a family characteristic of the Bernoullis.  There is some excuse for mathematicians, for their reputation stands for posterity largely not on what they did, but on what their contemporaries attributed to them.
 src:Karl Pearson
 cit:The History of Statistics in the 17th and 18th Centuries.
+tag:history
 tex:Karl Pearson, "The History of Statistics in the 17th and 18th Centuries" \cite[p. 226]{Pearson:1978}
 
 quo:When choosing between two evils, I always like to take the one I've never tried before.
 src:Mae West, 1941
+tag:ethics
 
 quo:To err is human---but it feels divine!
-src:Mae West
+src:Mae West (paraphrase of Alenander Pope, "To err is human, to forgive devine")
+url:http://www.quotecounterquote.com/2012/08/to-err-is-human-to-forgive-divine.html
+tag:unclassified
 
 quo:Good judgment comes from experience experience comes from bad judgment.
 src:Fred Brooks
+tag:history
 
 quo:One must learn by doing the thing; for though you think you know it, you have no certainty until you try.
 src:Sophocles
@@ -1027,7 +1037,7 @@ tag:data visualization,pictures
 quo:The graphic art depicts magnitudes to the eye. It does more. It compels the seeing of relations. We may portray by simple graphic methods whole masses of intricate routine, the organization of an enterprise, or the plan of a campaign. Graphs serve as storm signals for the manager, statesman, engineer; as potent narratives for the actuary, statist, naturalist; and as forceful engines of research for science, technology and industry. They display results. They disclose new facts and laws. They reveal discoveries as the bud unfolds the flower.
 src:Henry D. Hubbard
 cit:Foreword to Brinton (1939), Graphic Presentation
-tag:data visualization,pictures
+tag:data visualization,pictures,vision
 
 quo:The graphic language is modern. We are learning its alphabet. That it will develop a lexicon and a literature marvelous for its vividness and the variety of application is inevitable. Graphs are dynamic, dramatic. They may epitomize an epoch, each dot a fact, each slope an event, each curve a history. Wherever there are data to record, inferences to draw, or facts to tell, graphs furnish the unrivalled means whose power we are just beginning to realize and to apply.
 src:Henry D. Hubbard
@@ -1112,17 +1122,17 @@ tag:statistics
 quo:DIAGRAMS are of great utility for illustrating certain questions of vital statistics by conveying ideas on the subject through the eye, which cannot be so readily grasped when contained in figures.
 src:Florence Nightingale
 cit:Mortality of the British Army, 1857
-tag:data visualization,pictures
+tag:data visualization,pictures,vision
 
 quo:To give insight to statistical information it occurred to me, that making an appeal to the eye when proportion and magnitude are concerned, is the best and readiest method of conveying a distinct idea.
 src:William Playfair
 cit:The Statistical Breviary (1801), p. 2
-tag:data visualization,pictures
+tag:data visualization,pictures,vision
 
 quo:Regarding numbers and proportions, the best way to catch the imagination is to speak to the eyes.
 src:William Playfair
 cit:Elemens de statistique, Paris, 1802, p. XX.
-tag:data visualization,pictures
+tag:data visualization,pictures,vision
 
 quo:The aim of my carte figurative is to convey promptly to the eye the relation not given quickly by numbers requiring mental calculation.
 src:Charles Joseph Minard
@@ -1131,7 +1141,7 @@ tag:data visualization,pictures
 quo:Information that is imperfectly acquired, is generally as imperfectly retained; and a man who has carefully investigated a printed table, finds, when done, that he has only a very faint and partial idea of what he has read; and that like a figure imprinted on sand, is soon totally erased and defaced.
 src:William Playfair
 cit:The Commercial and Political Atlas (p. 3), 1786
-tag:data visualization,pictures
+tag:data visualization,pictures,tables
 
 quo:Since the aim of exploratory data analysis is to learn what seems to be, it should be no surprise that pictures play a vital role in doing it well.
 src:John W. Tukey
@@ -1143,6 +1153,11 @@ quo:There is nothing better than a picture for making you think of questions you
 src:John W. Tukey & Paul Tukey
 cit:John W. Tukey's Works on Interactive Graphics.  The Annals of Statistics Vol. 30, No. 6 (Dec., 2002), pp. 1629-1639
 url:https://www.jstor.org/stable/1558733
+tag:data visualization,pictures
+
+quo:Functional visualizations are more than innovative statistical analyses and computational algorithms. They must make sense to the user and require a visual language system that uses colour, shape, line, hierarchy and composition to communicate clearly and appropriately, much like the alphabetic and character-based languages used worldwide between humans.
+src:Matt Woolman
+cit:Digital Information Graphics
 tag:data visualization,pictures
 
 quo:A people without the knowledge of their past history, origin and culture is like a tree without roots
@@ -1490,7 +1505,7 @@ quo:A first analysis of experimental results should, I believe, invariably be co
 src:George Box
 cit:Signal to Noise Ratios, Performance Criteria, and Transformations, Technometrics, 30, 1--17
 url:https://doi.org/10.2307/1270311
-tag:data,data analysis
+tag:data,data analysis,eda
 
 quo:When I was in graduate school, a fellow student who was writing his dissertation with the late William G. Cochran passed along some of Cochran's advice: You make a bigger contribution to statistics if you find a workable solution to an important unsolved problem than if you find an optimal solution where a good one already exists.
 src:Fred L. Ramsey and Daniel W. Schafer
@@ -1983,7 +1998,7 @@ tag:statistics,nhst
 quo:Statistics is, or should be, about scientific investigation and how to do it better, but many statisticians believe it is a branch of mathematics.
 src:George Box
 cit:AmStat News, Oct 2000, page 11.
-tag:statistics
+tag:statistics,Box quotes
 
 quo:These days the statistician is often asked such questions as "Are you a Bayesian?" "Are you a frequentist?" "Are you a data analyst?" "Are you a designer of experiments?". I will argue that the appropriate answer to ALL of these questions can be (and preferably should be) "yes", and that we can see why this is so if we consider the scientific context for what statisticians do.
 src:George E.P. Box
@@ -3294,8 +3309,6 @@ src:Sir Ronald A Fisher
 cit:Statistical Methods for Research Workers, 1925
 url:https://archive.org/details/statisticalmethoe2fish
 
-
-
 quo:The primes have tantalized mathematicians since the Greeks, because they appear to be somewhat randomly distributed but not completely so. ... Although the prime numbers are rigidly determined, they somehow feel like experimental data.
 src:Timothy Gowers
 cit:Mathematics: A Very Short Introduction, 2002
@@ -3304,10 +3317,189 @@ tag:random numbers
 quo:Frequentist statistics assumes that there is a 'true' state of the world (e.g. the difference between species in predation probability) which gives rise to a distribution of possible experimental outcomes. The Bayesian framework says instead that the experimental outcome - what we actually saw happen - is the truth, while the parameter values or hypotheses have probability distributions. The Bayesian framework solves many of the conceptual problems of frequentist statistics: answers depend on what we actually saw and not on a range of hypothetical outcomes, and we can legitimately make statements about the probability of different hypotheses or parameter values.
 src:Ben Bolker
 cit:Ecological Models and Data in R, 2007
+tag:bayesian
 
 
 quo:A statistical estimate may be good or bad, accurate or the reverse; but in almost all cases it is likely to be more accurate than a casual observer’s impression, and the nature of things can only be disproved by statistical methods.
 src:Sir Arthur L Bowley
 cit:Elements of Statistics, 1901
 
+
+quo:An extremely odd demand is often set forth but never met, even by those who make it; i.e., that empirical data should be presented without any theoretical context, leaving the reader, the student, to his own devices in judging it. This demand seems odd because it is useless simply to look at something. Every act of looking turns into observation, every act of observation into reflection, every act of reflection into the making of associations; thus it is evident that we theorize every time we look carefully at the world.
+src:Johann Wolfgang von Goethe
+url:https://muse.jhu.edu/article/377567/summary
+
+quo:From the moment we first roll a die in a children's board game, or pick a card (any card), we start to learn what probability is. But even as adults, it is not easy to tell what it is, in the general way.
+src:David Stirzaker
+cit:Probability and Random Variables: A Beginner's Guide, 1999
+
+quo:We cannot really have a perfectly shuffled pack of perfect cards; this 'collection of equally likely hands' is actually a fiction. We create the idea, and then use the rules of arithmetic to calculate the required chances. This is characteristic of all mathematics, which concerns itself only with rules defining the behaviour of entities which are themselves undefined (such as 'numbers' or 'points').
+src:David Stirzaker
+cit:Probability and Random Variables: A Beginner's Guide, 1999
+
+quo:The whole point of probability is to discuss uncertain eventualities before they occur. After this event, things are completely different.
+src:David Stirzaker
+cit:Probability and Random Variables: A Beginner's Guide, 1999
+
+quo:There is no such thing as randomness. No one who could detect every force operating on a pair of dice would ever play dice games, because there would never be any doubt about the outcome. The randomness, such as it is, applies to our ignorance of the possible outcomes. It doesn’t apply to the outcomes themselves. They are 100% determined and are not random in the slightest. Scientists have become so confused by this that they now imagine that things really do happen randomly, i.e. for no reason at all.
+src:Thomas Stark
+cit:God Is Mathematics: The Proofs of the Eternal Existence of Mathematics, 2018
+
+quo:Why is the human need to be in control relevant to a discussion of random patterns? Because if events are random, we are not in control, and if we are in control of events, they are not random. There is therefore a fundamental clash between our need to feel we are in control and our ability to recognize randomness. That clash is one of the principal reasons we misinterpret random events.
+src:Leonard Mlodinow
+cit:The Drunkard’s Walk: How Randomness Rules Our Lives, 2008
+
+quo:An experiment is a failure only when it also fails adequately to test the hypothesis in question, when the data it produces don't prove anything one way or the other.
+src:Robert M Pirsig
+cit:Zen and the Art of Motorcycle Maintenance, 1974
+
+quo:A hypothesis is empirical or scientific only if it can be tested by experience. [...] A hypothesis or theory which cannot be, at least in principle, falsified by empirical observations and experiments does not belong to the realm of science.
+src:Francisco J Ayala
+cit:Biological Evolution: Natural Selection or Random Walk, American Scientist, 1974
+
+quo:...no one believes an hypothesis except its originator but everyone believes an experiment except the experimenter.
+src:William I B Beveridge
+cit:The Art of Scientific Investigation, 1950
+
+quo:The hypothesis is the principal intellectual instrument in research. Its function is to indicate new experiments and observations and it therefore sometimes leads to discoveries even when not correct itself. We must resist the temptation to become too attached to our hypothesis, and strive to judge it objectively and modify it or discard it as soon as contrary evidence is brought to light. Vigilance is needed to prevent our observations and interpretations being biased in favor of the hypothesis. Suppositions can be used without being believed.
+src:William I B Beveridge
+cit:The Art of Scientific Investigation, 1950
+
+quo:Experiments are like cross-questioning a witness who will tell the truth but not the whole truth.
+src:Alan Gregg
+cit:The Furtherance of Medical Research, 1941
+
+quo:A random sequence is a vague notion embodying the idea of a sequence in which each term is unpredictable to the uninitiated and whose digits pass a certain number of tests traditional with statisticians and depending somewhat on the uses to which the sequence is to be put.
+src:Derrick H Lehmer
+cit:1951
+
+quo:All predictions are statistical, but some predictions have such a high probability that one tends to regard them as certain.
+src:Marshall J Walker
+cit:"The Nature of Scientific Thought", 1963
+
+quo:The moment you forecast you know you’re going to be wrong, you just don’t know when and in which direction.
+src:Edgar R Fiedler
+cit:"Across the Board", 1977
+
+quo:Statistics at its best provides methodology for dealing empirically with complicated and uncertain information, in a way that is both useful and scientifically valid.
+src:John M Chambers, 1993
+
+quo:...it does not seem helpful just to say that all models are wrong. The very word model implies simplification and idealization. The idea that complex physical, biological or sociological systems can be exactly described by a few formulae is patently absurd. The construction of idealized representations that capture important stable aspects of such systems is, however, a vital part of general scientific analysis and statistical models, especially substantive ones, do not seem essentially different from other kinds of model.
+src:Sir David Cox
+cit:Comment on ‘Model uncertainty, data mining and statistical inference’, Journal of the Royal Statistical Society, Series A 158, 1995.
+url:https://www.jstor.org/stable/2983440
+
+quo:The science of statistics may be described as exploring, analyzing and summarizing data; designing or choosing appropriate ways of collecting data and extracting information from them; and communicating that information. Statistics also involves constructing and testing models for describing chance phenomena. These models can be used as a basis for making inferences and drawing conclusions and, finally, perhaps for making decisions.
+src:Fergus Daly et al
+cit:Elements of Statistics, 1995
+
+quo:If a man stands with his left foot on a hot stove and his right foot in a refrigerator, the statistician would say that, on the average, he’s comfortable.
+src:Walter Heller
+
+quo:Things are changing. Statisticians now recognize that computer scientists are making novel contributions while computer scientists now recognize the generality of statistical theory and methodology. Clever data mining algorithms are more scalable than statisticians ever thought possible. Formal statistical theory is more pervasive than computer scientists had realized.
+src:Larry A Wasserman
+cit:All of Statistics: A concise course in statistical inference, 2004
+
+quo:One feature [...] which requires much more justification than is usually given, is the setting up of unplausible null hypotheses. For example, a statistician may set out a test to see whether two drugs have exactly the same effect, or whether a regression line is exactly straight. These hypotheses can scarcely be taken literally.
+src:Cedric A B Smith
+cit:Book review of Norman T. J. Bailey: Statistical Methods in Biology, Applied Statistics 9, 1960
+
+quo:In general, it is necessary to have some data on which to calculate probabilities. [...] Statisticians do not evolve probabilities out of their inner consciousness, they merely calculate them.
+src:Leonard C Tippett
+
+quo:Even properly done statistics can’t be trusted. The plethora of available statistical techniques and analyses grants researchers an enormous amount of freedom when analyzing their data, and it is trivially easy to ‘torture the data until it confesses’.
+src:Alex Reinhart
+cit:Statistics Done Wrong: The Woefully Complete Guide, 2015
+
+quo:Using data from the population as it stands is a dangerous substitute for testing.
+src:Frederick Mosteller & Gale Mosteller
+cit:"New Statistical Methods in Public Policy. Part I: Experimentation", Journal of Contemporary Business 8, 1979
+
+quo:The closer that sample-selection procedures approach the gold standard of random selection - for which the definition is that every individual in the population has an equal chance of appearing in the sample - the more we should trust them. If we don’t know whether a sample is random, any statistical measure we conduct may be biased in some unknown way.
+src:Richard E Nisbett
+cit:"Mindware: Tools for Smart Thinking", 2015
+
+quo:A popular misconception holds that the era of Big Data means the end of a need for sampling. In fact, the proliferation of data of varying quality and relevance reinforces the need for sampling as a tool to work efficiently with a variety of data, and minimize bias. Even in a Big Data project, predictive models are typically developed and piloted with samples.
+src:Peter C Bruce & Andrew G Bruce
+cit:"Statistics for Data Scientists: 50 Essential Concepts", 2016
+
+quo:All predictions are statistical, but some predictions have such a high probability that one tends to regard them as certain.
+src:Marshall J Walker
+cit:The Nature of Scientific Thought, 1963
+
+quo:Statistics is a scientific discipline concerned with collection, analysis, and interpretation of data obtained from observation or experiment. The subject has a coherent structure based on the theory of Probability and includes many different procedures which contribute to research and development throughout the whole of Science and Technology.
+src:Egon Pearson
+cit:1936
+
+quo:[Statistics] is both a science and an art. It is a science in that its methods are basically systematic and have general application; and an art in that their successful application depends to a considerable degree on the skill and special experience of the statistician, and on his knowledge of the field of application, e.g. economics.
+src:Leonard H C Tippett
+cit:Statistics, 1943
+
+quo:The fact must be expressed as data, but there is a problem in that the correct data is difficult to catch. So that I always say 'When you see the data, doubt it!' 'When you see the measurement instrument, doubt it!' [...]For example, if the methods such as sampling, measurement, testing and chemical analysis methods were incorrect, data. […] to measure true characteristics and in an unavoidable case, using statistical sensory test and express them as data.
+src:Kaoru Ishikawa
+cit:Annual Quality Congress Transactions, 1981
+
+quo:There is a tendency to mistake data for wisdom, just as there has always been a tendency to confuse logic with values, intelligence with insight. Unobstructed access to facts can produce unlimited good only if it is matched by the desire and ability to find out what they mean and where they lead.
+src:Norman Cousins
+cit:"Human Options : An Autobiographical Notebook", 1981
+
+quo:Data in isolation are meaningless, a collection of numbers. Only in context of a theory do they assume significance...
+src:George Greenstein
+cit:"Frozen Star", 1983
+
+quo:Intuition becomes increasingly valuable in the new information society precisely because there is so much data.
+src:John Naisbitt
+cit:"Re-Inventing the Corporation", 1985
+
+quo:Randomness is a difficult notion for people to accept. When events come in clusters and streaks, people look for explanations and patterns. They refuse to believe that such patterns - which frequently occur in random data - could equally well be derived from tossing a coin. So it is in the stock market as well.
+src:Burton G Malkiel
+cit:"A Random Walk Down Wall Street", 1989
+
+quo:One can be highly functionally numerate without being a mathematician or a quantitative analyst. It is not the mathematical manipulation of numbers (or symbols representing numbers) that is central to the notion of numeracy. Rather, it is the ability to draw correct meaning from a logical argument couched in numbers. When such a logical argument relates to events in our uncertain real world, the element of uncertainty makes it, in fact, a statistical argument.
+src:Eric R Sowey
+cit:The Getting of Wisdom: Educating Statisticians to Enhance Their Clients' Numeracy, The American Statistician 57(2), 2003
+url:https://www.jstor.org/stable/30037239
+
+quo:We would wish ‘numerate’ to imply the possession of two attributes. The first of these is an ‘at-homeness’ with numbers and an ability to make use of mathematical skills which enable an individual to cope with the practical mathematical demands of his everyday life. The second is ability to have some appreciation and understanding of information which is presented in mathematical terms, for instance in graphs, charts or tables or by reference to percentage increase or decrease.
+src:Cockcroft Committee
+cit:Mathematics Counts: A Report into the Teaching of Mathematics in Schools, 1982
+
+quo:In all scientific fields, theory is frequently more important than experimental data. Scientists are generally reluctant to accept the existence of a phenomenon when they do not know how to explain it. On the other hand, they will often accept a theory that is especially plausible before there exists any data to support it.
+src:Richard Morris
+cit:1983
+
+quo:To find out what happens to a system when you interfere with it you have to interfere with it (not just passively observe it).
+src:George E P Box
+cit:"Use and Abuse of Regression", 1966
+
+quo:Since all models are wrong the scientist cannot obtain a ‘correct’ one by excessive elaboration. On the contrary following William of Occam he should seek an economical description of natural phenomena. Just as the ability to devise simple but evocative models is the signature of the great scientist so overelaboration and overparameterization is often the mark of mediocrity.
+src:George E P Box
+cit:Science and Statistics, Journal of the American Statistical Association 71, 1976
+url:https://www.jstor.org/stable/2286841
+
+quo:Since all models are wrong the scientist must be alert to what is importantly wrong. It is inappropriate to be concerned about mice when there are tigers abroad.
+src:George E P Box
+cit:Science and Statistics, Journal of the American Statistical Association 71, 1976
+url:https://www.jstor.org/stable/2286841
+
+quo:The fact that [the model] is an approximation does not necessarily detract from its usefulness because models are approximations. All models are wrong, but some are useful.
+src:George E P Box, 1987
+
+quo:The central limit theorem says that, under conditions almost always satisfied in the real world of experimentation, the distribution of such a linear function of errors will tend to normality as the number of its components becomes large. The tendency to normality occurs almost regardless of the individual distributions of the component errors. An important proviso is that several sources of error must make important contributions to the overall error and that no particular source of error dominate the rest.
+src:George E P Box et al
+cit:"Statistics for Experimenters: Design, discovery, and innovation" 2nd Ed., 2005
+
+quo:The postulate of randomness thus resolves itself into the question, 'of what population is this a random sample?' which must frequently be asked by every practical statistician.
+src:Ronald Fisher
+cit:"On the Mathematical Foundation of Theoretical Statistics", Philosophical Transactions of the Royal Society of London Vol. A222, 1922
+url:https://doi.org/10.1098/rsta.1922.0009
+
+quo:Statistics has been likened to a telescope. The latter enables one to see further and to make clear objects which were diminished or obscured by distance. The former enables one to discern structure and relationships which were distorted by other factors or obscured by random variation.
+src:David J Hand
+cit:"The Role of Statistics in Psychiatry", Psychological Medicine Vol. 15, 1985
+url:https://doi.org/10.1017/S0033291700031354
+
+quo:When looking at the end result of any statistical analysis, one must be very cautious not to over interpret the data. Care must be taken to know the size of the sample, and to be certain the method for gathering information is consistent with other samples gathered. […] No one should ever base conclusions without knowing the size of the sample and how random a sample it was. But all too often such data is not mentioned when the statistics are given - perhaps it is overlooked or even intentionally omitted.
+src:Theoni Pappas
+cit:"More Joy of Mathematics: Exploring mathematical insights & concepts", 1994
 
