@@ -8,3 +8,5 @@ ANNOUNCE
 ^\.travis\.yml$
 ^CRAN-SUBMISSION$
 ^data-raw
+^old-code
+^old_code
