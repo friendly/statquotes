@@ -41,6 +41,7 @@ Whatever the data, we can try to gain understanding by straightening or by flatt
 succeed in doing one or both, we almost always see more clearly what is going on.
 --- John Tukey
 
+# quote_tags() # list all tags
 R> statquote(tag="numeracy") # choose a random quote with a specific tag
 
 To be numerate means to be competent, confident, and comfortable with one’s judgements on whether
