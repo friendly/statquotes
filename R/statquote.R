@@ -8,53 +8,39 @@
 
 #' Display a randomly chosen statistical quote.
 #'
-#' When used without any arguments, one quote is returned at random.
+#' @param ind Integer or character.
+#' If 'ind' is missing, a random quote is chosen from all quotations.
+#' If 'ind' is specified and is an integer, return the ind^th quote.
+#' If 'ind' is specified and is character, use it as the 'pattern'.
 #'
-#' When 'source' is specified, the quotes are first narrowed to those matching
-#' the specified source (person).
-#'
-#' When 'tag' is specified, the quotes are first narrowed to those matching
-#' the specified tag.
-#'
-#' When 'pattern' is specified, the quotes are first narrowed to to those which
+#' @param pattern Character string. Quotes are first subset to to those which
 #' match the pattern in the quote text.
 #'
-#' When 'ind' is specified and is an integer, return the ind^th quote.
+#' @param tag Character string. Quotes are first subset to those matching the
+#' specified tag.
 #'
-#' When 'ind' is specified and is character, use it as the 'pattern'.
+#' @param source Character string. Quotes are first subset to those matching
+#' the specified source (person).
 #'
-#' @param ind Integer vector of quote ID numbers.
-#' If missing, a random value is sampled from all quotations.
-#'
-#' @param pattern A character string, used to select a subset of the quotes
-#' based on the text of the quote.
-#'
-#' @param tag A character string, used to select a subset of the quotes based
-#' on the tags.
-#'
-#' @param source A character string, used to select a subset of the quotes based
-#' on the source for the quote.
-#'
-#' @param topic Deprecated. Only kept for backward compatability. Use 'tag' instead.
+#' @param topic Deprecated. Use 'tag' instead. Only kept for backward compatability.
 
 #' @return
-#' A character vector containing one randomly selected quote
-#' from the included data set. It is of class \code{statquote} for
-#' which an S3 print method will be invoked.
+#' A character vector containing one quote.
+#' It is of class \code{statquote} for which an S3 print method will be invoked.
 #'
 #' @export
 #' @importFrom stringr str_detect
 #' @seealso \code{\link{quote_tags}}, \code{\link{search_quotes}}, \code{\link{quotes}},
 #' Inspired by: \code{\link[fortunes:fortunes]{fortune}}
 #' @examples
-#' statquote(10)
 #' set.seed(1234)
 #' statquote()
-#' statquote("magic")
-#' statquote(pattern="magic")
+#' statquote(10)
+#' statquote("boggled")
+#' statquote(pattern="boggled")
 #' statquote(source="Yates")
 #' statquote(tag="anova")
-#' print.data.frame(statquote(301)) # All information, including URL
+#' print.data.frame(statquote(302)) # All information
 #'
 statquote <- function(ind=NULL, pattern=NULL, tag=NULL, source=NULL, topic=NULL) {
 
@@ -143,18 +129,48 @@ as.data.frame.statquote <- function(x, row.names = NULL,
   x
 }
 
-#' List the tags in the quotes database
+#' List the tags of the quotes database
+#'
+#' List the tags of the quotes database
+#'
+#' @param table Logical. If \code{table=TRUE}, return a one-way frequency table
+#' of quotes for each tag; otherwise return the sorted vector of unique tags.
+#'
+#' @return Returns either a vector of tags in the quotes database or a one-way
+#' frequency table of the number of quotes for each tag.
+#'
 #' @export
+#'
 #' @examples
 #' quote_tags()
+#' quote_tags(table=TRUE)
 #'
-quote_tags <- function() {
+#' library(ggplot2)
+#' qt <- quote_tags(table=TRUE)
+#' qtdf <-as.data.frame(qt)
+#' # bar plot of frequencies
+#' ggplot2::ggplot(data=qtdf, aes(x=Freq, y=tags)) +
+#'     geom_bar(stat = "identity")
+#'
+#' # Sort tags by frequency
+#' qtdf |>
+#'   dplyr::mutate(tags = forcats::fct_reorder(tags, Freq)) |>
+#'   ggplot2::ggplot(aes(x=Freq, y=tags)) +
+#'   geom_bar(stat = "identity")
+#'
+quote_tags <- function (table = FALSE) {
   data <- .get.sq()
   tags <- data[, "tags"]
-  tags <- unique( unlist( strsplit(tags, ",") ) )
-  sort( tags[!is.na(tags)] )
+  tags <- unlist(strsplit(tags, ","))
+  tabs <- tags[!is.na(tags)]
+  if (table) {
+    table(tags)
+  }
+  else {
+    tags <- unique(tags)
+    sort(tags)
+  }
 }
-
 
 #' Function coerces statquote objects to strings suitable for LaTeX
 #'

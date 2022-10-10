@@ -13,57 +13,88 @@
 # statquotes v. 0.3.0 <img src="man/figures/statquotes-logo.png" align="right" height="200px" />
 **Quotes on statistics, data visualization and science**
 
-This package displays a randomly chosen quotation from a database consisting of quotes about topics related to statistics, data visualization and science.  The original idea came from the Unix `fortune` program that first appeared in Version 7 Unix. The `fortune` package is an R-centric equivalent.  `statquotes` is dedicated to quotations on the substance of data analysis and visualization.
+This package displays a randomly chosen quotation about topics related to statistics, data visualization and science.  The original idea came from the Unix `fortune` program. The `fortune` package is focused on quotes about R while the `statquotes` package is focused on quotes about data analysis and visualization.
 
-The data base is a collection of quotations assembled over the years from various
-sources.  It began life as a simple text file and was later converted to
-`LaTeX` using the [`epigraph` package](https://ctan.org/pkg/epigraph?lang=en). 
-
-In this R package, each call to `statquote()` displays a randomly selected quotation.  The selection can be restricted to those whose `tags` field matches the `tag` argument, or whose `source` field matches the `source=` argument.
+In this R package, each call to `statquote()` displays a randomly selected quotation.  The quotes can be restricted to those whose `tags` field matches the `tag` argument, or whose `source` field matches the `source=` argument.
 
 ### Examples
 
-#### Searching and printing
-
-The default print method gives a plain text format for the console, in the style of `fortune()`.
-
 ```{r}
-> set.seed(761)
 > statquote()
 
 The best thing about being a statistician is that you get to play in everyone's backyard. 
 --- John W. Tukey 
 
-> statquote(tag="science")
+R> statquote("boggle") # or statquote(pattern="boggle")
 
-Some people weave burlap into the fabric of our lives, and some weave gold thread. Both contribute 
-to make the whole picture beautiful and unique. 
---- Anon. 
+The statistician has no magic touch by which he may come in at the stage of
+tabulation and make something of nothing. Neither will his advice, however wise in
+the early stages of a study, ensure successful execution and conclusion. Many a
+study, launched on the ways of elegant statistical design, later boggled in
+execution, ends up with results to which the theory of probability can contribute
+little.
+--- W. Edwards Deming
 
-> search_quotes("mail")
+R> statquote(source="Tukey") # Choose a random quote from a specific author
 
-Have you ever seen voice mail?
---- The Hackers Test
+Whatever the data, we can try to gain understanding by straightening or by flattening. When we
+succeed in doing one or both, we almost always see more clearly what is going on.
+--- John Tukey
+
+# quote_tags() # list all tags
+R> statquote(tag="numeracy") # choose a random quote with a specific tag
+
+To be numerate means to be competent, confident, and comfortable with one’s judgements on whether
+to use mathematics in a particular situation and if so, what mathematics to use, how to do it,
+what degree of accuracy is appropriate, and what the answer means in relation to the context.
+--- Diana Coben
+
+# To find all quotes with a particular word:
+> search_quotes("lsmeans")
+
 ```
 
-#### Other output formats
+### Output formats
 
-`as.markdown()` formats quotes for `markdown`
+Quotes have class `statquote`. The `print.statquote()` method gives a plain text format for the console.
+```
+R> statquote("eulogy")
+
+One is so much less than two. [John Tukey's eulogy of his wife.]
+--- John Tukey
+```
+
+Use `as.markdown()` for markdown-formatted quotes:
+
 ```{r}
-as.markdown(statquote())
+R> cat(as.markdown(statquote("eulogy")))
+> *One is so much less than two. [John Tukey's eulogy of his wife.]* -- John Tukey
 ```
-> *The devil is in the details.* -- George Schultz
 
-`as.latex()` formats quotes for LaTeX, designed for the [epigraph](https://ctan.org/pkg/epigraph) package
+Use `as.latex()` for Latex-formatted quotes (for the [epigraph](https://ctan.org/pkg/epigraph) package):
 
 ```{r}
-cat(as.latex(statquote()))
-\epigraph{The future is uncertain but the end is always near.}{Jim Morrison}
+R> cat(as.latex(statquote("eulogy")))
+\epigraph{One is so much less than two. [John Tukey's eulogy of his wife.]}{John Tukey}
 ```
+
+Use `as.data.frame()` to see unformatted quotes:
+```{r}
+R> as.data.frame(statquote("eulogy"))
+    qid                                                             text     source
+411 411 One is so much less than two. [John Tukey's eulogy of his wife.] John Tukey
+                                                                                                        cite
+411 The life and professional contributions of John W. Tukey, The Annals of Statistics, 2001, Vol 30, p. 46.
+     url       tags  tex
+411 <NA> statistics <NA>
+```
+
+
 #### Quote clouds
 
-`quote_cloud()` generates word clouds based upon a search of the quotes database.
+`quote_cloud()` generates a word cloud based upon a search of the quotes database.
 ```{r}
+#quote_cloud("bayes")
 quote_cloud()
 ```
 
@@ -76,21 +107,27 @@ The released CRAN version can be installed via:
 ```
 install.packages("statquotes")
 ```
-The development version (if any) can be installed from this repo on Github via:
+
+The development version can be installed via:
 ```
 devtools::install_github("friendly/statquotes")
 ```
 
+Please report any problems or bugs at https://github.com/friendly/statquotes/issues.
+
 #### Quote of the day
 
-To have `statquotes` give you an inspirational quote of the day each time you start R, include the following line in your
-`.Rprofile` file.
-
+To have `statquotes` give you an inspirational quote of the day each time you start R, edit your `.Rprofile` file:
+```
+# Edit .Rprofile in home directory
+file.edit(file.path("~", ".Rprofile"))
+```
+Add this line to the bottom of `.Rprofile`, then save and close `.Rprofile`.
 ```
 if(interactive()) statquotes::statquote()
 ```
 
-### Author
+### Authors
 
 Michael Friendly,
 Kevin Wright,

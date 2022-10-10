@@ -13,19 +13,21 @@ statquote(ind = NULL, pattern = NULL, tag = NULL, source = NULL, topic = NULL)
 \method{as.data.frame}{statquote}(x, row.names = NULL, optional = FALSE, ...)
 }
 \arguments{
-\item{ind}{Integer vector of quote ID numbers.
-If missing, a random value is sampled from all quotations.}
+\item{ind}{Integer or character.
+If 'ind' is missing, a random quote is chosen from all quotations.
+If 'ind' is specified and is an integer, return the ind^th quote.
+If 'ind' is specified and is character, use it as the 'pattern'.}
 
-\item{pattern}{A character string, used to select a subset of the quotes
-based on the text of the quote.}
+\item{pattern}{Character string. Quotes are first subset to to those which
+match the pattern in the quote text.}
 
-\item{tag}{A character string, used to select a subset of the quotes based
-on the tags.}
+\item{tag}{Character string. Quotes are first subset to those matching the
+specified tag.}
 
-\item{source}{A character string, used to select a subset of the quotes based
-on the source for the quote.}
+\item{source}{Character string. Quotes are first subset to those matching
+the specified source (person).}
 
-\item{topic}{Deprecated. Only kept for backward compatability. Use 'tag' instead.}
+\item{topic}{Deprecated. Use 'tag' instead. Only kept for backward compatability.}
 
 \item{x}{object of class \code{'statquote'}}
 
@@ -38,36 +40,21 @@ on the source for the quote.}
 \item{optional}{see \code{\link{as.data.frame}}}
 }
 \value{
-A character vector containing one randomly selected quote
-from the included data set. It is of class \code{statquote} for
-which an S3 print method will be invoked.
+A character vector containing one quote.
+It is of class \code{statquote} for which an S3 print method will be invoked.
 }
 \description{
-When used without any arguments, one quote is returned at random.
-}
-\details{
-When 'source' is specified, the quotes are first narrowed to those matching
-the specified source (person).
-
-When 'tag' is specified, the quotes are first narrowed to those matching
-the specified tag.
-
-When 'pattern' is specified, the quotes are first narrowed to to those which
-match the pattern in the quote text.
-
-When 'ind' is specified and is an integer, return the ind^th quote.
-
-When 'ind' is specified and is character, use it as the 'pattern'.
+Display a randomly chosen statistical quote.
 }
 \examples{
-statquote(10)
 set.seed(1234)
 statquote()
-statquote("magic")
-statquote(pattern="magic")
+statquote(10)
+statquote("boggled")
+statquote(pattern="boggled")
 statquote(source="Yates")
 statquote(tag="anova")
-print.data.frame(statquote(301)) # All information, including URL
+print.data.frame(statquote(302)) # All information
 
 }
 \seealso{

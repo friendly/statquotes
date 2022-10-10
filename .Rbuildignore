@@ -3,7 +3,11 @@
 ^tex
 ^.*\.png$
 README.md
-ANNOUNCE
 ^cran-comments\.md$
 ^\.travis\.yml$
 ^CRAN-SUBMISSION$
+^data-raw
+^old-code
+^old_code
+^CONTRIBUTING.md
+
