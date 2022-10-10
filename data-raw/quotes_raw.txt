@@ -3106,11 +3106,6 @@ cit:Was this in your statistics textbook? III. Design and analysis. 1988. Experi
 url:https://doi.org/10.1017/S001447970010016X
 tag:nhst
 
-
-quo:The statistician has no magical touch by which he may come in at the stage of tabulation and make something of nothing. Neither will his advice, however wise in the early stages of a study, ensure successful execution and conclusion. Many a study, launched on the ways of elegant statistical design, later boggled in execution, ends up with results to which the theory of probability can contribute little.
-src:W. Edwards Deming
-cit:The World of W. Edwards Deming, 2nd ed. Cecelia S. Kilian. p. 104
-
 quo:Prediction is very difficult, especially of the future.
 src:Nield Henrick David Bohr
 
