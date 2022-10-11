@@ -16,13 +16,19 @@
 This package displays a randomly chosen quotation about topics related to statistics, data visualization and science, or can be used to search for quotes within the statquotes database for key term tags or authors.
 
 The original idea came from the Unix [`fortune`](https://en.wikipedia.org/wiki/Fortune_(Unix)) 
-program. The R [`fortune`](https://cran.r-project.org/package=fortunes) 
-package is focused on quotes about R, largely gleaned from the [R-help](https://stat.ethz.ch/mailman/listinfo/r-help) mailing list,
+program, used to display a "fortune" at startup and contained some bits of wisdom, together with
+obscure jokes about computer science and computer programming. A related service was 
+the internet `QOTD` protocol for [Quote Of The Day](https://en.wikipedia.org/wiki/QOTD).
+
+The R [`fortunes`](https://cran.r-project.org/package=fortunes) 
+package is focused on quotes about R, largely gleaned from the [R-help](https://stat.ethz.ch/mailman/listinfo/r-help) mailing list, and
 collected in this [vignette](https://cran.r-project.org/web/packages/fortunes/vignettes/fortunes.pdf).
-The `statquotes` package is focused on quotes about data analysis, visualization and science, designed
+
+The `statquotes` package is similar in spirit, but
+focused on quotes about data analysis, visualization and science, designed
 as a tool for finding quotes when writing about these topics.
 
-In this R package, each call to `statquote()` displays a randomly selected quotation.  The quotes can be restricted to those whose `tags` field matches the `tag` argument, or whose `source` field matches the `source=` argument.
+In this R package, each call to `statquote()` displays a randomly selected quotation, or, via `search_quotes()` restricted to those whose `tags` field matches the `tag` argument, or whose `source` field matches the `source=` argument. Quotes can be displayed in the R console, or formatted as markdown or LaTeX (for use with the [epigraph](https://ctan.org/pkg/epigraph) package).
 
 ### Examples
 
