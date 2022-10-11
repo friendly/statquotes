@@ -1,8 +1,12 @@
 # Version 0.3.1 (2022-10-10)
 
+- This is a major release of the `statquotes` package, now using tags to classify quotations rather than
+the previous hierarchical system of topics and subtopics.
+- Many more quotations have been added and the facilities for searching and formatting have been expanded.
 - Merged all `dev-tags` work into `master`
 - Prepare to release
 - Update README.md
+
 
 # Version 0.3.0 (2022-06-13)
 
