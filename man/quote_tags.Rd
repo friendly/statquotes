@@ -15,7 +15,8 @@ Returns either a vector of tags in the quotes database or a one-way
 frequency table of the number of quotes for each tag.
 }
 \description{
-List the tags of the quotes database
+This function finds the unique tags of items in the  quotes database and returns them
+as vector or a one-way  table giving their frequencies.
 }
 \examples{
 quote_tags()

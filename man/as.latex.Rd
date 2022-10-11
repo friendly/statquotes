@@ -2,7 +2,7 @@
 % Please edit documentation in R/statquote.R
 \name{as.latex}
 \alias{as.latex}
-\title{Function coerces statquote objects to strings suitable for LaTeX}
+\title{Coerces statquote objects to strings suitable for LaTeX}
 \usage{
 as.latex(quotes, form = "\\\\epigraph{\%s}{\%s}\\n\\n")
 }
@@ -26,4 +26,7 @@ format via the \code{\link{sprintf}} function.
 ll <- search_quotes("Tukey")
 as.latex(ll)
 
+}
+\author{
+Phil Chalmers
 }

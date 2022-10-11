@@ -10,6 +10,7 @@
 # RStudio files
 .Rproj.user/
 .DS_Store
+statquotes.Rproj
 inst/doc
 ^vignettes/*.html
 ^vignettes/*.R

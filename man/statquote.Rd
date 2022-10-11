@@ -18,22 +18,22 @@ If 'ind' is missing, a random quote is chosen from all quotations.
 If 'ind' is specified and is an integer, return the ind^th quote.
 If 'ind' is specified and is character, use it as the 'pattern'.}
 
-\item{pattern}{Character string. Quotes are first subset to to those which
+\item{pattern}{Character string. Quotes are subset to to those which
 match the pattern in the quote text.}
 
-\item{tag}{Character string. Quotes are first subset to those matching the
+\item{tag}{Character string. Quotes are subset to those matching the
 specified tag.}
 
-\item{source}{Character string. Quotes are first subset to those matching
+\item{source}{Character string. Quotes are subset to those matching
 the specified source (person).}
 
 \item{topic}{Deprecated. Use 'tag' instead. Only kept for backward compatability.}
 
 \item{x}{object of class \code{'statquote'}}
 
-\item{width}{Optional column width parameter}
+\item{width}{Optional print width parameter}
 
-\item{...}{Other optional arguments}
+\item{...}{Other optional arguments, unused here}
 
 \item{row.names}{see \code{\link{as.data.frame}}}
 
@@ -41,7 +41,8 @@ the specified source (person).}
 }
 \value{
 A character vector containing one quote.
-It is of class \code{statquote} for which an S3 print method will be invoked.
+It is of class \code{statquote} for which an S3 print method will be invoked, and for which
+other methods are available.
 }
 \description{
 Display a randomly chosen statistical quote.
@@ -59,5 +60,5 @@ print.data.frame(statquote(302)) # All information
 }
 \seealso{
 \code{\link{quote_tags}}, \code{\link{search_quotes}}, \code{\link{quotes}},
-Inspired by: \code{\link[fortunes:fortunes]{fortune}}
+Inspired by: \code{\link[fortunes]{fortune}}
 }
