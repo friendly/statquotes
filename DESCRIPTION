@@ -1,16 +1,17 @@
 Package: statquotes
 Title: Quotes on Statistics, Data Visualization and Science
-Version: 0.3.0
-Date: 2022-03-03
+Version: 0.3.1
+Date: 2022-10-10
 Authors@R: c(person("Michael", "Friendly", 
                     email = "friendly@yorku.ca", 
-                    role = c("aut", "cre")),
-             person("Phil", "Chalmers", 
-                    email = "rphilip.chalmers@gmail.com", 
-                    role = c("aut")),
+                    role = c("aut", "cre"),
+                    comment = c(ORCID = "0000-0002-3237-0941")),
              person("Kevin", "Wright", 
                     email = "kw.stat@gmail.com", 
                     comment=c(ORCID = "0000-0002-0617-8673"),
+                    role = c("aut")),
+             person("Phil", "Chalmers", 
+                    email = "rphilip.chalmers@gmail.com", 
                     role = c("aut")),
              person("Matthew", "Sigal", 
                     email = "matthewsigal@gmail.com", 
