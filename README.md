@@ -10,10 +10,17 @@
 <!-- badges: end -->
 
 
-# statquotes v. 0.3.0 <img src="man/figures/statquotes-logo.png" align="right" height="200px" />
+# statquotes v. 0.3.1 <img src="man/figures/statquotes-logo.png" align="right" height="200px" />
 **Quotes on statistics, data visualization and science**
 
-This package displays a randomly chosen quotation about topics related to statistics, data visualization and science.  The original idea came from the Unix `fortune` program. The `fortune` package is focused on quotes about R while the `statquotes` package is focused on quotes about data analysis and visualization.
+This package displays a randomly chosen quotation about topics related to statistics, data visualization and science, or can be used to search for quotes within the statquotes database for key term tags or authors.
+
+The original idea came from the Unix [`fortune`](https://en.wikipedia.org/wiki/Fortune_(Unix)) 
+program. The R [`fortune`](https://cran.r-project.org/package=fortunes) 
+package is focused on quotes about R, largely gleaned from the [R-help](https://stat.ethz.ch/mailman/listinfo/r-help) mailing list,
+collected in this [vignette](https://cran.r-project.org/web/packages/fortunes/vignettes/fortunes.pdf).
+The `statquotes` package is focused on quotes about data analysis, visualization and science, designed
+as a tool for finding quotes when writing about these topics.
 
 In this R package, each call to `statquote()` displays a randomly selected quotation.  The quotes can be restricted to those whose `tags` field matches the `tag` argument, or whose `source` field matches the `source=` argument.
 
