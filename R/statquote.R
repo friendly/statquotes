@@ -13,25 +13,26 @@
 #' If 'ind' is specified and is an integer, return the ind^th quote.
 #' If 'ind' is specified and is character, use it as the 'pattern'.
 #'
-#' @param pattern Character string. Quotes are first subset to to those which
+#' @param pattern Character string. Quotes are subset to to those which
 #' match the pattern in the quote text.
 #'
-#' @param tag Character string. Quotes are first subset to those matching the
+#' @param tag Character string. Quotes are subset to those matching the
 #' specified tag.
 #'
-#' @param source Character string. Quotes are first subset to those matching
+#' @param source Character string. Quotes are subset to those matching
 #' the specified source (person).
 #'
 #' @param topic Deprecated. Use 'tag' instead. Only kept for backward compatability.
 
 #' @return
 #' A character vector containing one quote.
-#' It is of class \code{statquote} for which an S3 print method will be invoked.
+#' It is of class \code{statquote} for which an S3 print method will be invoked, and for which
+#' other methods are available.
 #'
 #' @export
 #' @importFrom stringr str_detect
 #' @seealso \code{\link{quote_tags}}, \code{\link{search_quotes}}, \code{\link{quotes}},
-#' Inspired by: \code{\link[fortunes:fortunes]{fortune}}
+#' Inspired by: \code{\link[fortunes]{fortune}}
 #' @examples
 #' set.seed(1234)
 #' statquote()
@@ -47,7 +48,7 @@ statquote <- function(ind=NULL, pattern=NULL, tag=NULL, source=NULL, topic=NULL)
   dat <- .get.sq()
 
   if(!missing(topic)) {
-    message("Please use `tag` instead of `topic`")
+    message("`topic` is deprecated. Please use `tag` instead of `topic`. Using your `topic` as a `tag`.")
     tag=topic
   }
 
@@ -58,7 +59,7 @@ statquote <- function(ind=NULL, pattern=NULL, tag=NULL, source=NULL, topic=NULL)
   # ind is a number
   if(!missing(ind) && isInteger(ind)) {
     if (min(ind)<1 | max(ind) > nrow(dat))
-      stop("ind must be between 1 and ", nrow(dat))
+      stop("Numerical `ind` must be between 1 and ", nrow(dat))
     dat <- dat[ind,]
   }
   # ind is string, use it as 'pattern'
@@ -95,9 +96,9 @@ statquote <- function(ind=NULL, pattern=NULL, tag=NULL, source=NULL, topic=NULL)
 }
 
 #' @rdname statquote
-#' @param x object of class \code{'statquote'}
-#' @param width Optional column width parameter
-#' @param ... Other optional arguments
+#' @param x     object of class \code{'statquote'}
+#' @param width Optional print width parameter
+#' @param ...   Other optional arguments, unused here
 #' @export
 #'
 print.statquote <- function(x, width = NULL, ...) {
@@ -131,7 +132,8 @@ as.data.frame.statquote <- function(x, row.names = NULL,
 
 #' List the tags of the quotes database
 #'
-#' List the tags of the quotes database
+#' This function finds the unique tags of items in the  quotes database and returns them
+#' as vector or a one-way  table giving their frequencies.
 #'
 #' @param table Logical. If \code{table=TRUE}, return a one-way frequency table
 #' of quotes for each tag; otherwise return the sorted vector of unique tags.
@@ -172,7 +174,7 @@ quote_tags <- function (table = FALSE) {
   }
 }
 
-#' Function coerces statquote objects to strings suitable for LaTeX
+#' Coerces statquote objects to strings suitable for LaTeX
 #'
 #' This function coerces statquote objects to strings suitable for rendering in LaTeX.
 #' Quotes and (potential LaTeX) sources are placed within suitable "\code{epigraph}" output
@@ -187,6 +189,7 @@ quote_tags <- function (table = FALSE) {
 #' @return character vector of formatted LaTeX quotes
 #'
 #' @export
+#' @author Phil Chalmers
 #' @examples
 #'
 #' ll <- search_quotes("Tukey")

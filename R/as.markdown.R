@@ -3,7 +3,7 @@
 #'
 #' This function coerces statquote objects to strings suitable for rendering in markdown.
 #' Quotes and sources are placed within output
-#' format via the \code{\link{sprintf}} function.
+#' formatted via the \code{\link{sprintf}} function.
 #'
 #' @param quotes an object of class \code{statquote} returned from functions such as
 #'   \code{\link{search_quotes}} or \code{\link{statquote}}
@@ -20,7 +20,7 @@
 #' as.markdown(ll)
 #'
 as.markdown <- function(quotes, form = "> *%s* -- %s\n\n"){
-  topics <- unique(quotes$topic)
+#  topics <- unique(quotes$topic)
   lines <- sprintf(form, quotes$text, quotes$source)
   lines
 }
