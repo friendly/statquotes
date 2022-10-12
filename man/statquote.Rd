@@ -61,4 +61,6 @@ print.data.frame(statquote(302)) # All information
 \seealso{
 \code{\link{quote_tags}}, \code{\link{search_quotes}}, \code{\link{quotes}},
 Inspired by: \code{\link[fortunes]{fortune}}
+
+\code{\link{as.latex}}, \code{\link{as.markdown}}
 }

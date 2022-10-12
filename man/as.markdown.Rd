@@ -27,3 +27,6 @@ ll <- search_quotes("Tukey")
 as.markdown(ll)
 
 }
+\seealso{
+\code{\link{as.data.frame.statquote}}, \code{\link{as.latex}}
+}

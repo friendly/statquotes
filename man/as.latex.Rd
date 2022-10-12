@@ -27,6 +27,9 @@ ll <- search_quotes("Tukey")
 as.latex(ll)
 
 }
+\seealso{
+\code{\link{as.data.frame.statquote}}, \code{\link{as.markdown}}
+}
 \author{
 Phil Chalmers
 }

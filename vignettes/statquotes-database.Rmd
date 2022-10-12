@@ -22,7 +22,7 @@ library(statquotes)
 
 The quotes are stored in the `data-raw/quotes_raw.txt` file. The script `data-raw/convert_quotes_to_rda.R` can be used to read these quotes and save them to `data/quotes.rda`, which is the main data file used in the package.
 
-The `quotes_raw.txt` file uses the following format for each quotation.  Lines beginning with "%" are comments and ignored.  Other lines contain a "key:value" pair. The key is used to identify the right column when building the `quotes` dataframe:
+The `quotes_raw.txt` file uses the following format for each quotation.  Lines beginning with "%" are comments and ignored.  Other lines contain a "key:value" pair. The key is used to identify the right column when building the `quotes` data.frame:
 
 ```
 % Comment

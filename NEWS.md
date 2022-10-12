@@ -6,6 +6,7 @@ the previous hierarchical system of topics and subtopics.
 - Merged all `dev-tags` work into `master`
 - Prepare to release
 - Update README.md
+- Added `as.tagged()` to reproduce input format
 
 
 # Version 0.3.0 (2022-06-13)
