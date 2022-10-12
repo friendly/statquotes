@@ -30,6 +30,21 @@ as a tool for finding quotes when writing about these topics.
 
 In this R package, each call to `statquote()` displays a randomly selected quotation, or, via `search_quotes()` restricted to those whose `tags` field matches the `tag` argument, or whose `source` field matches the `source=` argument. Quotes can be displayed in the R console, or formatted as markdown or LaTeX (for use with the [epigraph](https://ctan.org/pkg/epigraph) package).
 
+### Installation
+
+The released CRAN version can be installed via:
+
+```
+install.packages("statquotes")
+```
+
+The development version can be installed via:
+```
+devtools::install_github("friendly/statquotes")
+```
+
+Please report any problems or bugs at https://github.com/friendly/statquotes/issues.
+
 ### Examples
 
 ```{r}
@@ -102,6 +117,25 @@ R> as.data.frame(statquote("eulogy"))
 411 <NA> statistics <NA>
 ```
 
+#### Tags
+
+One or more keyword `tags` are used to classify quotes in the quotes database.
+These provide another means of searching. The code below produces a bar plot
+of tags, sorted by frequency.
+
+```{r}
+library(ggplot2)
+qt <- quote_tags(table=TRUE)
+qtdf <-as.data.frame(qt)
+# Sort tags by frequency
+qtdf |>
+  dplyr::mutate(tags = forcats::fct_reorder(tags, Freq)) |>
+  ggplot2::ggplot(aes(x=Freq, y=tags)) +
+  geom_bar(stat = "identity")
+
+```
+
+<img src="man/figures/tags-bar-sorted.png">
 
 #### Quote clouds
 
@@ -112,21 +146,6 @@ quote_cloud()
 ```
 
 <img src="man/figures/quotecloud.png">
-
-### Installation
-
-The released CRAN version can be installed via:
-
-```
-install.packages("statquotes")
-```
-
-The development version can be installed via:
-```
-devtools::install_github("friendly/statquotes")
-```
-
-Please report any problems or bugs at https://github.com/friendly/statquotes/issues.
 
 #### Quote of the day
 
