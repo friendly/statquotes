@@ -122,6 +122,7 @@ print.statquote <- function(x, width = NULL, ...) {
 #' @rdname statquote
 #' @param row.names see \code{\link{as.data.frame}}
 #' @param optional see \code{\link{as.data.frame}}
+#' @seealso \code{\link{as.latex}}, \code{\link{as.markdown}}
 #' @export
 #'
 as.data.frame.statquote <- function(x, row.names = NULL,
@@ -190,6 +191,7 @@ quote_tags <- function (table = FALSE) {
 #'
 #' @export
 #' @author Phil Chalmers
+#' @seealso \code{\link{as.data.frame.statquote}}, \code{\link{as.markdown}}
 #' @examples
 #'
 #' ll <- search_quotes("Tukey")

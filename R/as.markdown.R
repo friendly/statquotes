@@ -14,6 +14,7 @@
 #' @return character vector of formatted markdown quotes
 #'
 #' @export
+#' @seealso \code{\link{as.data.frame.statquote}}, \code{\link{as.latex}}
 #' @examples
 #'
 #' ll <- search_quotes("Tukey")
