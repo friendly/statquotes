@@ -282,7 +282,7 @@ tag:data visualization,design
 
 quo:Mankind is not a circle with a single center but an ellipse with two focal points of which facts are one and ideas the other.
 src:Victor Hugo
-tag:data visualization,ellipses
+tag:data visualization,ellipses,geometry
 
 quo:So, Fabricius, I already have this: that the most true path of the planet [Mars] is an ellipse, which Durer also calls an oval, or certainly so close to an ellipse that the difference is insensible.
 src:Johannes Kepler, 1605
@@ -2922,12 +2922,14 @@ tag:nhst
 quo: The scientist must always give due thought to the statistical analysis, but must never let statistical analysis be a substitute for thinking!
 src:Marks Nester
 cit:A Myopic View and History of Hypothesis Testing.
+tag:science,significance,statistics
 
 
 quo:The purpose of this paper is severalfold. First, we attempt to convince the reader that at its worst, the results of statistical hypothesis testing can be seriously misleading, and at its best it offers no informational advantage over its alternatives; in fact it offers less.
 src:D. Jones and N. Matloff
 cit:Statistical hypothesis testing in biology: a contradiction in terms. 1986. Journal of Economic Entomology 79: 1156-1160.
 url:https://doi.org/10.1093/jee/79.5.1156
+tag:nhst,significance
 
 
 quo:In view of our long-term strategy of improving our theories, our statistical tactics can be greatly improved by shifting emphasis away from over-all hypothesis testing in the direction of statistical estimation. This always holds true when we are concerned with the actual size of one or more differences rather than simply in the existence of differences.
@@ -2941,21 +2943,21 @@ quo:The null hypothesis of no difference has been judged to be no longer a sound
 src:Cherry Ann Clark
 cit:Hypothesis testing in relation to statistical methodology. 1963. Review of Educational Research 33: 455-473.
 url:https://doi.org/10.2307/1169648
-tag:nhst
+tag:nhst,significance
 
 
 quo:There is nothing wrong with the t-test; it has merely been used to give an answer that was never asked for. The Student t-test answers the question: 'Is there any real difference between the means of the measurement by the old and the new method, or could the apparent difference have arisen from random variation?' We already know that there is a real difference, so the question is pointless. The question we should have answered is: 'How big is the difference between the two sets of measurements, and how precisely have we determined it?'
 src:L. Sayn-Wittgenstein
 cit:Statistics - salvation or slavery? 1965. Forestry Chronicle 41 : 103-105.
 url:https://doi.org/10.5558/tfc41103-1
-tag:nhst
+tag:nhst,significance
 
 
 quo:Somehow there has developed a widespread belief that statistical analysis is legitimate only if it includes significance testing. This belief leads to, and is fostered by, numerous introductory statistics texts that are little more than catalogues of techniques for performing significance tests.
 src:D. G. Altman
 cit:Discussion of Dr Chatfield's paper.  1985. Journal of the Royal Statistical Society A 148 : 242.
 url:https://doi.org/10.1111/j.2397-2327.1985.tb01681.x
-tag:nhst
+tag:nhst,significance
 
 
 quo:Testing the equality of 2 true treatment means is ridiculous. They will always be different, at least beyond the hundredth decimal place.
@@ -2968,13 +2970,13 @@ quo:It is surely apparent that anyone who wants to obtain a significant differen
 src:A. Binder
 cit:Further considerations on testing the null hypothesis and the strategy and tactics of investigating theoretical models. 1963. Psychological Review 70 : 107-115.
 url:https://psycnet.apa.org/doi/10.1037/h0039657
-tag:nhst
+tag:nhst,significance,sampling
 
 
 quo:As Confucius might have said, if the difference isn't different enough to make a difference, what's the difference?
 src:V. Chew
 cit:Testing differences among means: correct interpretation and some alternatives. 1980. HortScience 15(4) : 467-470.
-tag:nhst
+tag:nhst,significance
 
 
 quo:Some hesitation about the unthinking use of significance tests is a sign of statistical maturity.
@@ -2985,19 +2987,20 @@ tag:nhst
 quo:It is usually wise to give a confidence interval for the parameter in which you are interested.
 src:D. S. Moore and G. P. McCabe
 cit:Introduction to the Practice of Statistics. 1989. W. H. Freeman and Company (New York).
+tag:significance
 
 
 quo:Unfortunately, when applied in a cook-book fashion, such significance tests do not extract the maximum amount of information available from the data.  Worse still, misleading conclusions can be drawn.  There are at least three problems: (1) a conclusion that there is a significant difference can often be reached merely by collecting enough samples; (2) a statistically significant result is not necessarily practically significant; and (3) reports of the presence or absence of significant differences for multiple tests are not comparable unless identical sample sizes are used.
 src:G. B. McBride, J. C. Loftis, & N. C. Adkins
 cit:What do significance tests really tell us about the environment?. 1993. Environmental Management 17, 423-432 (1993).
 url:https://doi.org/10.1007/BF02394658
-tag:nhst
+tag:nhst,significance,sampling
 
 
 quo:In many experiments it seems obvious that the different treatments must have produced some difference, however small, in effect. Thus the hypothesis that there is no difference is unrealistic: the real problem is to obtain estimates of the sizes of the differences.
 src:William G. Cochran, and George M. Cox
 cit:Experimental Designs. 2nd ed. 1957. John Wiley & Sons, Inc.
-tag:nhst
+tag:nhst,significance
 
 
 quo:I suggest to you that Sir Ronald has befuddled us, mesmerized us, and led us down the primrose path. I believe that the almost universal reliance on merely refuting the null hypothesis as the standard method for corroborating substantive theories in the soft areas is a terrible mistake, is basically unsound, poor scientific strategy, and one of the worst things that ever happened in the history of psychology.
@@ -3006,13 +3009,14 @@ cit:Theoretical risks and tabular asterisks: Sir Karl, Sir Ronald, and the slow 
 url:https://psycnet.apa.org/doi/10.1037/0022-006X.46.4.806
 tag:nhst
 
-quo:probably all theories are false in the eyes of God.
+quo:Probably all theories are false in the eyes of God.
 src:P. E. Meehl
 cit:Theoretical risks and tabular asterisks: Sir Karl, Sir Ronald, and the slow progress of soft psychology. 1978. Journal of Consulting and Clinical Psychology 46 : 806-834.
 url:https://psycnet.apa.org/doi/10.1037/0022-006X.46.4.806
+tag:science,significance
 
 
-quo:the grotesque emphasis on significance tests in statistics courses of all kinds ... is taught to people, who if they come away with no other notion, will remember that statistics is about tests for significant differences. ... The apparatus on which their statistics course has been constructed is often worse than irrelevant, it is misleading about what is important in examining data and making inferences.
+quo:The grotesque emphasis on significance tests in statistics courses of all kinds ... is taught to people, who if they come away with no other notion, will remember that statistics is about tests for significant differences. ... The apparatus on which their statistics course has been constructed is often worse than irrelevant, it is misleading about what is important in examining data and making inferences.
 src:John A. Nelder
 cit:Discussion of Dr Chatfield's paper. 1985. Journal of the Royal Statistical Society A 148 : 238.
 url:https://doi.org/10.1111/j.2397-2327.1985.tb01681.x
@@ -3028,6 +3032,7 @@ tag:nhst
 quo:if experimenters realized how little is the chance of their experiments discovering what they are intended to discover, then a very substantial proportion of the experiments that are now in progress would have been abandoned in favour of an increase in size of the remaining experiments, judged more important.
 src:Jerzy Neyman
 cit:The use of the concept of power in agricultural experimentation. 1958. Journal of the Indian Society of Agricultural Statistics 9 : 9-17.
+tag:power
 
 quo:What was the probability (power) of detecting interactions ... in the experiment performed? ... The probability in question is frequently relatively low ... in cases of this kind the fact that the test failed to detect the existence of interactions does not mean very much. In fact, they may exist and have gone undetected.
 src:Jerzy Neyman
@@ -3038,19 +3043,19 @@ quo:In addition to important technical errors, fundamental errors in the philoso
 src:Denton E. Morrison & Ramon E Henkel
 cit:Significance tests reconsidered. 1969. The American Sociologist 4 : 131-140.
 url:https://www.jstor.org/stable/27701482
-tag:nhst
+tag:nhst,science,significance
 
 quo:Researchers have long recognized the unfortunate connotations and consequences of the term 'significance,' and we propose it is time for a change.
 src:Denton E. Morrison & Ramon E Henkel
 cit:Significance tests reconsidered. 1969. The American Sociologist 4 : 131-140.
 url:https://www.jstor.org/stable/27701482
-tag:nhst
+tag:nhst,significance
 
 quo:there is evidence that significance tests have been a genuine block to achieving ... knowledge.
 src:Denton E. Morrison & Ramon E Henkel
 cit:Significance tests reconsidered. 1969. The American Sociologist 4 : 131-140.
 url:https://www.jstor.org/stable/27701482
-tag:nhst
+tag:nhst,significance,knowledge
 
 
 quo:The twin assumptions of normality of distribution and homogeneity of variance are not ever exactly fulfilled in practice, and often they do not even hold to a good approximation.
@@ -3062,7 +3067,7 @@ quo:Statisticians classically asked the wrong question-and were willing to answe
 src:John W. Tukey
 cit:The philosophy of multiple comparisons. 1991. Statistical Science 6 : 100-116.
 url:https://www.jstor.org/stable/2245714
-tag:nhst
+tag:nhst,statistics,statistician
 
 quo:Empirical knowledge is always fuzzy! And theoretical knowledge, like all the laws of physics, as of today's date, is always wrong-in detail, though possibly providing some very good approximations indeed.
 src:John W. Tukey
@@ -3074,32 +3079,33 @@ quo:scientists care about whether a result is statistically significant, but the
 src:Deirdre N. McCloskey
 cit:The insignificance of statistical significance. 1995. Scientific American 272(4) : 104-105.
 url:https://www.scientificamerican.com/article/the-insignificance-of-statistical-s/
-tag:nhst
+tag:nhst,science,significance
 
 
 quo:The statistician should not always remain in his or her own office: not only is relevant information more likely to be on hand in the experimenter's department, but in the longer term the statistician stands to gain immeasurably in understanding of agricultural problems by often visiting other departments and their laboratories and fields.
 src:David J. Finney
 cit:Was this in your statistics textbook? I. Agricultural Scientist and Statistician. 1988. Experimental Agriculture 24 : 153-161.
 url:https://doi.org/10.1017/S0014479700015891
+tag:statistician
 
 
-quo:rigid dependence upon significance tests in single experiments is to be deplored.
+quo:Rigid dependence upon significance tests in single experiments is to be deplored.
 src:David J. Finney
 cit:Was this in your statistics textbook? III. Design and analysis. 1988. Experimental Agriculture 24 : 421-432.
 url:https://doi.org/10.1017/S001447970010016X
-tag:nhst
+tag:nhst,significance
 
 quo:A null hypothesis that yields under two different treatments have identical expectations is scarcely very plausible, and its rejection by a significance test is more dependent upon the size of an experiment than upon its untruth.
 src:David J. Finney
 cit:Was this in your statistics textbook? III. Design and analysis. 1988. Experimental Agriculture 24 : 421-432.
 url:https://doi.org/10.1017/S001447970010016X
-tag:nhst
+tag:nhst,significance
 
 quo:I have failed to find a single instance in which the Duncan test was helpful, and I doubt whether any of the alternative tests [multiple range significance tests] would please me better.
 src:David J. Finney
 cit:Was this in your statistics textbook? III. Design and analysis. 1988. Experimental Agriculture 24 : 421-432.
 url:https://doi.org/10.1017/S001447970010016X
-tag:nhst
+tag:nhst,significance
 
 quo:Is it ever worth basing analysis and interpretation of an experiment on the inherently implausible null hypothesis that two (or more) recognizably distinct cultivars have identical yield capacities?
 src:David J. Finney
@@ -3108,15 +3114,17 @@ url:https://doi.org/10.1017/S001447970010016X
 tag:nhst
 
 quo:Prediction is very difficult, especially of the future.
-src:Nield Henrick David Bohr
+src:Niels Henrick David Bohr
+tag:time,science
 
 quo:Statistics are no substitute for judgement.
 src:Henry Clay, Sr.
+tag:statistics
 
 quo:Standard errors of variance components are dumb because the distribution of a variance component is not symmetric, but Chi-squared and highly skewed.
 src:Doug Bates
 cit:Presentation at useR 2007
-tag:skewness
+tag:skewness,data models
 
 
 quo:All data are wrong, but some are useful.
@@ -3128,6 +3136,7 @@ quo:A lot of data science and analytics is just counting things and labeling the
 src:Hamdan Azhar
 cit:2022 New York R Conference
 url:https://youtu.be/W5EkEuaa_Mk
+tag:science,counts,data analysis
 
 quo:An observation is judged significant, if it would rarely have been produced, in the absence of a real cause of the kind we are seeking. It is a common practice to judge a result significant, if it is of such a magnitude that it would have been produced by chance not more frequently than once in twenty trials. This is an arbitrary, but convenient, level of significance for the practical investigator, but it does not mean that he allows himself to be deceived once in every twenty experiments. The test of significance only tells him what to ignore, namely all experiments in which significant results are not obtained. He should only claim that a phenomenon is experimentally demonstrable when he knows how to design an experiment so that it will rarely fail to give a significant result. Consequently, isolated significant results which he does not know how to reproduce are left in suspense pending further investigation.
 src:Ronald Fisher
@@ -3439,6 +3448,7 @@ tag:data,sampling
 quo:There is a tendency to mistake data for wisdom, just as there has always been a tendency to confuse logic with values, intelligence with insight. Unobstructed access to facts can produce unlimited good only if it is matched by the desire and ability to find out what they mean and where they lead.
 src:Norman Cousins
 cit:"Human Options : An Autobiographical Notebook", 1981
+tag:data,knowledge
 
 quo:Data in isolation are meaningless, a collection of numbers. Only in context of a theory do they assume significance...
 src:George Greenstein
