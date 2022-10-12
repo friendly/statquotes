@@ -2,9 +2,12 @@
 % Please edit documentation in R/as.markdown.R
 \name{as.markdown}
 \alias{as.markdown}
+\alias{as.tagged}
 \title{Function to transform statquote objects to strings suitable for markdown}
 \usage{
 as.markdown(quotes, form = "> *\%s* -- \%s\\n\\n")
+
+as.tagged(quotes, qid = TRUE)
 }
 \arguments{
 \item{quotes}{an object of class \code{statquote} returned from functions such as
@@ -12,21 +15,41 @@ as.markdown(quotes, form = "> *\%s* -- \%s\\n\\n")
 
 \item{form}{structure of the markdown output for the text (first argument)
 and source (second argument) passed to \code{\link{sprintf}}}
+
+\item{qid}{logical. Should the quote id number `qid` be included in the output?}
 }
 \value{
 character vector of formatted markdown quotes
+
+A character vector of lines
 }
 \description{
 This function coerces statquote objects to strings suitable for rendering in markdown.
 Quotes and sources are placed within output
 formatted via the \code{\link{sprintf}} function.
+
+This function formats a statquote object to the tagged \code{key:value} format used for
+maintaining the statquotes database.  The key names are:
+\preformatted{
+  quo:This is a quotation.
+  src:Person or persons who said or wrote the quote.
+  cit:Citation for the original quote.
+  url:URL where the quote can be found (such as journal articles).
+  tag:Comma-separated tags to categorize the quote.
+  tex:TeX-formatted citation
+}
 }
 \examples{
 
 ll <- search_quotes("Tukey")
 as.markdown(ll)
 
+qitems <- search_quotes("Yates")
+cat(as.tagged(qitems[1:5,]))
+
 }
 \seealso{
 \code{\link{as.data.frame.statquote}}, \code{\link{as.latex}}
+
+\code{\link{as.data.frame.statquote}}, \code{\link{as.latex}}, \code{\link{as.markdown}}
 }

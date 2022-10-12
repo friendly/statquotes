@@ -45,12 +45,14 @@ as.markdown <- function(quotes, form = "> *%s* -- %s\n\n"){
 #' @param qid logical. Should the quote id number `qid` be included in the output?
 #'
 #' @return A character vector of lines
+#' @rdname as.markdown
 #' @export
 #'
 #' @seealso \code{\link{as.data.frame.statquote}}, \code{\link{as.latex}}, \code{\link{as.markdown}}
 #' @examples
 #' qitems <- search_quotes("Yates")
 #' cat(as.tagged(qitems[1:5,]))
+#'
 as.tagged <- function(quotes, qid=TRUE) {
   stopifnot('statquote' %in% class(quotes))
   fields <- c("qid", "text", "source", "cite", "url", "tags", "tex")
