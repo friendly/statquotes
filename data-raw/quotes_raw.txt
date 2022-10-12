@@ -989,7 +989,8 @@ src:attributed to Wolfgang Pauli
 tag:reviews
 
 quo:This book fills a much-needed gap.
-src:Attributed to many
+src:Attributed to Moses Hadas
+url:http://www.quotationspage.com/quotes/Moses_Hadas/
 tag:reviews
 
 quo:Russell left the vast darkness of the topic unobscured
@@ -1008,9 +1009,9 @@ src:Mae West, 1941
 tag:ethics
 
 quo:To err is human---but it feels divine!
-src:Mae West (paraphrase of Alenander Pope, "To err is human, to forgive devine")
+src:Mae West (paraphrase of Alexander Pope, "To err is human, to forgive devine")
 url:http://www.quotecounterquote.com/2012/08/to-err-is-human-to-forgive-divine.html
-tag:unclassified
+tag:data,averages
 
 quo:Good judgment comes from experience experience comes from bad judgment.
 src:Fred Brooks
@@ -3433,6 +3434,7 @@ cit:Statistics, 1943
 quo:The fact must be expressed as data, but there is a problem in that the correct data is difficult to catch. So that I always say 'When you see the data, doubt it!' 'When you see the measurement instrument, doubt it!' [...]For example, if the methods such as sampling, measurement, testing and chemical analysis methods were incorrect, data. […] to measure true characteristics and in an unavoidable case, using statistical sensory test and express them as data.
 src:Kaoru Ishikawa
 cit:Annual Quality Congress Transactions, 1981
+tag:data,sampling
 
 quo:There is a tendency to mistake data for wisdom, just as there has always been a tendency to confuse logic with values, intelligence with insight. Unobstructed access to facts can produce unlimited good only if it is matched by the desire and ability to find out what they mean and where they lead.
 src:Norman Cousins
@@ -3441,14 +3443,17 @@ cit:"Human Options : An Autobiographical Notebook", 1981
 quo:Data in isolation are meaningless, a collection of numbers. Only in context of a theory do they assume significance...
 src:George Greenstein
 cit:"Frozen Star", 1983
+tag:data
 
 quo:Intuition becomes increasingly valuable in the new information society precisely because there is so much data.
 src:John Naisbitt
 cit:"Re-Inventing the Corporation", 1985
+tag:data
 
 quo:Randomness is a difficult notion for people to accept. When events come in clusters and streaks, people look for explanations and patterns. They refuse to believe that such patterns - which frequently occur in random data - could equally well be derived from tossing a coin. So it is in the stock market as well.
 src:Burton G Malkiel
 cit:"A Random Walk Down Wall Street", 1989
+tag:random numbers
 
 quo:One can be highly functionally numerate without being a mathematician or a quantitative analyst. It is not the mathematical manipulation of numbers (or symbols representing numbers) that is central to the notion of numeracy. Rather, it is the ability to draw correct meaning from a logical argument couched in numbers. When such a logical argument relates to events in our uncertain real world, the element of uncertainty makes it, in fact, a statistical argument.
 src:Eric R Sowey
@@ -3458,43 +3463,95 @@ url:https://www.jstor.org/stable/30037239
 quo:We would wish ‘numerate’ to imply the possession of two attributes. The first of these is an ‘at-homeness’ with numbers and an ability to make use of mathematical skills which enable an individual to cope with the practical mathematical demands of his everyday life. The second is ability to have some appreciation and understanding of information which is presented in mathematical terms, for instance in graphs, charts or tables or by reference to percentage increase or decrease.
 src:Cockcroft Committee
 cit:Mathematics Counts: A Report into the Teaching of Mathematics in Schools, 1982
+tag:numeracy,data visualization
 
 quo:In all scientific fields, theory is frequently more important than experimental data. Scientists are generally reluctant to accept the existence of a phenomenon when they do not know how to explain it. On the other hand, they will often accept a theory that is especially plausible before there exists any data to support it.
 src:Richard Morris
 cit:1983
+tag:science,data
 
 quo:To find out what happens to a system when you interfere with it you have to interfere with it (not just passively observe it).
 src:George E P Box
 cit:"Use and Abuse of Regression", 1966
+tag:Box quotes
 
 quo:Since all models are wrong the scientist cannot obtain a ‘correct’ one by excessive elaboration. On the contrary following William of Occam he should seek an economical description of natural phenomena. Just as the ability to devise simple but evocative models is the signature of the great scientist so overelaboration and overparameterization is often the mark of mediocrity.
 src:George E P Box
 cit:Science and Statistics, Journal of the American Statistical Association 71, 1976
 url:https://www.jstor.org/stable/2286841
+tag:Box quotes,data models
 
 quo:Since all models are wrong the scientist must be alert to what is importantly wrong. It is inappropriate to be concerned about mice when there are tigers abroad.
 src:George E P Box
 cit:Science and Statistics, Journal of the American Statistical Association 71, 1976
 url:https://www.jstor.org/stable/2286841
+tag:data models,science,Box quotes
 
 quo:The fact that [the model] is an approximation does not necessarily detract from its usefulness because models are approximations. All models are wrong, but some are useful.
 src:George E P Box, 1987
+tag:data models,science,Box quotes
 
 quo:The central limit theorem says that, under conditions almost always satisfied in the real world of experimentation, the distribution of such a linear function of errors will tend to normality as the number of its components becomes large. The tendency to normality occurs almost regardless of the individual distributions of the component errors. An important proviso is that several sources of error must make important contributions to the overall error and that no particular source of error dominate the rest.
 src:George E P Box et al
 cit:"Statistics for Experimenters: Design, discovery, and innovation" 2nd Ed., 2005
+tag:normality
 
 quo:The postulate of randomness thus resolves itself into the question, 'of what population is this a random sample?' which must frequently be asked by every practical statistician.
 src:Ronald Fisher
 cit:"On the Mathematical Foundation of Theoretical Statistics", Philosophical Transactions of the Royal Society of London Vol. A222, 1922
+tag:sampling
 url:https://doi.org/10.1098/rsta.1922.0009
+tag:random numbers,sampling,statistics
 
 quo:Statistics has been likened to a telescope. The latter enables one to see further and to make clear objects which were diminished or obscured by distance. The former enables one to discern structure and relationships which were distorted by other factors or obscured by random variation.
 src:David J Hand
 cit:"The Role of Statistics in Psychiatry", Psychological Medicine Vol. 15, 1985
 url:https://doi.org/10.1017/S0033291700031354
+tag:statistics
 
 quo:When looking at the end result of any statistical analysis, one must be very cautious not to over interpret the data. Care must be taken to know the size of the sample, and to be certain the method for gathering information is consistent with other samples gathered. […] No one should ever base conclusions without knowing the size of the sample and how random a sample it was. But all too often such data is not mentioned when the statistics are given - perhaps it is overlooked or even intentionally omitted.
 src:Theoni Pappas
 cit:"More Joy of Mathematics: Exploring mathematical insights & concepts", 1994
+tag:sampling
+
+quo: BREAKING: The Supreme Court just ruled 6-3 that according to the US constitution logistic regression IS machine learning.
+src: Kareem Carr, @Kareem_Carr, Twitter 7/1/21
+url: https://twitter.com/kareem_carr/status/1542907504111374337
+tag: data models
+
+quo: In questions of science the authority of a thousand is not worth the humble reasoning of a single individual
+src: Galileo Galilei, 1632
+cit: Dialog concerning the Two Chief World Systems
+tag: science
+
+quo: Science is organized knowledge. Wisdom is organized life.
+src: Immanuel Kant
+url: https://www.brainyquote.com/quotes/immanuel_kant_163227
+tag: science,knowledge
+
+
+quo: When you steal from one author, it's plagiarism; if you steal from many, it's research.
+src: Wilson Mizner (American playwright and entrepreneur)
+url: https://www.brainyquote.com/quotes/wilson_mizner_109330
+tag: research,ethics
+
+quo: You can't always get what you want, but if you try, sometimes, well you just might find, you get what you need.
+src: Mick Jagger
+tag: data,science
+
+quo: He who gives up code safety for code speed deserves neither.
+src: Hadley Wickham
+url: https://twitter.com/hadleywickham/status/504368538874703872
+tag: computing
+
+quo: Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+src: Martin Fowler
+cit: Refactoring: Improving the Design of Existing Code
+tag: computing
+
+quo: Thank you for sending me a copy of your book. I'll waste no time reading it.
+src: Moses Hadas
+url: http://www.quotationspage.com/quotes/Moses_Hadas/
+tag: reviews
+
 
