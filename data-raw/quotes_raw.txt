@@ -1359,65 +1359,65 @@ tag:probability
 quo:Things which ought to be expected can seem quite extraordinary if you've got the wrong model.
 src:David Hand
 cit:Significance, 2014, 11, 36-39.
-tag:data,data models
+tag:data,models
 
 quo:In many applications, the data analyst has a dilemma: Should an effect be classified as [fixed] and a BLUE obtained, or as [random] and a BLUP obtained?  The traditional distinction between fixed and random effects is not helpful; it may, in fact, lead the data analyst to choose the less efficient route.
 src:Walter Stroup and D K Mulitze
 cit:Nearest Neighbor Adjusted Best Linear Unbiased Prediction, 1991, The American Statistician, 45, 194--200.
 url:https://doi.org/10.2307/2684289
-tag:data,data models
+tag:data,models
 
 quo:What should be the distribution of random effects in a mixed model?  I think Gaussian is just fine, unless you are trying to write a journal paper.
 src:Terry Therneau
 cit:Speaking at useR 2007.
-tag:data,data models
+tag:data,models
 
 quo:Competent scientists do not believe their own models or theories, but rather treat them as convenient fictions. ...The issue to a scientist is not whether a model is true, but rather whether there is another whose predictive power is enough better to justify movement from today's fiction to a new one.
 src:Steve Vardeman
 cit:Comment, 1987, Journal of the American Statistical Association, 82 : 130-131.
-tag:data,data models
+tag:data,models
 
 quo:If you just rely on one model, you tend to amputate reality to make it fit your model.
 src:David Brooks
-tag:data,data models
+tag:data,models
 
 quo:Statistical models are sometimes misunderstood in epidemiology. Statistical models for data are never true. The question whether a model is true is irrelevant. A more appropriate question is whether we obtain the correct scientific conclusion if we pretend that the process under study behaves according to a particular statistical model.
 src:Scott Zeger
 cit:Statistical reasoning in epidemiology, American Journal of Epidemiology, 1991
 url:https://doi.org/10.1093/oxfordjournals.aje.a116008
-tag:data,data models
+tag:data,models
 
 quo:It is not always convenient to remember that the right model for a population can fit a sample of data worse than a wrong model -- even a wrong model with fewer parameters. We cannot rely on statistical diagnostics to save us, especially with small samples. We must think about what our models mean, regardless of fit, or we will promulgate nonsense.
 src:Leland Wilkinson
 cit:The Grammar of Graphics, p. 335.
-tag:data,data models
+tag:data,models
 
 quo:Fitting models to data is a bit like designing shirts to fit people. If you fit a shirt too closely to one particular person, it will fit other people poorly. Likewise, a model that fits a particular data set too well might not fit other data sets well.
 src:Rahul Parsa
 cit:Speaking to the Iowa SAS User's Group
-tag:data,data models
+tag:data,models
 
 quo:You might say that there's no reason to bother with model checking since all models are false anyway. I do believe that all models are false, but for me the purpose of model checking is not to accept or reject a model, but to reveal aspects of the data that are not captured by the fitted model.
 src:Andrew Gelman
 cit:Some thoughts on the sociology of statistics, 2007.
-tag:data,data models
+tag:data,models
 
 quo:When evaluating a model, at least two broad standards are relevant. One is whether the model is consistent with the data. The other is whether the model is consistent with the 'real world.'
 src:Kenneth Bollen
 cit:Structural Equations with Latent Variable
-tag:data,data models
+tag:data,models
 
 quo:The point of a model is to get useful information about the relation between the response and predictor variables. Interpretability is a way of getting information. But a model does not have to be simple to provide reliable information about the relation between predictor and response variables; neither does it have to be a data model. The goal is not interpretability, but accurate information.
 src:Leo Breiman
 cit:Statistical Modeling: The Two Cultures, Statistical Science, Vol 16, p. 210.
 url:https://doi.org/10.1214/ss/1009213726
-tag:data,data models
+tag:data,models
 
-quo:The goals in statistics are to use data to predict and to get information about the underlying data mechanism. Nowhere is it written on a stone tablet what kind of model should be used to solve problems involving data. To make my position clear, I am not against data models per se. In some situations they are the most appropriate way to solve the problem. But the emphasis needs to be on the problem and on the data. Unfortunately, our field has a vested interest in data models, come hell or high water. For instance, see Dempster's (1998) paper on modelling. His position on the 1990 Census adjustment controversy is particularly interesting. He admits that he doesn't know much about the data or the details, but argues that the problem can be solved by a strong dose of modelling. That more modeling can make error-ridden data accurate seems highly unlikely to me.
+quo:The goals in statistics are to use data to predict and to get information about the underlying data mechanism. Nowhere is it written on a stone tablet what kind of model should be used to solve problems involving data. To make my position clear, I am not against models per se. In some situations they are the most appropriate way to solve the problem. But the emphasis needs to be on the problem and on the data. Unfortunately, our field has a vested interest in models, come hell or high water. For instance, see Dempster's (1998) paper on modelling. His position on the 1990 Census adjustment controversy is particularly interesting. He admits that he doesn't know much about the data or the details, but argues that the problem can be solved by a strong dose of modelling. That more modeling can make error-ridden data accurate seems highly unlikely to me.
 src:Leo Breiman
 cit:Statistical Modeling: The Two Cultures, Statistical Science, Vol 16, p. 214.
 url:https://doi.org/10.1214/ss/1009213726
-tag:data,data models
+tag:data,models
 
 quo:Exploratory data analysis can never be the whole story, but nothing else can serve as the foundation stone--as the first step.
 src:John Tukey
@@ -3124,7 +3124,7 @@ tag:statistics
 quo:Standard errors of variance components are dumb because the distribution of a variance component is not symmetric, but Chi-squared and highly skewed.
 src:Doug Bates
 cit:Presentation at useR 2007
-tag:skewness,data models
+tag:skewness,models
 
 
 quo:All data are wrong, but some are useful.
@@ -3489,17 +3489,17 @@ quo:Since all models are wrong the scientist cannot obtain a ‘correct’ one b
 src:George E P Box
 cit:Science and Statistics, Journal of the American Statistical Association 71, 1976
 url:https://www.jstor.org/stable/2286841
-tag:Box quotes,data models
+tag:Box quotes,models
 
 quo:Since all models are wrong the scientist must be alert to what is importantly wrong. It is inappropriate to be concerned about mice when there are tigers abroad.
 src:George E P Box
 cit:Science and Statistics, Journal of the American Statistical Association 71, 1976
 url:https://www.jstor.org/stable/2286841
-tag:data models,science,Box quotes
+tag:models,science,Box quotes
 
 quo:The fact that [the model] is an approximation does not necessarily detract from its usefulness because models are approximations. All models are wrong, but some are useful.
 src:George E P Box, 1987
-tag:data models,science,Box quotes
+tag:models,science,Box quotes
 
 quo:The central limit theorem says that, under conditions almost always satisfied in the real world of experimentation, the distribution of such a linear function of errors will tend to normality as the number of its components becomes large. The tendency to normality occurs almost regardless of the individual distributions of the component errors. An important proviso is that several sources of error must make important contributions to the overall error and that no particular source of error dominate the rest.
 src:George E P Box et al
@@ -3527,7 +3527,7 @@ tag:sampling
 quo: BREAKING: The Supreme Court just ruled 6-3 that according to the US constitution logistic regression IS machine learning.
 src: Kareem Carr, @Kareem_Carr, Twitter 7/1/21
 url: https://twitter.com/kareem_carr/status/1542907504111374337
-tag: data models
+tag: models
 
 quo: In questions of science the authority of a thousand is not worth the humble reasoning of a single individual
 src: Galileo Galilei, 1632

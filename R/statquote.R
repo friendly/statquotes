@@ -165,7 +165,8 @@ quote_tags <- function (table = FALSE) {
   data <- .get.sq()
   tags <- data[, "tags"]
   tags <- unlist(strsplit(tags, ","))
-  tabs <- tags[!is.na(tags)]
+  tags <- trimws(tags)
+  tags <- tags[!is.na(tags)]
   if (table) {
     table(tags)
   }

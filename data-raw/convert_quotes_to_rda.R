@@ -53,7 +53,8 @@ readQuotes <- function(file) {
 
     } else if(str_detect(linei, "^tag:")){
       dat[qid,"tags"] <- gsub("^tag:\\s*", "", linei)
-      # TODO: remove trailing spaces in each tag
+      # remove trailing spaces in each tag
+      # dat[qid,"tags"] <- gsub(dat[qid,"tags"], "\\s+,", ",")
 
     } else if(str_detect(linei, "^tex:")){
       dat[qid,"tex"] <- gsub("^tex:\\s*", "", linei)
