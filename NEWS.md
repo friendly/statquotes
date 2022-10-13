@@ -9,6 +9,7 @@ the previous hierarchical system of "topics" and "subtopics".
 - Added `as.tagged()` to reproduce input format
 - Allow spaces following keys in quotes text file
 - Added a few more quotes
+- `print.statquote()` and `as.markdown()` gain a `cite=` argument, to include the citation in the result.  The default is currently `FALSE` for backward compatibility
 
 
 # Version 0.3.0 (2022-06-13)

@@ -9,13 +9,13 @@
 #' Invoke it after the function has been read in
 #' TODO: make the function a separate R file, with options to write the new quotes database.
 
-library(dplyr)
-library(stringr)
 
 #rawquotes <- readLines( file.path(packdir, "data-raw/quotes_raw.txt") )
 
 readQuotes <- function(file) {
 
+  library(dplyr)
+  library(stringr)
   rawquotes <- readLines(file)
 
   # Initialize dataframe

@@ -8,7 +8,7 @@
 \usage{
 statquote(ind = NULL, pattern = NULL, tag = NULL, source = NULL, topic = NULL)
 
-\method{print}{statquote}(x, width = NULL, ...)
+\method{print}{statquote}(x, cite = FALSE, width = NULL, ...)
 
 \method{as.data.frame}{statquote}(x, row.names = NULL, optional = FALSE, ...)
 }
@@ -30,6 +30,8 @@ the specified source (person).}
 \item{topic}{Deprecated. Use 'tag' instead. Only kept for backward compatability.}
 
 \item{x}{object of class \code{'statquote'}}
+
+\item{cite}{logical; should the \code{cite} field be printed?}
 
 \item{width}{Optional print width parameter}
 

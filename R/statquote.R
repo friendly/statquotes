@@ -97,20 +97,24 @@ statquote <- function(ind=NULL, pattern=NULL, tag=NULL, source=NULL, topic=NULL)
 
 #' @rdname statquote
 #' @param x     object of class \code{'statquote'}
+#' @param cite  logical; should the \code{cite} field be printed?
 #' @param width Optional print width parameter
 #' @param ...   Other optional arguments, unused here
 #' @export
 #'
-print.statquote <- function(x, width = NULL, ...) {
+print.statquote <- function(x, cite = FALSE, width = NULL, ...) {
     if (is.null(width)) width <- 0.9 * getOption("width")
     if (width < 10) stop("'width' must be greater than 10", call.=FALSE)
-    x <- x[ ,c('text', 'source')]
+    x <- x[ ,c('text', 'source', 'cite')]
     if (nrow(x) > 1){
       for(i in 1L:nrow(x)){
-        print(x[i,], width=width, ...)
+        print(x[i,], cite=cite, width=width, ...)
       }
     } else {
       x$source <- paste("---", x$source)
+      if(isTRUE(cite) && !is.na(x$cite)) {
+        x$source <- paste0(x$source, ", ", x$cite)
+      }
       out <- c(paste0("\n", strwrap(x$text, width)),
                paste0("\n", strwrap(x$source, width)))
       sapply(out, cat)

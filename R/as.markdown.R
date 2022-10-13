@@ -11,6 +11,8 @@
 #' @param form structure of the markdown output for the text (first argument)
 #'   and source (second argument) passed to \code{\link{sprintf}}
 #'
+#' @param cite logical; should the \code{cite} field be included in the source output?
+#'
 #' @return character vector of formatted markdown quotes
 #'
 #' @export
@@ -20,9 +22,14 @@
 #' ll <- search_quotes("Tukey")
 #' as.markdown(ll)
 #'
-as.markdown <- function(quotes, form = "> *%s* -- %s\n\n"){
+as.markdown <- function(quotes,
+                        form = "> *%s* -- %s\n\n",
+                        cite = FALSE){
 #  topics <- unique(quotes$topic)
   stopifnot('statquote' %in% class(quotes))
+  if (cite) quotes$source <- ifelse(is.na(quotes$cite),
+                                    quotes$source,
+                                    paste0(quotes$source, ", ", quotes$cite))
   lines <- sprintf(form, quotes$text, quotes$source)
   lines
 }
@@ -32,12 +39,12 @@ as.markdown <- function(quotes, form = "> *%s* -- %s\n\n"){
 #' This function formats a statquote object to the tagged \code{key:value} format used for
 #' maintaining the statquotes database.  The key names are:
 #' \preformatted{
-#'   quo:This is a quotation.
-#'   src:Person or persons who said or wrote the quote.
-#'   cit:Citation for the original quote.
-#'   url:URL where the quote can be found (such as journal articles).
-#'   tag:Comma-separated tags to categorize the quote.
-#'   tex:TeX-formatted citation
+#'   quo: This is a quotation.
+#'   src: Person or persons who said or wrote the quote.
+#'   cit: Citation for the original quote.
+#'   url: URL where the quote can be found (such as journal articles).
+#'   tag: Comma-separated tags to categorize the quote.
+#'   tex: TeX-formatted citation
 #' }
 #'
 #' @param quotes an object of class \code{statquote} returned from functions such as

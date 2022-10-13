@@ -5,7 +5,7 @@
 \alias{as.tagged}
 \title{Function to transform statquote objects to strings suitable for markdown}
 \usage{
-as.markdown(quotes, form = "> *\%s* -- \%s\\n\\n")
+as.markdown(quotes, form = "> *\%s* -- \%s\\n\\n", cite = FALSE)
 
 as.tagged(quotes, qid = TRUE)
 }
@@ -15,6 +15,8 @@ as.tagged(quotes, qid = TRUE)
 
 \item{form}{structure of the markdown output for the text (first argument)
 and source (second argument) passed to \code{\link{sprintf}}}
+
+\item{cite}{logical; should the \code{cite} field be included in the source output?}
 
 \item{qid}{logical. Should the quote id number `qid` be included in the output?}
 }
@@ -31,12 +33,12 @@ formatted via the \code{\link{sprintf}} function.
 This function formats a statquote object to the tagged \code{key:value} format used for
 maintaining the statquotes database.  The key names are:
 \preformatted{
-  quo:This is a quotation.
-  src:Person or persons who said or wrote the quote.
-  cit:Citation for the original quote.
-  url:URL where the quote can be found (such as journal articles).
-  tag:Comma-separated tags to categorize the quote.
-  tex:TeX-formatted citation
+  quo: This is a quotation.
+  src: Person or persons who said or wrote the quote.
+  cit: Citation for the original quote.
+  url: URL where the quote can be found (such as journal articles).
+  tag: Comma-separated tags to categorize the quote.
+  tex: TeX-formatted citation
 }
 }
 \examples{
