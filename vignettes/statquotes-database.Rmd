@@ -26,22 +26,22 @@ The `quotes_raw.txt` file uses the following format for each quotation.  Lines b
 
 ```
 % Comment
-quo:This is a quotation.
-src:Person or persons who said or wrote the quote.
-cit:Citation for the original quote.
-url:URL where the quote can be found (such as journal articles).
-tag:Comma-separated tags to categorize the quote.
-tex:TeX-formatted citation
+quo: This is a quotation.
+src: Person or persons who said or wrote the quote.
+cit: Citation for the original quote.
+url: URL where the quote can be found (such as journal articles).
+tag: Comma-separated tags to categorize the quote.
+tex: TeX-formatted citation
 ```
 
 Here is an example:
 
 ```
-quo:A judicious man looks at Statistics, not to get knowledge, but to save himself from having ignorance foisted on him.
-src:Thomas Carlyle
-cit:Chartism, 1840, Chapter II, Statistics
-url:https://en.wikisource.org/wiki/Chartism/Chapter_2
-tag:data visualization
+quo: A judicious man looks at Statistics, not to get knowledge, but to save himself from having ignorance foisted on him.
+src: Thomas Carlyle
+cit: Chartism, 1840, Chapter II, Statistics
+url: https://en.wikisource.org/wiki/Chartism/Chapter_2
+tag: data visualization
 ```
 
 ## LaTeX format for quotes file
