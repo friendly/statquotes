@@ -1,7 +1,7 @@
 Package: statquotes
 Title: Quotes on Statistics, Data Visualization and Science
-Version: 0.3.1
-Date: 2022-10-10
+Version: 0.3.2
+Date: 2022-10-14
 Authors@R: c(person("Michael", "Friendly", 
                     email = "friendly@yorku.ca", 
                     role = c("aut", "cre"),
