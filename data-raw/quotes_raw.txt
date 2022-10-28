@@ -3564,4 +3564,8 @@ src: Moses Hadas
 url: http://www.quotationspage.com/quotes/Moses_Hadas/
 tag: reviews
 
+quo: I will let the data speak for itself when it cleans itself.
+src: Allison Reichel
+url: https://twitter.com/allisonreichel/status/1350107719236247558
+tag: data
 
