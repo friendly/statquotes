@@ -3573,3 +3573,9 @@ quo: To the untrained eye, randomness appears as regularity or tendency to clust
 src: W. Feller
 cit: An Introduction to Probability Theory and its Applications (1950)
 tag: probability, visualization
+
+quo: Your assumptions are your windows on the world. Scrub them off every once in a while, or the light won't come in.
+src: Alan Alda
+cit: 1936
+url: https://www.oxfordreference.com/display/10.1093/acref/9780191843730.001.0001/q-oro-ed5-00019640;jsessionid=CD2BC56B8E5DA1EC23265EE4A3F44F21
+tag: assumptions
