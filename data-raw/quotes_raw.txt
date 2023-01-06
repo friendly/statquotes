@@ -3579,3 +3579,13 @@ src: Alan Alda
 cit: 1936
 url: https://www.oxfordreference.com/display/10.1093/acref/9780191843730.001.0001/q-oro-ed5-00019640;jsessionid=CD2BC56B8E5DA1EC23265EE4A3F44F21
 tag: assumptions
+
+quo: Little experience is sufficient to show that the traditional machinery of statistical processes is wholly unsuited to the needs of practical research. Not only does it take a cannon to shoot a sparrow, but it misses the sparrow! The elaborate mechanism built on the theory of infinitely large samples is not accurate enough for simple laboratory data. Only by systematically tackling small sample problems on their metrics does it seem possible to apply accurate tests to practical data.
+src: Ronald Fisher
+cit: Statistical Methods for Research Workers (1925)
+tag: sample size
+
+quo: We had once advocated a change in wheat plot lengths from 2 chains to 3, based on results from uniformity trials. It seemed a very good idea until a biometrician went to help harvest a very good crop and found he had to lift and carry bags of over 100lb, this being the yield from each plot.
+src: Jean Miller
+cit: A History of Statistics in New Zealand, H. S. Roberts. 
+tag: biometry
