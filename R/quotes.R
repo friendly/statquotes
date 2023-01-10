@@ -1,3 +1,5 @@
+# quotes.R
+
 #' Quotes on statistics, data visualization and science
 #'
 #' A data frame with quotations.  The variables are:
@@ -17,5 +19,5 @@
 #' @name quotes
 #' @usage data(quotes)
 #' @format A data frame
+#' @eval convert_quotes_txt_to_rda()
 NULL
-

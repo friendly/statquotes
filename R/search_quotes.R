@@ -4,19 +4,19 @@
 #' that match the pattern.
 #'
 #' @param search     A character string or regex pattern to search the database.
-#' 
+#'
 #' @param ignore_case If \code{TRUE}, matching is done without regard to case.
-#' 
+#'
 #' @param fuzzy       If \code{TRUE}, use \code{\link[base]{agrep}} to allow approximate matches to the search string.
-#' 
+#'
 #' @param fields     A character vector of the particular fields to search.
 #' The default is \code{c("text","source","tags")}.
 #' You can use the shortcut \code{fields="all"} to search all fields (including citation, url).
-#' 
+#'
 #' @param ...        additional arguments passed to \code{\link[base]{agrep}} to fine-tune fuzzy search parameters.
-#' 
+#'
 #' @return A data frame (also with class \code{'statquote'}) object containing all quotes that match the search parameters.
-#' 
+#'
 #' @export
 #' @seealso \code{\link[base]{agrep}}, \code{\link{statquote}}.
 #' @examples
@@ -28,7 +28,6 @@
 #' out <- search_quotes("bad data", fuzzy = TRUE)
 #' as.data.frame(out)
 #'
-
 search_quotes <- function(search,
                           ignore_case = TRUE,
                           fuzzy = FALSE,
@@ -38,7 +37,7 @@ search_quotes <- function(search,
     stop("No search parameters entered.", call.=FALSE)
 
   data <- .get.sq()
-  
+
   if(length(fields)==1 && fields=="all") fields <- colnames(data)
 
   # combine columns into single string
@@ -87,7 +86,7 @@ search_text <- function(search, fuzzy=FALSE,
 #'
 #' @return A data frame (also with class \code{'statquote'}) object
 #' containing all quotes.
-#' 
+#'
 #' @rdname search_quotes
 #' @export
 #' @examples

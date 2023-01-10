@@ -1,6 +1,7 @@
 
 #' @importFrom utils data
 .get.sq <- function(){
+  #browser()
   .sq.env <- new.env()
   data(quotes, package = 'statquotes', envir = .sq.env)
   .sq.env$quotes
