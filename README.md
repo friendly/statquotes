@@ -15,18 +15,13 @@
 
 This package displays a randomly chosen quotation about topics related to statistics, data visualization and science, or can be used to search for quotes within the statquotes database for key term tags or authors.
 
-The original idea came from the Unix [`fortune`](https://en.wikipedia.org/wiki/Fortune_(Unix)) 
-program, used to display a "fortune" at startup and contained some bits of wisdom, together with
-obscure jokes about computer science and computer programming. A related service was 
-the internet `QOTD` protocol for [Quote Of The Day](https://en.wikipedia.org/wiki/QOTD).
+The original idea came from the Unix [`fortune`](https://en.wikipedia.org/wiki/Fortune_(Unix)) program, used to display a "fortune" at startup and contained some bits of wisdom, together with obscure jokes about computer science and computer programming.
 
-The R [`fortunes`](https://cran.r-project.org/package=fortunes) 
+The [`fortunes`](https://cran.r-project.org/package=fortunes) 
 package is focused on quotes about R, largely gleaned from the [R-help](https://stat.ethz.ch/mailman/listinfo/r-help) mailing list, and
-collected in this [vignette](https://cran.r-project.org/web/packages/fortunes/vignettes/fortunes.pdf).
+collected in a [vignette](https://cran.r-project.org/web/packages/fortunes/vignettes/fortunes.pdf).
 
-The `statquotes` package is similar in spirit, but
-focused on quotes about data analysis, visualization and science, designed
-as a tool for finding quotes when writing about these topics.
+The `statquotes` package is focused on quotes about data analysis, visualization and science. It can be used to find quotes when writing about these topics.
 
 In this R package, each call to `statquote()` displays a randomly selected quotation, or, via `search_quotes()` restricted to those whose `tags` field matches the `tag` argument, or whose `source` field matches the `source=` argument. Quotes can be displayed in the R console, or formatted as markdown or LaTeX (for use with the [epigraph](https://ctan.org/pkg/epigraph) package).
 
@@ -48,6 +43,7 @@ Please report any problems or bugs at https://github.com/friendly/statquotes/iss
 ### Examples
 
 ```{r}
+> library(statquotes)
 > statquote()
 
 The best thing about being a statistician is that you get to play in everyone's backyard. 
@@ -70,6 +66,7 @@ succeed in doing one or both, we almost always see more clearly what is going on
 --- John Tukey
 
 # quote_tags() # list all tags
+
 R> statquote(tag="numeracy") # choose a random quote with a specific tag
 
 To be numerate means to be competent, confident, and comfortable with one’s judgements on whether
@@ -119,9 +116,7 @@ R> as.data.frame(statquote("eulogy"))
 
 #### Tags
 
-One or more keyword `tags` are used to classify quotes in the quotes database.
-These provide another means of searching. The code below produces a bar plot
-of tags, sorted by frequency.
+One or more keyword `tags` are used to classify quotes in the quotes database. These provide another means of searching. The code below produces a bar plot of tags, sorted by frequency.
 
 ```{r}
 library(ggplot2)
