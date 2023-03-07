@@ -3589,3 +3589,9 @@ quo: We had once advocated a change in wheat plot lengths from 2 chains to 3, ba
 src: Jean Miller
 cit: A History of Statistics in New Zealand, H. S. Roberts. 
 tag: biometry
+
+quo: All generative models are wrong, but some are useful.
+src: Jared Lander
+cit: Copilot for R, 56:25
+url: https://youtu.be/XQ4Negbmtk4?t=3385
+tag: models
