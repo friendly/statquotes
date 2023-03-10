@@ -3596,3 +3596,10 @@ src: Jared Lander
 cit: Copilot for R, 56:25
 url: https://youtu.be/XQ4Negbmtk4?t=3385
 tag: models
+
+quo: Everyone who has carried out experiments in the field or farmyard must be well aware that the result of a single experiment is very often entirely misleading. Yet it is still common practice to publish single results and to base practical advice upon them.
+src: T. B. Wood and F. J. M. Stratton
+cit: The interpretation of experimental results. The Journal of Agricultural Science, 3, 417-440.
+url: https://doi.org/10.1017/S0021859600001210
+tag: science
+
