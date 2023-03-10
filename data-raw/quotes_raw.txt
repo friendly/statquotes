@@ -2523,13 +2523,14 @@ tag:nhst
 
 quo:...to make measurements and then ignore their magnitude would ordinarily be pointless. Exclusive reliance on tests of significance obscures the fact that statistical significance does not imply substantive significance.
 src:I. R. Savage
-cit:Nonparametric statistics. Journal of the American Statistical Association 52 : 331-344.
-url:https://psycnet.apa.org/doi/10.2307/2280903
+cit:Nonparametric Statistics. Journal of the American Statistical Association, 52, 331-344.
+url:https://doi.org/10.1080/01621459.1957.10501392
 tag:nhst
 
 quo:Null hypotheses of no difference are usually known to be false before the data are collected ... when they are, their rejection or acceptance simply reflects the size of the sample and the power of the test, and is not a contribution to science"
 src:I. R. Savage
-cit:Nonparametric statistics. Journal of the American Statistical Association 52 : 331-344. url:https://psycnet.apa.org/doi/10.2307/2280903
+cit:Nonparametric Statistics. Journal of the American Statistical Association, 52, 331-344.
+url:https://doi.org/10.1080/01621459.1957.10501392
 tag:nhst
 
 
