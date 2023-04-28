@@ -3586,10 +3586,10 @@ src: Ronald Fisher
 cit: Statistical Methods for Research Workers (1925)
 tag: sample size
 
-quo: We had once advocated a change in wheat plot lengths from 2 chains to 3, based on results from uniformity trials. It seemed a very good idea until a biometrician went to help harvest a very good crop and found he had to lift and carry bags of over 100lb, this being the yield from each plot.
+quo: We had once advocated a change in wheat plot lengths from 2 chains to 3, based on results from uniformity trials. It seemed a very good idea until a biometrician went to help harvest a very good crop and found he had to lift and carry bags of over 100 pounds, this being the yield from each plot.
 src: Jean Miller
 cit: A History of Statistics in New Zealand, H. S. Roberts. 
-tag: biometry
+tag: biometry, expt design
 
 quo: All generative models are wrong, but some are useful.
 src: Jared Lander
@@ -3603,3 +3603,13 @@ cit: The interpretation of experimental results. The Journal of Agricultural Sci
 url: https://doi.org/10.1017/S0021859600001210
 tag: science
 
+quo: The preparation of clear and simple plans, and a convenient system of numbering the [treatments] that are to be applied, will lighten the work of the man in the field, who is usually operating under averse conditions, is frequently in a hurry, and is sometimes not very certain of the points at issue.
+src: F. Yates
+cit: The Design and Analysis of Factorial Experiments (1937). Harpenden Imperial Bureau of Soil Science. 
+url: https://repository.rothamsted.ac.uk/item/98765/the-design-and-analysis-of-factorial-experiments
+tag: biometry, expt design
+
+quo: I do not always agree with Sir Ronald Fisher, but it is due to him that the standard of presentation of results in agriculture is better than in any of the so-called exact sciencees; and this is a state of affairs that physicists should cease to tolerate.
+src: Sir Harald Jeffreys
+cit: Half a Century in Geophysics: An original article from the Report of the British Association for the Advancement of Science, 1953.
+tag: science
