@@ -3613,3 +3613,10 @@ quo: I do not always agree with Sir Ronald Fisher, but it is due to him that the
 src: Sir Harald Jeffreys
 cit: Half a Century in Geophysics: An original article from the Report of the British Association for the Advancement of Science, 1953.
 tag: science
+
+
+quo: Data are not just numbers, they are numbers with a context. ... In data analysis, context provides meaning.
+src: George W. Cobb & David S. Moore
+cit: Mathematics, Statistics, and Teaching. American Mathematical Monthly, 801–23. 
+tag: numeracy
+
