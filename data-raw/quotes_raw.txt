@@ -3620,3 +3620,19 @@ src: George W. Cobb & David S. Moore
 cit: Mathematics, Statistics, and Teaching. American Mathematical Monthly, 801–23. 
 tag: numeracy
 
+quo: When [the profession of] statistics becomes clearly embedded in people's minds as being concerned with *investigation* rather than simply *calculation* (or worse still, mere cataloguing of data), there can be no room for doubts about the relevance of the subject.
+src: C. J. Wild
+cit: Embracing the 'Wider view' of Statistics, The American Statistician, 48, 163-171. p. 165.
+url: https://doi.org/10.1080/00031305.1994.10476049
+
+quo: We have to teach non-statisticians to recognize where statistical expertise is required. No one else will. We teach students how to solve simple statistical problems, but how often do we make any serious effort to teach them to recognize situations that call for statistical expertise that is beyond the technical content of the course.=?
+src: C. J. Wild
+cit: Embracing the 'Wider view' of Statistics, The American Statistician, 48, 163-171. p. 166.
+url: https://doi.org/10.1080/00031305.1994.10476049
+tag: teaching
+
+quo: A careful and sophisticated analysis of the data is often quite useless if the statistician cannot communicate the essential features of the data to a client for whom statistics is an entirely foreign language.
+src: C. J. Wild
+cit: Embracing the 'Wider view' of Statistics, The American Statistician, 48, 163-171. p. 170.
+url: https://doi.org/10.1080/00031305.1994.10476049
+
