@@ -3636,3 +3636,7 @@ src: C. J. Wild
 cit: Embracing the 'Wider view' of Statistics, The American Statistician, 48, 163-171. p. 170.
 url: https://doi.org/10.1080/00031305.1994.10476049
 
+quo: The dominant feature of our 129 barley trials was the large differences...overy the five years of the study, even for the same field. To give sound advice on choice of plot size and shape, statisticians will require results from many trials conducted over many years, not to mention crops.
+src: Dorothy Robinson
+cit: Discussion of the paper by Dr Brewer and Professor Mead, Journal of the Royal Statistical Society. Series A, 1986, 149, pp. 314-348. Quote on p. 341.
+url: https://doi.org/10.2307/2981720 
