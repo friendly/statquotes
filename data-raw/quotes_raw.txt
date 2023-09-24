@@ -63,7 +63,7 @@ cit:Exploratory Data Analysis, 1977
 tag:data visualization,pictures,eda
 tex:John W. Tukey \citet[p. vi]{Tukey:77}
 
-quo:If data analysis is to be well done, much of it must be a matter of judgment, and ‘theory’ whether statistical or non-statistical, will have to guide, not command.
+quo:If data analysis is to be well done, much of it must be a matter of judgment, and 'theory' whether statistical or non-statistical, will have to guide, not command.
 src:John W. Tukey
 cit:The Future of Data Analysis, Annals of Mathematical Statistics, Vol. 33 (1), 1962.
 url:https://www.jstor.org/stable/2237638
@@ -3158,7 +3158,7 @@ cit:Principles of Professional Statistical Practice. Annals of Mathematical Stat
 url:https://doi.org/10.1214/aoms/1177699824
 tag:data,statistician
 
-quo:An inference, if it is to have scientific value, must constitute a prediction concerning future data. If the inference is to be made purely with the help of the distribution theory of statistics, the experiments that constitute evidence for the inference must arise from a state of statistical control; until that state is reached, there is no universe, normal or otherwise, and the statistician’s calculations by themselves are an illusion if not a delusion.
+quo:An inference, if it is to have scientific value, must constitute a prediction concerning future data. If the inference is to be made purely with the help of the distribution theory of statistics, the experiments that constitute evidence for the inference must arise from a state of statistical control; until that state is reached, there is no universe, normal or otherwise, and the statistician's calculations by themselves are an illusion if not a delusion.
 src:W. Edwards Deming
 cit:Statistical Method from the Viewpoint of Quality Control, 1939.
 url:https://archive.org/details/CAT10502416
@@ -3188,7 +3188,7 @@ quo:Excellence in statistical graphics consists of complex ideas communicated wi
 src:Edward R Tufte
 cit:The Visual Display of Quantitative Information, 1983
 
-quo:If you can’t have an experiment, do the best you can with whatever data you can gather, but do be very skeptical of historical data and subject them to all the logical tests you can think of.
+quo:If you can't have an experiment, do the best you can with whatever data you can gather, but do be very skeptical of historical data and subject them to all the logical tests you can think of.
 src:Robert Hooke
 cit:Statistics, Sports, and Some Other Things. In: Statistics: A Guide to the Unknown, Judith M. Tanur
 url:https://archive.org/details/statisticsguidet00tanu
@@ -3220,7 +3220,7 @@ quo:A very different - and very incorrect - argument is that successes must be b
 src:Gary Smith
 cit:Standard Deviations, 2014
 
-quo:Remember that even random coin flips can yield striking, even stunning, patterns that mean nothing at all. When someone shows you a pattern, no matter how impressive the person’s credentials, consider the possibility that the pattern is just a coincidence. Ask why, not what. No matter what the pattern, the question is: Why should we expect to find this pattern?
+quo:Remember that even random coin flips can yield striking, even stunning, patterns that mean nothing at all. When someone shows you a pattern, no matter how impressive the person's credentials, consider the possibility that the pattern is just a coincidence. Ask why, not what. No matter what the pattern, the question is: Why should we expect to find this pattern?
 src:Gary Smith
 cit:Standard Deviations, 2014
 
@@ -3228,7 +3228,7 @@ quo:We are seduced by patterns and we want explanations for these patterns. When
 src:Gary Smith
 cit:Standard Deviations, 2014
 
-quo:[In statistics] you have the fact that the concepts are not very clean. The idea of probability, of randomness, is not a clean mathematical idea. You cannot produce random numbers mathematically. They can only be produced by things like tossing dice or spinning a roulette wheel. With a formula, any formula, the number you get would be predictable and therefore not random. So as a statistician you have to rely on some conception of a world where things happen in some way at random, a conception which mathematicians don’t have.
+quo:[In statistics] you have the fact that the concepts are not very clean. The idea of probability, of randomness, is not a clean mathematical idea. You cannot produce random numbers mathematically. They can only be produced by things like tossing dice or spinning a roulette wheel. With a formula, any formula, the number you get would be predictable and therefore not random. So as a statistician you have to rely on some conception of a world where things happen in some way at random, a conception which mathematicians don't have.
 src:Lucien LeCam
 cit:Interview, 1988
 tag:probability
@@ -3247,11 +3247,11 @@ quo:Figures may not lie, but statistics compiled unscientifically and analyzed i
 src:Edwin B Wilson
 cit:Bulletin of the American Mathematical Society, Vol 18, 1912
 
-quo:The statistician’s job is to draw general conclusions from fragmentary data. Too often the data supplied to him for analysis are not only fragmentary but positively incoherent, so that he can do next to nothing with them. Even the most kindly statistician swears heartily under his breath whenever this happens.
+quo:The statistician's job is to draw general conclusions from fragmentary data. Too often the data supplied to him for analysis are not only fragmentary but positively incoherent, so that he can do next to nothing with them. Even the most kindly statistician swears heartily under his breath whenever this happens.
 src:M J Moroney
 cit:Facts from Figures, 1927
 
-quo:Just as by ‘literacy’, in this context, we mean much more than its dictionary sense of the ability to read and write, so by ‘numeracy’ we mean more than mere ability to manipulate the rule of three. When we say that a scientist is ‘illiterate’, we mean that he is not well enough read to be able to communicate effectively with those who have had a literary education. When we say that a historian or a linguist is ‘innumerate’ we mean that he cannot even begin to understand what scientists and mathematicians are talking about.
+quo:Just as by 'literacy', in this context, we mean much more than its dictionary sense of the ability to read and write, so by 'numeracy' we mean more than mere ability to manipulate the rule of three. When we say that a scientist is 'illiterate', we mean that he is not well enough read to be able to communicate effectively with those who have had a literary education. When we say that a historian or a linguist is 'innumerate' we mean that he cannot even begin to understand what scientists and mathematicians are talking about.
 src:Sir Geoffrey Crowther
 cit:A Report of the Central Advisory Committee for Education, 1959, p. 270.
 url:http://www.educationengland.org.uk/documents/crowther/crowther1959-1.html
@@ -3271,7 +3271,7 @@ src:Andrew Ehrenberg
 cit:The problem of numeracy, American Statistician 35, 67-71, 1981.
 url:https://www.jstor.org/stable/2683143
 
-quo:To be numerate means to be competent, confident, and comfortable with one’s judgements on whether to use mathematics in a particular situation and if so, what mathematics to use, how to do it, what degree of accuracy is appropriate, and what the answer means in relation to the context.
+quo:To be numerate means to be competent, confident, and comfortable with one's judgements on whether to use mathematics in a particular situation and if so, what mathematics to use, how to do it, what degree of accuracy is appropriate, and what the answer means in relation to the context.
 src:Diana Coben
 cit:Numeracy, mathematics and adult learning, 2000
 tag:numeracy
@@ -3326,7 +3326,7 @@ cit:Ecological Models and Data in R, 2007
 tag:bayesian
 
 
-quo:A statistical estimate may be good or bad, accurate or the reverse; but in almost all cases it is likely to be more accurate than a casual observer’s impression, and the nature of things can only be disproved by statistical methods.
+quo:A statistical estimate may be good or bad, accurate or the reverse; but in almost all cases it is likely to be more accurate than a casual observer's impression, and the nature of things can only be disproved by statistical methods.
 src:Sir Arthur L Bowley
 cit:Elements of Statistics, 1901
 
@@ -3347,13 +3347,13 @@ quo:The whole point of probability is to discuss uncertain eventualities before 
 src:David Stirzaker
 cit:Probability and Random Variables: A Beginner's Guide, 1999
 
-quo:There is no such thing as randomness. No one who could detect every force operating on a pair of dice would ever play dice games, because there would never be any doubt about the outcome. The randomness, such as it is, applies to our ignorance of the possible outcomes. It doesn’t apply to the outcomes themselves. They are 100% determined and are not random in the slightest. Scientists have become so confused by this that they now imagine that things really do happen randomly, i.e. for no reason at all.
+quo:There is no such thing as randomness. No one who could detect every force operating on a pair of dice would ever play dice games, because there would never be any doubt about the outcome. The randomness, such as it is, applies to our ignorance of the possible outcomes. It doesn't apply to the outcomes themselves. They are 100% determined and are not random in the slightest. Scientists have become so confused by this that they now imagine that things really do happen randomly, i.e. for no reason at all.
 src:Thomas Stark
 cit:God Is Mathematics: The Proofs of the Eternal Existence of Mathematics, 2018
 
 quo:Why is the human need to be in control relevant to a discussion of random patterns? Because if events are random, we are not in control, and if we are in control of events, they are not random. There is therefore a fundamental clash between our need to feel we are in control and our ability to recognize randomness. That clash is one of the principal reasons we misinterpret random events.
 src:Leonard Mlodinow
-cit:The Drunkard’s Walk: How Randomness Rules Our Lives, 2008
+cit:The Drunkard's Walk: How Randomness Rules Our Lives, 2008
 
 quo:An experiment is a failure only when it also fails adequately to test the hypothesis in question, when the data it produces don't prove anything one way or the other.
 src:Robert M Pirsig
@@ -3383,7 +3383,7 @@ quo:All predictions are statistical, but some predictions have such a high proba
 src:Marshall J Walker
 cit:"The Nature of Scientific Thought", 1963
 
-quo:The moment you forecast you know you’re going to be wrong, you just don’t know when and in which direction.
+quo:The moment you forecast you know you're going to be wrong, you just don't know when and in which direction.
 src:Edgar R Fiedler
 cit:"Across the Board", 1977
 
@@ -3392,14 +3392,14 @@ src:John M Chambers, 1993
 
 quo:...it does not seem helpful just to say that all models are wrong. The very word model implies simplification and idealization. The idea that complex physical, biological or sociological systems can be exactly described by a few formulae is patently absurd. The construction of idealized representations that capture important stable aspects of such systems is, however, a vital part of general scientific analysis and statistical models, especially substantive ones, do not seem essentially different from other kinds of model.
 src:Sir David Cox
-cit:Comment on ‘Model uncertainty, data mining and statistical inference’, Journal of the Royal Statistical Society, Series A 158, 1995.
+cit:Comment on 'Model uncertainty, data mining and statistical inference', Journal of the Royal Statistical Society, Series A 158, 1995.
 url:https://www.jstor.org/stable/2983440
 
 quo:The science of statistics may be described as exploring, analyzing and summarizing data; designing or choosing appropriate ways of collecting data and extracting information from them; and communicating that information. Statistics also involves constructing and testing models for describing chance phenomena. These models can be used as a basis for making inferences and drawing conclusions and, finally, perhaps for making decisions.
 src:Fergus Daly et al
 cit:Elements of Statistics, 1995
 
-quo:If a man stands with his left foot on a hot stove and his right foot in a refrigerator, the statistician would say that, on the average, he’s comfortable.
+quo:If a man stands with his left foot on a hot stove and his right foot in a refrigerator, the statistician would say that, on the average, he's comfortable.
 src:Walter Heller
 
 quo:Things are changing. Statisticians now recognize that computer scientists are making novel contributions while computer scientists now recognize the generality of statistical theory and methodology. Clever data mining algorithms are more scalable than statisticians ever thought possible. Formal statistical theory is more pervasive than computer scientists had realized.
@@ -3413,7 +3413,7 @@ cit:Book review of Norman T. J. Bailey: Statistical Methods in Biology, Applied 
 quo:In general, it is necessary to have some data on which to calculate probabilities. [...] Statisticians do not evolve probabilities out of their inner consciousness, they merely calculate them.
 src:Leonard C Tippett
 
-quo:Even properly done statistics can’t be trusted. The plethora of available statistical techniques and analyses grants researchers an enormous amount of freedom when analyzing their data, and it is trivially easy to ‘torture the data until it confesses’.
+quo:Even properly done statistics can't be trusted. The plethora of available statistical techniques and analyses grants researchers an enormous amount of freedom when analyzing their data, and it is trivially easy to 'torture the data until it confesses'.
 src:Alex Reinhart
 cit:Statistics Done Wrong: The Woefully Complete Guide, 2015
 
@@ -3421,7 +3421,7 @@ quo:Using data from the population as it stands is a dangerous substitute for te
 src:Frederick Mosteller & Gale Mosteller
 cit:"New Statistical Methods in Public Policy. Part I: Experimentation", Journal of Contemporary Business 8, 1979
 
-quo:The closer that sample-selection procedures approach the gold standard of random selection - for which the definition is that every individual in the population has an equal chance of appearing in the sample - the more we should trust them. If we don’t know whether a sample is random, any statistical measure we conduct may be biased in some unknown way.
+quo:The closer that sample-selection procedures approach the gold standard of random selection - for which the definition is that every individual in the population has an equal chance of appearing in the sample - the more we should trust them. If we don't know whether a sample is random, any statistical measure we conduct may be biased in some unknown way.
 src:Richard E Nisbett
 cit:"Mindware: Tools for Smart Thinking", 2015
 
@@ -3441,7 +3441,7 @@ quo:[Statistics] is both a science and an art. It is a science in that its metho
 src:Leonard H C Tippett
 cit:Statistics, 1943
 
-quo:The fact must be expressed as data, but there is a problem in that the correct data is difficult to catch. So that I always say 'When you see the data, doubt it!' 'When you see the measurement instrument, doubt it!' [...]For example, if the methods such as sampling, measurement, testing and chemical analysis methods were incorrect, data. […] to measure true characteristics and in an unavoidable case, using statistical sensory test and express them as data.
+quo:The fact must be expressed as data, but there is a problem in that the correct data is difficult to catch. So that I always say 'When you see the data, doubt it!' 'When you see the measurement instrument, doubt it!' [...]For example, if the methods such as sampling, measurement, testing and chemical analysis methods were incorrect, data. [...] to measure true characteristics and in an unavoidable case, using statistical sensory test and express them as data.
 src:Kaoru Ishikawa
 cit:Annual Quality Congress Transactions, 1981
 tag:data,sampling
@@ -3471,7 +3471,7 @@ src:Eric R Sowey
 cit:The Getting of Wisdom: Educating Statisticians to Enhance Their Clients' Numeracy, The American Statistician 57(2), 2003
 url:https://www.jstor.org/stable/30037239
 
-quo:We would wish ‘numerate’ to imply the possession of two attributes. The first of these is an ‘at-homeness’ with numbers and an ability to make use of mathematical skills which enable an individual to cope with the practical mathematical demands of his everyday life. The second is ability to have some appreciation and understanding of information which is presented in mathematical terms, for instance in graphs, charts or tables or by reference to percentage increase or decrease.
+quo:We would wish 'numerate' to imply the possession of two attributes. The first of these is an 'at-homeness' with numbers and an ability to make use of mathematical skills which enable an individual to cope with the practical mathematical demands of his everyday life. The second is ability to have some appreciation and understanding of information which is presented in mathematical terms, for instance in graphs, charts or tables or by reference to percentage increase or decrease.
 src:Cockcroft Committee
 cit:Mathematics Counts: A Report into the Teaching of Mathematics in Schools, 1982
 tag:numeracy,data visualization
@@ -3486,7 +3486,7 @@ src:George E P Box
 cit:"Use and Abuse of Regression", 1966
 tag:Box quotes
 
-quo:Since all models are wrong the scientist cannot obtain a ‘correct’ one by excessive elaboration. On the contrary following William of Occam he should seek an economical description of natural phenomena. Just as the ability to devise simple but evocative models is the signature of the great scientist so overelaboration and overparameterization is often the mark of mediocrity.
+quo:Since all models are wrong the scientist cannot obtain a 'correct' one by excessive elaboration. On the contrary following William of Occam he should seek an economical description of natural phenomena. Just as the ability to devise simple but evocative models is the signature of the great scientist so overelaboration and overparameterization is often the mark of mediocrity.
 src:George E P Box
 cit:Science and Statistics, Journal of the American Statistical Association 71, 1976
 url:https://www.jstor.org/stable/2286841
@@ -3520,7 +3520,7 @@ cit:"The Role of Statistics in Psychiatry", Psychological Medicine Vol. 15, 1985
 url:https://doi.org/10.1017/S0033291700031354
 tag:statistics
 
-quo:When looking at the end result of any statistical analysis, one must be very cautious not to over interpret the data. Care must be taken to know the size of the sample, and to be certain the method for gathering information is consistent with other samples gathered. […] No one should ever base conclusions without knowing the size of the sample and how random a sample it was. But all too often such data is not mentioned when the statistics are given - perhaps it is overlooked or even intentionally omitted.
+quo:When looking at the end result of any statistical analysis, one must be very cautious not to over interpret the data. Care must be taken to know the size of the sample, and to be certain the method for gathering information is consistent with other samples gathered. [...] No one should ever base conclusions without knowing the size of the sample and how random a sample it was. But all too often such data is not mentioned when the statistics are given - perhaps it is overlooked or even intentionally omitted.
 src:Theoni Pappas
 cit:"More Joy of Mathematics: Exploring mathematical insights & concepts", 1994
 tag:sampling
@@ -3617,7 +3617,7 @@ tag: science
 
 quo: Data are not just numbers, they are numbers with a context. ... In data analysis, context provides meaning.
 src: George W. Cobb & David S. Moore
-cit: Mathematics, Statistics, and Teaching. American Mathematical Monthly, 801–23. 
+cit: Mathematics, Statistics, and Teaching. American Mathematical Monthly, 801-23. 
 tag: numeracy
 
 quo: When [the profession of] statistics becomes clearly embedded in people's minds as being concerned with *investigation* rather than simply *calculation* (or worse still, mere cataloguing of data), there can be no room for doubts about the relevance of the subject.
