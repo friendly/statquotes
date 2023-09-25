@@ -3645,3 +3645,9 @@ quo: If we need a short suggestion of what exploratory data analysis is, I would
 src: John W. Tukey
 cit: Jones, L. V. (Ed.). (1986). The collected works of John W. Tukey: Philosophy and principles of data analysis 1949-1964 (Vols. III & IV). London: Chapman & Hall.
 tag: eda,data visualization
+
+quo: Three of the main strategies of data analysis are: 1. graphical presentation. 2. provision of flexibility in viewpoint and in facilities,  3. intensive search for parsimony and simplicity.
+src: John W. Tukey
+cit: Jones, L. V. (Ed.). (1986). The collected works of John W. Tukey: Philosophy and principles of data analysis 1949-1964 (Vols. III & IV). London: Chapman & Hall.
+tag: data visualization,data analysis
+
