@@ -10,7 +10,7 @@ search_quotes(
   search,
   ignore_case = TRUE,
   fuzzy = FALSE,
-  fields = c("text", "source", "tags"),
+  fields = c("text", "source", "tags", "cite"),
   ...
 )
 
