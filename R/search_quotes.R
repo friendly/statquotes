@@ -31,7 +31,7 @@
 search_quotes <- function(search,
                           ignore_case = TRUE,
                           fuzzy = FALSE,
-                          fields = c("text","source","tags"),
+                          fields = c("text","source","tags","cite"),
                           ...) {
   if(missing(search))
     stop("No search parameters entered.", call.=FALSE)
