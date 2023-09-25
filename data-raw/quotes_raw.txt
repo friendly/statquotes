@@ -3588,7 +3588,7 @@ tag: sample size
 
 quo: We had once advocated a change in wheat plot lengths from 2 chains to 3, based on results from uniformity trials. It seemed a very good idea until a biometrician went to help harvest a very good crop and found he had to lift and carry bags of over 100 pounds, this being the yield from each plot.
 src: Jean Miller
-cit: A History of Statistics in New Zealand, H. S. Roberts. 
+cit: A History of Statistics in New Zealand, H. S. Roberts.
 tag: biometry, expt design
 
 quo: All generative models are wrong, but some are useful.
@@ -3605,7 +3605,7 @@ tag: science
 
 quo: The preparation of clear and simple plans, and a convenient system of numbering the [treatments] that are to be applied, will lighten the work of the man in the field, who is usually operating under averse conditions, is frequently in a hurry, and is sometimes not very certain of the points at issue.
 src: F. Yates
-cit: The Design and Analysis of Factorial Experiments (1937). Harpenden Imperial Bureau of Soil Science. 
+cit: The Design and Analysis of Factorial Experiments (1937). Harpenden Imperial Bureau of Soil Science.
 url: https://repository.rothamsted.ac.uk/item/98765/the-design-and-analysis-of-factorial-experiments
 tag: biometry, expt design
 
@@ -3617,7 +3617,7 @@ tag: science
 
 quo: Data are not just numbers, they are numbers with a context. ... In data analysis, context provides meaning.
 src: George W. Cobb & David S. Moore
-cit: Mathematics, Statistics, and Teaching. American Mathematical Monthly, 801-23. 
+cit: Mathematics, Statistics, and Teaching. American Mathematical Monthly, 801-23.
 tag: numeracy
 
 quo: When [the profession of] statistics becomes clearly embedded in people's minds as being concerned with *investigation* rather than simply *calculation* (or worse still, mere cataloguing of data), there can be no room for doubts about the relevance of the subject.
@@ -3639,4 +3639,9 @@ url: https://doi.org/10.1080/00031305.1994.10476049
 quo: The dominant feature of our 129 barley trials was the large differences...overy the five years of the study, even for the same field. To give sound advice on choice of plot size and shape, statisticians will require results from many trials conducted over many years, not to mention crops.
 src: Dorothy Robinson
 cit: Discussion of the paper by Dr Brewer and Professor Mead, Journal of the Royal Statistical Society. Series A, 1986, 149, pp. 314-348. Quote on p. 341.
-url: https://doi.org/10.2307/2981720 
+url: https://doi.org/10.2307/2981720
+
+quo: If we need a short suggestion of what exploratory data analysis is, I would suggest that: 1. it is an attitude, AND 2. a flexibility, AND 3. some graph paper (or transparencies, or both).
+src: John W. Tukey
+cit: Jones, L. V. (Ed.). (1986). The collected works of John W. Tukey: Philosophy and principles of data analysis 1949-1964 (Vols. III & IV). London: Chapman & Hall.
+tag: eda,data visualization
