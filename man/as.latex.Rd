@@ -4,7 +4,7 @@
 \alias{as.latex}
 \title{Coerces statquote objects to strings suitable for LaTeX}
 \usage{
-as.latex(quotes, form = "\\\\epigraph{\%s}{\%s}\\n\\n")
+as.latex(quotes, form = "\\\\epigraph{\%s}{\%s}\\n\\n", cite = FALSE)
 }
 \arguments{
 \item{quotes}{an object of class \code{statquote} returned from functions such as
@@ -12,6 +12,8 @@ as.latex(quotes, form = "\\\\epigraph{\%s}{\%s}\\n\\n")
 
 \item{form}{structure of the LaTeX output for the text (first argument)
 and source (second argument) passed to \code{\link{sprintf}}}
+
+\item{cite}{logical; should the \code{cite} field be included in the source output?}
 }
 \value{
 character vector of formatted LaTeX quotes

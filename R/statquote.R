@@ -193,6 +193,8 @@ quote_tags <- function (table = FALSE) {
 #' @param form structure of the LaTeX output for the text (first argument)
 #'   and source (second argument) passed to \code{\link{sprintf}}
 #'
+#' @param cite logical; should the \code{cite} field be included in the source output?
+#'
 #' @return character vector of formatted LaTeX quotes
 #'
 #' @export
@@ -204,7 +206,7 @@ quote_tags <- function (table = FALSE) {
 #' as.latex(ll)
 #'
 
-as.latex <- function(quotes, form = "\\epigraph{%s}{%s}\n\n"){
+as.latex <- function(quotes, form = "\\epigraph{%s}{%s}\n\n", cite = FALSE){
 
   stopifnot('statquote' %in% class(quotes))
   #replace the common csv symbols with LaTeX versions
@@ -223,7 +225,8 @@ as.latex <- function(quotes, form = "\\epigraph{%s}{%s}\n\n"){
   }
 
   quotes$text <- symbols2tex(quotes$text)
-  quotes$source <- symbols2tex(quotes$source)
+  quotes$source <- if(cite) symbols2tex(paste0(quotes$source, ", ", quotes$cite))
+    else symbols2tex(quotes$source)
   lines <- NULL
   if(is.null(quotes$TeXsource)) quotes$TeXsource <- ""
   for(i in 1:nrow(quotes)){
