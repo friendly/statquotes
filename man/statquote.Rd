@@ -8,7 +8,7 @@
 \usage{
 statquote(ind = NULL, pattern = NULL, tag = NULL, source = NULL, topic = NULL)
 
-\method{print}{statquote}(x, cite = FALSE, width = NULL, ...)
+\method{print}{statquote}(x, cite = TRUE, width = NULL, ...)
 
 \method{as.data.frame}{statquote}(x, row.names = NULL, optional = FALSE, ...)
 }

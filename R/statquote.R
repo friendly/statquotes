@@ -103,7 +103,7 @@ statquote <- function(ind=NULL, pattern=NULL, tag=NULL, source=NULL, topic=NULL)
 #' @param ...   Other optional arguments, unused here
 #' @export
 #'
-print.statquote <- function(x, cite = FALSE, width = NULL, ...) {
+print.statquote <- function(x, cite = TRUE, width = NULL, ...) {
     if (is.null(width)) width <- 0.9 * getOption("width")
     if (width < 10) stop("'width' must be greater than 10", call.=FALSE)
     x <- x[ ,c('text', 'source', 'cite')]
@@ -206,7 +206,7 @@ quote_tags <- function (table = FALSE) {
 #' as.latex(ll)
 #'
 
-as.latex <- function(quotes, form = "\\epigraph{%s}{%s}\n\n", cite = FALSE){
+as.latex <- function(quotes, form = "\\epigraph{%s}{%s}\n\n", cite = TRUE){
 
   stopifnot('statquote' %in% class(quotes))
   #replace the common csv symbols with LaTeX versions

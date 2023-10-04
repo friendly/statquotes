@@ -57,13 +57,14 @@ the early stages of a study, ensure successful execution and conclusion. Many a
 study, launched on the ways of elegant statistical design, later boggled in
 execution, ends up with results to which the theory of probability can contribute
 little.
---- W. Edwards Deming
+--- W. Edwards Deming, Principles of Professional Statistical Practice. Annals of
+Mathematical Statistics, 36(6), 1883. (1965)
 
 R> statquote(source="Tukey") # Choose a random quote from a specific author
 
 Whatever the data, we can try to gain understanding by straightening or by flattening. When we
 succeed in doing one or both, we almost always see more clearly what is going on.
---- John Tukey
+--- John Tukey, Exploratory Data Analysis, p. 148.
 
 # quote_tags() # list all tags
 
@@ -72,7 +73,7 @@ R> statquote(tag="numeracy") # choose a random quote with a specific tag
 To be numerate means to be competent, confident, and comfortable with one’s judgements on whether
 to use mathematics in a particular situation and if so, what mathematics to use, how to do it,
 what degree of accuracy is appropriate, and what the answer means in relation to the context.
---- Diana Coben
+--- Diana Coben, Numeracy, mathematics and adult learning, 2000
 
 # To find all quotes with a particular word:
 > search_quotes("lsmeans")
@@ -86,21 +87,22 @@ Quotes have class `statquote`. The `print.statquote()` method gives a plain text
 R> statquote("eulogy")
 
 One is so much less than two. [John Tukey's eulogy of his wife.]
---- John Tukey
+--- John Tukey, The life and professional contributions of John W. Tukey, The Annals of
+Statistics, 2001, Vol 30, p. 46.
 ```
 
 Use `as.markdown()` for markdown-formatted quotes:
 
 ```{r}
 R> cat(as.markdown(statquote("eulogy")))
-> *One is so much less than two. [John Tukey's eulogy of his wife.]* -- John Tukey
+> *One is so much less than two. [John Tukey's eulogy of his wife.]* -- John Tukey, The life and professional contributions of John W. Tukey, The Annals of Statistics, 2001, Vol 30, p. 46.
 ```
 
 Use `as.latex()` for Latex-formatted quotes (for the [epigraph](https://ctan.org/pkg/epigraph) package):
 
 ```{r}
 R> cat(as.latex(statquote("eulogy")))
-\epigraph{One is so much less than two. [John Tukey's eulogy of his wife.]}{John Tukey}
+\epigraph{One is so much less than two. [John Tukey's eulogy of his wife.]}{John Tukey, The life and professional contributions of John W. Tukey, The Annals of Statistics, 2001, Vol 30, p. 46.}
 ```
 
 Use `as.data.frame()` to see unformatted quotes:

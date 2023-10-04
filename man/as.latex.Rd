@@ -4,7 +4,7 @@
 \alias{as.latex}
 \title{Coerces statquote objects to strings suitable for LaTeX}
 \usage{
-as.latex(quotes, form = "\\\\epigraph{\%s}{\%s}\\n\\n", cite = FALSE)
+as.latex(quotes, form = "\\\\epigraph{\%s}{\%s}\\n\\n", cite = TRUE)
 }
 \arguments{
 \item{quotes}{an object of class \code{statquote} returned from functions such as

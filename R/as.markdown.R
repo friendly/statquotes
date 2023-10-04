@@ -24,7 +24,7 @@
 #'
 as.markdown <- function(quotes,
                         form = "> *%s* -- %s\n\n",
-                        cite = FALSE){
+                        cite = TRUE){
 #  topics <- unique(quotes$topic)
   stopifnot('statquote' %in% class(quotes))
   if (cite) quotes$source <- ifelse(is.na(quotes$cite),

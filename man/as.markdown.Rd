@@ -5,7 +5,7 @@
 \alias{as.tagged}
 \title{Function to transform statquote objects to strings suitable for markdown}
 \usage{
-as.markdown(quotes, form = "> *\%s* -- \%s\\n\\n", cite = FALSE)
+as.markdown(quotes, form = "> *\%s* -- \%s\\n\\n", cite = TRUE)
 
 as.tagged(quotes, qid = TRUE)
 }
