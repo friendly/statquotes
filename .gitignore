@@ -12,5 +12,5 @@
 .DS_Store
 ^statquotes.Rproj$
 inst/doc
-^vignettes/*.html
-^vignettes/*.R
+vignettes/*.html
+vignettes/*.R
