@@ -1,3 +1,8 @@
+# Version 0.3.2
+
+- `as.latex()` gains a `cite` argument to include citation in the results
+- Collected quotes vignette added for complete overview of quotes collection
+
 # Version 0.3.1 (2022-10-10)
 
 - This is a major release of the `statquotes` package, now using "tags" to classify quotations rather than

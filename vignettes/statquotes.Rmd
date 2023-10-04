@@ -1,0 +1,28 @@
+---
+title: "Quotes on Statistics, Data Visualization and Science"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Quotes on Statistics, Data Visualization and Science}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r echo=FALSE, results='asis'}
+library("statquotes")
+library("utils")
+f <- statquotes::get_quotes()
+n <- nrow(f)
+invisible(lapply(1:n, function(i) { cat(sprintf("%i.", i), 
+                                        as.markdown(f[i,], cite=TRUE,
+                                                    form = "%s\n\n     -- *%s*\n"),
+                                        ifelse(is.na(f[i,]$tags), "\n\n", 
+                                                     paste0('~(*#', f[i,]$tags, "*)~\n\n")))}))
+```
+
