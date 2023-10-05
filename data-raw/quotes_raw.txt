@@ -3669,3 +3669,18 @@ src: Stephen Senn
 cit: Senn, S. (2007). Statistical Issues in Drug Development (2nd Edition). Chichester: John Wiley & Sons
 tag: statistics
 
+quo: The statistician cannot evade the responsibility for understanding the process he applies or recommends.
+src: Ronald A Fisher
+cit: Fisher, R. A. (1971 [1935]). The Design of Experiments (9th ed.). Macmillan.
+tag: statistics,science
+
+quo: Taking a model too seriously is really just another way of not taking it seriously at all.
+src: Andrew Gelman
+tag: models
+url: https://statmodeling.stat.columbia.edu/2009/11/30/just_one_of_the/
+
+quo: What the use of a p-value implies, therefore, is that a hypothesis that may be true may be rejected because it has not predicted observable results that have not occurred.
+src: Harold Jeffreys
+cit: Jeffreys, H. (1939). Theory of Probability. Oxford, England: Clarendon Press.
+tag: p-values
+
