@@ -1889,7 +1889,7 @@ cit:Quoted in Sir Josiah Stamp in Some Economic Matters in Modern Life, London: 
 tag:statistics
 
 quo:It was always important for the biometrician to take part in the field-work for most kinds of trials. A willingness to get our hands dirty did much to dispel the distrust of the theoretician from Head Office, as well as giving us an appreciation of the practical problems. Trials were always carried out to simulate farming conditions as much as possible. We had once advocated a change in wheat plot lengths from 2 chains to 3, based on results from uniformity trials. It seemed a very good idea until a biometrician went to help harvest a very good crop and found he had to lift and carry bags of over 100 lb, this being the yield from each plot. But the local agriculturist in charge of the trial would never have reported this; he would only have gone on grumbling about those 'theory guys' in Head Office forever.
-src:Jean Heywood
+src:Jean Heywood (nee Miller)
 cit:A History of Statistics in New Zealand, edited by H.S.Roberts. p. 23-24.
 tag:statistics
 
@@ -3550,7 +3550,7 @@ cit: Statistical Methods for Research Workers (1925)
 tag: sample size
 
 quo: We had once advocated a change in wheat plot lengths from 2 chains to 3, based on results from uniformity trials. It seemed a very good idea until a biometrician went to help harvest a very good crop and found he had to lift and carry bags of over 100 pounds, this being the yield from each plot.
-src: Jean Miller
+src: Jean Heywood (nee Miller)
 cit: A History of Statistics in New Zealand, H. S. Roberts.
 tag: biometry, expt design
 
