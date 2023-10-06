@@ -3276,11 +3276,6 @@ src:Stephen M Stigler
 cit:Neutral Models in Biology, 1987, p. 148.
 url:https://archive.org/details/neutralmodelsinb0000unse
 
-quo:Randomness is a difficult notion for people to accept. When events come in clusters and streaks, people look for explanations and patterns. They refuse to believe that such patterns - which frequently occur in random data - could equally well be derived from tossing a coin. So it is in the stock market as well.
-src:Didier Sornette
-cit:Why Stock Markets Crash: Critical events in complex financial systems, 2003
-url:https://archive.org/details/whystockmarketsc00sorn
-
 quo:Statistics may be regarded as (i) the study of populations, (ii) as the study of variation, and (iii) as the study of methods of the reduction of data.
 src:Sir Ronald A Fisher
 cit:Statistical Methods for Research Workers, 1925
@@ -3428,9 +3423,10 @@ src:John Naisbitt
 cit:"Re-Inventing the Corporation", 1985
 tag:data
 
-quo:Randomness is a difficult notion for people to accept. When events come in clusters and streaks, people look for explanations and patterns. They refuse to believe that such patterns - which frequently occur in random data - could equally well be derived from tossing a coin. So it is in the stock market as well.
-src:Burton G Malkiel
-cit:"A Random Walk Down Wall Street", 1989
+quo:No matter what the laws of chance might tell us, we search for patterns among random events wherever they might occur--not only in the stock market but even in interpreting sporting phenomena.
+src:Burton G. Malkiel
+cit:"A Random Walk Down Wall Street: The Time-Tested Strategy For Successful Investing", 2011, p. 149.
+url:https://archive.org/details/randomwalkdownwa0000malk_c2k7/page/148/mode/2up
 tag:random numbers
 
 quo:One can be highly functionally numerate without being a mathematician or a quantitative analyst. It is not the mathematical manipulation of numbers (or symbols representing numbers) that is central to the notion of numeracy. Rather, it is the ability to draw correct meaning from a logical argument couched in numbers. When such a logical argument relates to events in our uncertain real world, the element of uncertainty makes it, in fact, a statistical argument.
