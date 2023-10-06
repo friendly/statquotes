@@ -570,8 +570,10 @@ src:Bert Gunter
 cit:R-Help, 9/14/2015
 tag:data,outliers
 
+% No evidence supports this quote was by Deming.
 quo:In God we trust. All others must bring data.
 src:W. Edwards Deming
+url: https://quoteinvestigator.com/2010/05/26/everything-counts-einstein/
 tag:data
 
 quo:The combination of some data and an aching desire for an answer does not ensure that a reasonable answer can be extracted from a given body of data.
@@ -585,8 +587,10 @@ src:Elizabeth Barrett Browning
 cit:Sonnets from the Portuguese
 tag:data,counts
 
+% Sometimes (incorrectly?) attributed to Albert Einstein.
 quo:Not everything that counts can be counted, and not everything that can be counted counts.
-src:Albert Einstein
+src:William Bruce Cameron
+url:https://quoteinvestigator.com/2010/05/26/everything-counts-einstein/
 tag:data,counts
 
 quo:Whenever you can, count.
