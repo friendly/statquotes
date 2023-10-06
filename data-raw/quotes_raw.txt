@@ -2993,10 +2993,10 @@ cit:Discussion of Dr Chatfield's paper. 1985. Journal of the Royal Statistical S
 url:https://doi.org/10.1111/j.2397-2327.1985.tb01681.x
 tag:nhst
 
-quo:I contend that the general acceptance of statistical hypothesis testing is one of the most unfortunate aspects of 20th century applied science.
+quo:Statistics is intimately connected with science and technology, and few mathematicians have experience or understanding of the methods of either.
 src:John A. Nelder
-cit:Discussion of Dr Chatfield's paper. 1985. Journal of the Royal Statistical Society A 148 : 238.
-url:https://doi.org/10.1111/j.2397-2327.1985.tb01681.x
+cit:Discussion of Dr Chatfield's paper. 1985. Journal of the Royal Statistical Society A, 148, p. 238.
+url:https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2397-2327.1985.tb01681.x
 tag:nhst
 
 
