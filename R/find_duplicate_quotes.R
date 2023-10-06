@@ -24,6 +24,8 @@ find_duplicate_quotes <- function(){
   }, stringall = dat$text)
   whc <- which(sapply(matches, function(x) length(x) > 0L))
   matches <- cbind(whc, t(do.call(cbind, matches[whc])))
+  matches <- t(apply(matches, 1L, sort))
+  matches <- matches[!duplicated(matches[,1]), , drop=FALSE]
 
   if(nrow(matches)){
     ret <- apply(matches, 1L, function(rows){
