@@ -180,10 +180,6 @@ quo:Numbers have an important story to tell. They rely on you to give them a cle
 src:Stephen Few
 tag:data visualization
 
-quo:Visualizations act as a campfire around which we gather to tell stories.
-src:Al Shalloway
-tag:data visualization
-
 quo:The purpose of visualization is insight, not pictures.
 src:Ben Shneiderman
 cit:Extreme visualization: squeezing a billion records into a million pixels. In SIGMOD '08: Proceedings of the 2008 ACM SIGMOD international conference on Management of data, pages 3-12, New York, NY, USA, 2008. ACM.
@@ -465,10 +461,10 @@ cit:Consequences of Failure to Meet Assumptions Underlying the Fixed Effects Ana
 url:https://doi.org/10.2307/1169991
 tag:statistics,anova
 
-quo:Exploratory data analysis can never be the whole story, but nothing else	can serve as the foundation stone -- as the first step.
+quo:Exploratory data analysis can never be the whole story, but nothing else can serve as the foundation stone -- as the first step.
 src:John W. Tukey
 cit:Exploratory Data Analysis, 1977, p.3.
-tag:statistics
+tag:statistics,data,data analysis
 
 quo:The best thing about being a statistician is that you get to play in everyone's backyard.
 src:John W. Tukey
@@ -801,10 +797,6 @@ src:Box, Hunter, and Hunter
 cit:Statistics for Experimenters (1978)
 tag:science
 
-quo:With four parameters I can fit an elephant, and with five I can make him wiggle his trunk.
-src:John von Neumann
-tag:science
-
 quo:He who loves practice without theory is like the sailor who boards ship without a rudder and compass and never knows where he may be cast.
 src:Leonardo da Vinci
 tag:science
@@ -930,10 +922,6 @@ quo:The best way to predict the future is to invent it
 src:Alan Kay
 tag:history,time
 
-quo:Prediction is very difficult, especially about the future
-src:Niels Bohr
-tag:history,time
-
 quo:The future ain't what it used to be
 src:Yogi Berra
 tag:history,time
@@ -1043,11 +1031,6 @@ tag:data visualization,pictures,vision
 quo:The graphic language is modern. We are learning its alphabet. That it will develop a lexicon and a literature marvelous for its vividness and the variety of application is inevitable. Graphs are dynamic, dramatic. They may epitomize an epoch, each dot a fact, each slope an event, each curve a history. Wherever there are data to record, inferences to draw, or facts to tell, graphs furnish the unrivalled means whose power we are just beginning to realize and to apply.
 src:Henry D. Hubbard
 cit:Foreword to Brinton (1939), Graphic Presentation
-tag:data visualization,pictures
-
-quo:Functional visualizations are more than innovative statistical analyses and computational algorithms. They must make sense to the user and require a visual language system that uses colour, shape, line, hierarchy and composition to communicate clearly and appropriately, much like the alphabetic and character-based languages used worldwide between humans.
-src:Matt Woolman
-cit:Digital Information Graphics
 tag:data visualization,pictures
 
 % fixme multiline
@@ -1227,10 +1210,6 @@ quo:Whenever I am infuriated, I revenge myself with a new Diagram
 src:Florence Nightingale
 cit:Letter 1857.8.19 to Sidney Herbert
 tag:data visualization,pictures
-
-quo:Statistics is the art of stating in precise terms that which one does not know.
-src:William Kruskal
-tag:statistics
 
 quo:Again I must repeat my objections to intermingling causation with statistics. It might be to a certain extent admissible if you had no sanitary head. But you have one, & his report should be quite separate. The statistician has nothing to do with causation: he is almost certain in the present state of knowledge to err.
 src:Florence Nightingale
@@ -1418,11 +1397,6 @@ src:Leo Breiman
 cit:Statistical Modeling: The Two Cultures, Statistical Science, Vol 16, p. 214.
 url:https://doi.org/10.1214/ss/1009213726
 tag:data,models
-
-quo:Exploratory data analysis can never be the whole story, but nothing else can serve as the foundation stone--as the first step.
-src:John Tukey
-cit:Exploratory Data Analysis, p. 3.
-tag:data,data analysis
 
 quo:Unless exploratory data analysis uncovers indications, usually quantitative ones, there is likely to nothing for confirmatory data analysis to consider.
 src:John Tukey
@@ -1894,10 +1868,6 @@ src:S. den Hartog
 cit:Ph D. Thesis University of Groningen
 tag:statistics
 
-quo:It has now been proved beyond doubt that smoking is one of the leading causes of statistics.
-src:Fletcher Krebel
-tag:statistics
-
 quo:Because no one becomes statistically self-sufficient after one semester of study, I try to prepare students to become intelligent consumers of the assistance that they will inevitably seek. Service courses train future clients, not future statisticians.
 src:Michael W. Tosset
 cit:"Statistical Science", Feb 98, p. 24.
@@ -2269,7 +2239,7 @@ tag:statistics,significance,nhst
 quo:Visualizations act as a campfire around which we gather to tell stories.
 src:Al Shalloway
 cit:2011
-tag:eda
+tag:eda,data visualization
 
 quo:If students have students have no experience with hands-on [telescope] observing, they may take all data as 'truth' without having an understanding of how the data are obtained and what could potentially go wrong in that process, so I think it becomes crucially important to give a glimpse of what's happening behind the scenes at telescopes, so they can be appropriately skeptical users of data in the future.
 src:Colette Salyk
@@ -3116,7 +3086,7 @@ tag:nhst
 
 quo:Prediction is very difficult, especially of the future.
 src:Niels Henrick David Bohr
-tag:time,science
+tag:time,science,history
 
 quo:Statistics are no substitute for judgement.
 src:Henry Clay, Sr.
@@ -3207,6 +3177,7 @@ cit:1929 Lecture (cited in Bell 1945, The Development of Mathematics, p. 587)
 quo:It is now proved beyond doubt that smoking is one of the leading causes of statistics.
 src:Fletcher Knebel
 cit:1961
+tag:statistics
 
 quo:Statistics show that of those who contract the habit of eating, very few survive.
 src:William W Irwin
@@ -3280,7 +3251,7 @@ quo:Numeracy is the ability to process, interpret and communicate numerical, qua
 src:Jeff Evans
 cit:Adults' Mathematical Thinking and Emotion, 2000
 
-quo:Statistics are the art of stating in precise terms that which one does not know.
+quo:Statistics is the art of stating in precise terms that which one does not know.
 src:William Kruskal
 cit:Statistics, Moliere, and Henry Adams, American Scientist, 55, 416-428, 1967.
 url:https://www.jstor.org/stable/27837037
@@ -3378,10 +3349,6 @@ cit:The Furtherance of Medical Research, 1941
 quo:A random sequence is a vague notion embodying the idea of a sequence in which each term is unpredictable to the uninitiated and whose digits pass a certain number of tests traditional with statisticians and depending somewhat on the uses to which the sequence is to be put.
 src:Derrick H Lehmer
 cit:1951
-
-quo:All predictions are statistical, but some predictions have such a high probability that one tends to regard them as certain.
-src:Marshall J Walker
-cit:"The Nature of Scientific Thought", 1963
 
 quo:The moment you forecast you know you're going to be wrong, you just don't know when and in which direction.
 src:Edgar R Fiedler

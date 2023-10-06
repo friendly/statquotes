@@ -13,7 +13,7 @@ aggressively fuzzy matched.
 \examples{
 
 # As the number of quotes has grown, this has become very slow.
-# find_duplicate_quotes()
+# dups <- find_duplicate_quotes()
 
 
 }
