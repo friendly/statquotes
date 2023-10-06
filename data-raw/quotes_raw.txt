@@ -1891,7 +1891,8 @@ tag:statistics
 quo:It was always important for the biometrician to take part in the field-work for most kinds of trials. A willingness to get our hands dirty did much to dispel the distrust of the theoretician from Head Office, as well as giving us an appreciation of the practical problems. Trials were always carried out to simulate farming conditions as much as possible. We had once advocated a change in wheat plot lengths from 2 chains to 3, based on results from uniformity trials. It seemed a very good idea until a biometrician went to help harvest a very good crop and found he had to lift and carry bags of over 100 lb, this being the yield from each plot. But the local agriculturist in charge of the trial would never have reported this; he would only have gone on grumbling about those 'theory guys' in Head Office forever.
 src:Jean Heywood (nee Miller)
 cit:A History of Statistics in New Zealand, edited by H.S.Roberts. p. 23-24.
-tag:statistics
+url:url:https://www.stats.org.nz/wp-content/uploads/2018/07/A-History-of-Statistics-in-New-Zealand-1.pdf
+tag:statistics, biometry, expt design
 
 quo:Econometrics has successfully predicted 14 of the last 3 economic depressions.
 src:David Hand
@@ -3548,11 +3549,6 @@ quo: Little experience is sufficient to show that the traditional machinery of s
 src: Ronald Fisher
 cit: Statistical Methods for Research Workers (1925)
 tag: sample size
-
-quo: We had once advocated a change in wheat plot lengths from 2 chains to 3, based on results from uniformity trials. It seemed a very good idea until a biometrician went to help harvest a very good crop and found he had to lift and carry bags of over 100 pounds, this being the yield from each plot.
-src: Jean Heywood (nee Miller)
-cit: A History of Statistics in New Zealand, H. S. Roberts.
-tag: biometry, expt design
 
 quo: All generative models are wrong, but some are useful.
 src: Jared Lander
