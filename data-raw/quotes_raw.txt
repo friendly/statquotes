@@ -1,6 +1,6 @@
 % quotes_raw.txt
 
-% This file is a collection of quote blocks formatted like this:
+% This file is a collection of quote blocks formatted like this (but without the percent signs):
 
 % quo:A lot of data science and analytics is just counting things and labeling them.
 % src:Hamdan Azhar
@@ -359,6 +359,7 @@ quo:You cannot feed the hungry on statistics.
 src:David Lloyd George
 tag:statistics
 
+% See https://quoteinvestigator.com/2010/05/21/death-statistic/
 quo:A single death is a tragedy, a million deaths is a statistic.
 src:Kurt Tucholsky, mis-attributed to Joseph Stalin
 cit:Franzosischer Witz, 1925
@@ -382,7 +383,7 @@ src:Leonard L. Levison
 tag:statistics
 
 quo:Figures won't lie but liars will figure.
-src:Charles Grosvenor
+url:https://quoteinvestigator.com/2010/11/15/liars-figure/
 tag:statistics
 
 quo:I always find that statistics are hard to swallow and impossible to digest.  The only one I can remember is that if all the people who go to sleep in church were laid end to end they would be a lot more comfortable.
@@ -1928,6 +1929,7 @@ cit:Statistics and Ethics: Some Advice for Young Statisticians, The American Sta
 url:https://doi.org/10.1198/0003130031072
 tag:statistics,ethics
 
+% https://quoteinvestigator.com/2022/06/22/lies-statistics/
 quo:Statistical analysis of data can only be performed within the context of selected assumptions, models, and/or prior distributions. A statistical analysis is actually the extraction of substantive information from data and assumptions. And herein lies the rub, understood well by Disraeli and others skeptical of our work: For given data, an analysis can usually be selected which will result in "information" more favorable to the owner of the analysis then is objectively warranted.
 src:Stephen B. Vardeman and Max D. Morris
 cit:Statistics and Ethics: Some Advice for Young Statisticians, The American Statistician, vol 57, p. 25.
@@ -3276,6 +3278,7 @@ src:Frances Yates
 cit:Discussion on the Paper by Dr. Box and Dr. Andersen, Journal of the Royal Statistical Society B Vol. 17, 1955
 url:https://www.jstor.org/stable/2983783
 
+% https://quoteinvestigator.com/2021/01/18/confess/
 quo:Beware of the problem of testing too many hypotheses; the more you torture the data, the more likely they are to confess, but confessions obtained under duress may not be admissible in the court of scientific opinion.
 src:Stephen M Stigler
 cit:Neutral Models in Biology, 1987, p. 148.
@@ -3647,3 +3650,7 @@ src: Harold Jeffreys
 cit: Jeffreys, H. (1939). Theory of Probability. Oxford, England: Clarendon Press.
 tag: p-values
 
+quo: Statistics are no substitution for judgment.
+src: Henry Clay
+cit: Evening Sentinel (Staffordshire Sentinel), 1930 October 13, Production Prices and Depression: Professor Clay on the Trade Outlook, Quote Page 5, Column 5, Staffordshire, England. (British Newspaper Archive)
+url: https://quoteinvestigator.com/2019/08/04/statistics/
