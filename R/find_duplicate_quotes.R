@@ -1,8 +1,8 @@
 
 #' Check for duplicate quotes
 #'
-#' Returns a list with qid, source, and the text where strings are
-#' aggressively fuzzy matched.
+#' Returns a list with aggressively fuzzy matched quotations, along with their
+#' relevant citation information.
 #'
 #' @importFrom stats na.omit
 #' @export
