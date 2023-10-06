@@ -81,11 +81,15 @@ tag:data visualization
 tex:John W. Tukey \citet[p. 49]{Tukey:1962}
 
 quo:Genius seems to consist merely in trueness of sight.
-src:Ralph Waldo Emerson, 1840
+src:Ralph Waldo Emerson
+cit:Journals of Ralph Waldo Emerson, Entry dated 1835, May 11
+url:https://archive.org/details/journalsofralphw03emer/page/474/mode/2up?q=%22trueness+of+sight%22
 tag:data visualization,vision
 
 quo:The eye obeys exactly the action of the mind.
-src:Ralph Waldo Emerson, 1860
+src:Ralph Waldo Emerson
+cit:Representative men. English traits. Conduct of life, p.409 
+url:https://quod.lib.umich.edu/e/emerson/4957107.0006.001/196:11
 tag:data visualization
 
 quo:Vision is the art of seeing things invisible.
