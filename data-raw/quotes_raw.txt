@@ -3703,3 +3703,35 @@ quo: Statistics are no substitution for judgment.
 src: Henry Clay
 cit: Evening Sentinel (Staffordshire Sentinel), 1930 October 13, Production Prices and Depression: Professor Clay on the Trade Outlook, Quote Page 5, Column 5, Staffordshire, England. (British Newspaper Archive)
 url: https://quoteinvestigator.com/2019/08/04/statistics/
+
+quo: The most effective debugging tool is still careful thought, coupled with judiciously placed print statements.
+src: Brian Kernighan
+cit: Unix for Beginners (1979)
+url:https://softwarequotes.com/author/brian-wilson-kernighan
+tag: computing
+
+
+quo: We live on an island of knowledge surrounded by a sea of ignorance.  As our island of knowledge grows, so does the shore of our ignorance.
+src: John A. Wheeler, Scientific American, 1992
+tag: science,knowledge
+
+quo: It's not just about visualizing information, but making information visible.
+src: Jose Duarte
+tag: data visualization
+
+quo: I don't know what the definition of "philosopher" is. But I know for a fact that a "statistician" is someone who has written an R package.
+src: Richard McElrath, Twitter, 4-29-2023
+url: https://twitter.com/rlmcelreath/status/1652217479995826177
+tag: computing,statistics
+
+quo: In every project you have at least one other collaborator; future-you. You don’t want future-you to curse past-you.
+src: Solomon Kurz
+url: https://bookdown.org/content/4857/horoscopes-insights.html
+tag: time
+
+quo: The whole point of science is that most of it is uncertain. That's why science is exciting--because we don't know. Science is all about things we don't understand. The public, of course, imagines science is just a set of facts. But it's not. Science is a process of exploring, which is always partial. We explore, and we find out things that we understand. We find out things we thought we understood were wrong. That's how it makes progress.
+src: Freeman Dyson
+cit: mentioned in a 2014 interview
+tag: science,knowledge,uncertainty
+url: https://twitter.com/PhysInHistory/status/1711018027875987484
+
