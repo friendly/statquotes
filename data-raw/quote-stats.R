@@ -15,7 +15,7 @@ stats <- data.frame(
   chars = str_count(text, boundary("character")),
   words = str_count(text, boundary("word")),
   sent = str_count(text, boundary("sentence")),
-  txt = substr(qt$text, 1, 40)
+  txt = substr(qt$text, 1, 60)
 )
 
 summary(stats)
@@ -45,6 +45,7 @@ terms |> table() |> sort() |> as.data.frame() |> head(10)
 
 terms |> table() |> sort(decreasing=TRUE) |> as.data.frame() |> head(10)
 
-
+#' ## How many quotes have no tags?
+sum(is.na(tags))
 
 

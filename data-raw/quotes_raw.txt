@@ -88,7 +88,7 @@ tag:data visualization,vision
 
 quo:The eye obeys exactly the action of the mind.
 src:Ralph Waldo Emerson
-cit:Representative men. English traits. Conduct of life, p.409 
+cit:Representative men. English traits. Conduct of life, p.409
 url:https://quod.lib.umich.edu/e/emerson/4957107.0006.001/196:11
 tag:data visualization
 
@@ -1402,11 +1402,11 @@ cit:Statistical Modeling: The Two Cultures, Statistical Science, Vol 16, p. 210.
 url:https://doi.org/10.1214/ss/1009213726
 tag:data,models
 
-quo:The goals in statistics are to use data to predict and to get information about the underlying data mechanism. Nowhere is it written on a stone tablet what kind of model should be used to solve problems involving data. To make my position clear, I am not against models per se. In some situations they are the most appropriate way to solve the problem. But the emphasis needs to be on the problem and on the data. Unfortunately, our field has a vested interest in models, come hell or high water. For instance, see Dempster's (1998) paper on modelling. His position on the 1990 Census adjustment controversy is particularly interesting. He admits that he doesn't know much about the data or the details, but argues that the problem can be solved by a strong dose of modelling. That more modeling can make error-ridden data accurate seems highly unlikely to me.
+quo:The goals in statistics are to use data to predict and to get information about the underlying data mechanism. Nowhere is it written on a stone tablet what kind of model should be used to solve problems involving data. To make my position clear, I am not against models per se. In some situations they are the most appropriate way to solve the problem. But the emphasis needs to be on the problem and on the data. Unfortunately, our field has a vested interest in models, come hell or high water.
 src:Leo Breiman
 cit:Statistical Modeling: The Two Cultures, Statistical Science, Vol 16, p. 214.
 url:https://doi.org/10.1214/ss/1009213726
-tag:data,models
+tag:data,models,statistics
 
 quo:Unless exploratory data analysis uncovers indications, usually quantitative ones, there is likely to nothing for confirmatory data analysis to consider.
 src:John Tukey
@@ -1668,7 +1668,7 @@ quo:Scholars feel the need to present tables of model parameters in academic art
 src:Kousuke Imai, Gary King, Oliva Lau
 cit:Toward a Common Framework for Statistical Analysis and Development, Journal of Computational and Graphical Statistics, 2008, v 17.
 url:https://doi.org/10.1198/106186008X384898
-tag:data,tables
+tag:data,tables,uncertainty
 
 quo:The purpose of plotting is to convey phenomena to the viewer's cortex, not to provide a place to lookup observed numbers.
 src:Kaye Basford, John Tukey
@@ -1785,7 +1785,7 @@ cit:Survey Research Methods Section newsletter, July 2002.
 tag:data visualization
 
 
-quo:It's not easy to select more than a few clearly distinct colors. Also, "distinct" is context-dependent, because: What will be the spatial relationships of the different colors in your output? You can successfully have fairly similar colors adjacent to each other, since the contrast is more obvious when they're adjacent. However, if you want to use colors to track identity and difference across scattered points or patches, then you need bigger separations between colors, since you want to be able to see easily that patch "A" here is of the same kind as patch "A" there and different from patch "B" somewhere else, when mingled with patches of other kinds. And size matters. Big patches of similar color (as on a map) can look quite distinct, while the same colors used to plot filled circular blobs on a graph might be barely distinguishable, and totally indistinguishable if used to plot colored "."s or "+"s. It depends too on what you will be using to render the colors. Monitor screens vary in their ability to render different colors distinctly, and so do color printers. It's all very psycho-visual and success usually requires experimentation!
+quo:It's not easy to select more than a few clearly distinct colors. Also, "distinct" is context-dependent, because: What will be the spatial relationships of the different colors in your output? You can successfully have fairly similar colors adjacent to each other, since the contrast is more obvious when they're adjacent. However, if you want to use colors to track identity and difference across scattered points or patches, then you need bigger separations between colors, since you want to be able to see easily that patch "A" here is of the same kind as patch "A" there and different from patch "B" somewhere else, when mingled with patches of other kinds. And size matters. Big patches of similar color (as on a map) can look quite distinct, while the same colors used to plot filled circular blobs on a graph might be barely distinguishable, and totally indistinguishable if used to plot colored "."s or "+"s. ... It's all very psycho-visual and success usually requires experimentation!
 src:Ted Harding
 cit:R-help mailing list, 2004
 tag:data visualization
@@ -2066,7 +2066,7 @@ src:D. V. Lindley
 cit:Discussion, The American Statistician, August 1997, Vol. 51, page 265.
 tag:statistics,bayesian
 
-quo:In contrast to the logical development and intuitive interpretations of the Bayesian approach, frequentist methods are nearly impossible to understand, even for the best students. Consider confidence intervals. Many instructors err in describing confidence intervals and even some texts err. But whether texts or instructors err in explaining them, students do not understand them. And they carry this misunderstanding with them into later life. Calculating a confidence interval is easy. But everyone except the cognoscenti believes that when one calculates 95% confidence limits of 2.6 and 7.9, say, the probability is 95% that the parameter in question lies in the interval from 2.6 to 7.9. P values are nearly as obscure as confidence intervals. Diamond and Forrester (1983) make it clear that MDs [Medical Doctors] do not understand P values (and in particular that they themselves do not understand P values!). Students in frequentist courses may learn very well how to calculate confidence intervals and P values, but they cannot give them correct interpretations. I stopped teaching frequentist methods when I decided that they could not be learned.
+quo:In contrast to the logical development and intuitive interpretations of the Bayesian approach, frequentist methods are nearly impossible to understand, even for the best students. Consider confidence intervals. Many instructors err in describing confidence intervals and even some texts err. But whether texts or instructors err in explaining them, students do not understand them. And they carry this misunderstanding with them into later life. Calculating a confidence interval is easy. But everyone except the cognoscenti believes that when one calculates 95% confidence limits of 2.6 and 7.9, say, the probability is 95% that the parameter in question lies in the interval from 2.6 to 7.9. P values are nearly as obscure as confidence intervals. ... Students in frequentist courses may learn very well how to calculate confidence intervals and P values, but they cannot give them correct interpretations. I stopped teaching frequentist methods when I decided that they could not be learned.
 src:Donald A. Berry
 cit:Teaching Elementary Bayesian Statistics with Real Applications in Science, The American Statistician, 51, p 242.
 url:https://doi.org/10.1080/00031305.1997.10473970
@@ -2299,10 +2299,12 @@ tag:nhst
 quo: what John Dewey called 'the quest for certainty' is, in the case of empirical knowledge, a snare and a delusion.
 src:Richard B. Braithwaite
 cit:Scientific Explanation. A Study of the Function of Theory, Probability and Law in Science (p. 163), 1953. Cambridge University Press.
+tag:knowledge,uncertainty
 
 quo: The ultimate justification for any scientific belief will depend upon the main purpose for which we think scientifically--that of predicting and thereby controlling the future.
 src:Richard B. Braithwaite
 cit:Scientific Explanation. A Study of the Function of Theory, Probability and Law in Science (p. 174), 1953. Cambridge University Press.
+tag:science
 
 quo: Most readers of The American Statistician will recognize the limited value of hypothesis testing in the science of statistics. I am not sure that they all realize the extent to which it has become the primary tool in the religion of Statistics.
 src:David Salsburg
@@ -2319,14 +2321,14 @@ quo: I do not think that significance testing should be completely abandoned ...
 src:Nigel G. Yoccoz
 cit:Use, Overuse, and Misuse of Significance Tests in Evolutionary Biology and Ecology. Bulletin of the Ecological Society of America, Vol. 72, No. 2 (Jun., 1991), pp. 106-111.
 url:http://www.jstor.org/stable/20167258
-tag:nhst
+tag:nhst,significance,uncertainty
 
 
-quo: In marked contrast to what is advocated by most statisticians, most evolutionary biologists and ecologists overemphasize the potential role of significance testing in their scientific practice. Biological significance should be emphasized rather than statistical significance. Furthermore, a survey of papers showed that the literature is infiltrated by an array of misconceptions about the use and interpretation of significance tests. ... By far the most common error is to confound statistical significance with biological, scientific significance...Statements like 'the two populations are significantly different relative to parameter X (P=.004)' are found with no mention of the estimated difference. The difference is perhaps statistically significant at the level .004, but the reader has no idea is if it is biologically significant. ... Most biologists and other users of statistical methods still seem to be unaware that significance testing by itself sheds little light on the questions they are posing.
+quo: In marked contrast to what is advocated by most statisticians, most evolutionary biologists and ecologists overemphasize the potential role of significance testing in their scientific practice. Biological significance should be emphasized rather than statistical significance. Furthermore, a survey of papers showed that the literature is infiltrated by an array of misconceptions about the use and interpretation of significance tests. ... By far the most common error is to confound statistical significance with biological, scientific significance... Statements like 'the two populations are significantly different relative to parameter X (P=.004)' are found with no mention of the estimated difference. ... Most biologists and other users of statistical methods still seem to be unaware that significance testing by itself sheds little light on the questions they are posing.
 src:Nigel G. Yoccoz
 cit:Use, Overuse, and Misuse of Significance Tests in Evolutionary Biology and Ecology. Bulletin of the Ecological Society of America, Vol. 72, No. 2 (Jun., 1991), pp. 106-111.
 url:http://www.jstor.org/stable/20167258
-tag:nhst
+tag:nhst,significance
 
 
 quo: Tests appear to many users to be a simple way to discharge the obligation to provide some statistical treatment of the data.
@@ -2647,47 +2649,49 @@ quo:We admit with Sir Winston Churchill that it sometimes pays to admit the obvi
 src:W. Edwards Deming
 cit:On probability as a basis for action, 1975. American Statistician 29: 146-152.
 url:https://doi.org/10.2307/2683482
+tag:significance
 
 quo:Under the usual teaching, the trusting student, to pass the course must forsake all the scientific sense that he has accumulated so far, and learn the book, mistakes and all.
 src:W. Edwards Deming
 cit:On probability as a basis for action, 1975. American Statistician 29: 146-152.
 url:https://doi.org/10.2307/2683482
+tag:science
 
 quo:While [Edward C. Bryant] was at the University of Wyoming, someone came in from the Department of Animal Husbandry to announce to him an astounding scientific discovery---the fibres on the left side of the sheep and those on the right side are of different diameter. Dr. Bryant asked him how many fibres he had in the sample: answer, 50,000. This was a number big enough to establish significance. But what of it? Anyone would know in advance, without spending a dollar, that there is a difference between fibres of the left side and the right side of any sheep, or of n sheep combined. The question is whether the difference is of scientific importance.
 src:W. Edwards Deming
 cit:On probability as a basis for action, 1975. American Statistician 29: 146-152.
 url:https://doi.org/10.2307/2683482
-tag:nhst
+tag:nhst,science
 
 quo:Small wonder that students have trouble [with statistical hypothesis testing]. They may be trying to think.
 src:W. Edwards Deming
 cit:On probability as a basis for action, 1975. American Statistician 29: 146-152.
 url:https://doi.org/10.2307/2683482
-tag:nhst
+tag:nhst,significance
 
 quo:Data analysis methods in psychology still emphasize statistical significance testing, despite numerous articles demonstrating its severe deficiencies. It is now possible to use meta-analysis to show that reliance on significance testing retards the development of cumulative knowledge. The reform of teaching and practice will also require that researchers learn that the benefits that they believe flow from use of significance testing are illusory. Teachers must re-vamp their courses to bring students to understand that a) reliance on significance testing retards the growth of cumulative research knowledge; b) benefits widely believed to flow from significance testing do not in fact exist; c) significance testing methods must be replaced with point estimates and confidence intervals in individual studies and with meta-analyses and the integration of multiple studies. This reform is essential to the future progress of cumulative knowledge and psychological research.
 src:Frank L. Schmidt
 cit:Statistical significance testing and cumulative knowledge in psychology: implications for training of researchers. Psychological Methods 1(2), Jun 1996, 115-129.
 url:https://psycnet.apa.org/buy/1996-04469-001
-tag:nhst
+tag:nhst,significance,knowledge
 
 quo:If the null hypothesis is not rejected, Fisher's position was that nothing could be concluded. But researchers find it hard to go to all the trouble of conducting a study only to conclude that nothing can be concluded.
 src:Frank L. Schmidt
 cit:Statistical significance testing and cumulative knowledge in psychology: implications for training of researchers. Psychological Methods 1(2), Jun 1996, 115-129.
 url:https://psycnet.apa.org/buy/1996-04469-001
-tag:nhst
+tag:nhst,significance
 
 quo:Many researchers believe that statistical significance testing confers important benefits that are in fact completely imaginary.
 src:Frank L. Schmidt
 cit:Statistical significance testing and cumulative knowledge in psychology: implications for training of researchers. Psychological Methods 1(2), Jun 1996, 115-129.
 url:https://psycnet.apa.org/buy/1996-04469-001
-tag:nhst
+tag:nhst,significance
 
 quo:An important part of the explanation [of continued use of significance testing] is that researchers hold false beliefs about significance testing, beliefs that tell them that significance testing offers important benefits to researchers that it in fact does not. Three of these beliefs are particularly important. The first is the false belief that the significance level of a study indicates the probability of successful replications of the study.... A second false belief widely held by researchers is that statistical significance level provides an index of the importance or size of a difference or relation.... The third false belief held by many researchers is the most devastating of all to the research enterprise. This is the belief that if a difference or relation is not statistically significant, then it is zero, or at least so small that it can safely be considered to be zero. This is the belief that if the null hypothesis is not rejected then it is to be accepted. This is the belief that a major benefit from significance tests is that they tell us whether a difference or affect is real or 'probably just occurred by chance'.
 src:Frank L. Schmidt
-cit:Statistical significance testing and cumulative knowledge in psychology: implications for training of researchers. Psychological Methods 1(2), Jun 1996, 115-129.
+cit:Statistical significance testing and cumulative knowledge in psychology: Implications for training of researchers. Psychological Methods 1(2), Jun 1996, 115-129.
 url:https://psycnet.apa.org/buy/1996-04469-001
-tag:nhst
+tag:nhst,significance
 
 quo:We can no longer tolerate a situation in which our upcoming generation of researchers are being trained to use discredited data analysis methods while the broader research enterprise of which they are to become a part has moved toward improved methods.
 src:Frank L. Schmidt
@@ -2700,13 +2704,13 @@ quo:I believe ... that hypothesis testing has been greatly overemphasized in psy
 src:Jacob Cohen
 cit:Things I have learned (so far), 1990. American Psychologist 45: 1304-1312.
 url:https://psycnet.apa.org/doi/10.1037/0003-066X.45.12.1304
-tag:nhst
+tag:nhst,significance
 
 quo:... the primary product of a research inquiry is one or more measures of effect size, not p values.
 src:Jacob Cohen
 cit:Things I have learned (so far), 1990. American Psychologist 45: 1304-1312.
 url:https://psycnet.apa.org/doi/10.1037/0003-066X.45.12.1304
-tag:nhst
+tag:nhst,significance
 
 quo:The prevailing yes-no decision at the magic .05 level from a single research is a far cry from the use of informed judgment. Science simply doesn't work that way. A successful piece of research doesn't conclusively settle an issue, it just makes some theoretical proposition to some degree more [or less] likely.
 src:Jacob Cohen
@@ -2723,13 +2727,13 @@ quo:When a Fisherian null hypothesis is rejected with an associated probability 
 src:Jacob Cohen
 cit:Things I have learned (so far), 1990. American Psychologist 45: 1304-1312.
 url:https://psycnet.apa.org/doi/10.1037/0003-066X.45.12.1304
-tag:nhst
+tag:nhst,significance
 
 quo:Despite widespread misconceptions to the contrary, the rejection of a given null hypothesis gives us no basis for estimating the probability that a replication of the research will again result in rejecting that null hypothesis.
 src:Jacob Cohen
 cit:Things I have learned (so far), 1990. American Psychologist 45: 1304-1312.
 url:https://psycnet.apa.org/doi/10.1037/0003-066X.45.12.1304
-tag:nhst
+tag:nhst,significance
 
 quo:Of course, everyone knows that failure to reject the Fisherian null hypothesis does not warrant the conclusion that it is true. Fisher certainly knew and emphasized it, and our textbooks duly so instruct us. Yet how often do we read in the discussion and conclusions of articles now appearing in our most prestigious journals that 'there is no difference' or 'no relationship'.
 src:Jacob Cohen
@@ -3125,6 +3129,7 @@ quo:An observation is judged significant, if it would rarely have been produced,
 src:Ronald Fisher
 cit:The Statistical Method in Psychical Research, Proceedings of the Society for Psychical Research, 39: 189-192 (1929).
 url:https://hdl.handle.net/2440/15204
+tag:significance
 
 
 quo:The statistician has no magic touch by which he may come in at the stage of tabulation and make something of nothing. Neither will his advice, however wise in the early stages of a study, ensure successful execution and conclusion. Many a study, launched on the ways of elegant statistical design, later boggled in execution, ends up with results to which the theory of probability can contribute little.
@@ -3144,31 +3149,36 @@ quo:An inference, if it is to have scientific value, must constitute a predictio
 src:W. Edwards Deming
 cit:Statistical Method from the Viewpoint of Quality Control, 1939.
 url:https://archive.org/details/CAT10502416
+tag:statistics,science
 
 quo:Data visualization is part art and part science. The challenge is to get the art right without getting the science wrong and vice versa.
 src:Claus O. Wilke
 cit:Fundamentals of Data Visualization
-tag:data visualization
+tag:data visualization,science
 
 
 quo:In other words, the model is terrific in all ways other than the fact that it is totally useless. So why did we create it? In short, because we could: we have a data set, and a statistical package, and add the former to the latter, hit a few buttons and voila, we have another paper.
 src:Andew J. Vickers & Angel M. Cronin
 cit:Everything you always wanted to know about evaluating prediction models (but were too afraid to ask). Urology. 2010;76(6):1298-1301.
 url:https://doi.org/10.1016%2Fj.urology.2010.06.019
+tag:models
 
 
 quo:The definition of a medical statistician is one who will not accept that Columbus discovered America because he said he was looking for India in the trial plan.
 src:Stephen J. Senn
 cit:Power is indeed irrelevant in interpreting completed studies. BMJ. 2002;325(7375):1304.
 url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1124761/
+tag:statistician
 
 quo:Inept graphics also flourish because many graphic artists believe that statistics are boring and tedious. It then follows that decorated graphics must pep up, animate, and all too often exaggerate what evidence there is in the data. ... If the statistics are boring, then you've got the wrong numbers.
 src:Edward R Tufte
 cit:The Visual Display of Quantitative Information, 1983.
+tag:data visualization,statistics
 
 quo:Excellence in statistical graphics consists of complex ideas communicated with clarity, precision, and efficiency. Graphical displays should show the data, induce the viewer to think about the substance rather that about the methodology, graphic design, the technology of graphic production, or something else, avoid distorting what the data have to say, present many numbers in a small space make large data sets coherent, encourage the eye to compare different pieces of data, reveal the data at several levels of detail, from a broad overview to the fine structure, serve a reasonable clear purpose: description, exploration, tabulation, or decoration [should] be closely integrated with the statistical and verbal descriptions of a data set.
 src:Edward R Tufte
 cit:The Visual Display of Quantitative Information, 1983
+tag:data visualization
 
 quo:If you can't have an experiment, do the best you can with whatever data you can gather, but do be very skeptical of historical data and subject them to all the logical tests you can think of.
 src:Robert Hooke
@@ -3185,6 +3195,7 @@ tag:sampling
 quo:Probability is the most important concept in modern science, especially as nobody has the slightest notion what it means.
 src:Bertrand Russell
 cit:1929 Lecture (cited in Bell 1945, The Development of Mathematics, p. 587)
+tag:probability
 
 quo:It is now proved beyond doubt that smoking is one of the leading causes of statistics.
 src:Fletcher Knebel
@@ -3202,10 +3213,12 @@ cit:Standard Deviations, 2014
 quo:A very different - and very incorrect - argument is that successes must be balanced by failures (and failures by successes) so that things average out. Every coin flip that lands heads makes tails more likely. Every red at roulette makes black more likely. ... These beliefs are all incorrect. Good luck will certainly not continue indefinitely, but do not assume that good luck makes bad luck more likely, or vice versa.
 src:Gary Smith
 cit:Standard Deviations, 2014
+tag:probability
 
 quo:Remember that even random coin flips can yield striking, even stunning, patterns that mean nothing at all. When someone shows you a pattern, no matter how impressive the person's credentials, consider the possibility that the pattern is just a coincidence. Ask why, not what. No matter what the pattern, the question is: Why should we expect to find this pattern?
 src:Gary Smith
 cit:Standard Deviations, 2014
+tag:probability
 
 quo:We are seduced by patterns and we want explanations for these patterns. When we see a string of successes, we think that a hot hand has made success more likely. If we see a string of failures, we think a cold hand has made failure more likely. It is easy to dismiss such theories when they involve coin flips, but it is not so easy with humans. We surely have emotions and ailments that can cause our abilities to go up and down. The question is whether these fluctuations are important or trivial.
 src:Gary Smith
@@ -3229,30 +3242,36 @@ url:https://archive.org/details/dli.ernet.5666
 quo:Figures may not lie, but statistics compiled unscientifically and analyzed incompetently are almost sure to be misleading, and when this condition is unnecessarily chronic the so-called statisticians may be called liars.
 src:Edwin B Wilson
 cit:Bulletin of the American Mathematical Society, Vol 18, 1912
+tag:statisticians
 
 quo:The statistician's job is to draw general conclusions from fragmentary data. Too often the data supplied to him for analysis are not only fragmentary but positively incoherent, so that he can do next to nothing with them. Even the most kindly statistician swears heartily under his breath whenever this happens.
 src:M J Moroney
 cit:Facts from Figures, 1927
+tag:statisticians
 
 quo:Just as by 'literacy', in this context, we mean much more than its dictionary sense of the ability to read and write, so by 'numeracy' we mean more than mere ability to manipulate the rule of three. When we say that a scientist is 'illiterate', we mean that he is not well enough read to be able to communicate effectively with those who have had a literary education. When we say that a historian or a linguist is 'innumerate' we mean that he cannot even begin to understand what scientists and mathematicians are talking about.
 src:Sir Geoffrey Crowther
 cit:A Report of the Central Advisory Committee for Education, 1959, p. 270.
 url:http://www.educationengland.org.uk/documents/crowther/crowther1959-1.html
+tag:numeracy
 
 quo:Numeracy has come to be an indispensable tool to the understanding and mastery of all phenomena, and not only of those in the relatively close field of the traditional natural sciences.
 src:Sir Geoffrey Crowther
 cit:A Report of the Central Advisory Committee for Education, 1959, p. 271.
 url:http://www.educationengland.org.uk/documents/crowther/crowther1959-1.html
+tag:numeracy
 
 quo:Numeracy has two facets--reading and writing, or extracting numerical information and presenting it. The skills of data presentation may at first seem ad hoc and judgmental, a matter of style rather than of technology, but certain aspects can be formalized into explicit rules, the equivalent of elementary syntax.
 src:Andrew Ehrenberg
 cit:Rudiments of Numeracy, Journal of Royal Statistical Society, 140, 277-297, 1977.
 url:https://www.jstor.org/stable/2344922
+tag:numeracy
 
 quo:People often feel inept when faced with numerical data. Many of us think that we lack numeracy, the ability to cope with numbers. ... The fault is not in ourselves, but in our data. Most data are badly presented and so the cure lies with the producers of the data. To draw an analogy with literacy, we do not need to learn to read better, but writers need to be taught to write better.
 src:Andrew Ehrenberg
 cit:The problem of numeracy, American Statistician 35, 67-71, 1981.
 url:https://www.jstor.org/stable/2683143
+tag:numeracy
 
 quo:To be numerate means to be competent, confident, and comfortable with one's judgements on whether to use mathematics in a particular situation and if so, what mathematics to use, how to do it, what degree of accuracy is appropriate, and what the answer means in relation to the context.
 src:Diana Coben
@@ -3262,21 +3281,25 @@ tag:numeracy
 quo:Numeracy is the ability to process, interpret and communicate numerical, quantitative, spatial, statistical, even mathematical information, in ways that are appropriate for a variety of contexts, and that will enable a typical member of the culture or subculture to participate effectively in activities that they value.
 src:Jeff Evans
 cit:Adults' Mathematical Thinking and Emotion, 2000
+tag:numeracy
 
 quo:Statistics is the art of stating in precise terms that which one does not know.
 src:William Kruskal
 cit:Statistics, Moliere, and Henry Adams, American Scientist, 55, 416-428, 1967.
 url:https://www.jstor.org/stable/27837037
+tag:statistics
 
 quo:If significance tests are required for still larger samples, graphical accuracy is insufficient, and arithmetical methods are advised. A word to the wise is in order here, however. Almost never does it make sense to use exact binomial significance tests on such data - for the inevitable small deviations from the mathematical model of independence and constant split have piled up to such an extent that the binomial variability is deeply buried and unnoticeable. Graphical treatment of such large samples may still be worthwhile because it brings the results more vividly to the eye.
 src:Frederick Mosteller & John W Tukey
 cit:The Uses and Usefulness of Binomial Probability Paper, Journal of the American Statistical Association 44, 1949.
 url:https://doi.org/10.2307/2280595
+tag:significance,data visualization
 
 quo:Sequences of random numbers also inevitably display certain regularities. ... The trouble is, just as no real die, coin, or roulette wheel is ever likely to be perfectly fair, no numerical recipe produces truly random numbers. The mere existence of a formula suggests some sort of predictability or pattern.
 src:Ivars Peterson
 cit:The Jungles of Randomness: A Mathematical Safari, 1998.
 url:https://archive.org/details/junglesofrandomn00ivar
+tag:random numbers
 
 quo:It is very easy to devise different tests which, on the average, have similar properties, ... they behave satisfactorily when the null hypothesis is true and have approximately the same power of detecting departures from that hypothesis. Two such tests may, however, give very different results when applied to a given set of data. The situation leads to a good deal of contention amongst statisticians and much discredit of the science of statistics. The appalling position can easily arise in which one can get any answer one wants if only one goes around to a large enough number of statisticians.
 src:Frances Yates
@@ -3288,11 +3311,13 @@ quo:Beware of the problem of testing too many hypotheses; the more you torture t
 src:Stephen M Stigler
 cit:Neutral Models in Biology, 1987, p. 148.
 url:https://archive.org/details/neutralmodelsinb0000unse
+tag:significance
 
 quo:Statistics may be regarded as (i) the study of populations, (ii) as the study of variation, and (iii) as the study of methods of the reduction of data.
 src:Sir Ronald A Fisher
 cit:Statistical Methods for Research Workers, 1925
 url:https://archive.org/details/statisticalmethoe2fish
+tag:statistics
 
 quo:The primes have tantalized mathematicians since the Greeks, because they appear to be somewhat randomly distributed but not completely so. ... Although the prime numbers are rigidly determined, they somehow feel like experimental data.
 src:Timothy Gowers
@@ -3308,15 +3333,18 @@ tag:bayesian
 quo:A statistical estimate may be good or bad, accurate or the reverse; but in almost all cases it is likely to be more accurate than a casual observer's impression, and the nature of things can only be disproved by statistical methods.
 src:Sir Arthur L Bowley
 cit:Elements of Statistics, 1901
+tag:statistics
 
 
 quo:An extremely odd demand is often set forth but never met, even by those who make it; i.e., that empirical data should be presented without any theoretical context, leaving the reader, the student, to his own devices in judging it. This demand seems odd because it is useless simply to look at something. Every act of looking turns into observation, every act of observation into reflection, every act of reflection into the making of associations; thus it is evident that we theorize every time we look carefully at the world.
 src:Johann Wolfgang von Goethe
 url:https://muse.jhu.edu/article/377567/summary
+tag:data
 
 quo:From the moment we first roll a die in a children's board game, or pick a card (any card), we start to learn what probability is. But even as adults, it is not easy to tell what it is, in the general way.
 src:David Stirzaker
 cit:Probability and Random Variables: A Beginner's Guide, 1999
+tag:probability
 
 quo:We cannot really have a perfectly shuffled pack of perfect cards; this 'collection of equally likely hands' is actually a fiction. We create the idea, and then use the rules of arithmetic to calculate the required chances. This is characteristic of all mathematics, which concerns itself only with rules defining the behaviour of entities which are themselves undefined (such as 'numbers' or 'points').
 src:David Stirzaker
@@ -3325,6 +3353,7 @@ cit:Probability and Random Variables: A Beginner's Guide, 1999
 quo:The whole point of probability is to discuss uncertain eventualities before they occur. After this event, things are completely different.
 src:David Stirzaker
 cit:Probability and Random Variables: A Beginner's Guide, 1999
+tag:probability
 
 quo:There is no such thing as randomness. No one who could detect every force operating on a pair of dice would ever play dice games, because there would never be any doubt about the outcome. The randomness, such as it is, applies to our ignorance of the possible outcomes. It doesn't apply to the outcomes themselves. They are 100% determined and are not random in the slightest. Scientists have become so confused by this that they now imagine that things really do happen randomly, i.e. for no reason at all.
 src:Thomas Stark
@@ -3349,6 +3378,7 @@ cit:The Art of Scientific Investigation, 1950
 quo:The hypothesis is the principal intellectual instrument in research. Its function is to indicate new experiments and observations and it therefore sometimes leads to discoveries even when not correct itself. We must resist the temptation to become too attached to our hypothesis, and strive to judge it objectively and modify it or discard it as soon as contrary evidence is brought to light. Vigilance is needed to prevent our observations and interpretations being biased in favor of the hypothesis. Suppositions can be used without being believed.
 src:William I B Beveridge
 cit:The Art of Scientific Investigation, 1950
+tag:science
 
 quo:Experiments are like cross-questioning a witness who will tell the truth but not the whole truth.
 src:Alan Gregg
@@ -3357,36 +3387,45 @@ cit:The Furtherance of Medical Research, 1941
 quo:A random sequence is a vague notion embodying the idea of a sequence in which each term is unpredictable to the uninitiated and whose digits pass a certain number of tests traditional with statisticians and depending somewhat on the uses to which the sequence is to be put.
 src:Derrick H Lehmer
 cit:1951
+tag:random numbers
 
 quo:The moment you forecast you know you're going to be wrong, you just don't know when and in which direction.
 src:Edgar R Fiedler
 cit:"Across the Board", 1977
+tag:time series
 
 quo:Statistics at its best provides methodology for dealing empirically with complicated and uncertain information, in a way that is both useful and scientifically valid.
 src:John M Chambers, 1993
+tag:statistics
 
 quo:...it does not seem helpful just to say that all models are wrong. The very word model implies simplification and idealization. The idea that complex physical, biological or sociological systems can be exactly described by a few formulae is patently absurd. The construction of idealized representations that capture important stable aspects of such systems is, however, a vital part of general scientific analysis and statistical models, especially substantive ones, do not seem essentially different from other kinds of model.
 src:Sir David Cox
 cit:Comment on 'Model uncertainty, data mining and statistical inference', Journal of the Royal Statistical Society, Series A 158, 1995.
 url:https://www.jstor.org/stable/2983440
+tag:models,uncertainty
 
 quo:The science of statistics may be described as exploring, analyzing and summarizing data; designing or choosing appropriate ways of collecting data and extracting information from them; and communicating that information. Statistics also involves constructing and testing models for describing chance phenomena. These models can be used as a basis for making inferences and drawing conclusions and, finally, perhaps for making decisions.
 src:Fergus Daly et al
 cit:Elements of Statistics, 1995
+tag:statistics,knowledge
 
 quo:If a man stands with his left foot on a hot stove and his right foot in a refrigerator, the statistician would say that, on the average, he's comfortable.
 src:Walter Heller
+tag:statistician
 
 quo:Things are changing. Statisticians now recognize that computer scientists are making novel contributions while computer scientists now recognize the generality of statistical theory and methodology. Clever data mining algorithms are more scalable than statisticians ever thought possible. Formal statistical theory is more pervasive than computer scientists had realized.
 src:Larry A Wasserman
 cit:All of Statistics: A concise course in statistical inference, 2004
+tag:statistician
 
 quo:One feature [...] which requires much more justification than is usually given, is the setting up of unplausible null hypotheses. For example, a statistician may set out a test to see whether two drugs have exactly the same effect, or whether a regression line is exactly straight. These hypotheses can scarcely be taken literally.
 src:Cedric A B Smith
 cit:Book review of Norman T. J. Bailey: Statistical Methods in Biology, Applied Statistics 9, 1960
+tag:statistician
 
 quo:In general, it is necessary to have some data on which to calculate probabilities. [...] Statisticians do not evolve probabilities out of their inner consciousness, they merely calculate them.
 src:Leonard C Tippett
+tag:data,probability
 
 quo:Even properly done statistics can't be trusted. The plethora of available statistical techniques and analyses grants researchers an enormous amount of freedom when analyzing their data, and it is trivially easy to 'torture the data until it confesses'.
 src:Alex Reinhart
@@ -3403,18 +3442,22 @@ cit:"Mindware: Tools for Smart Thinking", 2015
 quo:A popular misconception holds that the era of Big Data means the end of a need for sampling. In fact, the proliferation of data of varying quality and relevance reinforces the need for sampling as a tool to work efficiently with a variety of data, and minimize bias. Even in a Big Data project, predictive models are typically developed and piloted with samples.
 src:Peter C Bruce & Andrew G Bruce
 cit:"Statistics for Data Scientists: 50 Essential Concepts", 2016
+tag:sampling,data
 
 quo:All predictions are statistical, but some predictions have such a high probability that one tends to regard them as certain.
 src:Marshall J Walker
 cit:The Nature of Scientific Thought, 1963
+tag:uncertainty
 
 quo:Statistics is a scientific discipline concerned with collection, analysis, and interpretation of data obtained from observation or experiment. The subject has a coherent structure based on the theory of Probability and includes many different procedures which contribute to research and development throughout the whole of Science and Technology.
 src:Egon Pearson
 cit:1936
+tag:statistics,probability,science
 
 quo:[Statistics] is both a science and an art. It is a science in that its methods are basically systematic and have general application; and an art in that their successful application depends to a considerable degree on the skill and special experience of the statistician, and on his knowledge of the field of application, e.g. economics.
 src:Leonard H C Tippett
 cit:Statistics, 1943
+tag:statistics
 
 quo:The fact must be expressed as data, but there is a problem in that the correct data is difficult to catch. So that I always say 'When you see the data, doubt it!' 'When you see the measurement instrument, doubt it!' [...]For example, if the methods such as sampling, measurement, testing and chemical analysis methods were incorrect, data. [...] to measure true characteristics and in an unavoidable case, using statistical sensory test and express them as data.
 src:Kaoru Ishikawa
@@ -3446,6 +3489,7 @@ quo:One can be highly functionally numerate without being a mathematician or a q
 src:Eric R Sowey
 cit:The Getting of Wisdom: Educating Statisticians to Enhance Their Clients' Numeracy, The American Statistician 57(2), 2003
 url:https://www.jstor.org/stable/30037239
+tag:numeracy,uncertainty
 
 quo:We would wish 'numerate' to imply the possession of two attributes. The first of these is an 'at-homeness' with numbers and an ability to make use of mathematical skills which enable an individual to cope with the practical mathematical demands of his everyday life. The second is ability to have some appreciation and understanding of information which is presented in mathematical terms, for instance in graphs, charts or tables or by reference to percentage increase or decrease.
 src:Cockcroft Committee
@@ -3549,7 +3593,7 @@ tag: data
 quo: To the untrained eye, randomness appears as regularity or tendency to cluster.
 src: W. Feller
 cit: An Introduction to Probability Theory and its Applications (1950)
-tag: probability, visualization
+tag: probability,data visualization
 
 quo: Your assumptions are your windows on the world. Scrub them off every once in a while, or the light won't come in.
 src: Alan Alda

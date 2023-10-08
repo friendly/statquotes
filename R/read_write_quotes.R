@@ -101,7 +101,9 @@ convert_quotes_txt_to_rda = function() {
   # the right name (not filename)
   quotes <- read_quotes_raw()
   packdir <- getwd()
+  file <- file.path( packdir, "data/quotes.rda")
   save(quotes, file=file.path( packdir, "data/quotes.rda") )
+  message(paste("wrote", nrow(quotes), "quotes to ", file))
 
   # A return value is REQUIRED, so use empty string
   return("")
