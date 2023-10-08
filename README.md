@@ -82,7 +82,8 @@ what degree of accuracy is appropriate, and what the answer means in relation to
 
 ### Output formats
 
-Quotes have class `statquote`. The `print.statquote()` method gives a plain text format for the console.
+Quotes have class `"statquote"`. The `print.statquote()` method gives a plain text format for the console.
+This method has an argument, `cite = TRUE`, which appends the citation information to the source.
 ```
 R> statquote("eulogy")
 
