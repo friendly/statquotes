@@ -11,3 +11,5 @@ README.md
 ^old_code
 ^CONTRIBUTING.md
 
+^doc$
+^Meta$
