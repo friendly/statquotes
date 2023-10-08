@@ -386,7 +386,8 @@ quo:Statistics are figures used as arguments.
 src:Leonard L. Levison
 tag:statistics
 
-quo:Figures won't lie but liars will figure.
+quo:Figures won't lie, but liars will figure.
+src:Unknown (though often misattributed to Mark Twain)
 url:https://quoteinvestigator.com/2010/11/15/liars-figure/
 tag:statistics
 
