@@ -493,7 +493,7 @@ src:John W. Tukey
 cit:Quoted by John Chambers
 tag:statistics
 
-quo:All models are wrong but some are useful.
+quo:All models are wrong, but some are useful.
 src:George E. P. Box
 tag:statistics
 
@@ -1596,10 +1596,10 @@ src:M. J. Moroney
 cit:Facts from Figures, p. 34.
 tag:data,averages
 
-quo:It is difficult to understand why statisticians commonly limit their inquiries to Averages, and do not revel in more comprehensive views.  Their souls seem as dull to the charm of variety as that of the native of one of our flat English counties, whose retrospect of Switzerland was that, if its mountains could be thrown into its lakes, two nuisances would be got rid of at once. An Average is but a solitary fact, whereas if a single other fact be added to it, an entire Normal Scheme, which nearly corresponds to the observed one, starts potentially into existence. Some people hate the very name of statistics, but I find them full of beauty and interest. Whenever they are not brutalised, but delicately handled by the higher methods, and are warily interpreted, their power of dealing with complicated phenomena is extraordinary. They are the only tools by which an opening can be cut through the formidable thicket of difficulties that bars the path of those who pursue the Science of man.
+quo:Some people hate the very name of statistics, but I find them full of beauty and interest. Whenever they are not brutalised, but delicately handled by the higher methods, and are warily interpreted, their power of dealing with complicated phenomena is extraordinary. They are the only tools by which an opening can be cut through the formidable thicket of difficulties that bars the path of those who pursue the Science of man.
 src:Frances Galton
 cit:Natural Inheritance.
-tag:data,averages
+tag:statistics,science
 
 quo:The central limit theorem is often used to justify the assumption of normality when using the sample mean and the the sample standard deviation.  But it is inevitable that real data contain gross errors. Five to ten percent unusual values in a dataset seem to be the rule rather than the exception (Hampel 1973). The distribution of such data is no longer Normal.
 src:A. S. Hedayat and Guoqin Su
@@ -3050,7 +3050,7 @@ src:John W. Tukey
 cit:The problem of multiple comparisons. 1973. Unpublished manuscript, Dept. of Statistics, Princeton University.
 tag:normality
 
-quo:Statisticians classically asked the wrong question-and were willing to answer with a lie, one that was often a downright lie. They asked 'Are the effects of A and B different?' and they were willing to answer 'no.' All we know about the world teaches us that the effects of A and B are always different-in some decimal place-for any A and B. Thus asking 'Are the effects different?' is foolish.
+quo:[A]sking 'Are the effects different?' is foolish.
 src:John W. Tukey
 cit:The philosophy of multiple comparisons. 1991. Statistical Science 6 : 100-116.
 url:https://www.jstor.org/stable/2245714
@@ -3103,10 +3103,6 @@ tag:nhst
 quo:Prediction is very difficult, especially of the future.
 src:Niels Henrick David Bohr
 tag:time,science,history
-
-quo:Statistics are no substitute for judgement.
-src:Henry Clay, Sr.
-tag:statistics
 
 quo:Standard errors of variance components are dumb because the distribution of a variance component is not symmetric, but Chi-squared and highly skewed.
 src:Doug Bates
