@@ -1,6 +1,6 @@
 ## Test environments
 * local Windows install, 4.2.3 (2023-03-15 ucrt)
-* win-builder R Under development (unstable) (2022-10-08 r83047 ucrt)
+* win-builder R Under development (unstable) (2023-10-08 r85282 ucrt)
 
 ## R CMD check results
 

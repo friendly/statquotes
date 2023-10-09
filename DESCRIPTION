@@ -1,7 +1,7 @@
 Package: statquotes
 Title: Quotes on Statistics, Data Visualization and Science
 Version: 0.3.2
-Date: 2022-10-14
+Date: 2023-10-09
 Authors@R: c(person("Michael", "Friendly", 
                     email = "friendly@yorku.ca", 
                     role = c("aut", "cre"),
@@ -21,6 +21,8 @@ Language: en-US
 Description: Generates a random quotation from a database of quotes on topics
     in statistics, data visualization and science. Other functions allow searching
     the quotes database by key term tags, or authors or creating a word cloud.
+    The output is designed to be suitable for use at the console, in Rmarkdown
+    and LaTex.
 Depends:
     R (>= 3.5.0)
 License: GPL (>= 2)
