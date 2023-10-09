@@ -1,4 +1,4 @@
-# Version 0.3.2
+# Version 0.3.2 (2023-10-09)
 
 This is a modest development release, enhancing display of quotations, and adding a vignette
 

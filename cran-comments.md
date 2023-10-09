@@ -1,10 +1,17 @@
 ## Test environments
 * local Windows install, 4.2.3 (2023-03-15 ucrt)
-* win-builder R Under development (unstable) (2022-10-08 r83047 ucrt)
+* win-builder R Under development (unstable) (2023-10-08 r85282 ucrt)
 
 ## R CMD check results
 
-There were no ERRORs, WARNINGs or NOTEs
+There were no ERRORs, WARNINGs; 1 NOTEs
+
+Possibly misspelled words in DESCRIPTION:
+  LaTeX (25:9)
+  Rmarkdown (24:70)
+
+These are false positive misspellings. I think it would look
+funny to have to quote them.
 
 ## Reverse dependencies
 
