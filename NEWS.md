@@ -1,8 +1,10 @@
 # Version 0.3.2
 
+This is a modest development release, enhancing display of quotations, and adding a vignette
+
 - `as.latex()` gains a `cite` argument to include citation in the results
-- Collected quotes vignette added for complete overview of quotes collection
 - `cite=TRUE` is now the default in `as.markdown()`, `as.latex()`, and  `search_quotes()`
+- Collected quotes vignette added for complete overview of quotes collection
 
 # Version 0.3.1 (2022-10-10)
 
