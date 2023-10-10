@@ -23,7 +23,7 @@
 #' @param source Character string. Quotes are subset to those matching
 #' the specified source (person).
 #'
-#' @param topic Deprecated. Use 'tag' instead. Only kept for backward compatability.
+#' @param topic Deprecated. Use 'tag' instead. Only kept for backward compatibility.
 
 #' @return
 #' A character vector containing one quote.
