@@ -11,7 +11,7 @@ Possibly misspelled words in DESCRIPTION:
   Rmarkdown (24:70)
 
 These are false positive misspellings. I think it would look
-funny to have to quote them.
+weird to have to quote them.
 
 ## Reverse dependencies
 
