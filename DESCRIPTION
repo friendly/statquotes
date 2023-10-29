@@ -1,11 +1,11 @@
 Package: statquotes
 Title: Quotes on Statistics, Data Visualization and Science
-Version: 0.3.2
-Date: 2023-10-09
+Version: 0.3.3
+Date: 2023-10-29
 Authors@R: c(person("Michael", "Friendly", 
                     email = "friendly@yorku.ca", 
                     role = c("aut", "cre"),
-                    comment = c(ORCID = "0000-0002-3237-0941")),
+                    comment = c(ORCID = "0000-0002-3237-0941", Twitter="@datavisFriendly")),
              person("Kevin", "Wright", 
                     email = "kw.stat@gmail.com", 
                     comment=c(ORCID = "0000-0002-0617-8673"),

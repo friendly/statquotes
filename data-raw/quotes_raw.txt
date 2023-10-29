@@ -1410,12 +1410,12 @@ tag:data,models,statistics
 
 quo:Unless exploratory data analysis uncovers indications, usually quantitative ones, there is likely to nothing for confirmatory data analysis to consider.
 src:John Tukey
-cit:Exploratory Data Analysis, p. 3.
+cit:Exploratory Data Analysis, 1977, p. 3.
 tag:data,data analysis
 
 quo:One thing the data analyst has to learn is how to expose himself to what his data are willing--or even anxious--to tell him. Finding clues requires looking in the right places and with the right magnifying glass.
 src:John Tukey
-cit:Exploratory Data Analysis, p. 21.
+cit:Exploratory Data Analysis, 1977, p. 21.
 tag:data,data analysis
 
 quo:In data analysis, a plot of y against x may help us when we know nothing about the logical connection from x to y--even when we do not know whether or not there is one--even when we know that such a connection is impossible.
@@ -1425,7 +1425,7 @@ tag:data,data analysis
 
 quo:Whatever the data, we can try to gain understanding by straightening or by flattening. When we succeed in doing one or both, we almost always see more clearly what is going on.
 src:John Tukey
-cit:Exploratory Data Analysis, p. 148.
+cit:Exploratory Data Analysis, 1977, p. 148.
 tag:data,data analysis
 
 quo:When nearest neighbor effects exist, the randomized complete block analysis [can be] so poor as to deserver to be called catastrophic.  It [can not] even be considered a serious form of analysis. It is extremely important to make this clear to the vast number of researchers who have near religious faith in the randomized complete block design.
@@ -1761,12 +1761,12 @@ tag:data visualization
 
 quo:There is no more reason to expect one graph to 'tell all' than to expect one number to do the same.
 src:John Tukey
-cit:Exploratory Data Analysis.
+cit:Exploratory Data Analysis, 1977.
 tag:data visualization
 
 quo:There is no excuse for failing to plot and look.
 src:John Tukey
-cit:Exploratory Data Analysis
+cit:Exploratory Data Analysis, 1997, p. 43
 tag:data visualization
 
 quo:It's generally considered bad practice to use more than six colors in a single display.
@@ -2041,7 +2041,7 @@ tag:statistics
 
 quo:It is a rare thing that a specific body of data tells us as clearly as we would wish how it itself should be analyzed.
 src:John Tukey
-cit:Exploratory Data Analysis, p. 397.
+cit:Exploratory Data Analysis, 1977, p. 397.
 tag:statistics
 
 quo:Just which robust/resistant methods you use is not important--what is important is that you use some. It is perfectly proper to use both classical and robust/resistant methods routinely, and only worry when they differ enough to matter. But, when they differ, you should think hard.
@@ -3731,3 +3731,20 @@ cit: mentioned in a 2014 interview
 tag: science,knowledge,uncertainty
 url: https://twitter.com/PhysInHistory/status/1711018027875987484
 
+quo: Mathematical Statistics is a rigorous way to solve the wrong problem.  Applied statistics is a subjective way to solve the right problem.
+src: Frank Harrell
+cit: Twitter, 10-10-2023
+url: https://twitter.com/f2harrell/status/1711707876782133269
+tag: statistics
+
+quo: It is as scientific and intelligible to represent time by space, as it is to represent space by space.
+src: Emma Willard, 1850, _Guide to the Temple of Time_, p. 21
+tag: time
+
+quo: Can't duration be imitated and represented as significantly, as distinctly as space?
+src: Jacques Barbeu Dubourg, 1753, _Carte chronographique_
+tag: time
+
+quo: Science has before it two obstacles which hinder its progress: the deficiency of our senses to discover truths, and the insufficiencies of language to express and transmit what truths we have acquired. The Graphic Method this double goal better than any other.
+src: Etienne-Jules Marey, _La Methode Graphique_, 1878
+tag: science,data visualization
