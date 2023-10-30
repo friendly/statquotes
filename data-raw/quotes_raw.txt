@@ -3748,3 +3748,15 @@ tag: time
 quo: Science has before it two obstacles which hinder its progress: the deficiency of our senses to discover truths, and the insufficiencies of language to express and transmit what truths we have acquired. The Graphic Method this double goal better than any other.
 src: Etienne-Jules Marey, _La Methode Graphique_, 1878
 tag: science,data visualization
+
+quo: Let's solve the problem but let's not make it worse by guessing.
+src: Gene Kranz, Apollo 13 Lead Flight Director
+tag: science,prediction
+
+quo: We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil.
+src: Donald Knuth
+tag: programming
+
+quo: There are only two kinds of languages: the ones people complain about and the ones nobody uses.
+src: Bjarne Stroustrup
+tag: programming
