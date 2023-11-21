@@ -3760,3 +3760,8 @@ tag: programming
 quo: There are only two kinds of languages: the ones people complain about and the ones nobody uses.
 src: Bjarne Stroustrup
 tag: programming
+
+quo: Sometimes a simple model will out perform a more complex model ... Nevertheless, I believe that deliberately limiting the complexity of the model is not fruitful when the problem is evidently complex. Instead, if a simple model is found that out performs some particular complex model, the appropriate response is to define a different complex model that captures whatever aspect of the problem led to the simple model performing well.
+src: Radford M. Neal
+cit: Neal, R. M. (1996). Bayesian Learning for Neural Networks. Springer, New York.
+tag: modeling,data analysis,Ockham's razor
