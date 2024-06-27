@@ -3765,3 +3765,9 @@ quo: Sometimes a simple model will out perform a more complex model ... Neverthe
 src: Radford M. Neal
 cit: Neal, R. M. (1996). Bayesian Learning for Neural Networks. Springer, New York.
 tag: modeling,data analysis,Ockham's razor
+
+quo: What makes a statistician look like a hero?  You might think that the answer would be, Extracting a small faint signal from noise.  But I don't think so.  I think that a statistician looks like a hero by studying large effects.
+src: Andrew Gelman
+cit: Numbersense Pros: Interview with Andrew Gelman, 2013-09-12
+url: https://junkcharts.typepad.com/numbersruleyourworld/2013/09/numbersense-pros-interview-with-andrew-gelman.html
+tag: data analysis
