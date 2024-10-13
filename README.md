@@ -10,7 +10,7 @@
 <!-- badges: end -->
 
 
-# statquotes v. 0.3.2 <img src="man/figures/statquotes-logo.png" align="right" height="200px" />
+# statquotes v. 0.3.2 <img src="man/figures/logo.png" align="right" height="200px" />
 **Quotes on statistics, data visualization and science**
 
 This package displays a randomly chosen quotation about topics related to statistics, data visualization and science, or can be used to search for quotes within the statquotes database for key term tags or authors.

@@ -59,7 +59,7 @@ tex:Jacques Bertin \citet[p. 16]{Bertin:81}
 
 quo:The greatest value of a picture is when it forces us to notice what we never expected to see.
 src:John W. Tukey
-cit:Exploratory Data Analysis, 1977
+cit:Exploratory Data Analysis, 1977, p. vi
 tag:data visualization,pictures,eda
 tex:John W. Tukey \citet[p. vi]{Tukey:77}
 
@@ -1761,7 +1761,7 @@ tag:data visualization
 
 quo:There is no more reason to expect one graph to 'tell all' than to expect one number to do the same.
 src:John Tukey
-cit:Exploratory Data Analysis, 1977.
+cit:Exploratory Data Analysis, 1977, p. 157
 tag:data visualization
 
 quo:There is no excuse for failing to plot and look.
@@ -3149,7 +3149,7 @@ tag:statistics,science
 
 quo:Data visualization is part art and part science. The challenge is to get the art right without getting the science wrong and vice versa.
 src:Claus O. Wilke
-cit:Fundamentals of Data Visualization
+cit:Fundamentals of Data Visualization, p.1
 tag:data visualization,science
 
 
@@ -3738,13 +3738,16 @@ url: https://twitter.com/f2harrell/status/1711707876782133269
 tag: statistics
 
 quo: It is as scientific and intelligible to represent time by space, as it is to represent space by space.
-src: Emma Willard, 1850, _Guide to the Temple of Time_, p. 21
+src: Emma Willard
+cit: Guide to the Temple of Time, 1850, p. 21
 tag: time
 
 quo: Can't duration be imitated and represented as significantly, as distinctly as space?
-src: Jacques Barbeu Dubourg, 1753, _Carte chronographique_
+src: Jacques Barbeu Dubourg
+cit: Carte chronographique, 1753
 tag: time
 
 quo: Science has before it two obstacles which hinder its progress: the deficiency of our senses to discover truths, and the insufficiencies of language to express and transmit what truths we have acquired. The Graphic Method this double goal better than any other.
-src: Etienne-Jules Marey, _La Methode Graphique_, 1878
+src: Etienne-Jules Marey
+cit: La Methode Graphique, 1878
 tag: science,data visualization
