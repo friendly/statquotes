@@ -3774,3 +3774,14 @@ src: Andrew Gelman
 cit: Numbersense Pros: Interview with Andrew Gelman, 2013-09-12
 url: https://junkcharts.typepad.com/numbersruleyourworld/2013/09/numbersense-pros-interview-with-andrew-gelman.html
 tag: data analysis
+
+quo: In real-life situations the interpretation of the results of goodness-of-fit tests must rely on judgment of content rather than on P-values.
+src: Peter Huber
+cit: Data Analysis: What Can Be Learned from the Past 50 Years.
+tag: nhst,normality
+
+quo: Too much emphasis is put on futile attempts to automate non-routine tasks, and not enough effort is spent on facilitating routine work.
+src: Peter Huber
+cit: Data Analysis: What Can Be Learned from the Past 50 Years.
+tag: science
+
