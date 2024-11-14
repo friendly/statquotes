@@ -204,7 +204,7 @@ url:http://www.jstor.org/stable/2224943
 tag:data visualization
 
 quo:Without data you are just another person with an opinion.
-src:W. Edwards Deming
+src:Unknown (perhaps incorrectly attributed to W. Edwards Deming)
 tag:data visualization,data
 
 quo:Without a plot you are just a person missing a convincing argument.
@@ -3775,6 +3775,11 @@ cit: Numbersense Pros: Interview with Andrew Gelman, 2013-09-12
 url: https://junkcharts.typepad.com/numbersruleyourworld/2013/09/numbersense-pros-interview-with-andrew-gelman.html
 tag: data analysis
 
+quo: Data are not taken for museum purposes; they are taken as a basis for doing something. If nothing is to be done with the data, then there is no use in collecting any. The ultimate purpose of taking data is to provide a basis for action or a recommendation for action. The step intermediate between the collection of data and the action is prediction.
+src: W. Edwards Deming
+cit: On a Classification of the Problems of Statistical Inference, June 1942, Journal of the American Statistical Association, page 173.
+tag: data,prediction
+
 quo: In real-life situations the interpretation of the results of goodness-of-fit tests must rely on judgment of content rather than on P-values.
 src: Peter Huber
 cit: Data Analysis: What Can Be Learned from the Past 50 Years.
@@ -3784,4 +3789,3 @@ quo: Too much emphasis is put on futile attempts to automate non-routine tasks, 
 src: Peter Huber
 cit: Data Analysis: What Can Be Learned from the Past 50 Years.
 tag: science
-
