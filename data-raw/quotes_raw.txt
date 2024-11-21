@@ -3792,3 +3792,11 @@ tag: science
 
 quo: The best thing to do with missing data is to not have any.
 src: Gertrude Cox
+
+quo: The modern student, and too often his teacher, overlook the fact that such a simple thing as a scatter diagram is a more important tool of prediction than the correlation coefficient, especially if the points are labeled so as to distinguish the different sources of the data.
+src: W. Edwards Deming
+cit: 1940
+
+quo: Above all, a statistician must be a scientist.
+src: W. Edwards Deming
+cit: 1940
