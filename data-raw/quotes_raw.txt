@@ -3789,3 +3789,6 @@ quo: Too much emphasis is put on futile attempts to automate non-routine tasks, 
 src: Peter Huber
 cit: Data Analysis: What Can Be Learned from the Past 50 Years.
 tag: science
+
+quo: The best thing to do with missing data is to not have any.
+src: Gertrude Cox
