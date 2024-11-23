@@ -3800,3 +3800,11 @@ cit: 1940
 quo: Above all, a statistician must be a scientist.
 src: W. Edwards Deming
 cit: 1940
+
+quo: The chaste beauty and intellectual delights of the theory of statistical inference, regarded as the intellectual offspring of mathematics and inductive logic, are known at present only to a few devotees; but this theory is bound in time to receive a wider appreciation and a higher valuation even apart from its practical usefulness in the form of application
+src: Harold Hotelling
+cit: Presidential address to Indian Statstical Congress at Madras, 1941, Sankhya, 5, 127-129
+
+quo: Unfortunately, too many people like to do their statistical work just as they say their prayers-merely substitute in a formula found in a highly respected book written a long time ago.
+src: Harold Hotelling
+cit: The Place of Statistics in the University, Proceedings of the Berkley Symposium on Mathematical Statistics and Probability, University of California Press, 1949, 21-40.
