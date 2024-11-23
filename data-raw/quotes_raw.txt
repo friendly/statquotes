@@ -3218,7 +3218,8 @@ tag:probability
 
 quo:We are seduced by patterns and we want explanations for these patterns. When we see a string of successes, we think that a hot hand has made success more likely. If we see a string of failures, we think a cold hand has made failure more likely. It is easy to dismiss such theories when they involve coin flips, but it is not so easy with humans. We surely have emotions and ailments that can cause our abilities to go up and down. The question is whether these fluctuations are important or trivial.
 src:Gary Smith
-cit:Standard Deviations, 2014
+cit: Standard Deviations, 2014.
+
 
 quo:[In statistics] you have the fact that the concepts are not very clean. The idea of probability, of randomness, is not a clean mathematical idea. You cannot produce random numbers mathematically. They can only be produced by things like tossing dice or spinning a roulette wheel. With a formula, any formula, the number you get would be predictable and therefore not random. So as a statistician you have to rely on some conception of a world where things happen in some way at random, a conception which mathematicians don't have.
 src:Lucien LeCam
@@ -3808,3 +3809,49 @@ cit: Presidential address to Indian Statstical Congress at Madras, 1941, Sankhya
 quo: Unfortunately, too many people like to do their statistical work just as they say their prayers-merely substitute in a formula found in a highly respected book written a long time ago.
 src: Harold Hotelling
 cit: The Place of Statistics in the University, Proceedings of the Berkley Symposium on Mathematical Statistics and Probability, University of California Press, 1949, 21-40.
+
+quo: We have overwhelming evidence that available information plus analysis does not lead to knowledge. The management science team can properly analyse a situation and present recommendations to the manager, but no change occurs. The situation is so familiar to those of us who try to practice management science that I hardly need to describe the cases.
+src: C. West Churchman
+cit: Managerial acceptance of scientific recommendations, California Management Review Vol 7, 1964.
+
+quo: Statistics is a body of methods and theory applied to numerical evidence in making decisions in the face of uncertainty.
+src: Lawrence Lapin
+cit: Statistics for Modern Business Decisions, 1973.
+
+quo: Like a detective, a data analyst will experience many dead ends, retrace his steps, and explore many alternatives before settling on a single description of the evidence in front of him.
+src: David Lubinsky & Daryl Pregibon
+cit: Data analysis as search, Journal of Econometrics Vol. 38 (1–2), 1988
+
+quo: ...the simplest hypothesis proposed as an explanation of phenomena is more likely to be the true one than is any other available hypothesis, that its predictions are more likely to be true than those of any other available hypothesis, and that it is an ultimate a priori epistemic principle that simplicity is evidence for truth.
+src: Richard Swinburne
+cit: Simplicity as Evidence for Truth, 1997.
+
+quo: When significance tests are used and a null hypothesis is not rejected, a major problem often arises - namely, the result may be interpreted, without a logical basis, as providing evidence for the null hypothesis.
+src: David F Parkhurst
+cit: Statistical Significance Tests: Equivalence and Reverse Tests Should Reduce Misinterpretation, BioScience Vol. 51 (12), 2001.
+
+quo: Data analysis is careful thinking about evidence.
+src: Michael Milton
+cit: Head First Data Analysis, 2009.
+
+quo: Data clusters are everywhere, even in random data. Someone who looks for an explanation will inevitably find one, but a theory that fits a data cluster is not persuasive evidence. The found explanation needs to make sense and it needs to be tested with uncontaminated data.
+src: Gary Smith
+cit: Standard Deviations, 2014.
+tag: clustering
+
+quo: In general, when building statistical models, we must not forget that the aim is to understand something about the real world. Or predict, choose an action, make a decision, summarize evidence, and so on, but always about the real world, not an abstract mathematical world: our models are not the reality - a point well made by George Box in his oft-cited remark that "all models are wrong, but some are useful.
+src: David Hand
+cit: Wonderful examples, but let's not close our eyes, Statistical Science 29, 2014.
+
+quo: In terms of characteristics, a data scientist has an inquisitive mind and is prepared to explore and ask questions, examine assumptions and analyse processes, test hypotheses and try out solutions and, based on evidence, communicate informed conclusions, recommendations and caveats to stakeholders and decision makers.
+src: Jesús Rogel-Salazar
+cit: Data Science and Analytics with Python, 2017.
+
+quo: With the growing availability of massive data sets and user-friendly analysis software, it might be thought that there is less need for training in statistical methods. This would be naïve in the extreme. Far from freeing us from the need for statistical skills, bigger data and the rise in the number and complexity of scientific studies makes it even more difficult to draw appropriate conclusions. More data means that we need to be even more aware of what the evidence is actually worth.
+src: David Spiegelhalter
+cit: The Art of Statistics: Learning from Data, 2019.
+
+quo: The general principles of starting with a well-defined question, engaging in careful observation, and then formulating hypotheses and assessing the strength of evidence for and against them became known as the scientific method.
+src: Michael Friendly & Howard Wainer
+cit: A History of Data Visualization and Graphic Communication, 2021.
+tag: science
