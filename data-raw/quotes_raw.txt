@@ -2123,6 +2123,11 @@ src:George E. P. Box & G. C. Tiao
 cit:Bayesian Inference in Statistical Analysis (1973)
 tag:statistics,bayesian
 
+quo:If a prior is anything at all, it's a belief prior to some data. We can discuss how our priors differ from each other and argue about whose prior is best justified. But when data come in and priors are converted to posteriors, no one learns that their prior was wrong, any more than seeing a coin landing heads shows me that calling odds of 50-50 was wrong.
+src: Richard Gunton
+cit: Priors aren't wrong, Significance, (2025), 22, p. 43.
+tag: bayesian
+
 quo:If one could get some rational basis for obtaining the prior, then there would be no problem.  But people have seminars these days about something where someone says, 'I am going to use such and such a prior'.  Where does he get the prior?  It is not data based.  It is a mathematical convenience or something like that.  It is not even obtained by using Bayes' theorem. Why one should believe the outcome of using this seems to be a very moot point.
 src:Oscar Kempthorne
 cit:A conversation with Oscar Kempthorne, Statistical Science, 1995, V 10, p. 333.
