@@ -3894,3 +3894,7 @@ quo: I can say that everything important about statistics that I ever learned, I
 src: David Brillinger
 cit: Discussion, Technometrics, 2006, V 48 No 3. Page 325.
 doi: 10.1198/004017006000000200
+
+quo: We're making it less random to make it feel more random.
+src: Steve Jobs
+cit: Steven Levy, 2006, The perfect thing: how the iPod shuffles commerce, culture, and coolness.
