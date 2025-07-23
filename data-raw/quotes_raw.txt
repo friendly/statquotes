@@ -57,28 +57,217 @@ cit:Graphics and Graphic Information Processing, 2011, p. 16.
 tag:data visualization,vision
 tex:Jacques Bertin \citet[p. 16]{Bertin:81}
 
-quo:The greatest value of a picture is when it forces us to notice what we never expected to see.
-src:John W. Tukey
-cit:Exploratory Data Analysis, 1977, p. vi
-tag:data visualization,pictures,eda
-tex:John W. Tukey \citet[p. vi]{Tukey:77}
+% ----- Tukey quotes -----
+
+% Tukey Future of Data Analysis
+
+quo:I have come to feel that my central interest is in data analysis, which I take to include, among other things: procedures for analyzing data, techniques for interpreting the results of such procedures, ways of planning the gathering of data to make its analysis easier, more precise or more accurate, and all the machinery and results of (mathematical) statistics which apply to analyzing data.
+cit:The Future of Data Analysis, Annals of Mathematical Statistics, 1962, Vol. 33 (1), 1962. Page 2.
+url:https://www.jstor.org/stable/2237638
+
+quo:Many have forgotten that data analysis can, sometimes quite appropriately, precede probability models, that progress can come from asking what a specified indicator ( = a specified function of the data) may reasonably be regarded as estimating. Escape from this constraint can do much to promote novelty.
+cit:The Future of Data Analysis, Annals of Mathematical Statistics, 1962, Vol. 33 (1), 1962. Page 5.
+url:https://www.jstor.org/stable/2237638
 
 quo:If data analysis is to be well done, much of it must be a matter of judgment, and 'theory' whether statistical or non-statistical, will have to guide, not command.
-src:John W. Tukey
-cit:The Future of Data Analysis, Annals of Mathematical Statistics, Vol. 33 (1), 1962.
+src:John Tukey
+cit:The Future of Data Analysis, Annals of Mathematical Statistics, 1962, Vol. 33 (1), 1962.
 url:https://www.jstor.org/stable/2237638
 
 quo:The physical sciences are used to 'praying over' their data, examining the same data from a variety of points of view. This process has been very rewarding, and has led to many extremely valuable insights. Without this sort of flexibility, progress in physical science would have been much slower. Flexibility in analysis is often to be had honestly at the price of a willingness not to demand that what has already been observed shall establish, or prove, what analysis suggests. In physical science generally, the results of praying over the data are thought of as something to be put to further test in another experiment, as indications rather than conclusions.
-src:John W. Tukey
-cit:The Future of Data Analysis, Annals of Mathematical Statistics, Vol. 33 (1), 1962.
+src:John Tukey
+cit:The Future of Data Analysis, Annals of Mathematical Statistics, 1962, Vol. 33 (1), 1962.
 url:https://www.jstor.org/stable/2237638
 
 quo:If one technique of data analysis were to be exalted above all others for its ability to be revealing to the mind in connection with each of many different models, there is little doubt which one would be chosen. The simple graph has brought more information to the data analyst's mind than any other device. It specializes in providing indications of unexpected phenomena.
-src:John W. Tukey
-cit:The Future of Data Analysis,  The Annals of Mathematical Statistics, Vol. 33, No. 1 (Mar., 1962), pp. 1-67.
+src:John Tukey
+cit:The Future of Data Analysis,  The Annals of Mathematical Statistics, 1962, Vol. 33, No. 1. Page 49.
 url:https://www.jstor.org/stable/2237638
 tag:data visualization
-tex:John W. Tukey \citet[p. 49]{Tukey:1962}
+
+quo:The most important maxim for data analysis to heed...is this: Far better an approximate answer to the right question, which is often vague, than an exact answer to the wrong question, which can always be made precise.
+src:John Tukey
+cit:The Future of Data Analysis,  The Annals of Mathematical Statistics, 1962, Vol. 33, No. 1. Page 13-14.
+url:https://www.jstor.org/stable/2237638
+tag:statistics
+
+quo:The greatest possibilities of visual display lie in vividness and inescapability of the intended message. A visual display can stop your mental flow in its tracks and make you think. A visual display can force you to notice what you never expected to see.
+src:John Tukey
+tag:data visualization,vision
+tex:John Tukey \citeyear{Tukey:90}
+
+quo:The purpose of [data] display is comparison (recognition of phenomena), not numbers ... The phenomena are the main actors, numbers are the supporting cast.
+src:John Tukey
+tag:data visualization
+tex:John W. Tukey \citeyear{Tukey:90}
+
+quo:...But it is not always clear *which* 1000 words.
+src:John Tukey, 1973
+tag:data visualization,pictures
+
+quo:The best thing about being a statistician is that you get to play in everyone's backyard.
+src:John Tukey
+tag:statistics
+
+quo:The worst, i.e., most dangerous, feature of 'accepting the null hypothesis' is the giving up of explicit uncertainty ... Mathematics can sometimes be put in such black-and-white terms, but our knowledge or belief about the external world never can.
+src:John Tukey
+cit:The Philosophy of Multiple Comparisons, Statistical Science, 1991, 6, 100-116.
+doi:10.1214/ss/1177011945
+tag:statistics,nhst
+
+quo:Statisticians classically asked the wrong question--and were willing to answer with a lie, one that was often a downright lie. They asked "Are the effects of A and B different?" and they were willing to answer "no". All we know about the world teaches us that the effects of A and B are always different--in some decimal place--for every A and B. Thus asking "Are the effects different?" is foolish. What we should be answering first is "Can we tell the direction in which the effects of A differ from the effects of B?" In other words, can we be confident about the direction from A to B? Is it "up", "down" or "uncertain"?
+src:John Tukey
+cit:The Philosophy of Multiple Comparisons, Statistical Science, 1991, 6, 100-116.
+doi:10.1214/ss/1177011945
+tag:statistics
+
+quo:Empirical knowledge is always fuzzy! And theoretical knowledge, like all the laws of physics, as of today's date, is always wrong-in detail, though possibly providing some very good approximations indeed.
+src:John Tukey
+cit:The Philosophy of Multiple Comparisons, Statistical Science, 1991, 6, 100-116.
+doi:10.1214/ss/1177011945
+
+quo:The combination of some data and an aching desire for an answer does not ensure that a reasonable answer can be extracted from a given body of data.
+src:John W. Tukey
+cit:Sunset Salvo, The American Statistician Vol. 40 (1), 1986.
+url:https://doi.org/10.1080/00031305.1986.10475361
+tag:data
+
+% Unverified
+quo:The practical power of a statistical test is the product of its' statistical power and the probability of use.
+src:John W. Tukey
+cit:A Quick, Compact, Two Sample Test to Duckworth's Specifications
+tag:science,power
+tex:John W. Tukey, 1959 \citep{Tukey:59}
+
+quo:Since the aim of exploratory data analysis is to learn what seems to be, it should be no surprise that pictures play a vital role in doing it well.
+src:John W. Tukey
+cit:John W. Tukey's Works on Interactive Graphics.  The Annals of Statistics Vol. 30, No. 6 (Dec., 2002), pp. 1629-1639
+url:https://www.jstor.org/stable/1558733
+tag:data visualization,pictures,eda
+
+quo:There is nothing better than a picture for making you think of questions you had forgotten to ask (even mentally).
+src:John W. Tukey & Paul Tukey
+cit:John W. Tukey's Works on Interactive Graphics.  The Annals of Statistics Vol. 30, No. 6 (Dec., 2002), pp. 1629-1639
+url:https://www.jstor.org/stable/1558733
+tag:data visualization,pictures
+
+% Tukey EDA
+
+quo: The greatest value of a picture is when it forces us to notice what we never expected to see.
+src: John Tukey
+cit: Exploratory Data Analysis, 1977, p. vi
+tag:data visualization,pictures,eda
+
+quo:Exploratory data analysis can never be the whole story, but nothing else can serve as the foundation stone -- as the first step.
+src:John Tukey
+cit:Exploratory Data Analysis, 1977, p.3.
+tag:statistics,data,data analysis
+
+quo: Unless exploratory data analysis uncovers indications, usually quantitative ones, there is likely to nothing for confirmatory data analysis to consider.
+src: John Tukey
+cit: Exploratory Data Analysis, 1977, p. 3.
+tag:data,data analysis
+
+quo: One thing the data analyst has to learn is how to expose himself to what his data are willing--or even anxious--to tell him. Finding clues requires looking in the right places and with the right magnifying glass.
+src: John Tukey
+cit: Exploratory Data Analysis, 1977, p. 21.
+tag:data,data analysis
+
+quo: In data analysis, a plot of y against x may help us when we know nothing about the logical connection from x to y--even when we do not know whether or not there is one--even when we know that such a connection is impossible.
+src: John Tukey
+cit: Exploratory Data Analysis, p. 131.
+tag:data,data analysis
+
+quo: Whatever the data, we can try to gain understanding by straightening or by flattening. When we succeed in doing one or both, we almost always see more clearly what is going on.
+src: John Tukey
+cit: Exploratory Data Analysis, 1977, p. 148.
+tag:data,data analysis
+
+quo:A competent data analysis of an even moderately complex set of data is a thing of trials and retreats, of dead ends and branches.
+src:John Tukey
+cit:Computer Science and Statistics: Proceedings of the 14th Symposium on the Interface, p. 4.
+tag:data,data analysis
+
+quo:There is no more reason to expect one graph to 'tell all' than to expect one number to do the same.
+src:John Tukey
+cit:Exploratory Data Analysis, 1977, p. 157
+tag:data visualization
+
+quo:There is no excuse for failing to plot and look.
+src:John Tukey
+cit:Exploratory Data Analysis, 1997, p. 43
+tag:data visualization
+
+quo:One is so much less than two. [John Tukey's eulogy of his wife.]
+src:John Tukey
+cit:The life and professional contributions of John W. Tukey, The Annals of Statistics, 2001, Vol 30, p. 46.
+tag:statistics
+
+quo:No one has ever shown that he or she had a free lunch. Here, of course, "free lunch" means "usefulness of a model that is locally easy to make inferences from".
+src:John Tukey
+cit:Issues relevant to an honest account of data-based inference, partially in the light of Laurie Davies' paper.
+tag:statistics
+
+quo:If asymptotics are of any real value, it must be because they teach us something useful in finite samples. I wish I knew how to be sure when this happens.
+src:John Tukey
+cit:Issues relevant to an honest account of data-based inference, partially in the light of Laurie Davies' paper.
+tag:statistics
+
+quo:Statistics is a science in my opinion, and it is no more a branch of mathematics than are physics, chemistry, and economics; for if its methods fail the test of experience--not the test of logic--they will be discarded.
+src:John Tukey
+cit:The life and professional contributions of John W. Tukey, by David Brillinger, The Annals of Statistics, 2001, Vol 30.
+tag:statistics
+
+quo:One Christmas Tukey gave his students books of crossword puzzles as presents. Upon examining the books the students found that Tukey had removed the puzzle answers and had replaced them with words of the sense: "Doing statistics is like doing crosswords except that one cannot know for sure whether one has found the solution."
+src:John Tukey
+cit:The life and professional contributions of John W. Tukey, by David Brillinger, The Annals of Statistics, 2001, Vol 30, p. 22.
+tag:statistics
+
+quo:A sort of question that is inevitable is: "Someone taught my students exploratory, and now (boo hoo) they want me to tell them how to assess significance or confidence for all these unusual functions of the data. Oh, what can we do?" To this there is an easy answer: TEACH them the JACKKNIFE.
+src:John Tukey
+cit:We Need Both Exploratory and Confirmatory, The American Statistician, Vol 34, No 1, p. 25.
+url:https://doi.org/10.2307/2682991
+tag:statistics
+
+quo:John Tukey's eye for detail was amazing. When we were preparing some of the material for our book (which was published last year), it was most disconcerting to have him glance at the data and question one value out of several thousand points. Of course, he was correct and I had missed identifying this anomaly.
+src:Kaye Basford
+tag:statistics
+
+quo:Many students are curious about the '1.5 x IQR Rule';, i.e. why do we use Q1 - 1.5 x IQR (or Q3 + 1.5 x IQR) as the value for deciding if a data value is classified as an outlier? Paul Velleman, a statistician at Cornell University, was a student of John Tukey, who invented the boxplot and the 1.5 x IQR Rule. When he asked Tukey, 'Why 1.5?', Tukey answered, 'Because 1 is too small and 2 is too large.' [Assuming a Gaussian distribution, about 1 value in 100 would be an outlier. Using 2 x IQR would lead to 1 value in 1000 being an outlier.]
+src:Unknown
+tag:statistics
+
+quo:It is a rare thing that a specific body of data tells us as clearly as we would wish how it itself should be analyzed.
+src:John Tukey
+cit:Exploratory Data Analysis, 1977, p. 397.
+tag:statistics
+
+quo:Just which robust/resistant methods you use is not important--what is important is that you use some. It is perfectly proper to use both classical and robust/resistant methods routinely, and only worry when they differ enough to matter. But, when they differ, you should think hard.
+src:John Tukey
+cit:Quoted by Doug Martin
+tag:statistics
+
+quo:I believe that there are many classes of problems where Bayesian analyses are reasonable, mainly classes with which I have little acquaintance.
+src:John Tukey
+cit:The life and professional contributions of John W. Tukey, The Annals of Statistics, 2001, Vol 30, p. 45.
+tag:statistics,bayesian
+
+quo:The twin assumptions of normality of distribution and homogeneity of variance are not ever exactly fulfilled in practice, and often they do not even hold to a good approximation.
+src:John W. Tukey
+cit:The problem of multiple comparisons. 1973. Unpublished manuscript, Dept. of Statistics, Princeton University.
+tag:normality
+
+quo: If we need a short suggestion of what exploratory data analysis is, I would suggest that: 1. it is an attitude, AND 2. a flexibility, AND 3. some graph paper (or transparencies, or both).
+src: John W. Tukey
+cit: Jones, L. V. (Ed.). (1986). The collected works of John W. Tukey: Philosophy and principles of data analysis 1949-1964 (Vols. III & IV). London: Chapman & Hall.
+tag: eda,data visualization
+
+quo: Three of the main strategies of data analysis are: 1. graphical presentation. 2. provision of flexibility in viewpoint and in facilities,  3. intensive search for parsimony and simplicity.
+src: John W. Tukey
+cit: Jones, L. V. (Ed.). (1986). The collected works of John W. Tukey: Philosophy and principles of data analysis 1949-1964 (Vols. III & IV). London: Chapman & Hall.
+tag: data visualization,data analysis
+
+% ----- End Tukey
 
 quo:Genius seems to consist merely in trueness of sight.
 src:Ralph Waldo Emerson
@@ -155,16 +344,6 @@ src:Hans Rosling
 cit:OECD World Forum, Istanbul, June 2007
 tag:data visualization,statistics
 
-quo:The greatest possibilities of visual display lie in vividness and inescapability of the intended message. A visual display can stop your mental flow in its tracks and make you think. A visual display can force you to notice what you never expected to see.
-src:John W. Tukey
-tag:data visualization,vision
-tex:John W. Tukey \citeyear{Tukey:90}
-
-quo:The purpose of [data] display is comparison (recognition of phenomena), not numbers ... The phenomena are the main actors, numbers are the supporting cast.
-src:John W. Tukey
-tag:data visualization
-tex:John W. Tukey \citeyear{Tukey:90}
-
 quo:If an editor should print bad English he would lose his position. Many editors are using and printing bad methods of graphic presentation, but they hold their jobs just the same.
 src:W. C. Brinton
 cit:Graphic methods of presenting facts 1914, p. 3.
@@ -204,7 +383,7 @@ url:http://www.jstor.org/stable/2224943
 tag:data visualization
 
 quo:Without data you are just another person with an opinion.
-src:W. Edwards Deming
+src:Unknown (perhaps incorrectly attributed to W. Edwards Deming)
 tag:data visualization,data
 
 quo:Without a plot you are just a person missing a convincing argument.
@@ -232,10 +411,6 @@ tag:data visualization,pictures
 quo:A picture is worth a ten thousand words.
 src:Fred R. Barnard
 cit:advertising trade journal Printers Ink, March 10 1927.
-tag:data visualization,pictures
-
-quo:...But it is not always clear *which* 1000 words.
-src:John W. Tukey, 1973
 tag:data visualization,pictures
 
 quo:Un croquis vaut mieux qu'un long discours. Tr.: A good sketch is better than a long speech.
@@ -467,31 +642,6 @@ cit:Consequences of Failure to Meet Assumptions Underlying the Fixed Effects Ana
 url:https://doi.org/10.2307/1169991
 tag:statistics,anova
 
-quo:Exploratory data analysis can never be the whole story, but nothing else can serve as the foundation stone -- as the first step.
-src:John W. Tukey
-cit:Exploratory Data Analysis, 1977, p.3.
-tag:statistics,data,data analysis
-
-quo:The best thing about being a statistician is that you get to play in everyone's backyard.
-src:John W. Tukey
-tag:statistics
-
-quo:Far better an approximate answer to the right question, which is often vague, than an exact answer to the wrong question, which can always be made precise.
-src:John W. Tukey
-cit:The Future of Data Analysis,  The Annals of Mathematical Statistics, Vol. 33, No. 1 (Mar., 1962), pp. 1-67.
-url:https://www.jstor.org/stable/2237638
-tag:statistics
-
-quo:The worst, i.e., most dangerous, feature of 'accepting the null hypothesis' is the giving up of explicit uncertainty ... Mathematics can sometimes be put in such black-and-white terms, but our knowledge or belief about the external world never can.
-src:John W. Tukey
-cit:The Philosophy of Multiple Comparisons, Statist. Sci. 6 (1) 100 - 116, February, 1991.
-url:https://doi.org/10.1214/ss/1177011945
-tag:statistics,nhst
-
-quo:Better to have an approximate answer to the right question than a precise answer to the wrong question.
-src:John W. Tukey
-cit:Quoted by John Chambers
-tag:statistics
 
 quo:All models are wrong, but some are useful.
 src:George E. P. Box
@@ -582,12 +732,6 @@ src:W. Edwards Deming
 url: https://quoteinvestigator.com/2010/05/26/everything-counts-einstein/
 tag:data
 
-quo:The combination of some data and an aching desire for an answer does not ensure that a reasonable answer can be extracted from a given body of data.
-src:John W. Tukey
-cit:Sunset Salvo, The American Statistician Vol. 40 (1), 1986.
-url:https://doi.org/10.1080/00031305.1986.10475361
-tag:data
-
 quo:How do I love thee? Let me count the ways.
 src:Elizabeth Barrett Browning
 cit:Sonnets from the Portuguese
@@ -653,12 +797,7 @@ src:James Thurber
 cit:1961
 tag:science
 
-% Unverified
-quo:The practical power of a statistical test is the product of its' statistical power and the probability of use.
-src:John W. Tukey
-cit:A Quick, Compact, Two Sample Test to Duckworth's Specifications
-tag:science,power
-tex:John W. Tukey, 1959 \citep{Tukey:59}
+
 
 quo:Theory into Practice.
 src:Mao Tse-Tung
@@ -1137,18 +1276,6 @@ src:William Playfair
 cit:The Commercial and Political Atlas (p. 3), 1786
 tag:data visualization,pictures,tables
 
-quo:Since the aim of exploratory data analysis is to learn what seems to be, it should be no surprise that pictures play a vital role in doing it well.
-src:John W. Tukey
-cit:John W. Tukey's Works on Interactive Graphics.  The Annals of Statistics Vol. 30, No. 6 (Dec., 2002), pp. 1629-1639
-url:https://www.jstor.org/stable/1558733
-tag:data visualization,pictures,eda
-
-quo:There is nothing better than a picture for making you think of questions you had forgotten to ask (even mentally).
-src:John W. Tukey & Paul Tukey
-cit:John W. Tukey's Works on Interactive Graphics.  The Annals of Statistics Vol. 30, No. 6 (Dec., 2002), pp. 1629-1639
-url:https://www.jstor.org/stable/1558733
-tag:data visualization,pictures
-
 quo:Functional visualizations are more than innovative statistical analyses and computational algorithms. They must make sense to the user and require a visual language system that uses colour, shape, line, hierarchy and composition to communicate clearly and appropriately, much like the alphabetic and character-based languages used worldwide between humans.
 src:Matt Woolman
 cit:Digital Information Graphics
@@ -1408,26 +1535,6 @@ cit:Statistical Modeling: The Two Cultures, Statistical Science, Vol 16, p. 214.
 url:https://doi.org/10.1214/ss/1009213726
 tag:data,models,statistics
 
-quo:Unless exploratory data analysis uncovers indications, usually quantitative ones, there is likely to nothing for confirmatory data analysis to consider.
-src:John Tukey
-cit:Exploratory Data Analysis, 1977, p. 3.
-tag:data,data analysis
-
-quo:One thing the data analyst has to learn is how to expose himself to what his data are willing--or even anxious--to tell him. Finding clues requires looking in the right places and with the right magnifying glass.
-src:John Tukey
-cit:Exploratory Data Analysis, 1977, p. 21.
-tag:data,data analysis
-
-quo:In data analysis, a plot of y against x may help us when we know nothing about the logical connection from x to y--even when we do not know whether or not there is one--even when we know that such a connection is impossible.
-src:John Tukey
-cit:Exploratory Data Analysis, p. 131.
-tag:data,data analysis
-
-quo:Whatever the data, we can try to gain understanding by straightening or by flattening. When we succeed in doing one or both, we almost always see more clearly what is going on.
-src:John Tukey
-cit:Exploratory Data Analysis, 1977, p. 148.
-tag:data,data analysis
-
 quo:When nearest neighbor effects exist, the randomized complete block analysis [can be] so poor as to deserver to be called catastrophic.  It [can not] even be considered a serious form of analysis. It is extremely important to make this clear to the vast number of researchers who have near religious faith in the randomized complete block design.
 src:Walt Stroup & D Mulitze
 cit:Nearest Neighbor Adjusted Best Linear Unbiased Prediction, The American Statistician, 45, 194--200.
@@ -1506,10 +1613,6 @@ quo:The old rule of trusting the Central Limit Theorem if the sample size is lar
 src:Tim Hesterberg
 tag:data,data analysis
 
-quo:A competent data analysis of an even moderately complex set of data is a thing of trials and retreats, of dead ends and branches.
-src:John Tukey
-cit:Computer Science and Statistics: Proceedings of the 14th Symposium on the Interface, p. 4.
-tag:data,data analysis
 
 quo:Scrutiny [of data] should take in the *names* of variates. Analysis of variates y1 to y5 is not statistics; analysis of plant height in centimeters, root weight in grams, etc., may be.
 src:D. A. Preece
@@ -1759,16 +1862,6 @@ cit:Graphical Perception: Theory, Experimentation, and Application to the Develo
 url:https://doi.org/10.2307/2288400
 tag:data visualization
 
-quo:There is no more reason to expect one graph to 'tell all' than to expect one number to do the same.
-src:John Tukey
-cit:Exploratory Data Analysis, 1977, p. 157
-tag:data visualization
-
-quo:There is no excuse for failing to plot and look.
-src:John Tukey
-cit:Exploratory Data Analysis, 1997, p. 43
-tag:data visualization
-
 quo:It's generally considered bad practice to use more than six colors in a single display.
 src:Ross Ihaka
 cit:R-help mailing list, 2004
@@ -1987,25 +2080,6 @@ quo:These days the statistician is often asked such questions as "Are you a Baye
 src:George E.P. Box
 tag:statistics
 
-quo:One is so much less than two. [John Tukey's eulogy of his wife.]
-src:John Tukey
-cit:The life and professional contributions of John W. Tukey, The Annals of Statistics, 2001, Vol 30, p. 46.
-tag:statistics
-
-quo:Statisticians classically asked the wrong question--and were willing to answer with a lie, one that was often a downright lie. They asked "Are the effects of A and B different?" and they were willing to answer "no". All we know about the world teaches us that the effects of A and B are always different--in some decimal place--for every A and B. Thus asking "Are the effects different?" is foolish. What we should be answering first is "Can we tell the direction in which the effects of A differ from the effects of B?" In other words, can we be confident about the direction from A to B? Is it "up", "down" or "uncertain"?
-src:John Tukey
-cit:The Philosophy of Multiple Comparisons, Statistical Science, 6, 100-116.
-tag:statistics
-
-quo:No one has ever shown that he or she had a free lunch. Here, of course, "free lunch" means "usefulness of a model that is locally easy to make inferences from".
-src:John Tukey
-cit:Issues relevant to an honest account of data-based inference, partially in the light of Laurie Davies' paper.
-tag:statistics
-
-quo:If asymptotics are of any real value, it must be because they teach us something useful in finite samples. I wish I knew how to be sure when this happens.
-src:John Tukey
-cit:Issues relevant to an honest account of data-based inference, partially in the light of Laurie Davies' paper.
-tag:statistics
 
 %fixme multiline
 
@@ -2015,39 +2089,6 @@ src:George Box vs. John Tukey
 cit:Douglas Martin, 1999 S-Plus Conference Proceedings.
 tag:statistics
 
-quo:Statistics is a science in my opinion, and it is no more a branch of mathematics than are physics, chemistry, and economics; for if its methods fail the test of experience--not the test of logic--they will be discarded.
-src:John Tukey
-cit:The life and professional contributions of John W. Tukey, by David Brillinger, The Annals of Statistics, 2001, Vol 30.
-tag:statistics
-
-quo:One Christmas Tukey gave his students books of crossword puzzles as presents. Upon examining the books the students found that Tukey had removed the puzzle answers and had replaced them with words of the sense: "Doing statistics is like doing crosswords except that one cannot know for sure whether one has found the solution."
-src:John Tukey
-cit:The life and professional contributions of John W. Tukey, by David Brillinger, The Annals of Statistics, 2001, Vol 30, p. 22.
-tag:statistics
-
-quo:A sort of question that is inevitable is: "Someone taught my students exploratory, and now (boo hoo) they want me to tell them how to assess significance or confidence for all these unusual functions of the data. Oh, what can we do?" To this there is an easy answer: TEACH them the JACKKNIFE.
-src:John Tukey
-cit:We Need Both Exploratory and Confirmatory, The American Statistician, Vol 34, No 1, p. 25.
-url:https://doi.org/10.2307/2682991
-tag:statistics
-
-quo:John Tukey's eye for detail was amazing. When we were preparing some of the material for our book (which was published last year), it was most disconcerting to have him glance at the data and question one value out of several thousand points. Of course, he was correct and I had missed identifying this anomaly.
-src:Kaye Basford
-tag:statistics
-
-quo:Many students are curious about the '1.5 x IQR Rule';, i.e. why do we use Q1 - 1.5 x IQR (or Q3 + 1.5 x IQR) as the value for deciding if a data value is classified as an outlier? Paul Velleman, a statistician at Cornell University, was a student of John Tukey, who invented the boxplot and the 1.5 x IQR Rule. When he asked Tukey, 'Why 1.5?', Tukey answered, 'Because 1 is too small and 2 is too large.' [Assuming a Gaussian distribution, about 1 value in 100 would be an outlier. Using 2 x IQR would lead to 1 value in 1000 being an outlier.]
-src:Unknown
-tag:statistics
-
-quo:It is a rare thing that a specific body of data tells us as clearly as we would wish how it itself should be analyzed.
-src:John Tukey
-cit:Exploratory Data Analysis, 1977, p. 397.
-tag:statistics
-
-quo:Just which robust/resistant methods you use is not important--what is important is that you use some. It is perfectly proper to use both classical and robust/resistant methods routinely, and only worry when they differ enough to matter. But, when they differ, you should think hard.
-src:John Tukey
-cit:Quoted by Doug Martin
-tag:statistics
 
 quo:We thus echo the classical Bayesian literature in concluding that 'noninformative prior information' is a contradiction in terms. The flat prior carries information just like any other; it represents the assumption that the effect is likely to be large. This is often not true. Indeed, the signal-to-noise ratio s is often very low and then it is necessary to shrink the unbiased estimate. Failure to do so by inappropriately using the flat prior causes overestimation of effects and subsequent failure to replicate them.
 src:Erik van Zwet & Andrew Gelman
@@ -2081,6 +2122,11 @@ quo:The best way to convey to the experimenter what the data tell him about thet
 src:George E. P. Box & G. C. Tiao
 cit:Bayesian Inference in Statistical Analysis (1973)
 tag:statistics,bayesian
+
+quo:If a prior is anything at all, it's a belief prior to some data. We can discuss how our priors differ from each other and argue about whose prior is best justified. But when data come in and priors are converted to posteriors, no one learns that their prior was wrong, any more than seeing a coin landing heads shows me that calling odds of 50-50 was wrong.
+src: Richard Gunton
+cit: Priors aren't wrong, Significance, (2025), 22, p. 43.
+tag: bayesian
 
 quo:If one could get some rational basis for obtaining the prior, then there would be no problem.  But people have seminars these days about something where someone says, 'I am going to use such and such a prior'.  Where does he get the prior?  It is not data based.  It is a mathematical convenience or something like that.  It is not even obtained by using Bayes' theorem. Why one should believe the outcome of using this seems to be a very moot point.
 src:Oscar Kempthorne
@@ -2129,11 +2175,6 @@ tag:statistics,bayesian
 quo:If the prior distribution, at which I am frankly guessing, has little or no effect on the result, then why bother; and if it has a large effect, then since I do not know what I am doing how would I dare act on the conclusions drawn?
 src:Richard W Hamming
 cit:The Art of Probability for Scientists and Engineers, 1991, p. 298.
-tag:statistics,bayesian
-
-quo:I believe that there are many classes of problems where Bayesian analyses are reasonable, mainly classes with which I have little acquaintance.
-src:John Tukey
-cit:The life and professional contributions of John W. Tukey, The Annals of Statistics, 2001, Vol 30, p. 45.
 tag:statistics,bayesian
 
 quo:If you read Bayesian polemics from the 1970s and 1980s, including my own, it's usually arrogant and even insulting. Some of the terms were excessively pointed. For example, Bayesians identified which frequentist methods were "incoherent", or more accurately, lamented that none seemed to be coherent. On the other hand, Bayesians were accused of being "biased". The rhetoric was not all that different from that of the Fisher/Pearson duels. But we Bayesians have stopped saying derogatory things, partly because we have changed and partly because frequentists have been listening. When you're walking beside someone you tend to be cordial; when you're trying to catch up to tell them something and they are ignoring what you say, you sometimes yell.
@@ -3044,24 +3085,6 @@ cit:Significance tests reconsidered. 1969. The American Sociologist 4 : 131-140.
 url:https://www.jstor.org/stable/27701482
 tag:nhst,significance,knowledge
 
-
-quo:The twin assumptions of normality of distribution and homogeneity of variance are not ever exactly fulfilled in practice, and often they do not even hold to a good approximation.
-src:John W. Tukey
-cit:The problem of multiple comparisons. 1973. Unpublished manuscript, Dept. of Statistics, Princeton University.
-tag:normality
-
-quo:[A]sking 'Are the effects different?' is foolish.
-src:John W. Tukey
-cit:The philosophy of multiple comparisons. 1991. Statistical Science 6 : 100-116.
-url:https://www.jstor.org/stable/2245714
-tag:nhst,statistics,statistician
-
-quo:Empirical knowledge is always fuzzy! And theoretical knowledge, like all the laws of physics, as of today's date, is always wrong-in detail, though possibly providing some very good approximations indeed.
-src:John W. Tukey
-cit:The philosophy of multiple comparisons. 1991. Statistical Science 6 : 100-116.
-url:https://www.jstor.org/stable/2245714
-
-
 quo:scientists care about whether a result is statistically significant, but they should care much more about whether it is meaningful.
 src:Deirdre N. McCloskey
 cit:The insignificance of statistical significance. 1995. Scientific American 272(4) : 104-105.
@@ -3218,7 +3241,8 @@ tag:probability
 
 quo:We are seduced by patterns and we want explanations for these patterns. When we see a string of successes, we think that a hot hand has made success more likely. If we see a string of failures, we think a cold hand has made failure more likely. It is easy to dismiss such theories when they involve coin flips, but it is not so easy with humans. We surely have emotions and ailments that can cause our abilities to go up and down. The question is whether these fluctuations are important or trivial.
 src:Gary Smith
-cit:Standard Deviations, 2014
+cit: Standard Deviations, 2014.
+
 
 quo:[In statistics] you have the fact that the concepts are not very clean. The idea of probability, of randomness, is not a clean mathematical idea. You cannot produce random numbers mathematically. They can only be produced by things like tossing dice or spinning a roulette wheel. With a formula, any formula, the number you get would be predictable and therefore not random. So as a statistician you have to rely on some conception of a world where things happen in some way at random, a conception which mathematicians don't have.
 src:Lucien LeCam
@@ -3651,16 +3675,6 @@ src: Dorothy Robinson
 cit: Discussion of the paper by Dr Brewer and Professor Mead, Journal of the Royal Statistical Society. Series A, 1986, 149, pp. 314-348. Quote on p. 341.
 url: https://doi.org/10.2307/2981720
 
-quo: If we need a short suggestion of what exploratory data analysis is, I would suggest that: 1. it is an attitude, AND 2. a flexibility, AND 3. some graph paper (or transparencies, or both).
-src: John W. Tukey
-cit: Jones, L. V. (Ed.). (1986). The collected works of John W. Tukey: Philosophy and principles of data analysis 1949-1964 (Vols. III & IV). London: Chapman & Hall.
-tag: eda,data visualization
-
-quo: Three of the main strategies of data analysis are: 1. graphical presentation. 2. provision of flexibility in viewpoint and in facilities,  3. intensive search for parsimony and simplicity.
-src: John W. Tukey
-cit: Jones, L. V. (Ed.). (1986). The collected works of John W. Tukey: Philosophy and principles of data analysis 1949-1964 (Vols. III & IV). London: Chapman & Hall.
-tag: data visualization,data analysis
-
 quo: If you torture the data enough, nature will always confess.
 src: Ronald Coase
 cit: quoted from Coase, R. H. (1982). How should economists chose? American Enterprise Institute, Washington, D. C.
@@ -3774,3 +3788,113 @@ src: Andrew Gelman
 cit: Numbersense Pros: Interview with Andrew Gelman, 2013-09-12
 url: https://junkcharts.typepad.com/numbersruleyourworld/2013/09/numbersense-pros-interview-with-andrew-gelman.html
 tag: data analysis
+
+quo: Data are not taken for museum purposes; they are taken as a basis for doing something. If nothing is to be done with the data, then there is no use in collecting any. The ultimate purpose of taking data is to provide a basis for action or a recommendation for action. The step intermediate between the collection of data and the action is prediction.
+src: W. Edwards Deming
+cit: On a Classification of the Problems of Statistical Inference, June 1942, Journal of the American Statistical Association, page 173.
+tag: data,prediction
+
+quo: In real-life situations the interpretation of the results of goodness-of-fit tests must rely on judgment of content rather than on P-values.
+src: Peter Huber
+cit: Data Analysis: What Can Be Learned from the Past 50 Years.
+tag: nhst,normality
+
+quo: Too much emphasis is put on futile attempts to automate non-routine tasks, and not enough effort is spent on facilitating routine work.
+src: Peter Huber
+cit: Data Analysis: What Can Be Learned from the Past 50 Years.
+tag: science
+
+quo: The best thing to do with missing data is to not have any.
+src: Gertrude Cox
+
+quo: The modern student, and too often his teacher, overlook the fact that such a simple thing as a scatter diagram is a more important tool of prediction than the correlation coefficient, especially if the points are labeled so as to distinguish the different sources of the data.
+src: W. Edwards Deming
+cit: 1940
+
+quo: Above all, a statistician must be a scientist.
+src: W. Edwards Deming
+cit: 1940
+
+quo: The chaste beauty and intellectual delights of the theory of statistical inference, regarded as the intellectual offspring of mathematics and inductive logic, are known at present only to a few devotees; but this theory is bound in time to receive a wider appreciation and a higher valuation even apart from its practical usefulness in the form of application
+src: Harold Hotelling
+cit: Presidential address to Indian Statstical Congress at Madras, 1941, Sankhya, 5, 127-129
+
+quo: Unfortunately, too many people like to do their statistical work just as they say their prayers-merely substitute in a formula found in a highly respected book written a long time ago.
+src: Harold Hotelling
+cit: The Place of Statistics in the University, Proceedings of the Berkley Symposium on Mathematical Statistics and Probability, University of California Press, 1949, 21-40.
+
+quo: We have overwhelming evidence that available information plus analysis does not lead to knowledge. The management science team can properly analyse a situation and present recommendations to the manager, but no change occurs. The situation is so familiar to those of us who try to practice management science that I hardly need to describe the cases.
+src: C. West Churchman
+cit: Managerial acceptance of scientific recommendations, California Management Review Vol 7, 1964.
+
+quo: Statistics is a body of methods and theory applied to numerical evidence in making decisions in the face of uncertainty.
+src: Lawrence Lapin
+cit: Statistics for Modern Business Decisions, 1973.
+
+quo: Like a detective, a data analyst will experience many dead ends, retrace his steps, and explore many alternatives before settling on a single description of the evidence in front of him.
+src: David Lubinsky & Daryl Pregibon
+cit: Data analysis as search, Journal of Econometrics Vol. 38 (1–2), 1988
+
+quo: ...the simplest hypothesis proposed as an explanation of phenomena is more likely to be the true one than is any other available hypothesis, that its predictions are more likely to be true than those of any other available hypothesis, and that it is an ultimate a priori epistemic principle that simplicity is evidence for truth.
+src: Richard Swinburne
+cit: Simplicity as Evidence for Truth, 1997.
+
+quo: When significance tests are used and a null hypothesis is not rejected, a major problem often arises - namely, the result may be interpreted, without a logical basis, as providing evidence for the null hypothesis.
+src: David F Parkhurst
+cit: Statistical Significance Tests: Equivalence and Reverse Tests Should Reduce Misinterpretation, BioScience Vol. 51 (12), 2001.
+
+quo: Data analysis is careful thinking about evidence.
+src: Michael Milton
+cit: Head First Data Analysis, 2009.
+
+quo: Data clusters are everywhere, even in random data. Someone who looks for an explanation will inevitably find one, but a theory that fits a data cluster is not persuasive evidence. The found explanation needs to make sense and it needs to be tested with uncontaminated data.
+src: Gary Smith
+cit: Standard Deviations, 2014.
+tag: clustering
+
+quo: In general, when building statistical models, we must not forget that the aim is to understand something about the real world. Or predict, choose an action, make a decision, summarize evidence, and so on, but always about the real world, not an abstract mathematical world: our models are not the reality - a point well made by George Box in his oft-cited remark that "all models are wrong, but some are useful.
+src: David Hand
+cit: Wonderful examples, but let's not close our eyes, Statistical Science 29, 2014.
+
+quo: In terms of characteristics, a data scientist has an inquisitive mind and is prepared to explore and ask questions, examine assumptions and analyse processes, test hypotheses and try out solutions and, based on evidence, communicate informed conclusions, recommendations and caveats to stakeholders and decision makers.
+src: Jesús Rogel-Salazar
+cit: Data Science and Analytics with Python, 2017.
+
+quo: With the growing availability of massive data sets and user-friendly analysis software, it might be thought that there is less need for training in statistical methods. This would be naïve in the extreme. Far from freeing us from the need for statistical skills, bigger data and the rise in the number and complexity of scientific studies makes it even more difficult to draw appropriate conclusions. More data means that we need to be even more aware of what the evidence is actually worth.
+src: David Spiegelhalter
+cit: The Art of Statistics: Learning from Data, 2019.
+
+quo: The general principles of starting with a well-defined question, engaging in careful observation, and then formulating hypotheses and assessing the strength of evidence for and against them became known as the scientific method.
+src: Michael Friendly & Howard Wainer
+cit: A History of Data Visualization and Graphic Communication, 2021.
+tag: science
+
+quo:Is statistics a science?...If statistics is a science, then what is its subject matter? Physicists study "stuff", biologists study life, astronomers study the universe—what do statisticians study?
+src: Colin Mallows
+cit: Tukey's Paper After 40 Years, Technometrics, 2006, V 48, No 3. Page 322.
+doi: 10.1198/004017006000000219
+
+quo: David Cox was asked to identify "what is statistics." His answer was that statistics is the discipline concerned with the study of variability, the study of uncertainty, and the study of decision making in the face of uncertainty. ... This seems to say that what statisticians study is their
+methodology, divorced from applications.
+src: Colin Mallows
+cit: Tukey's Paper After 40 Years, Technometrics, 2006, V 48, No 3. Page 322.
+doi: 10.1198/004017006000000219
+
+quo: The definition [of statistics] I prefer says that: Statistics concerns the relation of quantitative data to a real-world problem, often in the presence of variability and uncertainty. It attempts to make precise and explicit what the data has to say about the problem of interest.
+src: Colin Mallows
+cit: Tukey's Paper After 40 Years, Technometrics, 2006, V 48, No 3. Page 322.
+doi: 10.1198/004017006000000219
+
+quo: In 1995 Daryl Pregibon and I gave a definition of a massive-data problem. This is not just a problem for which we have massive data; that could be simply a problem where classical asymptotic theory is all that is needed. I have not seen many of those. No, a massive data problem is a massive problem for which we have massive data.
+src: Colin Mallows
+cit: Tukey's Paper After 40 Years, Technometrics, 2006, V 48, No 3. Page 323.
+doi: 10.1198/004017006000000219
+
+quo: I can say that everything important about statistics that I ever learned, I learned at lunch at Murray Hill [at Bell Labs 1960-1961]. The rest of my career has been applying what I learned.
+src: David Brillinger
+cit: Discussion, Technometrics, 2006, V 48 No 3. Page 325.
+doi: 10.1198/004017006000000200
+
+quo: We're making it less random to make it feel more random.
+src: Steve Jobs
+cit: Steven Levy, 2006, The perfect thing: how the iPod shuffles commerce, culture, and coolness.
