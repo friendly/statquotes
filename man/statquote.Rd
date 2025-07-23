@@ -27,7 +27,7 @@ specified tag.}
 \item{source}{Character string. Quotes are subset to those matching
 the specified source (person).}
 
-\item{topic}{Deprecated. Use 'tag' instead. Only kept for backward compatability.}
+\item{topic}{Deprecated. Use 'tag' instead. Only kept for backward compatibility.}
 
 \item{x}{object of class \code{'statquote'}}
 

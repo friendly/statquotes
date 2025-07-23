@@ -4,15 +4,15 @@
 #' a word cloud based upon that filter.
 #'
 #' @param search Character string (or regular expression) used to search the database. Default is to search all quotes.
-#' 
+#'
 #' @param max.words Integer; The maximum number of words to be plotted.
-#' 
+#'
 #' @param colors A character vector of colors to be used to designate
 #'   word frequency. The default is 5 levels, from light to dark green.
-#' 
+#'
 #' @param ... additional arguments passed to \code{\link{search_quotes}} and
-#'   \code{\link{wordcloud}}
-#' 
+#'   \code{\link[wordcloud]{wordcloud}}
+#'
 #' @return None. A wordcloud is plotted.
 #' @importFrom tidytext unnest_tokens
 #' @importFrom wordcloud wordcloud
@@ -23,7 +23,7 @@
 #' quote_cloud()
 #' quote_cloud(search = "graph")
 #' quote_cloud(max.words = 10)
-#' 
+#'
 quote_cloud <- function(search = ".*", max.words = 80, colors, ...){
     qt <- search_quotes(search, ...) # defaults to all quotes
     .sq.env <- new.env()

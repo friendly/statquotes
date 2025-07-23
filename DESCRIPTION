@@ -1,7 +1,7 @@
 Package: statquotes
 Title: Quotes on Statistics, Data Visualization and Science
 Version: 0.3.3
-Date: 2023-10-29
+Date: 2025-07-28
 Authors@R: c(person("Michael", "Friendly", 
                     email = "friendly@yorku.ca", 
                     role = c("aut", "cre"),
@@ -24,7 +24,7 @@ Description: Generates a random quotation from a database of quotes on topics
     The output is designed to be suitable for use at the console, in Rmarkdown
     and LaTeX.
 Depends:
-    R (>= 3.5.0)
+    R (>= 4.1.0)
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
@@ -34,7 +34,7 @@ URL: https://github.com/friendly/statquotes/
 Imports: stringr,
     tidytext,
     wordcloud
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 Suggests: 
     knitr,
     rmarkdown,
