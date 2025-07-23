@@ -32,5 +32,5 @@ quote_cloud(max.words = 10)
 }
 \seealso{
 \code{\link{statquote}}, \code{\link{quote_tags}}, \code{\link{quotes}},
-  \code{\link{search_quotes}}. \code{\link{wordcloud}}
+  \code{\link{search_quotes}}. \code{\link[wordcloud]{wordcloud}}
 }

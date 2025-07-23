@@ -3898,3 +3898,37 @@ doi: 10.1198/004017006000000200
 quo: We're making it less random to make it feel more random.
 src: Steve Jobs
 cit: Steven Levy, 2006, The perfect thing: how the iPod shuffles commerce, culture, and coolness.
+
+quo: The only statistics you can trust are those you falsified yourself
+src: Winston Churchill
+url: https://slsclove.people.uic.edu/stathumr.htm
+tag: statistics
+
+quo: Statistics must have a clearly defined purpose, one aspect of which is scientific advance and the other, human welfare and national development
+src: P.C. Mahalanobis, quoted by C.R. Rao
+url: https://www.jstor.org/stable/25050946
+tag: statistics,science
+
+quo: It is as scientific and intelligible to represent time by space, as it is to represent space by space.
+src: Emma Willard
+cit: Guide to the Temple of Time (1850), p. 21
+tag: time,space
+
+quo: Can't duration be imitated and represented as significantly, as distinctly as space?
+src: Jacques Barbeu Dubourg, 1753
+tag: time,space
+
+quo: As knowledge increases amongst mankind, and transactions multiply, it becomes more and more desireable to abbreviate and facilitate the modes of conveying information
+src: William Playfair, 1786
+tag: data visualization
+
+quo: Study the science of art and the art of science. Learn how to see. Realize that everything connects to everything else.
+src: Leonardo da Vinci (1452 - 1519)
+tag: science
+
+quo: All thinking begins with seeing
+src: Susanne K Langer
+cit: Philosophy in a New Key, 1942
+tag: data visualization
+
+
