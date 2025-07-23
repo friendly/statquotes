@@ -4,7 +4,7 @@
 
 ## R CMD check results
 
-There were no ERRORs, WARNINGs; 1 NOTEs
+There were no ERRORs, WARNINGs, NOTEs
 
 
 ## Reverse dependencies
