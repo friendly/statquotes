@@ -1,6 +1,9 @@
 ## Version 0.3.3
 
+This is a minor release fixing CRAN issues
+
 o Now Depends: R >= 4.1.0 due to pipes
+o Fixed CRAN nits re links
 
 ## Version 0.3.2 (2023-10-09)
 

@@ -1,17 +1,11 @@
 ## Test environments
-* local Windows install, 4.2.3 (2023-03-15 ucrt)
+* local Windows install, R version 4.5.1 (2025-06-13 ucrt)
 * win-builder R Under development (unstable) (2023-10-08 r85282 ucrt)
 
 ## R CMD check results
 
 There were no ERRORs, WARNINGs; 1 NOTEs
 
-Possibly misspelled words in DESCRIPTION:
-  LaTeX (25:9)
-  Rmarkdown (24:70)
-
-These are false positive misspellings. I think it would look
-weird to have to quote them.
 
 ## Reverse dependencies
 
@@ -20,11 +14,10 @@ There are no reverse dependencies
 > devtools::revdep()
 character(0)
 
-# Version 0.3.2
+## Version 0.3.3
 
-This is a modest development release, enhancing display of quotations, and adding a vignette
+This is a minor release fixing CRAN issues
 
-- `as.latex()` gains a `cite` argument to include citation in the results
-- `cite=TRUE` is now the default in `as.markdown()`, `as.latex()`, and  `search_quotes()`
-- Collected quotes vignette added for complete overview of quotes collection
+o Now Depends: R >= 4.1.0 due to pipes
+o Fixed CRAN nits re links
 
