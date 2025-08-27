@@ -3931,4 +3931,8 @@ src: Susanne K Langer
 cit: Philosophy in a New Key, 1942
 tag: data visualization
 
+quo: Bayesians address the question everyone is interested in by using assumptions no-one believes, while frequentists use impeccable logic to deal with an issue of no interest to anyone.
+src: Louis Lyons
+tag: bayesian,nhst 
+
 
