@@ -534,6 +534,10 @@ quo:To understand God's thoughts we must study statistics, for these are the mea
 src:Florence Nightingale
 tag:statistics
 
+quo:Statistics is the most important science in the whole world: for upon it depends the practical application of every other science and of every art.
+src:Florence Nightingale
+tag:statistics
+
 quo:You cannot feed the hungry on statistics.
 src:David Lloyd George
 tag:statistics
@@ -620,6 +624,10 @@ tag:statistics
 quo:Sometimes the only thing you can do with a poorly designed experiment is to try to find out what it died of.
 src:Ronald A. Fisher
 tag:statistics,experimental design
+
+quo:We may at once admit that any inference from the particular to the general must be attended with some degree of uncertainty, but this is not the same as to admit that such inference cannot be absolutely rigorous, for the nature and degree of the uncertainty may itself be capable of rigorous expression.
+src:Ronald A. Fisher
+tag:statistics,inference
 
 quo:The best time to plan an experiment is after you've done it.
 src:Ronald A. Fisher
@@ -756,6 +764,10 @@ quo:While the individual man is an insoluble puzzle, in the aggregate he becomes
 src:Arthur Conan-Doyle
 cit:Sign of the Four
 tag:data,averages
+
+quo: Not all of the characteristics which are conversationally described in terms of "more" or "less" can actually be measured. But any characteristic which lends itself to such description has the possibility of being reduced to measurement.
+src: L.L. Thurstone
+tag:measurement
 
 quo:If you put a buttock on a hot plate and another one on an ice cube, the average is good, but in reality your bottom is in trouble.
 src:Grigore Moisil
@@ -1012,6 +1024,10 @@ tag:history
 quo:A generation which ignores history has no past and no future
 src:Robert Heinlein
 tag:history
+
+quo:If it can't be expressed in figures, it is not science. It is opinion.
+src:Robert Heinlein
+tag:science
 
 quo:For my part, I consider that it will be found much better by all parties to leave the past to history, especially as I propose to write that history myself.
 src:Winston Churchill
@@ -2229,6 +2245,9 @@ src:Robert E Kass, Brian S. Caffo, Marie Davidian, Xiao-Li Meng, Bin Yu, Nancy R
 cit:Ten Simple Rules for Effective Statistical Practice, PLoS Comput Biol 12(6):e1004961.
 url:https://doi.org/10.1371/journal.pcbi.1004961
 tag:statistics,significance,nhst
+
+quo:In our lust for measurement, we frequently measure that which we can rather than that which we wish to measure ... and forget that there is a difference.
+src: George Udny Yule
 
 quo:The difference between "statistically significant" and "not statistically significant" is not in itself necessarily statistically significant. By this, I mean more than the obvious point about arbitrary divisions, that there is essentially no difference between something significant at the 0.049 level or the 0.051 level. I have a bigger point to make. It is common in applied research--in the last couple of weeks, I have seen this mistake made in a talk by a leading political scientist and a paper by a psychologist--to compare two effects, from two different analyses, one of which is statistically significant and one which is not, and then to try to interpret/explain the difference. Without any recognition that the difference itself was not statistically significant.
 src:Andrew Gelman
