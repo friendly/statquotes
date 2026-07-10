@@ -3,13 +3,13 @@
 
 Here are some ideas for papers and websites to review for finding quotes
 
-% https://www.jstor.org/stable/20116653
-% https://www.frontiersin.org/articles/10.3389/fnhum.2017.00390/full
-% https://www.tandfonline.com/doi/full/10.1080/00031305.2018.1527253
-% https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-020-01051-6
-% https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1119478/
+* https://www.jstor.org/stable/20116653
+* https://www.frontiersin.org/articles/10.3389/fnhum.2017.00390/full
+* https://www.tandfonline.com/doi/full/10.1080/00031305.2018.1527253
+* https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-020-01051-6
+* https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1119478/
 
-% See the papers at the bottom of this page: https://teachdatascience.com/pvals/
+See the papers at the bottom of this page: https://teachdatascience.com/pvals/
 
 
 # How to contribute a quote to the statquotes package
