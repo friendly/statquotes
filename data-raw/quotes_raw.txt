@@ -3984,6 +3984,7 @@ cit: George Box (1976). Journal of the American Statistical Association, 71, 791
 
 quo: I keep saying that the sexy job in the next 10 years will be statisticians. And I'm not kidding.
 src: Hal Varian
+cit: New York Times, 2009-08-06
 url: http://www.nytimes.com/2009/08/06/technology/06stats.html
 
 quo: Causal interpretation of the results of regression analysis of observational data is a risky business. The responsibility rests entirely on the shoulders of the researcher, because the shoulders of the statistical technique cannot carry such strong inferences.
@@ -3991,6 +3992,8 @@ src: Jan de Leeuw
 
 quo: Statistics is the grammar of science.
 src: Karl Pearson
+cit: Karl Pearson (1892), The Grammar of Science.
+url: https://archive.org/details/grammarofscience00pearuoft
 
 quo: Uncertainty is a personal matter; it is not *the* uncertainty but *your* uncertainty.
 src: Dennis Lindley
@@ -3999,3 +4002,8 @@ cit: Dennis Victor Lindley (2006), Understanding Uncertainty, Wiley-Interscience
 quo: Stigler’s law of eponymy that says that a scientific notion is never attributed to the right person; in particular, the law is not due to Stigler.
 src: Dennis Lindley
 cit: Dennis Victor Lindley (2006), Understanding Uncertainty, Wiley-Interscience, p. xv.
+
+quo: Six Sigma was not an innovation in statistics science, but it was a tremendously important innovation in statistical engineering.
+src: Roger Hoerl
+cit: Roger Hoerl (2025). The future of statistics in an AI era, Quality Engineering, 38, 333-345.
+doi: https://doi.org/10.1080/08982112.2025.2556222
