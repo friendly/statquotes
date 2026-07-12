@@ -4007,3 +4007,8 @@ quo: Six Sigma was not an innovation in statistics science, but it was a tremend
 src: Roger Hoerl
 cit: Roger Hoerl (2025). The future of statistics in an AI era, Quality Engineering, 38, 333-345.
 doi: https://doi.org/10.1080/08982112.2025.2556222
+
+quo: A good chart isn't an illustration but a visual argument.
+src: Alberto Cairo
+cit: Alberto Cairo, "How Charts Lie"
+tag: data visualization
