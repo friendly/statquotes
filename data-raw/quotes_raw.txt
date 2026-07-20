@@ -4012,3 +4012,7 @@ quo: A good chart isn't an illustration but a visual argument.
 src: Alberto Cairo
 cit: Alberto Cairo, "How Charts Lie"
 tag: data visualization
+
+quo: Good statistics are like a telescope for an astronomer, a microscope for a bacteriologist, or an x-ray for a radiologist. If we are willing to let them, good statistics help us to see things about the world around us and about ourselves--both large and small – that we would not be able to see in any other way.
+src: Tim Hartford
+cit: Tim Hartford, "The Data Detective", p. 9
