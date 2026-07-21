@@ -113,7 +113,7 @@ tag: data visualization,pictures
 
 quo: The best thing about being a statistician is that you get to play in everyone's backyard.
 src: John Tukey
-cit: Quoted by David Brillinger in "...how wonderful is the field of statistics" 
+cit: David Brillinger, "...how wonderful is the field of statistics", In Past, Present, and Future of Statistical Science (2014).
 tag: statistics
 
 quo: The collective noun for a group of statisticians is a quarrel.
@@ -122,7 +122,7 @@ cit: David Brillinger, "...how wonderful is the field of statistics". In Past, p
 
 quo: A consultant is a man who thinks with other people's brains. In: Past, present, and future of statistical science (2014).
 src: John Tukey
-cit: David Brillinger, "...how wonderful is the field of statistics"
+cit: David Brillinger, "...how wonderful is the field of statistics", In Past, Present, and Future of Statistical Science (2014).
 tag: consulting
   
 quo: The worst, i.e., most dangerous, feature of 'accepting the null hypothesis' is the giving up of explicit uncertainty ... Mathematics can sometimes be put in such black-and-white terms, but our knowledge or belief about the external world never can.
@@ -251,7 +251,7 @@ tag: statistics
 
 quo: Instant data analysis is--and will remain--an illusion.
 src: John Tukey
-cit:  John W. Tukey (1969), Analyzing data: sanctification or detective work? American Psychologist, 24 (2): 83-91.
+cit: John W. Tukey (1969), Analyzing data: sanctification or detective work? American Psychologist, 24 (2): 83-91.
 
 quo: Many students are curious about the '1.5 x IQR Rule';, i.e. why do we use Q1 - 1.5 x IQR (or Q3 + 1.5 x IQR) as the value for deciding if a data value is classified as an outlier? Paul Velleman, a statistician at Cornell University, was a student of John Tukey, who invented the boxplot and the 1.5 x IQR Rule. When he asked Tukey, 'Why 1.5?', Tukey answered, 'Because 1 is too small and 2 is too large.' [Assuming a Gaussian distribution, about 1 value in 100 would be an outlier. Using 2 x IQR would lead to 1 value in 1000 being an outlier.]
 src: Unknown
@@ -3972,7 +3972,7 @@ doi: 10.1198/004017006000000219
 
 quo: I can say that everything important about statistics that I ever learned, I learned at lunch at Murray Hill [at Bell Labs 1960-1961]. The rest of my career has been applying what I learned.
 src: David Brillinger
-cit: Discussion, Technometrics, 2006, V 48 No 3. Page 325.
+cit: David Brillinger, Discussion, Technometrics, 2006, V 48 No 3. Page 325.
 doi: 10.1198/004017006000000200
 
 quo: We're making it less random to make it feel more random.
