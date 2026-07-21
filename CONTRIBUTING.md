@@ -13,8 +13,6 @@ See the papers at the bottom of this page: https://teachdatascience.com/pvals/
 
 Much improvement could be done tracking down the original sources of quotes.
 
-Here is a great list of quotes: https://github.com/hydrodynamicstability/statquotes
-
 
 
 # How to contribute a quote to the statquotes package
