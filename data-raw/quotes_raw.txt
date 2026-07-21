@@ -245,6 +245,10 @@ quo: John Tukey's eye for detail was amazing. When we were preparing some of the
 src: Kaye Basford
 tag: statistics
 
+quo: Instant data analysis is--and will remain--an illusion.
+src: John Tukey
+cit:  John W. Tukey (1969), Analyzing data: sanctification or detective work? American Psychologist, 24 (2): 83-91.
+
 quo: Many students are curious about the '1.5 x IQR Rule';, i.e. why do we use Q1 - 1.5 x IQR (or Q3 + 1.5 x IQR) as the value for deciding if a data value is classified as an outlier? Paul Velleman, a statistician at Cornell University, was a student of John Tukey, who invented the boxplot and the 1.5 x IQR Rule. When he asked Tukey, 'Why 1.5?', Tukey answered, 'Because 1 is too small and 2 is too large.' [Assuming a Gaussian distribution, about 1 value in 100 would be an outlier. Using 2 x IQR would lead to 1 value in 1000 being an outlier.]
 src: Unknown
 tag: statistics
@@ -278,6 +282,11 @@ quo: Three of the main strategies of data analysis are: 1. graphical presentatio
 src: John W. Tukey
 cit: Jones, L. V. (Ed.). (1986). The collected works of John W. Tukey: Philosophy and principles of data analysis 1949-1964 (Vols. III & IV). London: Chapman & Hall.
 tag: data visualization,data analysis
+
+quo: If one technique of data analysis were to be exalted above all others for its ability to be revealing to the mind in connection with each of many different models, there is little doubt which one would be chosen. The simple graph has brought more information to the data analyst's mind than any other device. It specializes in providing indications of expected phenomena. So long as we have to deal with the relation of a single response to a single stimulus, we can express almost everything qualitative, and much that is quantitative, by a graph. We may have to plot the differences between observed response and a function of the stimulus against another function of stimulus; we may have to re-express the response, but the meat of the matter can usually be set out in a graph.
+src: John Tukey
+cit: John W. Tukey (1962). The future of data analysis. Annals of Mathematical Statistics, 33: 1-67.
+tag: data visualization
 
 % ----- End Tukey
 
@@ -1557,6 +1566,12 @@ src: Kenneth Bollen
 cit: Structural Equations with Latent Variable
 tag: data,models
 
+quo: Live with the data before you plunge into modeling.
+src: Leo Breiman
+cit: Statistical Modeling: The Two Cultures, Statistical Science, Vol 16, p. 210.
+url: https://doi.org/10.1214/ss/1009213726
+tag: data,models
+
 quo: The point of a model is to get useful information about the relation between the response and predictor variables. Interpretability is a way of getting information. But a model does not have to be simple to provide reliable information about the relation between predictor and response variables; neither does it have to be a data model. The goal is not interpretability, but accurate information.
 src: Leo Breiman
 cit: Statistical Modeling: The Two Cultures, Statistical Science, Vol 16, p. 210.
@@ -1950,7 +1965,7 @@ tag: statistics
 
 quo: When noise is correlated it becomes music.
 src: Anindya Roy
-cit: Personal communication
+cit: Personal communication to K.Wright
 tag: statistics
 
 quo: As I left consulting to go back to the university, these were the perceptions I had about working with data to find answers to problems: (a) Focus on finding a good solution--that's what consultants get paid for. (b) Live with the data before you plunge into modelling. (c) Search for a model that gives a good solution, either algorithmic or data. (d) Predictive accuracy on test sets is the criterion for how good the model is. (e) Computers are an indispensable partner.
@@ -2075,7 +2090,7 @@ tag: statistics
 
 quo: The standard error of most statistics is proportional to 1 over the square root of the sample size.  God did this, and there is nothing we can do to change it.
 src: Howard Wainer
-cit: Improving Tabular Displays, With NAEP Tables as Examples and Inspirations, Journal of Educational and Behavioral Statistics, Vol 22, No. 1, pp. 1-30.
+cit: Howard Wainer, Improving Tabular Displays, With NAEP Tables as Examples and Inspirations, Journal of Educational and Behavioral Statistics, Vol 22, No. 1, pp. 1-30.
 url: https://doi.org/10.2307/1165236
 tag: statistics
 
@@ -2091,12 +2106,12 @@ tag: statistics
 
 quo: My philosophy on lotteries is that while you actually have to buy a ticket in order to win the lottery, buying a ticket does not significantly increase your odds of winning.
 src: Howie Smith
-cit: Prsonal communication
+cit: Prsonal communication to K.Wright
 tag: statistics
 
 quo: If you show your friends your confidence interval for the standard error of the estimated length of the confidence interval of your confidence about yourself, I guess one nice thing to ask to freak them out is: "Can you construct a confidence interval for the confidence level of my confidence?
 src: Tony Baiching
-cit: Personal communication
+cit: Personal communication to K.Wright
 tag: statistics
 
 quo: To make the preliminary test on variances is rather like putting to sea in a rowing boat to find out whether conditions are sufficiently calm for an ocean liner to leave port.
@@ -2584,14 +2599,14 @@ url: https://doi.org/10.2307/2981969
 tag: nhst
 
 quo: ...to make measurements and then ignore their magnitude would ordinarily be pointless. Exclusive reliance on tests of significance obscures the fact that statistical significance does not imply substantive significance.
-src: I. R. Savage
+src: I. Richard Savage
 cit: Nonparametric Statistics. Journal of the American Statistical Association, 52, 331-344.
 url: https://doi.org/10.1080/01621459.1957.10501392
 tag: nhst
 
 quo: Null hypotheses of no difference are usually known to be false before the data are collected ... when they are, their rejection or acceptance simply reflects the size of the sample and the power of the test, and is not a contribution to science"
-src: I. R. Savage
-cit: Nonparametric Statistics. Journal of the American Statistical Association, 52, 331-344.
+src: I. Richard Savage
+cit: I. Richard Savage (1957). Nonparametric Statistics. Journal of the American Statistical Association, 52, 331-344.
 url: https://doi.org/10.1080/01621459.1957.10501392
 tag: nhst
 
@@ -2716,6 +2731,9 @@ cit: The case against statistical testing. Harvard Educational Review 48: 378-39
 url: https://psycnet.apa.org/doi/10.17763/haer.48.3.t490261645281841
 tag: nhst
 
+quo: Dr. Shewhart was well aware that the statistician's levels of significance furnish no measure of belief in a prediction. Probability has use; tests of significance do not.
+src: W. Edwards Deming
+cit: W. Edwards Deming (1986). Foreword to the reprint of Statistical Method from the Viewpoint of Quality Control by Walter A. Shewhart (New York: Dover).
 
 quo: Pencil and paper for construction of distributions, scatter diagrams, and run-charts to compare small groups and to detect trends, are more efficient methods of estimation than statistical inference that depends on variances and standard errors, as the simple techniques preserve the information in the original data.
 src: W. Edwards Deming
@@ -3579,6 +3597,10 @@ quo: The fact that [the model] is an approximation does not necessarily detract 
 src: George E P Box, 1987
 tag: models,science,Box quotes
 
+quo: A theory has only the alternative of being right or wrong. A model has a third possibility: it may be right, but irrelevant."
+src: Manfred Eigen
+cit: Manfred Eigen (1973). The origin of biological information. In The Physicist's Conception of Nature ed. by J. Mehra (Dordrecht: Springer), pp.594-632
+
 quo: The central limit theorem says that, under conditions almost always satisfied in the real world of experimentation, the distribution of such a linear function of errors will tend to normality as the number of its components becomes large. The tendency to normality occurs almost regardless of the individual distributions of the component errors. An important proviso is that several sources of error must make important contributions to the overall error and that no particular source of error dominate the rest.
 src: George E P Box et al
 cit: "Statistics for Experimenters: Design, discovery, and innovation" 2nd Ed., 2005
@@ -3788,6 +3810,10 @@ cit: Twitter, 10-10-2023
 url: https://twitter.com/f2harrell/status/1711707876782133269
 tag: statistics
 
+quo: Using the data to guide the data analysis is almost as dangerous as not doing so.
+src: Frank Harrell
+cit: Frank E. Harrell, Jr. (2001). Regression Modeling Strategies, with Applications to Linear Models, Logistic Regression, and Survival Analysis. Springer.
+
 quo: It is as scientific and intelligible to represent time by space, as it is to represent space by space.
 src: Emma Willard
 cit: Guide to the Temple of Time, 1850, p. 21
@@ -3833,13 +3859,26 @@ tag: data,prediction
 
 quo: In real-life situations the interpretation of the results of goodness-of-fit tests must rely on judgment of content rather than on P-values.
 src: Peter Huber
-cit: Data Analysis: What Can Be Learned from the Past 50 Years.
+cit: Peter Huber (2011), Data Analysis: What Can Be Learned from the Past 50 Years. Wiley.
+tag: nhst,normality
+
+quo: Goodness-of-fit tests will reject even perfectly adequate models, once the sample size is large enough, simply because not every nook and cranny can and should be modeled.
+src: Peter Huber
+cit: Peter Huber (2011), Data Analysis: What Can Be Learned from the Past 50 Years. Wiley.
 tag: nhst,normality
 
 quo: Too much emphasis is put on futile attempts to automate non-routine tasks, and not enough effort is spent on facilitating routine work.
 src: Peter Huber
 cit: Data Analysis: What Can Be Learned from the Past 50 Years.
 tag: science
+
+quo: Robustness is more than a bag of procedures. It should be regarded as a state of mind: a statistician should keep in mind that all aspects of a data analytic setup (experimental design, data collection, models, procedures) must be handled in such a way that minor deviations from the assumptions cannot have large effects on the results (a robustness problem), and that major deivations can be discovered (a diagnostic problem). Only a small part of this can be captured by theorems and proofs, or by canned computer procedures."
+src: Peter Huber
+cit: Peter J. Huber (2011). Data Analysis: What Can Be Learned from the Past 50 Years. Wiley.
+
+quo: On the basis of the same data, you cannot both discover a feature and perform a meaningful statistical test for its presence....it is no longer possible to calculate reliable P-values after one has looked at the data -- unless they are based on fresh data, they may be worse than useless, namely misleading.
+src: Peter Huber
+cit: Peter J. Huber (2011). Data Analysis: What Can Be Learned from the Past 50 Years. Wiley.
 
 quo: The best thing to do with missing data is to not have any.
 src: Gertrude Cox
@@ -3874,7 +3913,7 @@ cit: Data analysis as search, Journal of Econometrics Vol. 38 (1–2), 1988
 
 quo: ...the simplest hypothesis proposed as an explanation of phenomena is more likely to be the true one than is any other available hypothesis, that its predictions are more likely to be true than those of any other available hypothesis, and that it is an ultimate a priori epistemic principle that simplicity is evidence for truth.
 src: Richard Swinburne
-cit: Simplicity as Evidence for Truth, 1997.
+cit: Richard Swinburne (1997), Simplicity as Evidence for Truth.
 
 quo: When significance tests are used and a null hypothesis is not rejected, a major problem often arises - namely, the result may be interpreted, without a logical basis, as providing evidence for the null hypothesis.
 src: David F Parkhurst
@@ -3942,7 +3981,8 @@ url: https://slsclove.people.uic.edu/stathumr.htm
 tag: statistics
 
 quo: Statistics must have a clearly defined purpose, one aspect of which is scientific advance and the other, human welfare and national development
-src: P.C. Mahalanobis, quoted by C.R. Rao
+src: P.C. Mahalanobis
+cit: C.R. Rao (1993), Statistics Must Have a Purpose--The Mahalanobis Dictum, Sankhya, 55, 331-349.
 url: https://www.jstor.org/stable/25050946
 tag: statistics,science
 
@@ -3991,9 +4031,7 @@ quo: Causal interpretation of the results of regression analysis of observationa
 src: Jan de Leeuw
 
 quo: Statistics is the grammar of science.
-src: Karl Pearson
-cit: Karl Pearson (1892), The Grammar of Science.
-url: https://archive.org/details/grammarofscience00pearuoft
+src: Karl Pearson (attributed, but unlikely--not in "The Grammar of Science")
 
 quo: Uncertainty is a personal matter; it is not *the* uncertainty but *your* uncertainty.
 src: Dennis Lindley
@@ -4010,9 +4048,67 @@ doi: https://doi.org/10.1080/08982112.2025.2556222
 
 quo: A good chart isn't an illustration but a visual argument.
 src: Alberto Cairo
-cit: Alberto Cairo, "How Charts Lie"
+cit: Alberto Cairo, How Charts Lie.
 tag: data visualization
 
 quo: Good statistics are like a telescope for an astronomer, a microscope for a bacteriologist, or an x-ray for a radiologist. If we are willing to let them, good statistics help us to see things about the world around us and about ourselves--both large and small – that we would not be able to see in any other way.
 src: Tim Hartford
-cit: Tim Hartford, "The Data Detective", p. 9
+cit: Tim Hartford, The Data Detective, p. 9
+
+quo: Statistics is more a way of thinking or reasoning than a bunch of prescriptions for beating data to elicit answers.
+src: C. R. Rao
+cit: C. R. Rao (1997), Statistics and Truth: Putting Chance to Work. World Scientific.
+
+quo: Statistics is nothing more than a trivial exercise if it does not address real-world problems.
+src: Colin Mallows
+cit: Colin Mallows (2006), Tukey's paper after 40 years, Technometrics, 48: 319-325.
+
+quo: If you need to rely on statistics, you need to worry.
+src: Daniel Kleppner
+cit: Daniel Kleppner (1992), Fretting about statistics, Physics Today, vol. 45, no. 7, pp. 9-11.
+
+quo: ...without data, everyone is an expert. Issues that generate great disagreement and controversy are usually those where little factual data exist.
+src: Ronald Snee
+cit: Ronald D. Snee (1986), In pursuit of total quality. Quality Progress, 20 (8): 25-31.
+
+quo: My experience with data analysis indicates to me that problems with the data themselves are usually more numerous and more serious than problems with methodology.
+src: John Bailar
+cit: John C. Bailar, III (1976), Bailar's laws of data analysis. Clinical Pharmacology and Therapeutics, 20: 113-119.
+
+quo: Statistical ideas for producing data to answer specific questions are the most influential contributions of statistics to human knowledge. Badly designed data production is the most common serious flaw in statistical studies. Well designed data production allows us to apply standard methods of analysis and reach clear conclusions. Professional statisticians are paid for their expertise in designing studies; if the study is well designed (and no unanticipated disaster occurred), you don't need a professional to do the analysis. In other words, the design of data production is really important. If you just say 'Suppose X_1 to X_n are iid observations,' you aren't teaching statistics.
+src: George W. Cobb and David S. Moore
+cit: George W. Cobb and David S. Moore (1997). Mathematics, statistics, and teaching. American Mathematical Monthly, 104: 801-823.
+
+quo: We’re talking about asking authors, ‘Is this hypothesis testing or exploratory?’ An exploratory study explores new questions rather than tests an existing hypothesis. But scientists have felt that they had to disguise an exploratory study as hypothesis testing and that is totally dishonest. I have no problem with true exploratory science. That is what I did most of my career. But it is important that scientists call it as such and not try to pass it off as something else.
+src: Marcia McNutt
+cit: Marcia McNutt (2016), now President of the National Academy of Sciences. Science, 353: 116–119.
+
+quo: There is no way to infer the 'right' model from the data unless there is strong prior theory to limit the universe of possible models....That kind of strong theory is rarely available in the social sciences.
+src: David Freedman
+cit: David A. Freedman (2009). Statistical Models: Theory and Practice, revised edition (Cambridge University Press).
+
+quo: Although 'eyeballing' the data as I had done can hardly be called statistical analysis, the fact remains that whenever you have an element of random behavior in your data, you can easily fool yourself. With today's cheap and powerful workstations you can accumulate vast piles of data, analyze them in a jiffy and apply sophisticated statistical tests to reassure yourself that the data are consistent and that all is well. What you have really achieved, however, is the ability to fool yourself in a highly sophisticated manner.
+src: Daniel Kleppner
+cit: Daniel Kleppner (1992). Fretting about statistics. Physics Today, vol. 45, no. 7, pp. 9-11.
+
+quo: And because what we observe is not the outcome of a stationary process, conventional statistical inference rarely applies and forecasts are often based on shifting sands.
+src: John Kay & Mervyn King
+cit: John Kay and Mervyn King (2020). Radical Uncertainty: Decision-Making Beyond the Numbers (New York: W. W. Norton).
+
+quo: Thus, a frequent mistake is to calculate a confidence interval to contain the population mean when the problem requires a tolerance interval or a prediction interval. At other times, a tolerance interval is used when a prediction interval is needed. Such confusion is understandable, because most texts on statistics generally discuss confidence intervals, occasionally make reference to tolerance intervals, but generally consider prediction intervals only in the context of regression analysis.
+src: Gerald J. Hahn and William Q. Meeker
+cit: Gerald J. Hahn and William Q. Meeker (1991). Statistical Intervals: A Guide for Practitioners. Wiley.
+
+quo: "If we wish to ensure that the probability of making at least one type I error is not greater than alpha, we must know 'per what' we are to control this error: per hypothesis test, per question, per trial, per drug development programme, per lifetime of the statistician, for all science for ever? This is the really difficult question that all this work raises and this is the question that is regularly shirked.
+src: Stephen Senn
+cit: Stephen Senn (1998). Mathematics: governess or handmaiden? Journal of the Royal Statistical Society D, 47 (2): 251-259.
+tag: probability
+
+quo: Replication on fresh data, preferably by another group of experimenters, is a mainstay of the 'scientific method'. If done skillfully, replication can eliminate all difficulties with extensive exploration.
+src: Persi Diaconis
+cit: Persi Diaconis (1985). Theories of data analysis: From magical thinking through classical statistics. In Exploring Data Tables, Trends, and Shapes, ed. by D. C. Hoaglin, F. Mosteller, and J. W. Tukey. Wiley, pp. 1-36.
+
+quo: I now turn to another kind of principle or idea, and that is that there is no sense in calculating the probability after it happens. A lot of scientists don't even appreciate this....For example, I had the most remarkable experience this evening. While coming in here, I saw license plate ANZ 912. Calculate for me, please, the odds that of all the license plates in the state of Washington I should happen to see ANZ 912. Well, it's a ridiculous thing.
+src: Richard Feynman
+cit: Richard P. Feynman (1963). The John Danz lectures, University of Washington, Seattle. The Meaning of It All: Thoughts of a Citizen-Scientist. Perseus Books.
+tag: probability
