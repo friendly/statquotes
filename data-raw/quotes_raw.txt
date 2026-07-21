@@ -26,6 +26,10 @@
 % nhst = null hypothesis significance testing
 % normality
 
+% Works reviewed
+% https://github.com/hydrodynamicstability/statquotes
+
+
 % ---------------------------------------------------------------------------
 % This section of quotes was contributed by Michael Friendly
 
