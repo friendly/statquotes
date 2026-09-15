@@ -4115,4 +4115,10 @@ cit: Persi Diaconis (1985). Theories of data analysis: From magical thinking thr
 quo: I now turn to another kind of principle or idea, and that is that there is no sense in calculating the probability after it happens. A lot of scientists don't even appreciate this....For example, I had the most remarkable experience this evening. While coming in here, I saw license plate ANZ 912. Calculate for me, please, the odds that of all the license plates in the state of Washington I should happen to see ANZ 912. Well, it's a ridiculous thing.
 src: Richard Feynman
 cit: Richard P. Feynman (1963). The John Danz lectures, University of Washington, Seattle. The Meaning of It All: Thoughts of a Citizen-Scientist. Perseus Books.
+
+quo: Model estimates come with various measures of precision, confidence, or credence. Presenting and interpreting these measures is notoriously prone to misinterpretation, or overinterpretation. Researchers and audiences tend to demand more from things like confidence intervals and p-values than these statistics can deliver.
+src: Kieran Healy
+cit: Kieran Healy, Data Visualization
+url: https://socviz.co/06-modeling.html
+
 tag: probability
