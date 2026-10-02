@@ -79,11 +79,13 @@ read_quotes_raw <- function(file = file.path(getwd(), "data-raw/quotes_raw.txt")
 
   n.na <- sum(is.na( dat[,"text"] ))
   if(n.na>0) {
-    warning(paste("Found", n.na, "quotes with empty text (quo:) field"))
+    warning(paste("Found", n.na, "quotes with empty text (quo:) field.",
+                  "\nqid locations:", paste0(which(is.na( dat[,"text"] )), collapse=',')))
   }
   n.na <- sum(is.na( dat[,"source"] ))
   if(n.na>0) {
-    warning(paste("Found", n.na, "quotes with empty source (src:) field"))
+    warning(paste("Found", n.na, "quotes with empty source (src:) field.",
+                  "\nqid locations:", paste0(which(is.na( dat[,"source"] )), collapse=',')))
   }
 
   # return the quotes
