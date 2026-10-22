@@ -557,6 +557,10 @@ quo: You may prove anything by figures.
 src: Thomas Carlyle
 tag: statistics
 
+quo: The subjectivist (i.e. Bayesian) states his judgments, whereas the objectivist sweeps them under the carpet by calling assumptions knowledge, and he basks in the glorious objectivity of science.
+src: I.J. Good
+tag: bayesian
+
 quo: To understand God's thoughts we must study statistics, for these are the measure of His purpose.
 src: Florence Nightingale
 tag: statistics
@@ -3746,6 +3750,14 @@ tag: data analysis
 quo: A big computer, a complex algorithm and a long time does not equal science.
 src: Robert Gentleman
 tag: science,computing
+
+quo: All generalizations are false, including this one.
+src: Unknown (commonly misattributed to Mark Twain)
+tag: generalization
+
+quo: It's easy to lie with statistics; it is easier to lie without them.
+src: Charles Frederick Mosteller
+tag: statistics
 
 quo: Absence of evidence is not evidence of absence.
 src: Martin Rees
